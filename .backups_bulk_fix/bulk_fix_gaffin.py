@@ -6,17 +6,12 @@ import pathlib, re, shutil, sys, os
 ROOTS = ["."]
 # Patterns to fix in PATHS (file & directory names)
 PATH_RENAMES = [
-    ("richard-b.-gaffin-jr.", "richard-b-gaffin-jr."),  # dotted slug -> clean
-    ("richard-b.-gaffin-jr",  "richard-b-gaffin-jr"),
-    ("gafifn",                "gaffin"),                # <-- your extra path case
-]
+    ("richard-b-gaffin-jr", "richard-b-gaffin-jr"),  # dotted slug -> clean
+    ]
 # Patterns to fix in FILE CONTENTS (strings)
 CONTENT_RENAMES = [
-    ("richard-b.-gaffin-jr.", "richard-b-gaffin-jr."),
-    ("richard-b.-gaffin-jr",  "richard-b-gaffin-jr"),
-    ("richard-b-gaffin-jr..", "richard-b-gaffin-jr."),  # collapse double dot
-    # Uncomment if text contains the typo too:
-    # ("gafifn", "gaffin"),
+    ("richard-b-gaffin-jr", "richard-b-gaffin-jr"),
+    ("Richard B. Gaffin Jr.",  "Richard B. Gaffin Jr."),
 ]
 TEXT_EXT = {
     ".md",".mdx",".markdown",".txt",".json",".jsonl",".yml",".yaml",

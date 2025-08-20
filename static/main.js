@@ -9,7 +9,11 @@ async function api(path) {
     return r.json();
 }
 
-const slugify = s => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const slugify = s => (s || '')
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, '-')   // non-alnum -> -
+  .replace(/^-+|-+$/g, '')       // trim leading/trailing -
+  .replace(/\.+$/g, '');
 
 /* ---------- router ---------- */
 function useRouter() {

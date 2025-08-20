@@ -26564,7 +26564,7 @@
           "topic_id": "top_0e8b884aa7cb",
           "topic_slug": "nature-and-origin-of-sin",
           "topic_category": "Doctrine Of Sin",
-          "markdown_path": "outlines/doctrine-of-sin/nature-and-origin-of-sin/richard-gaffin.md",
+          "markdown_path": "outlines/doctrine-of-sin/nature-and-origin-of-sin/richard-b-gaffin-jr.md",
           "updated_at": "2025-08-16",
           "key_work_ids": [
             "work_08952f5fdd71",
@@ -26578,7 +26578,7 @@
           "topic_id": "top_7e8a2612951f",
           "topic_slug": "original-sin-and-imputation",
           "topic_category": "Doctrine Of Sin",
-          "markdown_path": "outlines/doctrine-of-sin/original-sin-and-imputation/richard-gaffin.md",
+          "markdown_path": "outlines/doctrine-of-sin/original-sin-and-imputation/richard-b-gaffin-jr.md",
           "updated_at": "2025-08-16",
           "key_work_ids": [
             "work_eec8222b28b3",
@@ -26593,7 +26593,7 @@
           "topic_id": "top_31f6d4fc5cf2",
           "topic_slug": "pelagianism-semi-pelagianism-and-augustinianism",
           "topic_category": "Doctrine Of Sin",
-          "markdown_path": "outlines/doctrine-of-sin/pelagianism-semi-pelagianism-and-augustinianism/richard-gaffin.md",
+          "markdown_path": "outlines/doctrine-of-sin/pelagianism-semi-pelagianism-and-augustinianism/richard-b-gaffin-jr.md",
           "updated_at": "2025-08-16",
           "key_work_ids": [
             "work_08952f5fdd71",
@@ -26670,7 +26670,7 @@
           "topic_id": "top_2faa3c3f1f60",
           "topic_slug": "eternal-functional-subordination-debates",
           "topic_category": "Doctrine Of The Trinity",
-          "markdown_path": "outlines/doctrine-of-the-trinity/eternal-functional-subordination-debates/richard-gaffin.md",
+          "markdown_path": "outlines/doctrine-of-the-trinity/eternal-functional-subordination-debates/richard-b-gaffin-jr.md",
           "updated_at": "2025-08-16",
           "key_work_ids": [
             "work_b23e791eba16",

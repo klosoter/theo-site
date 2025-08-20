@@ -65,4 +65,4 @@ Geerhardus Vos defined the **nature and task of theology** as the disciplined st
 
 ## Legacy and Impact
 
-Vos’s articulation of **biblical theology** as a distinct discipline profoundly shaped Reformed theological method in the twentieth century. His emphasis on the **organic, historical, and redemptive character of revelation** provided a framework for understanding Scripture as a unified, Christ-centered whole. Vos’s influence endures in the work of later theologians such as Herman Ridderbos, Richard Gaffin, and Edmund Clowney, and remains foundational for contemporary Reformed approaches to the **nature and task of theology**.
+Vos’s articulation of **biblical theology** as a distinct discipline profoundly shaped Reformed theological method in the twentieth century. His emphasis on the **organic, historical, and redemptive character of revelation** provided a framework for understanding Scripture as a unified, Christ-centered whole. Vos’s influence endures in the work of later theologians such as Herman Ridderbos, Richard B. Gaffin Jr., and Edmund Clowney, and remains foundational for contemporary Reformed approaches to the **nature and task of theology**.
