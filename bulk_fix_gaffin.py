@@ -6,15 +6,15 @@ import pathlib, re, shutil, sys, os
 ROOTS = ["."]
 # Patterns to fix in PATHS (file & directory names)
 PATH_RENAMES = [
-    ("richard-b.-gaffin-jr.", "richard-b-gaffin-jr."),  # dotted slug -> clean
-    ("richard-b.-gaffin-jr",  "richard-b-gaffin-jr"),
+    ("richard-b-gaffin-jr.", "richard-b-gaffin-jr."),  # dotted slug -> clean
+    ("richard-b-gaffin-jr",  "richard-b-gaffin-jr"),
     ("gafifn",                "gaffin"),                # <-- your extra path case
 ]
 # Patterns to fix in FILE CONTENTS (strings)
 CONTENT_RENAMES = [
-    ("richard-b.-gaffin-jr.", "richard-b-gaffin-jr."),
-    ("richard-b.-gaffin-jr",  "richard-b-gaffin-jr"),
-    ("richard-b-gaffin-jr..", "richard-b-gaffin-jr."),  # collapse double dot
+    ("richard-b-gaffin-jr.", "richard-b-gaffin-jr."),
+    ("richard-b-gaffin-jr",  "richard-b-gaffin-jr"),
+    ("richard-b-gaffin-jr.", "richard-b-gaffin-jr."),  # collapse double dot
     # Uncomment if text contains the typo too:
     # ("gafifn", "gaffin"),
 ]
@@ -23,7 +23,7 @@ TEXT_EXT = {
     ".js",".ts",".tsx",".py",".html",".css",".csv",".tsv"
 }
 BACKUP_DIR = ".backups_bulk_fix"
-DRY_RUN = True  # set False to apply changes
+DRY_RUN = False  # set False to apply changes
 # ---------------------------------------------------------------------------
 
 ROOTS = [pathlib.Path(r).resolve() for r in ROOTS]

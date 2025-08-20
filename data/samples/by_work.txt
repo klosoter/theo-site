@@ -125,7 +125,7 @@
         "topic_id": "top_25865b61d590",
         "theologian_id": "theo_01d6e8e3cff7",
         "outline_id": "out_47ed0ee848a0",
-        "markdown_path": "outlines/christology/kenosis-theories-and-critiques/richard-b.-gaffin-jr..md"
+        "markdown_path": "outlines/christology/kenosis-theories-and-critiques/richard-b-gaffin-jr.md"
       }
     ],
     "title": "\"A Cessationist View\" in Are Miraculous Gifts for Today?",
@@ -145,7 +145,7 @@
         "topic_id": "top_c28e6ab43b2d",
         "theologian_id": "theo_01d6e8e3cff7",
         "outline_id": "out_a225843c00e9",
-        "markdown_path": "outlines/pneumatology/baptism-of-the-holy-spirit/richard-b.-gaffin-jr..md"
+        "markdown_path": "outlines/pneumatology/baptism-of-the-holy-spirit/richard-b-gaffin-jr.md"
       }
     ],
     "title": "\"A Cessationist View\" in Are Miraculous Gifts for Today? Four Views",
