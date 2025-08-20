@@ -1,0 +1,344 @@
+[
+  {
+    "id": "theo_0f63e509379b",
+    "slug": "A. Andrew Das",
+    "full_name": "A. Andrew Das",
+    "name": "A. Andrew Das",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_3ed37ac89ea7"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_979f40c3419b",
+    "slug": "A. Edward Siecienski",
+    "full_name": "A. Edward Siecienski",
+    "name": "A. Edward Siecienski",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_0e5f9ded1326"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_e85d71513e95",
+    "slug": "A.A. Hodge",
+    "full_name": "A.A. Hodge",
+    "name": "A.A. Hodge",
+    "dates": "1823–1886",
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_a1dc6864e0b1"
+    ],
+    "wts_relevance": true,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_e9df3aafbfb1",
+    "slug": "A.T.B. McGowan",
+    "full_name": "A.T.B. McGowan",
+    "name": "A.T.B. McGowan",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_27c808bbfc58"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_bbaf9204ff14",
+    "slug": "Abraham Kuyper",
+    "full_name": "Abraham Kuyper",
+    "name": "Abraham Kuyper",
+    "dates": "1837–1920",
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_a179e488f8ad"
+    ],
+    "wts_relevance": true,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_421f6f1cf18d",
+    "slug": "Adam C. Johnson",
+    "full_name": "Adam C. Johnson",
+    "name": "Adam C. Johnson",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_a8e2f9322e53"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_3698ee84fe2f",
+    "slug": "Adam J. Johnson",
+    "full_name": "Adam J. Johnson",
+    "name": "Adam J. Johnson",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_6854311e6f33",
+      "work_75990ab04c52",
+      "work_d6728d9105c3"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_e9456cb5a226",
+    "slug": "Adonis Vidu",
+    "full_name": "Adonis Vidu",
+    "name": "Adonis Vidu",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_014bccebc50d",
+      "work_1e3d638e770e",
+      "work_6a731d63177b"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_22452c865577",
+    "slug": "Al Wolters",
+    "full_name": "Al Wolters",
+    "name": "Al Wolters",
+    "dates": "1952–",
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_bb524abef698"
+    ],
+    "wts_relevance": true,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_35e43611631b",
+    "slug": "Alan D. Strange",
+    "full_name": "Alan D. Strange",
+    "name": "Alan D. Strange",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_5131fa2aa6a2"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_c66c309571d9",
+    "slug": "Alan J. Spence",
+    "full_name": "Alan J. Spence",
+    "name": "Alan J. Spence",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_1a8f9089abcc",
+      "work_976ef1cccbd3"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_bd8b00bdfaaf",
+    "slug": "Alan S. Bandy",
+    "full_name": "Alan S. Bandy",
+    "name": "Alan S. Bandy",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_c9284bfe9f72"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_fd6d1af54939",
+    "slug": "Albrecht Ritschl",
+    "full_name": "Albrecht Ritschl",
+    "name": "Albrecht Ritschl",
+    "dates": "1822–1889",
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": true,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_460f372a5a47",
+    "slug": "Alec Motyer",
+    "full_name": "Alec Motyer",
+    "name": "Alec Motyer",
+    "dates": "1924–2016",
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": true,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_d34847f2a639",
+    "slug": "Alister E. McGrath",
+    "full_name": "Alister E. McGrath",
+    "name": "Alister E. McGrath",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_7326c6abfe56"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_1bb0dfd831b1",
+    "slug": "Allan Anderson",
+    "full_name": "Allan Anderson",
+    "name": "Allan Anderson",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_c9fff14e4a6b"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_53cc9f912144",
+    "slug": "Alvin Plantinga",
+    "full_name": "Alvin Plantinga",
+    "name": "Alvin Plantinga",
+    "dates": "1932–",
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_35e3b9e28870",
+      "work_4bd6d1f421e1",
+      "work_5fe9b994d35a"
+    ],
+    "wts_relevance": true,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_deba605e3a95",
+    "slug": "Andrew A. Bonar",
+    "full_name": "Andrew A. Bonar",
+    "name": "Andrew A. Bonar",
+    "dates": "1810–1892",
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": true,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_961a272bbcf3",
+    "slug": "Andrew A. Sandlin",
+    "full_name": "Andrew A. Sandlin",
+    "name": "Andrew A. Sandlin",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_03fafccf191d"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "theo_1896ac3a298c",
+    "slug": "Andrew A. Snelling",
+    "full_name": "Andrew A. Snelling",
+    "name": "Andrew A. Snelling",
+    "dates": null,
+    "era_category": [],
+    "traditions": [],
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [
+      "work_dc2f949b03fc",
+      "work_e3095f3f7686"
+    ],
+    "wts_relevance": false,
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  }
+]

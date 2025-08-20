@@ -1,0 +1,414 @@
+{
+  "work_e0fde1126f74": {
+    "referenced_in": [
+      {
+        "topic_id": "top_bcdbe3b27a7f",
+        "theologian_id": "theo_38bdde67d604",
+        "outline_id": "out_88289cdc8036",
+        "markdown_path": "outlines/eschatology/antichrist-and-man-of-lawlessness/gregory-k.-beale.md"
+      }
+    ],
+    "title": "\"1–2 Thessalonians\" (IVP New Testament Commentary, 2003)",
+    "primary_author_theologian_id": "theo_38bdde67d604",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_38bdde67d604",
+        "slug": "Gregory K. Beale",
+        "full_name": "Gregory K. Beale"
+      }
+    ]
+  },
+  "work_cfa06cf99d84": {
+    "referenced_in": [
+      {
+        "topic_id": "top_a76905abad5a",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_fb514773a7c0",
+        "markdown_path": "outlines/soteriology/adoption/john-owen.md"
+      }
+    ],
+    "title": "\"A Brief Declaration and Vindication of the Doctrine of the Trinity\"",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_9a8bad95ad9e": {
+    "referenced_in": [
+      {
+        "topic_id": "top_0e8b884aa7cb",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_d43aba4a1c96",
+        "markdown_path": "outlines/doctrine-of-sin/nature-and-origin-of-sin/john-owen.md"
+      }
+    ],
+    "title": "\"A Brief Declaration and Vindication of the Doctrine of the Trinity\" (for anthropological context)",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_97263a885a5f": {
+    "referenced_in": [
+      {
+        "topic_id": "top_9b743976a17c",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_1976df3d2e79",
+        "markdown_path": "outlines/ecclesiology-&-sacraments/visible-and-invisible-church-distinction/john-owen.md"
+      }
+    ],
+    "title": "\"A Brief Instruction in the Worship of God\" (Works, vol. 15)",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_36e4b8f86177": {
+    "referenced_in": [
+      {
+        "topic_id": "top_d83fcc9d8eaa",
+        "theologian_id": "theo_06305c7dfd89",
+        "outline_id": "out_9f440c56c492",
+        "markdown_path": "outlines/soteriology/assurance-and-perseverance/thomas-brooks.md"
+      }
+    ],
+    "title": "\"A Cabinet of Choice Jewels\"",
+    "primary_author_theologian_id": "theo_06305c7dfd89",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_06305c7dfd89",
+        "slug": "Thomas Brooks",
+        "full_name": "Thomas Brooks"
+      }
+    ]
+  },
+  "work_ab40c7e97bf4": {
+    "referenced_in": [
+      {
+        "topic_id": "top_d31900b00a67",
+        "theologian_id": "theo_f5be9f777670",
+        "outline_id": "out_e67e67532179",
+        "markdown_path": "outlines/eschatology/revelation-20-and-the-millennium/kim-riddlebarger.md"
+      }
+    ],
+    "title": "\"A Case for Amillennialism: Understanding the End Times\"",
+    "primary_author_theologian_id": "theo_f5be9f777670",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_f5be9f777670",
+        "slug": "Kim Riddlebarger",
+        "full_name": "Kim Riddlebarger"
+      }
+    ]
+  },
+  "work_19c3d7a0a1b2": {
+    "referenced_in": [
+      {
+        "topic_id": "top_25865b61d590",
+        "theologian_id": "theo_01d6e8e3cff7",
+        "outline_id": "out_47ed0ee848a0",
+        "markdown_path": "outlines/christology/kenosis-theories-and-critiques/richard-b.-gaffin-jr..md"
+      }
+    ],
+    "title": "\"A Cessationist View\" in Are Miraculous Gifts for Today?",
+    "primary_author_theologian_id": "theo_01d6e8e3cff7",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01d6e8e3cff7",
+        "slug": "Richard B. Gaffin Jr.",
+        "full_name": "Richard B. Gaffin Jr."
+      }
+    ]
+  },
+  "work_7e2f98077a97": {
+    "referenced_in": [
+      {
+        "topic_id": "top_c28e6ab43b2d",
+        "theologian_id": "theo_01d6e8e3cff7",
+        "outline_id": "out_a225843c00e9",
+        "markdown_path": "outlines/pneumatology/baptism-of-the-holy-spirit/richard-b.-gaffin-jr..md"
+      }
+    ],
+    "title": "\"A Cessationist View\" in Are Miraculous Gifts for Today? Four Views",
+    "primary_author_theologian_id": "theo_01d6e8e3cff7",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01d6e8e3cff7",
+        "slug": "Richard B. Gaffin Jr.",
+        "full_name": "Richard B. Gaffin Jr."
+      }
+    ]
+  },
+  "work_f5e3ea9b6732": {
+    "referenced_in": [
+      {
+        "topic_id": "top_a76905abad5a",
+        "theologian_id": "theo_e84f90ea9799",
+        "outline_id": "out_fb5a555cecaf",
+        "markdown_path": "outlines/soteriology/adoption/anthony-n.s.-lane.md"
+      }
+    ],
+    "title": "\"A Concise History of Christian Doctrine\" (2006)",
+    "primary_author_theologian_id": "theo_e84f90ea9799",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_e84f90ea9799",
+        "slug": "Anthony N.S. Lane",
+        "full_name": "Anthony N.S. Lane"
+      }
+    ]
+  },
+  "work_e5585550ac82": {
+    "referenced_in": [
+      {
+        "topic_id": "top_49542353d68b",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_f7dfbf6e09d6",
+        "markdown_path": "outlines/christology/impeccability-of-christ/john-owen.md"
+      }
+    ],
+    "title": "\"A Declaration of the Glorious Mystery of the Person of Christ, God and Man\"",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_79881b3d7160": {
+    "referenced_in": [
+      {
+        "topic_id": "top_95f6db90a829",
+        "theologian_id": "theo_c4bd273d811a",
+        "outline_id": "out_675c6feef8c5",
+        "markdown_path": "outlines/ecclesiology-&-sacraments/church-government-presbyterian-polity-offices-discipline/robert-l.-dabney.md"
+      }
+    ],
+    "title": "\"A Defence of Virginia and Through Her, of the South\" (contextualizes his ecclesiology)",
+    "primary_author_theologian_id": "theo_c4bd273d811a",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_c4bd273d811a",
+        "slug": "Robert L. Dabney",
+        "full_name": "Robert L. Dabney"
+      }
+    ]
+  },
+  "work_affbe93e71f2": {
+    "referenced_in": [
+      {
+        "topic_id": "top_09c1f96def60",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_9c1d67b4f5a1",
+        "markdown_path": "outlines/covenant-theology/mosaic-covenant-covenant-of-works-as-to-substance/john-owen.md"
+      }
+    ],
+    "title": "\"A Discourse Concerning Evangelical Love, Church Peace, and Unity\"",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_ebdcdbd57928": {
+    "referenced_in": [
+      {
+        "topic_id": "top_5f8935ddef79",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_db96a41ae627",
+        "markdown_path": "outlines/pneumatology/person-and-deity-of-the-holy-spirit/john-owen.md"
+      },
+      {
+        "topic_id": "top_f97189979aa0",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_fc5c2066b3bf",
+        "markdown_path": "outlines/bibliology/accommodation-and-incarnational-analogy/john-owen.md"
+      }
+    ],
+    "title": "\"A Discourse Concerning the Holy Spirit\"",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_e9c230415f76": {
+    "referenced_in": [
+      {
+        "topic_id": "top_ffaeb0af5519",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_bfe533f585cf",
+        "markdown_path": "outlines/soteriology/regeneration-and-effectual-calling/john-owen.md"
+      }
+    ],
+    "title": "\"A Discourse of the Work of the Holy Spirit in Prayer\"",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_31a5a2aeb129": {
+    "referenced_in": [
+      {
+        "topic_id": "top_59ec9b4749fe",
+        "theologian_id": "theo_3ec37db888cb",
+        "outline_id": "out_411c36cafc9d",
+        "markdown_path": "outlines/theology-proper/absolute-and-relative-attributes/stephen-charnock.md"
+      }
+    ],
+    "title": "\"A Discourse on God's Knowledge\"",
+    "primary_author_theologian_id": "theo_3ec37db888cb",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_3ec37db888cb",
+        "slug": "Stephen Charnock",
+        "full_name": "Stephen Charnock"
+      }
+    ]
+  },
+  "work_e0e44515004c": {
+    "referenced_in": [
+      {
+        "topic_id": "top_59ec9b4749fe",
+        "theologian_id": "theo_3ec37db888cb",
+        "outline_id": "out_411c36cafc9d",
+        "markdown_path": "outlines/theology-proper/absolute-and-relative-attributes/stephen-charnock.md"
+      }
+    ],
+    "title": "\"A Discourse on the Eternity of God\"",
+    "primary_author_theologian_id": "theo_3ec37db888cb",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_3ec37db888cb",
+        "slug": "Stephen Charnock",
+        "full_name": "Stephen Charnock"
+      }
+    ]
+  },
+  "work_7cf3786a5a66": {
+    "referenced_in": [
+      {
+        "topic_id": "top_59ec9b4749fe",
+        "theologian_id": "theo_3ec37db888cb",
+        "outline_id": "out_411c36cafc9d",
+        "markdown_path": "outlines/theology-proper/absolute-and-relative-attributes/stephen-charnock.md"
+      }
+    ],
+    "title": "\"A Discourse on the Existence of God\"",
+    "primary_author_theologian_id": "theo_3ec37db888cb",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_3ec37db888cb",
+        "slug": "Stephen Charnock",
+        "full_name": "Stephen Charnock"
+      }
+    ]
+  },
+  "work_cf099540637c": {
+    "referenced_in": [
+      {
+        "topic_id": "top_59ec9b4749fe",
+        "theologian_id": "theo_3ec37db888cb",
+        "outline_id": "out_411c36cafc9d",
+        "markdown_path": "outlines/theology-proper/absolute-and-relative-attributes/stephen-charnock.md"
+      }
+    ],
+    "title": "\"A Discourse on the Omnipresence of God\"",
+    "primary_author_theologian_id": "theo_3ec37db888cb",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_3ec37db888cb",
+        "slug": "Stephen Charnock",
+        "full_name": "Stephen Charnock"
+      }
+    ]
+  },
+  "work_ea415cd05d59": {
+    "referenced_in": [
+      {
+        "topic_id": "top_0e8b884aa7cb",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_d43aba4a1c96",
+        "markdown_path": "outlines/doctrine-of-sin/nature-and-origin-of-sin/john-owen.md"
+      },
+      {
+        "topic_id": "top_2218757d871e",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_6280e1455076",
+        "markdown_path": "outlines/soteriology/faith-and-repentance/john-owen.md"
+      }
+    ],
+    "title": "\"A Display of Arminianism\"",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  },
+  "work_31c3287fbcd1": {
+    "referenced_in": [
+      {
+        "topic_id": "top_8fe3fe69aa08",
+        "theologian_id": "theo_01884231e7c8",
+        "outline_id": "out_be90cd1bafca",
+        "markdown_path": "outlines/covenant-theology/covenant-of-works/john-owen.md"
+      }
+    ],
+    "title": "\"A Display of Arminianism\" (1643)",
+    "primary_author_theologian_id": "theo_01884231e7c8",
+    "is_topic_keywork": false,
+    "authors": [
+      {
+        "id": "theo_01884231e7c8",
+        "slug": "John Owen",
+        "full_name": "John Owen"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3592 @@
+{
+  "Nature and task of theology": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Nature and task of theology",
+      "topic_specific_theologians": [
+        "Richard B. Gaffin Jr.",
+        "John Webster",
+        "Kevin J. Vanhoozer",
+        "Michael Horton",
+        "David F. Wells",
+        "Scott R. Swain",
+        "Richard Muller",
+        "Meredith G. Kline"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Idea of Systematic Theology",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Idea of Systematic Theology",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Collected Writings, Vol. 1: The Claims of Truth",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 1: The Claims of Truth",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "An Introduction to Systematic Theology",
+          "suffix": "",
+          "raw": "Cornelius Van Til, An Introduction to Systematic Theology",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Reformed Dogmatics, Vol. 1: Theology Proper",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Reformed Dogmatics, Vol. 1: Theology Proper",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "Christianity and Liberalism",
+          "suffix": "",
+          "raw": "J. Gresham Machen, Christianity and Liberalism",
+          "theologian": "J. Gresham Machen"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Domain of the Word",
+          "suffix": "",
+          "raw": "John Webster, The Domain of the Word",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "The Drama of Doctrine",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, The Drama of Doctrine",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Reformed Catholicity",
+          "suffix": "and Scott R. Swain",
+          "raw": "Michael Allen and Scott R. Swain, Reformed Catholicity",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "The Christian Faith: A Systematic Theology for Pilgrims on the Way",
+          "suffix": "",
+          "raw": "Michael Horton, The Christian Faith: A Systematic Theology for Pilgrims on the Way",
+          "theologian": "Michael Horton"
+        },
+        {
+          "title": "No Place for Truth",
+          "suffix": "",
+          "raw": "David F. Wells, No Place for Truth",
+          "theologian": "David F. Wells"
+        },
+        {
+          "title": "The Quest for the Trinity",
+          "suffix": "",
+          "raw": "Stephen R. Holmes, The Quest for the Trinity",
+          "theologian": "Stephen R. Holmes"
+        },
+        {
+          "title": "J. Aaron Simmons, & Bruce L. McCormack (eds.), Theological Hermeneutics and the Church",
+          "suffix": "",
+          "raw": "R. David Nelson, J. Aaron Simmons, & Bruce L. McCormack (eds.), Theological Hermeneutics and the Church",
+          "theologian": "R. David Nelson"
+        },
+        {
+          "title": "Participatory Biblical Exegesis",
+          "suffix": "",
+          "raw": "Matthew Levering, Participatory Biblical Exegesis",
+          "theologian": "Matthew Levering"
+        },
+        {
+          "title": "The Doctrine of the Knowledge of God (newer editions)",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Knowledge of God (newer editions)",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Retrieving Eternal Generation",
+          "suffix": "& Scott R. Swain (eds.)",
+          "raw": "Fred Sanders & Scott R. Swain (eds.), Retrieving Eternal Generation",
+          "theologian": "Fred Sanders"
+        },
+        {
+          "title": "The Task of Dogmatics",
+          "suffix": "& Fred Sanders (eds.)",
+          "raw": "Oliver D. Crisp & Fred Sanders (eds.), The Task of Dogmatics",
+          "theologian": "Oliver D. Crisp"
+        },
+        {
+          "title": "Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "suffix": "and Scott R. Swain (eds.)",
+          "raw": "Michael Allen and Scott R. Swain (eds.), Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "Intellectual Appetite: A Theological Grammar",
+          "suffix": "",
+          "raw": "Paul J. Griffiths, Intellectual Appetite: A Theological Grammar",
+          "theologian": "Paul J. Griffiths"
+        },
+        {
+          "title": "Theological Commentary: Evangelical Perspectives",
+          "suffix": "",
+          "raw": "R. Michael Allen, Theological Commentary: Evangelical Perspectives",
+          "theologian": "R. Michael Allen"
+        },
+        {
+          "title": "Orthodox and Modern: Studies in the Theology of Karl Barth",
+          "suffix": "",
+          "raw": "Bruce McCormack, Orthodox and Modern: Studies in the Theology of Karl Barth",
+          "theologian": "Bruce McCormack"
+        }
+      ]
+    }
+  },
+  "General and special revelation": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "General and special revelation",
+      "topic_specific_theologians": [
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline",
+        "Greg L. Bahnsen",
+        "Michael S. Horton",
+        "Kevin J. Vanhoozer",
+        "Stephen J. Nichols",
+        "John Webster",
+        "Henri Blocher"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Revelation and Inspiration",
+          "suffix": "",
+          "raw": "B.B. Warfield, Revelation and Inspiration",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "The Nature and Authority of Scripture",
+          "suffix": "",
+          "raw": "John Murray, The Nature and Authority of Scripture",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "Biblical Theology",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Biblical Theology",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "Christianity and Liberalism",
+          "suffix": "",
+          "raw": "J. Gresham Machen, Christianity and Liberalism",
+          "theologian": "J. Gresham Machen"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Christian Faith: A Systematic Theology for Pilgrims on the Way",
+          "suffix": "",
+          "raw": "Michael S. Horton, The Christian Faith: A Systematic Theology for Pilgrims on the Way",
+          "theologian": "Michael S. Horton"
+        },
+        {
+          "title": "Remythologizing Theology",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, Remythologizing Theology",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "The Doctrine of the Word of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Word of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Inerrancy and Worldview",
+          "suffix": "",
+          "raw": "Vern Poythress, Inerrancy and Worldview",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "The Open Secret: A New Vision for Natural Theology",
+          "suffix": "",
+          "raw": "Alister E. McGrath, The Open Secret: A New Vision for Natural Theology",
+          "theologian": "Alister E. McGrath"
+        },
+        {
+          "title": "Natural Theology: A Reader",
+          "suffix": "& J.P. Moreland, eds.",
+          "raw": "William Lane Craig & J.P. Moreland, eds., Natural Theology: A Reader",
+          "theologian": "William Lane Craig"
+        },
+        {
+          "title": "Adam, the Fall, and Original Sin",
+          "suffix": "& Michael Reeves (eds.)",
+          "raw": "Hans Madueme & Michael Reeves (eds.), Adam, the Fall, and Original Sin",
+          "theologian": "Hans Madueme"
+        },
+        {
+          "title": "Their Rock Is Not Like Our Rock",
+          "suffix": "",
+          "raw": "Daniel Strange, Their Rock Is Not Like Our Rock",
+          "theologian": "Daniel Strange"
+        },
+        {
+          "title": "Faith, Form, and Fashion: Classical Reformed Theology and Its Postmodern Critics",
+          "suffix": "",
+          "raw": "Paul Helm, Faith, Form, and Fashion: Classical Reformed Theology and Its Postmodern Critics",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "For Us and for Our Salvation: The Doctrine of Christ in the Early Church",
+          "suffix": "",
+          "raw": "Stephen J. Nichols, For Us and for Our Salvation: The Doctrine of Christ in the Early Church",
+          "theologian": "Stephen J. Nichols"
+        },
+        {
+          "title": "Holy Scripture: A Dogmatic Sketch",
+          "suffix": "",
+          "raw": "John Webster, Holy Scripture: A Dogmatic Sketch",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "In the Beginning: The Opening Chapters of Genesis",
+          "suffix": "",
+          "raw": "Henri Blocher, In the Beginning: The Opening Chapters of Genesis",
+          "theologian": "Henri Blocher"
+        },
+        {
+          "title": "Inspiration and Incarnation",
+          "suffix": "",
+          "raw": "Peter Enns, Inspiration and Incarnation",
+          "theologian": "Peter Enns"
+        },
+        {
+          "title": "Church Dogmatics I/1 (esp. on revelation)",
+          "suffix": "",
+          "raw": "Karl Barth, Church Dogmatics I/1 (esp. on revelation)",
+          "theologian": "Karl Barth"
+        },
+        {
+          "title": "Natural Theology: Comprising 'Nature and Grace' by Brunner and the reply 'No!' by Barth",
+          "suffix": "& Karl Barth",
+          "raw": "Emil Brunner & Karl Barth, Natural Theology: Comprising 'Nature and Grace' by Brunner and the reply 'No!' by Barth",
+          "theologian": "Emil Brunner"
+        }
+      ]
+    }
+  },
+  "Self-attestation and authority of Scripture": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Self-attestation and authority of Scripture",
+      "topic_specific_theologians": [
+        "John Owen",
+        "William Whitaker",
+        "Benjamin B. Warfield",
+        "J. Gresham Machen",
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline",
+        "Michael Horton",
+        "Kevin Vanhoozer"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Inspiration and Authority of the Bible",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Inspiration and Authority of the Bible",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Christianity and Liberalism",
+          "suffix": "",
+          "raw": "J. Gresham Machen, Christianity and Liberalism",
+          "theologian": "J. Gresham Machen"
+        },
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Collected Writings, Vol. 1: The Claims of Truth",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 1: The Claims of Truth",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "God's Word in Servant-Form",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., God's Word in Servant-Form",
+          "theologian": "Richard B. Gaffin Jr."
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "Canon Revisited",
+          "suffix": "",
+          "raw": "Michael Kruger, Canon Revisited",
+          "theologian": "Michael Kruger"
+        },
+        {
+          "title": "The Question of Canon",
+          "suffix": "",
+          "raw": "Michael Kruger, The Question of Canon",
+          "theologian": "Michael Kruger"
+        },
+        {
+          "title": "Holy Scripture: A Dogmatic Sketch",
+          "suffix": "",
+          "raw": "John Webster, Holy Scripture: A Dogmatic Sketch",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "The Drama of Doctrine",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, The Drama of Doctrine",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Inspiration and Incarnation",
+          "suffix": "",
+          "raw": "Peter Enns, Inspiration and Incarnation",
+          "theologian": "Peter Enns"
+        },
+        {
+          "title": "Scripture and the Authority of God",
+          "suffix": "",
+          "raw": "N.T. Wright, Scripture and the Authority of God",
+          "theologian": "N.T. Wright"
+        },
+        {
+          "title": "A High View of Scripture?",
+          "suffix": "",
+          "raw": "Craig D. Allert, A High View of Scripture?",
+          "theologian": "Craig D. Allert"
+        },
+        {
+          "title": "Collected Writings on Scripture",
+          "suffix": "",
+          "raw": "D.A. Carson, Collected Writings on Scripture",
+          "theologian": "D.A. Carson"
+        },
+        {
+          "title": "The Doctrine of the Word of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Word of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Inerrancy and Worldview",
+          "suffix": "",
+          "raw": "Vern Poythress, Inerrancy and Worldview",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "God's Word Alone: The Authority of Scripture",
+          "suffix": "(ed.)",
+          "raw": "Matthew Barrett (ed.), God's Word Alone: The Authority of Scripture",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "A Clear and Present Word",
+          "suffix": "",
+          "raw": "Mark D. Thompson, A Clear and Present Word",
+          "theologian": "Mark D. Thompson"
+        },
+        {
+          "title": "The Law and the Prophets: A Study in Old Testament Canon Formation",
+          "suffix": "",
+          "raw": "Stephen B. Chapman, The Law and the Prophets: A Study in Old Testament Canon Formation",
+          "theologian": "Stephen B. Chapman"
+        },
+        {
+          "title": "The Bible Made Impossible",
+          "suffix": "",
+          "raw": "Christian Smith, The Bible Made Impossible",
+          "theologian": "Christian Smith"
+        },
+        {
+          "title": "Scripture as Real Presence",
+          "suffix": "",
+          "raw": "Hans Boersma, Scripture as Real Presence",
+          "theologian": "Hans Boersma"
+        }
+      ]
+    }
+  },
+  "Inspiration and inerrancy": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Inspiration and inerrancy",
+      "topic_specific_theologians": [
+        "J. Gresham Machen",
+        "Gregory K. Beale",
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline",
+        "Benjamin B. Warfield (distinct focus on inerrancy)",
+        "Harold Lindsell",
+        "Millard J. Erickson",
+        "Peter Enns"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Inspiration and Authority of the Bible",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Inspiration and Authority of the Bible",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Christianity and Liberalism",
+          "suffix": "",
+          "raw": "J. Gresham Machen, Christianity and Liberalism",
+          "theologian": "J. Gresham Machen"
+        },
+        {
+          "title": "The Doctrine of Scripture",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Doctrine of Scripture",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Collected Writings, Vol. 1: The Claims of Scripture",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 1: The Claims of Scripture",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Erosion of Inerrancy in Evangelicalism",
+          "suffix": "",
+          "raw": "Gregory K. Beale, The Erosion of Inerrancy in Evangelicalism",
+          "theologian": "Gregory K. Beale"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "How God Became Jesus",
+          "suffix": "& Craig A. Evans (eds.)",
+          "raw": "Michael Bird & Craig A. Evans (eds.), How God Became Jesus",
+          "theologian": "Michael Bird"
+        },
+        {
+          "title": "Collected Writings on Scripture",
+          "suffix": "",
+          "raw": "D.A. Carson, Collected Writings on Scripture",
+          "theologian": "D.A. Carson"
+        },
+        {
+          "title": "The Erosion of Inerrancy in Evangelicalism",
+          "suffix": "",
+          "raw": "Gregory K. Beale, The Erosion of Inerrancy in Evangelicalism",
+          "theologian": "Gregory K. Beale"
+        },
+        {
+          "title": "Inspiration and Incarnation",
+          "suffix": "",
+          "raw": "Peter Enns, Inspiration and Incarnation",
+          "theologian": "Peter Enns"
+        },
+        {
+          "title": "Holy Scripture: A Dogmatic Sketch",
+          "suffix": "",
+          "raw": "John Webster, Holy Scripture: A Dogmatic Sketch",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "The Drama of Doctrine",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, The Drama of Doctrine",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "From Heaven He Came and Sought Her",
+          "suffix": "& Michael P. Jensen (eds.)",
+          "raw": "Michael F. Bird & Michael P. Jensen (eds.), From Heaven He Came and Sought Her",
+          "theologian": "Michael Bird"
+        },
+        {
+          "title": "Biblical Authority: A Critique of the Rogers/McKim Proposal",
+          "suffix": "",
+          "raw": "John D. Woodbridge, Biblical Authority: A Critique of the Rogers/McKim Proposal",
+          "theologian": "John D. Woodbridge"
+        },
+        {
+          "title": "Scripture and the Authority of God",
+          "suffix": "",
+          "raw": "N.T. Wright, Scripture and the Authority of God",
+          "theologian": "N.T. Wright"
+        },
+        {
+          "title": "God's Word Alone: The Authority of Scripture",
+          "suffix": "(ed.)",
+          "raw": "Matthew Barrett (ed.), God's Word Alone: The Authority of Scripture",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "Canon Revisited",
+          "suffix": "",
+          "raw": "Michael Kruger, Canon Revisited",
+          "theologian": "Michael Kruger"
+        },
+        {
+          "title": "The Oxford Handbook of Biblical Inerrancy",
+          "suffix": "& Marvin R. Wilson (eds.)",
+          "raw": "Stephen B. Chapman & Marvin R. Wilson (eds.), The Oxford Handbook of Biblical Inerrancy",
+          "theologian": "Stephen B. Chapman"
+        },
+        {
+          "title": "God's Word in Human Words",
+          "suffix": "",
+          "raw": "Kenton L. Sparks, God's Word in Human Words",
+          "theologian": "Kenton L. Sparks"
+        },
+        {
+          "title": "The Doctrine of the Word of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Word of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Inerrancy and Worldview",
+          "suffix": "",
+          "raw": "Vern Poythress, Inerrancy and Worldview",
+          "theologian": "Vern Poythress"
+        }
+      ]
+    }
+  },
+  "Accommodation and incarnational analogy": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Accommodation and incarnational analogy",
+      "topic_specific_theologians": [
+        "John Owen",
+        "Benjamin B. Warfield",
+        "Meredith G. Kline",
+        "Richard B. Gaffin Jr.",
+        "Kevin J. Vanhoozer",
+        "Stephen Williams",
+        "Peter Enns",
+        "Michael S. Horton"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Inspiration and Authority of the Bible",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Inspiration and Authority of the Bible",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Biblical Theology: Old and New Testaments",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Biblical Theology: Old and New Testaments",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "The Authority of Scripture",
+          "suffix": "",
+          "raw": "John Murray, The Authority of Scripture",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Doctrine of Scripture",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Doctrine of Scripture",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Images of the Spirit",
+          "suffix": "",
+          "raw": "Meredith G. Kline, Images of the Spirit",
+          "theologian": "Meredith G. Kline"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "Inspiration and Incarnation: Evangelicals and the Problem of the Old Testament",
+          "suffix": "",
+          "raw": "Peter Enns, Inspiration and Incarnation: Evangelicals and the Problem of the Old Testament",
+          "theologian": "Peter Enns"
+        },
+        {
+          "title": "The Drama of Doctrine",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, The Drama of Doctrine",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Covenant and Eschatology: The Divine Drama",
+          "suffix": "",
+          "raw": "Michael S. Horton, Covenant and Eschatology: The Divine Drama",
+          "theologian": "Michael S. Horton"
+        },
+        {
+          "title": "Holy Scripture: A Dogmatic Sketch",
+          "suffix": "",
+          "raw": "John Webster, Holy Scripture: A Dogmatic Sketch",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "Revelation and Reconciliation: A Window on Modernity",
+          "suffix": "",
+          "raw": "Stephen Williams, Revelation and Reconciliation: A Window on Modernity",
+          "theologian": "Stephen Williams"
+        },
+        {
+          "title": "Models for Scripture",
+          "suffix": "",
+          "raw": "John Goldingay, Models for Scripture",
+          "theologian": "John Goldingay"
+        },
+        {
+          "title": "Scripture and the Authority of God",
+          "suffix": "",
+          "raw": "N.T. Wright, Scripture and the Authority of God",
+          "theologian": "N.T. Wright"
+        },
+        {
+          "title": "Introducing Biblical Hermeneutics",
+          "suffix": "",
+          "raw": "Craig Bartholomew, Introducing Biblical Hermeneutics",
+          "theologian": "Craig Bartholomew"
+        },
+        {
+          "title": "A Clear and Present Word: The Clarity of Scripture",
+          "suffix": "",
+          "raw": "Mark D. Thompson, A Clear and Present Word: The Clarity of Scripture",
+          "theologian": "Mark D. Thompson"
+        },
+        {
+          "title": "How God Became Jesus",
+          "suffix": "& Craig A. Evans (eds.)",
+          "raw": "Michael Bird & Craig A. Evans (eds.), How God Became Jesus",
+          "theologian": "Michael Bird"
+        },
+        {
+          "title": "The Doctrine of the Word of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Word of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Inerrancy and Worldview",
+          "suffix": "",
+          "raw": "Vern Poythress, Inerrancy and Worldview",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "The Eclipse of Biblical Narrative",
+          "suffix": "",
+          "raw": "Hans Frei, The Eclipse of Biblical Narrative",
+          "theologian": "Hans Frei"
+        },
+        {
+          "title": "Church Dogmatics I/2 (Doctrine of Revelation)",
+          "suffix": "",
+          "raw": "Karl Barth, Church Dogmatics I/2 (Doctrine of Revelation)",
+          "theologian": "Karl Barth"
+        },
+        {
+          "title": "Biblical Interpretation and Method: Essays in Honour of John Barton",
+          "suffix": "& Marvin R. Wilson (eds.)",
+          "raw": "Stephen B. Chapman & Marvin R. Wilson (eds.), Biblical Interpretation and Method: Essays in Honour of John Barton",
+          "theologian": "Stephen B. Chapman"
+        }
+      ]
+    }
+  },
+  "Role of the Holy Spirit in revelation and illumination": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Role of the Holy Spirit in revelation and illumination",
+      "topic_specific_theologians": [
+        "Richard B. Gaffin Jr.",
+        "Sinclair B. Ferguson",
+        "Meredith G. Kline",
+        "Anthony C. Thiselton",
+        "Michael Horton",
+        "James D.G. Dunn",
+        "Clark Pinnock",
+        "Graham Cole"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Perspectives on Pentecost",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., Perspectives on Pentecost",
+          "theologian": "Richard B. Gaffin Jr."
+        },
+        {
+          "title": "Biblical Theology",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Biblical Theology",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "The Inspiration and Authority of the Bible",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Inspiration and Authority of the Bible",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "The Holy Spirit",
+          "suffix": "",
+          "raw": "John Murray, The Holy Spirit",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Christian Faith in the Modern World",
+          "suffix": "",
+          "raw": "J. Gresham Machen, The Christian Faith in the Modern World",
+          "theologian": "J. Gresham Machen"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "He Who Gives Life: The Doctrine of the Holy Spirit",
+          "suffix": "",
+          "raw": "Graham Cole, He Who Gives Life: The Doctrine of the Holy Spirit",
+          "theologian": "Graham Cole"
+        },
+        {
+          "title": "The Holy Spirit",
+          "suffix": "",
+          "raw": "Sinclair B. Ferguson, The Holy Spirit",
+          "theologian": "Sinclair B. Ferguson"
+        },
+        {
+          "title": "Rediscovering the Holy Spirit",
+          "suffix": "",
+          "raw": "Michael Horton, Rediscovering the Holy Spirit",
+          "theologian": "Michael Horton"
+        },
+        {
+          "title": "Word and Spirit: Selected Writings in Biblical and Systematic Theology",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., Word and Spirit: Selected Writings in Biblical and Systematic Theology",
+          "theologian": "Richard B. Gaffin Jr."
+        },
+        {
+          "title": "Gift and Giver: The Holy Spirit for Today",
+          "suffix": "",
+          "raw": "Craig S. Keener, Gift and Giver: The Holy Spirit for Today",
+          "theologian": "Craig S. Keener"
+        },
+        {
+          "title": "The Holy Spirit: In Biblical Teaching, through the Centuries, and Today",
+          "suffix": "",
+          "raw": "Anthony C. Thiselton, The Holy Spirit: In Biblical Teaching, through the Centuries, and Today",
+          "theologian": "Anthony C. Thiselton"
+        },
+        {
+          "title": "Flame of Love: A Theology of the Holy Spirit",
+          "suffix": "",
+          "raw": "Clark Pinnock, Flame of Love: A Theology of the Holy Spirit",
+          "theologian": "Clark Pinnock"
+        },
+        {
+          "title": "The Christ and the Spirit: Pneumatology",
+          "suffix": "",
+          "raw": "James D.G. Dunn, The Christ and the Spirit: Pneumatology",
+          "theologian": "James D.G. Dunn"
+        },
+        {
+          "title": "Holy Scripture: A Dogmatic Sketch",
+          "suffix": "",
+          "raw": "John Webster, Holy Scripture: A Dogmatic Sketch",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "Remythologizing Theology: Divine Action, Passion, and Authorship",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, Remythologizing Theology: Divine Action, Passion, and Authorship",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "suffix": "and Scott R. Swain (eds.)",
+          "raw": "Michael Allen and Scott R. Swain (eds.), Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "The Holy Spirit",
+          "suffix": "",
+          "raw": "Christopher R.J. Holmes, The Holy Spirit",
+          "theologian": "Christopher R.J. Holmes"
+        },
+        {
+          "title": "The Holy Spirit: A Guide to Christian Theology",
+          "suffix": "",
+          "raw": "John Goldingay, The Holy Spirit: A Guide to Christian Theology",
+          "theologian": "John Goldingay"
+        },
+        {
+          "title": "Pentecostal Theology and the Christian Spiritual Tradition",
+          "suffix": "",
+          "raw": "Simon Chan, Pentecostal Theology and the Christian Spiritual Tradition",
+          "theologian": "Simon Chan"
+        }
+      ]
+    }
+  },
+  "Canon and tradition": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Canon and tradition",
+      "topic_specific_theologians": [
+        "Bruce Metzger",
+        "F.F. Bruce",
+        "Michael Kruger",
+        "Lee Martin McDonald",
+        "John Webster",
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline",
+        "J. Gresham Machen"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Inspiration and Authority of the Bible",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Inspiration and Authority of the Bible",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Christianity and Liberalism",
+          "suffix": "",
+          "raw": "J. Gresham Machen, Christianity and Liberalism",
+          "theologian": "J. Gresham Machen"
+        },
+        {
+          "title": "God's Word in Servant-Form",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., God's Word in Servant-Form",
+          "theologian": "Richard B. Gaffin Jr."
+        },
+        {
+          "title": "The Protestant Doctrine of Scripture",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Protestant Doctrine of Scripture",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Collected Writings, Vol. 1: The Claims of Scripture",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 1: The Claims of Scripture",
+          "theologian": "John Murray"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "Canon Revisited",
+          "suffix": "",
+          "raw": "Michael Kruger, Canon Revisited",
+          "theologian": "Michael Kruger"
+        },
+        {
+          "title": "The Question of Canon",
+          "suffix": "",
+          "raw": "Michael Kruger, The Question of Canon",
+          "theologian": "Michael Kruger"
+        },
+        {
+          "title": "A High View of Scripture?",
+          "suffix": "",
+          "raw": "Craig D. Allert, A High View of Scripture?",
+          "theologian": "Craig D. Allert"
+        },
+        {
+          "title": "The Biblical Canon: Its Origin, Transmission, and Authority",
+          "suffix": "",
+          "raw": "Lee Martin McDonald, The Biblical Canon: Its Origin, Transmission, and Authority",
+          "theologian": "Lee Martin McDonald"
+        },
+        {
+          "title": "Holy Scripture: A Dogmatic Sketch",
+          "suffix": "",
+          "raw": "John Webster, Holy Scripture: A Dogmatic Sketch",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "Scripture and Truth",
+          "suffix": "& John Woodbridge (eds.)",
+          "raw": "D.A. Carson & John Woodbridge (eds.), Scripture and Truth",
+          "theologian": "D.A. Carson"
+        },
+        {
+          "title": "Exploring the Origins of the Bible",
+          "suffix": "& Emanuel Tov (eds.)",
+          "raw": "Craig A. Evans & Emanuel Tov (eds.), Exploring the Origins of the Bible",
+          "theologian": "Craig A. Evans"
+        },
+        {
+          "title": "The New Testament as Canon",
+          "suffix": "& Eugene E. Lemcio",
+          "raw": "Robert W. Wall & Eugene E. Lemcio, The New Testament as Canon",
+          "theologian": "Robert W. Wall"
+        },
+        {
+          "title": "Creating the Canon",
+          "suffix": "",
+          "raw": "Benjamin P. Laird, Creating the Canon",
+          "theologian": "Benjamin P. Laird"
+        },
+        {
+          "title": "The Oxford Handbook of Sacramental Theology",
+          "suffix": "& Matthew Levering (eds.)",
+          "raw": "Hans Boersma & Matthew Levering (eds.), The Oxford Handbook of Sacramental Theology",
+          "theologian": "Hans Boersma"
+        },
+        {
+          "title": "Gospel Writing: A Canonical Perspective",
+          "suffix": "",
+          "raw": "Francis Watson, Gospel Writing: A Canonical Perspective",
+          "theologian": "Francis Watson"
+        },
+        {
+          "title": "Jews and Christians – Parting Ways in the First Two Centuries CE?",
+          "suffix": "& Benjamin A. Edsall (eds.)",
+          "raw": "Jens Schröter & Benjamin A. Edsall (eds.), Jews and Christians – Parting Ways in the First Two Centuries CE?",
+          "theologian": "Jens Schröter"
+        },
+        {
+          "title": "Holy Writings, Sacred Text: The Canon in Early Christianity",
+          "suffix": "",
+          "raw": "John Barton, Holy Writings, Sacred Text: The Canon in Early Christianity",
+          "theologian": "John Barton"
+        },
+        {
+          "title": "God's Word Alone: The Authority of Scripture",
+          "suffix": "(ed.)",
+          "raw": "Matthew Barrett (ed.), God's Word Alone: The Authority of Scripture",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "Inspiration and Incarnation",
+          "suffix": "",
+          "raw": "Peter Enns, Inspiration and Incarnation",
+          "theologian": "Peter Enns"
+        }
+      ]
+    }
+  },
+  "Biblical Theology vs Systematic Theology": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Biblical Theology vs Systematic Theology",
+      "topic_specific_theologians": [
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline",
+        "Gregory K. Beale",
+        "D.A. Carson",
+        "James Barr",
+        "N.T. Wright",
+        "Kevin J. Vanhoozer",
+        "Stephen Wellum"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Biblical Theology: Old and New Testaments",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Biblical Theology: Old and New Testaments",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "Collected Writings, Vol. 1: The Claims of Truth",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 1: The Claims of Truth",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Idea of Systematic Theology",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Idea of Systematic Theology",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "The Use of the Old Testament in the New",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., The Use of the Old Testament in the New",
+          "theologian": "Richard B. Gaffin Jr."
+        },
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Drama of Doctrine",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, The Drama of Doctrine",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Systematic Theology: From Canon to Concept",
+          "suffix": "",
+          "raw": "Stephen Wellum, Systematic Theology: From Canon to Concept",
+          "theologian": "Stephen Wellum"
+        },
+        {
+          "title": "A New Testament Biblical Theology",
+          "suffix": "",
+          "raw": "Gregory K. Beale, A New Testament Biblical Theology",
+          "theologian": "Gregory K. Beale"
+        },
+        {
+          "title": "Theological Interpretation of the New Testament",
+          "suffix": "",
+          "raw": "D.A. Carson, Theological Interpretation of the New Testament",
+          "theologian": "D.A. Carson"
+        },
+        {
+          "title": "New Dictionary of Biblical Theology",
+          "suffix": "& Brian S. Rosner (eds.)",
+          "raw": "T. Desmond Alexander & Brian S. Rosner (eds.), New Dictionary of Biblical Theology",
+          "theologian": "T. Desmond Alexander"
+        },
+        {
+          "title": "Biblical Theology in the Life of the Church",
+          "suffix": "",
+          "raw": "Michael Lawrence, Biblical Theology in the Life of the Church",
+          "theologian": "Michael Lawrence"
+        },
+        {
+          "title": "Biblical Theology: Retrospect and Prospect",
+          "suffix": "(ed.)",
+          "raw": "Scott J. Hafemann (ed.), Biblical Theology: Retrospect and Prospect",
+          "theologian": "Scott J. Hafemann"
+        },
+        {
+          "title": "The Concept of Biblical Theology",
+          "suffix": "",
+          "raw": "James Barr, The Concept of Biblical Theology",
+          "theologian": "James Barr"
+        },
+        {
+          "title": "The New Testament and the People of God",
+          "suffix": "",
+          "raw": "N.T. Wright, The New Testament and the People of God",
+          "theologian": "N.T. Wright"
+        },
+        {
+          "title": "Old Testament and Christian Doctrine",
+          "suffix": "",
+          "raw": "Henri Blocher, Old Testament and Christian Doctrine",
+          "theologian": "Henri Blocher"
+        },
+        {
+          "title": "Kingdom through Covenant",
+          "suffix": "and Stephen J. Wellum",
+          "raw": "Peter J. Gentry and Stephen J. Wellum, Kingdom through Covenant",
+          "theologian": "Peter J. Gentry"
+        },
+        {
+          "title": "Systematic Theology",
+          "suffix": "",
+          "raw": "Robert Letham, Systematic Theology",
+          "theologian": "Robert Letham"
+        },
+        {
+          "title": "Biblical Theology: The God of the Christian Scriptures",
+          "suffix": "",
+          "raw": "John Goldingay, Biblical Theology: The God of the Christian Scriptures",
+          "theologian": "John Goldingay"
+        },
+        {
+          "title": "Introducing Biblical Hermeneutics",
+          "suffix": "",
+          "raw": "Craig Bartholomew, Introducing Biblical Hermeneutics",
+          "theologian": "Craig Bartholomew"
+        },
+        {
+          "title": "Jeremy Evans & Paul Copan (eds.), Holy War in the Bible: Christian Morality and an Old Testament Problem",
+          "suffix": "",
+          "raw": "Heath A. Thomas, Jeremy Evans & Paul Copan (eds.), Holy War in the Bible: Christian Morality and an Old Testament Problem",
+          "theologian": "Heath A. Thomas"
+        }
+      ]
+    }
+  },
+  "Analogia entis vs analogia fidei": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Analogia entis vs analogia fidei",
+      "topic_specific_theologians": [
+        "Erich Przywara",
+        "Eberhard Jüngel",
+        "Hans Urs von Balthasar",
+        "Robert Sokolowski",
+        "Bruce McCormack",
+        "Kevin J. Vanhoozer",
+        "Scott Oliphint",
+        "Richard B. Gaffin Jr."
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The New Modernism: An Appraisal of the Theology of Barth and Brunner",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The New Modernism: An Appraisal of the Theology of Barth and Brunner",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Christianity and Barthianism",
+          "suffix": "",
+          "raw": "Cornelius Van Til, Christianity and Barthianism",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "The Epistle to the Romans",
+          "suffix": "",
+          "raw": "John Murray, The Epistle to the Romans",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "Biblical Theology: Old and New Testaments",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Biblical Theology: Old and New Testaments",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "Revelation and Inspiration",
+          "suffix": "",
+          "raw": "B.B. Warfield, Revelation and Inspiration",
+          "theologian": "B.B. Warfield"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Analogy of Being: Invention of the Antichrist or the Wisdom of God?",
+          "suffix": "",
+          "raw": "Thomas Joseph White, The Analogy of Being: Invention of the Antichrist or the Wisdom of God?",
+          "theologian": "Thomas Joseph White"
+        },
+        {
+          "title": "Karl Barth and the Analogia Entis",
+          "suffix": "",
+          "raw": "Keith L. Johnson, Karl Barth and the Analogia Entis",
+          "theologian": "Keith L. Johnson"
+        },
+        {
+          "title": "Orthodox and Modern: Studies in the Theology of Karl Barth",
+          "suffix": "",
+          "raw": "Bruce McCormack, Orthodox and Modern: Studies in the Theology of Karl Barth",
+          "theologian": "Bruce McCormack"
+        },
+        {
+          "title": "Erich Przywara, Analogia Entis",
+          "suffix": "and David Bentley Hart",
+          "raw": "John Betz and David Bentley Hart, Erich Przywara, Analogia Entis",
+          "theologian": "John Betz"
+        },
+        {
+          "title": "The Hidden and the Manifest: Essays in Theology and Metaphysics",
+          "suffix": "",
+          "raw": "David Bentley Hart, The Hidden and the Manifest: Essays in Theology and Metaphysics",
+          "theologian": "David Bentley Hart"
+        },
+        {
+          "title": "Remythologizing Theology",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, Remythologizing Theology",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Reasons for Faith: Philosophy in the Service of Theology",
+          "suffix": "",
+          "raw": "Scott Oliphint, Reasons for Faith: Philosophy in the Service of Theology",
+          "theologian": "K. Scott Oliphint"
+        },
+        {
+          "title": "Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "suffix": "and Scott R. Swain (eds.)",
+          "raw": "Michael Allen and Scott R. Swain (eds.), Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "Nouvelle Théologie and Sacramental Ontology",
+          "suffix": "",
+          "raw": "Hans Boersma, Nouvelle Théologie and Sacramental Ontology",
+          "theologian": "Hans Boersma"
+        },
+        {
+          "title": "Participatory Biblical Exegesis",
+          "suffix": "",
+          "raw": "Matthew Levering, Participatory Biblical Exegesis",
+          "theologian": "Matthew Levering"
+        },
+        {
+          "title": "Theological Science (new editions and discussions)",
+          "suffix": "",
+          "raw": "Thomas F. Torrance, Theological Science (new editions and discussions)",
+          "theologian": "Thomas F. Torrance"
+        },
+        {
+          "title": "Faith, Freedom and the Spirit: The Economic Trinity in Barth, Torrance and Contemporary Theology",
+          "suffix": "",
+          "raw": "Paul D. Molnar, Faith, Freedom and the Spirit: The Economic Trinity in Barth, Torrance and Contemporary Theology",
+          "theologian": "Paul D. Molnar"
+        },
+        {
+          "title": "Saving Karl Barth: Hans Urs von Balthasar's Preoccupation",
+          "suffix": "",
+          "raw": "D. Stephen Long, Saving Karl Barth: Hans Urs von Balthasar's Preoccupation",
+          "theologian": "D. Stephen Long"
+        }
+      ]
+    }
+  },
+  "Theological method (principia, theology as science)": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Theological method (principia, theology as science)",
+      "topic_specific_theologians": [
+        "Richard Muller",
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline",
+        "Scott R. Swain",
+        "Michael Allen",
+        "Kevin J. Vanhoozer",
+        "David F. Wells",
+        "John Webster"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Reformed Dogmatics, Vol. 1: Theology Proper",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Reformed Dogmatics, Vol. 1: Theology Proper",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "Revelation and Inspiration",
+          "suffix": "",
+          "raw": "B.B. Warfield, Revelation and Inspiration",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Collected Writings, Vol. 4: Studies in Theology",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 4: Studies in Theology",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "Systematic Theology, Vol. 1",
+          "suffix": "",
+          "raw": "Charles Hodge, Systematic Theology, Vol. 1",
+          "theologian": "Charles Hodge"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Trinity and the Bible: On Theological Interpretation",
+          "suffix": "",
+          "raw": "Scott R. Swain, The Trinity and the Bible: On Theological Interpretation",
+          "theologian": "Scott Swain"
+        },
+        {
+          "title": "Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "suffix": "and Scott R. Swain (eds.)",
+          "raw": "Michael Allen and Scott R. Swain (eds.), Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "The Drama of Doctrine",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, The Drama of Doctrine",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "The Domain of the Word: Scripture and Theological Reason",
+          "suffix": "",
+          "raw": "John Webster, The Domain of the Word: Scripture and Theological Reason",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "Reformed Catholicity",
+          "suffix": "and Scott R. Swain",
+          "raw": "Michael Allen and Scott R. Swain, Reformed Catholicity",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "Recovering the Reformed Confession",
+          "suffix": "",
+          "raw": "R. Scott Clark, Recovering the Reformed Confession",
+          "theologian": "R. Scott Clark"
+        },
+        {
+          "title": "No Place for Truth",
+          "suffix": "",
+          "raw": "David F. Wells, No Place for Truth",
+          "theologian": "David F. Wells"
+        },
+        {
+          "title": "Participatory Biblical Exegesis",
+          "suffix": "",
+          "raw": "Matthew Levering, Participatory Biblical Exegesis",
+          "theologian": "Matthew Levering"
+        },
+        {
+          "title": "The Quest for the Trinity",
+          "suffix": "",
+          "raw": "Stephen R. Holmes, The Quest for the Trinity",
+          "theologian": "Stephen R. Holmes"
+        },
+        {
+          "title": "The Triune God",
+          "suffix": "",
+          "raw": "Fred Sanders, The Triune God",
+          "theologian": "Fred Sanders"
+        },
+        {
+          "title": "Scripture as Real Presence",
+          "suffix": "",
+          "raw": "Hans Boersma, Scripture as Real Presence",
+          "theologian": "Hans Boersma"
+        },
+        {
+          "title": "Interpreting Scripture with the Great Tradition",
+          "suffix": "",
+          "raw": "Craig A. Carter, Interpreting Scripture with the Great Tradition",
+          "theologian": "Craig A. Carter"
+        },
+        {
+          "title": "The Word of God for the People of God",
+          "suffix": "",
+          "raw": "J. Todd Billings, The Word of God for the People of God",
+          "theologian": "J. Todd Billings"
+        },
+        {
+          "title": "The Doctrine of the Knowledge of God (newer editions/discussions)",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Knowledge of God (newer editions/discussions)",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "The Christian Faith: A Systematic Theology for Pilgrims on the Way",
+          "suffix": "",
+          "raw": "Michael Horton, The Christian Faith: A Systematic Theology for Pilgrims on the Way",
+          "theologian": "Michael Horton"
+        }
+      ]
+    }
+  },
+  "Epistemology and the knowledge of God": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Epistemology and the knowledge of God",
+      "topic_specific_theologians": [
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline",
+        "J. Gresham Machen",
+        "Michael S. Horton",
+        "Kevin J. Vanhoozer",
+        "Alvin Plantinga",
+        "Nicholas Wolterstorff",
+        "Jean-Luc Marion"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "The Christian Faith in the Modern World",
+          "suffix": "",
+          "raw": "J. Gresham Machen, The Christian Faith in the Modern World",
+          "theologian": "J. Gresham Machen"
+        },
+        {
+          "title": "Revelation and Inspiration",
+          "suffix": "",
+          "raw": "B.B. Warfield, Revelation and Inspiration",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "The Doctrine of the Knowledge of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Knowledge of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Revelation and Tradition: Essays in Biblical and Systematic Theology",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., Revelation and Tradition: Essays in Biblical and Systematic Theology",
+          "theologian": "Richard B. Gaffin Jr."
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Doctrine of the Knowledge of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Knowledge of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Logic: A God-Centered Approach to the Foundation of Western Thought",
+          "suffix": "",
+          "raw": "Vern S. Poythress, Logic: A God-Centered Approach to the Foundation of Western Thought",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "Covenant and Eschatology: The Divine Drama",
+          "suffix": "",
+          "raw": "Michael S. Horton, Covenant and Eschatology: The Divine Drama",
+          "theologian": "Michael S. Horton"
+        },
+        {
+          "title": "The Drama of Doctrine",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, The Drama of Doctrine",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Warranted Christian Belief",
+          "suffix": "",
+          "raw": "Alvin Plantinga, Warranted Christian Belief",
+          "theologian": "Alvin Plantinga"
+        },
+        {
+          "title": "Reason within the Bounds of Religion",
+          "suffix": "",
+          "raw": "Nicholas Wolterstorff, Reason within the Bounds of Religion",
+          "theologian": "Nicholas Wolterstorff"
+        },
+        {
+          "title": "Loving to Know: Covenant Epistemology",
+          "suffix": "",
+          "raw": "Esther Meek, Loving to Know: Covenant Epistemology",
+          "theologian": "Esther Meek"
+        },
+        {
+          "title": "The Fall of Interpretation",
+          "suffix": "",
+          "raw": "James K.A. Smith, The Fall of Interpretation",
+          "theologian": "James K.A. Smith"
+        },
+        {
+          "title": "Crossing the Threshold of Divine Revelation",
+          "suffix": "",
+          "raw": "William J. Abraham, Crossing the Threshold of Divine Revelation",
+          "theologian": "William J. Abraham"
+        },
+        {
+          "title": "God Without Being",
+          "suffix": "",
+          "raw": "Jean-Luc Marion, God Without Being",
+          "theologian": "Jean-Luc Marion"
+        },
+        {
+          "title": "Faith, Form, and Fashion: Classical Reformed Theology and Its Postmodern Critics",
+          "suffix": "",
+          "raw": "Paul Helm, Faith, Form, and Fashion: Classical Reformed Theology and Its Postmodern Critics",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "Mapping Modern Theology: A Thematic and Historical Introduction",
+          "suffix": "and Bruce McCormack (eds.)",
+          "raw": "Kelly Kapic and Bruce McCormack (eds.), Mapping Modern Theology: A Thematic and Historical Introduction",
+          "theologian": "Kelly Kapic"
+        },
+        {
+          "title": "Contact with Reality: Michael Polanyi's Realism and Why It Matters",
+          "suffix": "",
+          "raw": "Esther Meek, Contact with Reality: Michael Polanyi's Realism and Why It Matters",
+          "theologian": "Esther Meek"
+        },
+        {
+          "title": "Analytic Theology: New Essays in the Philosophy of Theology",
+          "suffix": "and Michael C. Rea (eds.)",
+          "raw": "Oliver D. Crisp and Michael C. Rea (eds.), Analytic Theology: New Essays in the Philosophy of Theology",
+          "theologian": "Oliver D. Crisp"
+        },
+        {
+          "title": "All That Is in God",
+          "suffix": "",
+          "raw": "James E. Dolezal, All That Is in God",
+          "theologian": "James E. Dolezal"
+        }
+      ]
+    }
+  },
+  "Existence and knowability of God": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Existence and knowability of God",
+      "topic_specific_theologians": [
+        "Anselm of Canterbury",
+        "William Lane Craig",
+        "Alvin Plantinga",
+        "Richard Swinburne",
+        "Cornelius Van Til",
+        "John Frame",
+        "Greg Bahnsen",
+        "J. Gresham Machen"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "The Doctrine of the Knowledge of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of the Knowledge of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Revelation and Inspiration",
+          "suffix": "",
+          "raw": "B.B. Warfield, Revelation and Inspiration",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "The Christian Faith in the Modern World",
+          "suffix": "",
+          "raw": "J. Gresham Machen, The Christian Faith in the Modern World",
+          "theologian": "J. Gresham Machen"
+        },
+        {
+          "title": "Systematic Theology (esp. Vol. 1)",
+          "suffix": "",
+          "raw": "Charles Hodge, Systematic Theology (esp. Vol. 1)",
+          "theologian": "Charles Hodge"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "All That Is in God",
+          "suffix": "",
+          "raw": "James E. Dolezal, All That Is in God",
+          "theologian": "James E. Dolezal"
+        },
+        {
+          "title": "Apologetics: A Justification of Christian Belief",
+          "suffix": "",
+          "raw": "John Frame, Apologetics: A Justification of Christian Belief",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Knowing and the Trinity",
+          "suffix": "",
+          "raw": "Vern S. Poythress, Knowing and the Trinity",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "The Divine Revelation",
+          "suffix": "",
+          "raw": "Paul Helm, The Divine Revelation",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "Christian Dogmatics",
+          "suffix": "& Scott R. Swain (eds.)",
+          "raw": "Michael Allen & Scott R. Swain (eds.), Christian Dogmatics",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "The Quest for the Trinity",
+          "suffix": "",
+          "raw": "Stephen R. Holmes, The Quest for the Trinity",
+          "theologian": "Stephen R. Holmes"
+        },
+        {
+          "title": "Where the Conflict Really Lies",
+          "suffix": "",
+          "raw": "Alvin Plantinga, Where the Conflict Really Lies",
+          "theologian": "Alvin Plantinga"
+        },
+        {
+          "title": "Reasonable Faith",
+          "suffix": "",
+          "raw": "William Lane Craig, Reasonable Faith",
+          "theologian": "William Lane Craig"
+        },
+        {
+          "title": "The Existence of God (3rd ed.)",
+          "suffix": "",
+          "raw": "Richard Swinburne, The Existence of God (3rd ed.)",
+          "theologian": "Richard Swinburne"
+        },
+        {
+          "title": "Arguing About Gods",
+          "suffix": "",
+          "raw": "Graham Oppy, Arguing About Gods",
+          "theologian": "Graham Oppy"
+        },
+        {
+          "title": "The Elusive God",
+          "suffix": "",
+          "raw": "Paul K. Moser, The Elusive God",
+          "theologian": "Paul K. Moser"
+        },
+        {
+          "title": "Remythologizing Theology",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, Remythologizing Theology",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "Systematic Theology",
+          "suffix": "",
+          "raw": "Robert Letham, Systematic Theology",
+          "theologian": "Robert Letham"
+        },
+        {
+          "title": "None Greater",
+          "suffix": "",
+          "raw": "Matthew Barrett, None Greater",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "Why Should I Believe Christianity?",
+          "suffix": "",
+          "raw": "James N. Anderson, Why Should I Believe Christianity?",
+          "theologian": "James N. Anderson"
+        }
+      ]
+    }
+  },
+  "Simplicity, aseity, immutability, impassibility": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Simplicity, aseity, immutability, impassibility",
+      "topic_specific_theologians": [
+        "Stephen Charnock",
+        "Richard Muller",
+        "James Dolezal",
+        "Scott Swain",
+        "K. Scott Oliphint",
+        "John Webster",
+        "Robert Jenson",
+        "Thomas Weinandy"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Biblical and Theological Studies",
+          "suffix": "",
+          "raw": "B.B. Warfield, Biblical and Theological Studies",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Systematic Theology",
+          "suffix": "",
+          "raw": "Charles Hodge, Systematic Theology",
+          "theologian": "Charles Hodge"
+        },
+        {
+          "title": "Collected Writings, Vol. 2: Systematic Theology",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 2: Systematic Theology",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "An Introduction to Systematic Theology",
+          "suffix": "",
+          "raw": "Cornelius Van Til, An Introduction to Systematic Theology",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Reformed Dogmatics",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Reformed Dogmatics",
+          "theologian": "Geerhardus Vos"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "All That Is in God",
+          "suffix": "",
+          "raw": "James E. Dolezal, All That Is in God",
+          "theologian": "James E. Dolezal"
+        },
+        {
+          "title": "Divine Simplicity: A Dogmatic Account",
+          "suffix": "",
+          "raw": "Steven J. Duby, Divine Simplicity: A Dogmatic Account",
+          "theologian": "Steven J. Duby"
+        },
+        {
+          "title": "None Greater: The Undomesticated Attributes of God",
+          "suffix": "",
+          "raw": "Matthew Barrett, None Greater: The Undomesticated Attributes of God",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "The Trinity and the Bible",
+          "suffix": "",
+          "raw": "Scott R. Swain, The Trinity and the Bible",
+          "theologian": "Scott Swain"
+        },
+        {
+          "title": "Contemplating God with the Great Tradition",
+          "suffix": "",
+          "raw": "Craig A. Carter, Contemplating God with the Great Tradition",
+          "theologian": "Craig A. Carter"
+        },
+        {
+          "title": "Does God Suffer?",
+          "suffix": "",
+          "raw": "Thomas Weinandy, Does God Suffer?",
+          "theologian": "Thomas Weinandy"
+        },
+        {
+          "title": "The Doctrine of God: Introducing the Big Questions",
+          "suffix": "",
+          "raw": "John C. Peckham, The Doctrine of God: Introducing the Big Questions",
+          "theologian": "John C. Peckham"
+        },
+        {
+          "title": "Remythologizing Theology",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, Remythologizing Theology",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "God with Us: Divine Condescension and the Attributes of God",
+          "suffix": "",
+          "raw": "K. Scott Oliphint, God with Us: Divine Condescension and the Attributes of God",
+          "theologian": "K. Scott Oliphint"
+        },
+        {
+          "title": "Divine Simplicity: A Biblical and Trinitarian Account",
+          "suffix": "",
+          "raw": "Paul R. Hinlicky, Divine Simplicity: A Biblical and Trinitarian Account",
+          "theologian": "Paul R. Hinlicky"
+        },
+        {
+          "title": "The Perfectly Simple Triune God",
+          "suffix": "",
+          "raw": "D. Stephen Long, The Perfectly Simple Triune God",
+          "theologian": "D. Stephen Long"
+        },
+        {
+          "title": "God Without Measure: Working Papers in Christian Theology",
+          "suffix": "",
+          "raw": "John Webster, God Without Measure: Working Papers in Christian Theology",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "Systematic Theology, Vol. 1",
+          "suffix": "",
+          "raw": "Robert Jenson, Systematic Theology, Vol. 1",
+          "theologian": "Robert Jenson"
+        },
+        {
+          "title": "The Crucified God",
+          "suffix": "",
+          "raw": "Jürgen Moltmann, The Crucified God",
+          "theologian": "Jürgen Moltmann"
+        },
+        {
+          "title": "God and Necessity",
+          "suffix": "",
+          "raw": "Brian Leftow, God and Necessity",
+          "theologian": "Brian Leftow"
+        }
+      ]
+    }
+  },
+  "Absolute and relative attributes": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Absolute and relative attributes",
+      "topic_specific_theologians": [
+        "Stephen Charnock",
+        "Louis Berkhof",
+        "Robert Letham",
+        "Richard A. Muller",
+        "Scott R. Swain",
+        "James E. Dolezal",
+        "John Webster",
+        "Peter Lillback"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Systematic Theology",
+          "suffix": "",
+          "raw": "Charles Hodge, Systematic Theology",
+          "theologian": "Charles Hodge"
+        },
+        {
+          "title": "Biblical and Theological Studies",
+          "suffix": "",
+          "raw": "B.B. Warfield, Biblical and Theological Studies",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Collected Writings, Vol. 2: Systematic Theology",
+          "suffix": "",
+          "raw": "John Murray, Collected Writings, Vol. 2: Systematic Theology",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "An Introduction to Systematic Theology",
+          "suffix": "",
+          "raw": "Cornelius Van Til, An Introduction to Systematic Theology",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Reformed Dogmatics, Vol. 2: God and Creation",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Reformed Dogmatics, Vol. 2: God and Creation",
+          "theologian": "Geerhardus Vos"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "All That Is in God",
+          "suffix": "",
+          "raw": "James E. Dolezal, All That Is in God",
+          "theologian": "James E. Dolezal"
+        },
+        {
+          "title": "The Trinity and the Bible",
+          "suffix": "",
+          "raw": "Scott R. Swain, The Trinity and the Bible",
+          "theologian": "Scott Swain"
+        },
+        {
+          "title": "Divine Simplicity",
+          "suffix": "",
+          "raw": "Steven J. Duby, Divine Simplicity",
+          "theologian": "Steven J. Duby"
+        },
+        {
+          "title": "Contemplating God with the Great Tradition",
+          "suffix": "",
+          "raw": "Craig A. Carter, Contemplating God with the Great Tradition",
+          "theologian": "Craig A. Carter"
+        },
+        {
+          "title": "None Greater",
+          "suffix": "",
+          "raw": "Matthew Barrett, None Greater",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "The Deep Things of God",
+          "suffix": "",
+          "raw": "Fred Sanders, The Deep Things of God",
+          "theologian": "Fred Sanders"
+        },
+        {
+          "title": "God Without Measure",
+          "suffix": "",
+          "raw": "John Webster, God Without Measure",
+          "theologian": "John Webster"
+        },
+        {
+          "title": "The Perfectly Simple Triune God",
+          "suffix": "",
+          "raw": "D. Stephen Long, The Perfectly Simple Triune God",
+          "theologian": "D. Stephen Long"
+        },
+        {
+          "title": "Divine Simplicity: A Dogmatic Account",
+          "suffix": "",
+          "raw": "Paul R. Hinlicky, Divine Simplicity: A Dogmatic Account",
+          "theologian": "Paul R. Hinlicky"
+        },
+        {
+          "title": "Which Trinity? Whose Monotheism?",
+          "suffix": "",
+          "raw": "Thomas H. McCall, Which Trinity? Whose Monotheism?",
+          "theologian": "Thomas H. McCall"
+        },
+        {
+          "title": "The God Who Became Human",
+          "suffix": "",
+          "raw": "Graham A. Cole, The God Who Became Human",
+          "theologian": "Graham A. Cole"
+        },
+        {
+          "title": "Grounded in Heaven",
+          "suffix": "",
+          "raw": "Michael Allen, Grounded in Heaven",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "Remythologizing Theology",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, Remythologizing Theology",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "The Humility of the Eternal Son",
+          "suffix": "",
+          "raw": "Bruce L. McCormack, The Humility of the Eternal Son",
+          "theologian": "Bruce McCormack"
+        },
+        {
+          "title": "Simply God",
+          "suffix": "",
+          "raw": "Peter Sanlon, Simply God",
+          "theologian": "Peter Sanlon"
+        }
+      ]
+    }
+  },
+  "Divine foreknowledge, providence, and the problem of evil": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Divine foreknowledge, providence, and the problem of evil",
+      "topic_specific_theologians": [
+        "Jonathan Edwards",
+        "William Lane Craig",
+        "Alvin Plantinga",
+        "Richard Muller",
+        "Paul Helm",
+        "Bruce K. Waltke",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Biblical and Theological Studies",
+          "suffix": "",
+          "raw": "B.B. Warfield, Biblical and Theological Studies",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Systematic Theology",
+          "suffix": "",
+          "raw": "Charles Hodge, Systematic Theology",
+          "theologian": "Charles Hodge"
+        },
+        {
+          "title": "The Providence of God",
+          "suffix": "",
+          "raw": "John Murray, The Providence of God",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "Reformed Dogmatics",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Reformed Dogmatics",
+          "theologian": "Geerhardus Vos"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Providence of God",
+          "suffix": "",
+          "raw": "Paul Helm, The Providence of God",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "The Doctrine of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Chance and the Sovereignty of God",
+          "suffix": "",
+          "raw": "Vern Poythress, Chance and the Sovereignty of God",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "An Invitation to Analytic Christian Theology",
+          "suffix": "",
+          "raw": "Thomas McCall, An Invitation to Analytic Christian Theology",
+          "theologian": "Thomas McCall"
+        },
+        {
+          "title": "The Only Wise God",
+          "suffix": "",
+          "raw": "William Lane Craig, The Only Wise God",
+          "theologian": "William Lane Craig"
+        },
+        {
+          "title": "God, Freedom, and Evil",
+          "suffix": "",
+          "raw": "Alvin Plantinga, God, Freedom, and Evil",
+          "theologian": "Alvin Plantinga"
+        },
+        {
+          "title": "God of the Possible",
+          "suffix": "",
+          "raw": "Gregory Boyd, God of the Possible",
+          "theologian": "Gregory A. Boyd"
+        },
+        {
+          "title": "The Doors of the Sea",
+          "suffix": "",
+          "raw": "David Bentley Hart, The Doors of the Sea",
+          "theologian": "David Bentley Hart"
+        },
+        {
+          "title": "The Many Faces of Evil",
+          "suffix": "",
+          "raw": "John Feinberg, The Many Faces of Evil",
+          "theologian": "John Feinberg"
+        },
+        {
+          "title": "What's Your Worldview?",
+          "suffix": "",
+          "raw": "James N. Anderson, What's Your Worldview?",
+          "theologian": "James N. Anderson"
+        },
+        {
+          "title": "Eternal God: A Study of God without Time",
+          "suffix": "",
+          "raw": "Paul Helm, Eternal God: A Study of God without Time",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "God's Foreknowledge and Man's Free Will",
+          "suffix": "",
+          "raw": "Richard Rice, God's Foreknowledge and Man's Free Will",
+          "theologian": "Richard Rice"
+        },
+        {
+          "title": "Evil and a Good God",
+          "suffix": "",
+          "raw": "Bruce Reichenbach, Evil and a Good God",
+          "theologian": "Bruce Reichenbach"
+        },
+        {
+          "title": "Pilgrim Theology",
+          "suffix": "",
+          "raw": "Michael Horton, Pilgrim Theology",
+          "theologian": "Michael Horton"
+        },
+        {
+          "title": "Does God Suffer?",
+          "suffix": "",
+          "raw": "Thomas Weinandy, Does God Suffer?",
+          "theologian": "Thomas Weinandy"
+        }
+      ]
+    }
+  },
+  "Middle knowledge and Molinism": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Middle knowledge and Molinism",
+      "topic_specific_theologians": [
+        "Luis de Molina",
+        "Robert Bellarmine",
+        "William Lane Craig",
+        "Alvin Plantinga",
+        "Richard A. Muller",
+        "Paul Helm",
+        "Bruce A. Ware",
+        "John Frame"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Biblical and Theological Studies",
+          "suffix": "",
+          "raw": "B.B. Warfield, Biblical and Theological Studies",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "The Reformed Faith and Modern Substitutes",
+          "suffix": "",
+          "raw": "John Murray, The Reformed Faith and Modern Substitutes",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "The Doctrine of God",
+          "suffix": "",
+          "raw": "John Frame, The Doctrine of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Reformed Dogmatics",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Reformed Dogmatics",
+          "theologian": "Geerhardus Vos"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "Luis de Molina: The Life and Theology of the Founder of Middle Knowledge",
+          "suffix": "",
+          "raw": "Kirk R. MacGregor, Luis de Molina: The Life and Theology of the Founder of Middle Knowledge",
+          "theologian": "Kirk R. MacGregor"
+        },
+        {
+          "title": "The Only Wise God: The Compatibility of Divine Foreknowledge and Human Freedom",
+          "suffix": "",
+          "raw": "William Lane Craig, The Only Wise God: The Compatibility of Divine Foreknowledge and Human Freedom",
+          "theologian": "William Lane Craig"
+        },
+        {
+          "title": "The Providence of God",
+          "suffix": "",
+          "raw": "Paul Helm, The Providence of God",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "Molinism: Divine Foreknowledge and Human Freedom",
+          "suffix": "",
+          "raw": "Paul Helm, Molinism: Divine Foreknowledge and Human Freedom",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "Divine Will and Human Choice: Freedom, Contingency, and Necessity in Early Modern Reformed Thought",
+          "suffix": "",
+          "raw": "Richard A. Muller, Divine Will and Human Choice: Freedom, Contingency, and Necessity in Early Modern Reformed Thought",
+          "theologian": "Richard A. Muller"
+        },
+        {
+          "title": "Middle Knowledge: Human Freedom in Divine Sovereignty",
+          "suffix": "",
+          "raw": "John D. Laing, Middle Knowledge: Human Freedom in Divine Sovereignty",
+          "theologian": "John D. Laing"
+        },
+        {
+          "title": "Divine Providence: The Molinist Account",
+          "suffix": "",
+          "raw": "Thomas P. Flint, Divine Providence: The Molinist Account",
+          "theologian": "Thomas P. Flint"
+        },
+        {
+          "title": "God's Greater Glory: The Exalted God of Scripture and the Christian Faith",
+          "suffix": "",
+          "raw": "Bruce A. Ware, God's Greater Glory: The Exalted God of Scripture and the Christian Faith",
+          "theologian": "Bruce A. Ware"
+        },
+        {
+          "title": "No Other God: A Response to Open Theism",
+          "suffix": "",
+          "raw": "John Frame, No Other God: A Response to Open Theism",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "Calvinism and the Problem of Evil",
+          "suffix": "",
+          "raw": "James N. Anderson, Calvinism and the Problem of Evil",
+          "theologian": "James N. Anderson"
+        },
+        {
+          "title": "Calvinism and the Problem of Evil",
+          "suffix": "& Daniel Johnson (eds.)",
+          "raw": "David Alexander & Daniel Johnson (eds.), Calvinism and the Problem of Evil",
+          "theologian": "David Alexander"
+        },
+        {
+          "title": "Divine Foreknowledge: Four Views",
+          "suffix": "(ed.)",
+          "raw": "Steven B. Cowan (ed.), Divine Foreknowledge: Four Views",
+          "theologian": "Steven B. Cowan"
+        },
+        {
+          "title": "Molinist Philosophical and Theological Ventures",
+          "suffix": "",
+          "raw": "Kirk R. MacGregor, Molinist Philosophical and Theological Ventures",
+          "theologian": "Kirk R. MacGregor"
+        },
+        {
+          "title": "Excusing Sinners and Blaming God: A Response to the Problem of Divine Determinism",
+          "suffix": "",
+          "raw": "Guillaume Bignon, Excusing Sinners and Blaming God: A Response to the Problem of Divine Determinism",
+          "theologian": "Guillaume Bignon"
+        }
+      ]
+    }
+  },
+  "Divine decrees: election and reprobation": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Divine decrees: election and reprobation",
+      "topic_specific_theologians": [
+        "Peter Martyr Vermigli",
+        "Jerome Zanchi",
+        "William Perkins",
+        "John Owen",
+        "Jonathan Edwards",
+        "Robert L. Reymond",
+        "Richard B. Gaffin Jr.",
+        "Meredith G. Kline"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "The Plan of Salvation",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Plan of Salvation",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Systematic Theology (esp. Vol. 2)",
+          "suffix": "",
+          "raw": "Charles Hodge, Systematic Theology (esp. Vol. 2)",
+          "theologian": "Charles Hodge"
+        },
+        {
+          "title": "Reformed Dogmatics, Vol. 1",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Reformed Dogmatics, Vol. 1",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "Redemption Accomplished and Applied",
+          "suffix": "",
+          "raw": "John Murray, Redemption Accomplished and Applied",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "Election and Free Will",
+          "suffix": "",
+          "raw": "Robert A. Peterson, Election and Free Will",
+          "theologian": "Robert A. Peterson"
+        },
+        {
+          "title": "For Calvinism",
+          "suffix": "",
+          "raw": "Michael Horton, For Calvinism",
+          "theologian": "Michael Horton"
+        },
+        {
+          "title": "Against Calvinism",
+          "suffix": "",
+          "raw": "Roger E. Olson, Against Calvinism",
+          "theologian": "Roger E. Olson"
+        },
+        {
+          "title": "Predestination: Biblical and Theological Paths",
+          "suffix": "",
+          "raw": "Matthew Levering, Predestination: Biblical and Theological Paths",
+          "theologian": "Matthew Levering"
+        },
+        {
+          "title": "Deviant Calvinism",
+          "suffix": "",
+          "raw": "Oliver D. Crisp, Deviant Calvinism",
+          "theologian": "Oliver D. Crisp"
+        },
+        {
+          "title": "The Doctrine of Election (in The Biggest Story Bible Storybook)",
+          "suffix": "",
+          "raw": "Kevin DeYoung, The Doctrine of Election (in The Biggest Story Bible Storybook)",
+          "theologian": "Kevin DeYoung"
+        },
+        {
+          "title": "The Grace of God in the Gospel",
+          "suffix": "",
+          "raw": "Garry J. Williams, The Grace of God in the Gospel",
+          "theologian": "Garry J. Williams"
+        },
+        {
+          "title": "Election and Reprobation: Biblical and Theological Survey",
+          "suffix": "",
+          "raw": "Thomas R. Schreiner, Election and Reprobation: Biblical and Theological Survey",
+          "theologian": "Thomas Schreiner"
+        },
+        {
+          "title": "From Heaven He Came and Sought Her",
+          "suffix": "and Jonathan Gibson (eds.)",
+          "raw": "David Gibson and Jonathan Gibson (eds.), From Heaven He Came and Sought Her",
+          "theologian": "David Gibson"
+        },
+        {
+          "title": "The Doctrine of Predestination in Reformed Theology",
+          "suffix": "",
+          "raw": "J.V. Fesko, The Doctrine of Predestination in Reformed Theology",
+          "theologian": "J.V. Fesko"
+        },
+        {
+          "title": "The Callings of God: The Providence of God and Election",
+          "suffix": "",
+          "raw": "Paul Helm, The Callings of God: The Providence of God and Election",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "God's Greater Glory: The Exalted God of Scripture and the Christian Faith",
+          "suffix": "",
+          "raw": "Bruce A. Ware, God's Greater Glory: The Exalted God of Scripture and the Christian Faith",
+          "theologian": "Bruce A. Ware"
+        },
+        {
+          "title": "Paul and the Faithfulness of God",
+          "suffix": "",
+          "raw": "N.T. Wright, Paul and the Faithfulness of God",
+          "theologian": "N.T. Wright"
+        },
+        {
+          "title": "Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "suffix": "and Scott R. Swain (eds.)",
+          "raw": "Michael Allen and Scott R. Swain (eds.), Christian Dogmatics: Reformed Theology for the Church Catholic",
+          "theologian": "Michael Allen"
+        },
+        {
+          "title": "Calvinism and the Problem of Evil",
+          "suffix": "",
+          "raw": "James N. Anderson, Calvinism and the Problem of Evil",
+          "theologian": "James N. Anderson"
+        }
+      ]
+    }
+  },
+  "Theodicy and divine justice": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Theodicy and divine justice",
+      "topic_specific_theologians": [
+        "Gottfried Wilhelm Leibniz",
+        "John Hick",
+        "Alvin Plantinga",
+        "Marilyn McCord Adams",
+        "Richard Swinburne",
+        "Gregory E. Ganssle",
+        "Meredith G. Kline",
+        "Richard B. Gaffin Jr."
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Biblical and Theological Studies",
+          "suffix": "",
+          "raw": "B.B. Warfield, Biblical and Theological Studies",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "The Defense of the Faith",
+          "suffix": "",
+          "raw": "Cornelius Van Til, The Defense of the Faith",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "The Epistle to the Romans",
+          "suffix": "",
+          "raw": "John Murray, The Epistle to the Romans",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "Biblical Theology",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Biblical Theology",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "Resurrection and Redemption",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., Resurrection and Redemption",
+          "theologian": "Richard B. Gaffin Jr."
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "God, Freedom, and Evil",
+          "suffix": "",
+          "raw": "Alvin Plantinga, God, Freedom, and Evil",
+          "theologian": "Alvin Plantinga"
+        },
+        {
+          "title": "Horrendous Evils and the Goodness of God",
+          "suffix": "",
+          "raw": "Marilyn McCord Adams, Horrendous Evils and the Goodness of God",
+          "theologian": "Marilyn McCord Adams"
+        },
+        {
+          "title": "God and Time: Essays on the Divine Nature",
+          "suffix": "",
+          "raw": "Gregory E. Ganssle, God and Time: Essays on the Divine Nature",
+          "theologian": "Gregory E. Ganssle"
+        },
+        {
+          "title": "Apologetics to the Glory of God",
+          "suffix": "",
+          "raw": "John Frame, Apologetics to the Glory of God",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "The Providence of God",
+          "suffix": "",
+          "raw": "Paul Helm, The Providence of God",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "Evil and the Justice of God",
+          "suffix": "",
+          "raw": "N.T. Wright, Evil and the Justice of God",
+          "theologian": "N.T. Wright"
+        },
+        {
+          "title": "The Doors of the Sea: Where Was God in the Tsunami?",
+          "suffix": "",
+          "raw": "David Bentley Hart, The Doors of the Sea: Where Was God in the Tsunami?",
+          "theologian": "David Bentley Hart"
+        },
+        {
+          "title": "The Problem of Evil and the Problem of God",
+          "suffix": "",
+          "raw": "William Lane Craig, The Problem of Evil and the Problem of God",
+          "theologian": "William Lane Craig"
+        },
+        {
+          "title": "Why Should I Believe Christianity?",
+          "suffix": "",
+          "raw": "James N. Anderson, Why Should I Believe Christianity?",
+          "theologian": "James N. Anderson"
+        },
+        {
+          "title": "The Hiddenness of God",
+          "suffix": "",
+          "raw": "Michael Rea, The Hiddenness of God",
+          "theologian": "Michael Rea"
+        },
+        {
+          "title": "Wandering in Darkness: Narrative and the Problem of Suffering",
+          "suffix": "",
+          "raw": "Eleonore Stump, Wandering in Darkness: Narrative and the Problem of Suffering",
+          "theologian": "Eleonore Stump"
+        },
+        {
+          "title": "Redeeming Science: A God-Centered Approach",
+          "suffix": "",
+          "raw": "Vern S. Poythress, Redeeming Science: A God-Centered Approach",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "Justice: Rights and Wrongs",
+          "suffix": "",
+          "raw": "Nicholas Wolterstorff, Justice: Rights and Wrongs",
+          "theologian": "Nicholas Wolterstorff"
+        },
+        {
+          "title": "An Invitation to Analytic Christian Theology",
+          "suffix": "",
+          "raw": "Thomas McCall, An Invitation to Analytic Christian Theology",
+          "theologian": "Thomas McCall"
+        },
+        {
+          "title": "Evil and the Cross",
+          "suffix": "",
+          "raw": "Henri Blocher, Evil and the Cross",
+          "theologian": "Henri Blocher"
+        }
+      ]
+    }
+  },
+  "Open theism and divine condescension": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "Open theism and divine condescension",
+      "topic_specific_theologians": [
+        "Bruce Ware",
+        "John Sanders",
+        "Clark Pinnock",
+        "Richard Muller",
+        "Kevin Vanhoozer",
+        "Peter Lillback",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "'Redemption Accomplished and Applied'",
+          "suffix": "",
+          "raw": "John Murray, 'Redemption Accomplished and Applied'",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "'The Defense of the Faith'",
+          "suffix": "",
+          "raw": "Cornelius Van Til, 'The Defense of the Faith'",
+          "theologian": "Cornelius Van Til"
+        },
+        {
+          "title": "'Biblical Theology'",
+          "suffix": "",
+          "raw": "Geerhardus Vos, 'Biblical Theology'",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "'The Biblical Doctrine of God'",
+          "suffix": "",
+          "raw": "B.B. Warfield, 'The Biblical Doctrine of God'",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "'The Doctrine of God'",
+          "suffix": "",
+          "raw": "John Frame, 'The Doctrine of God'",
+          "theologian": "John Frame"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "'God's Lesser Glory: The Diminished God of Open Theism'",
+          "suffix": "",
+          "raw": "Bruce Ware, 'God's Lesser Glory: The Diminished God of Open Theism'",
+          "theologian": "Bruce Ware"
+        },
+        {
+          "title": "'The God Who Risks: A Theology of Providence'",
+          "suffix": "",
+          "raw": "John Sanders, 'The God Who Risks: A Theology of Providence'",
+          "theologian": "John Sanders"
+        },
+        {
+          "title": "'The Openness of God: A Biblical Challenge to the Traditional Understanding of God'",
+          "suffix": "et al.",
+          "raw": "Clark Pinnock et al., 'The Openness of God: A Biblical Challenge to the Traditional Understanding of God'",
+          "theologian": "Clark Pinnock"
+        },
+        {
+          "title": "'God of the Possible'",
+          "suffix": "",
+          "raw": "Gregory Boyd, 'God of the Possible'",
+          "theologian": "Gregory A. Boyd"
+        },
+        {
+          "title": "'Divine Sovereignty and Human Responsibility'",
+          "suffix": "",
+          "raw": "D.A. Carson, 'Divine Sovereignty and Human Responsibility'",
+          "theologian": "D.A. Carson"
+        },
+        {
+          "title": "'Remythologizing Theology: Divine Action, Passion, and Authorship'",
+          "suffix": "",
+          "raw": "Kevin Vanhoozer, 'Remythologizing Theology: Divine Action, Passion, and Authorship'",
+          "theologian": "Kevin Vanhoozer"
+        },
+        {
+          "title": "'Divine Will and Human Choice: Freedom, Contingency, and Necessity in Early Modern Reformed Thought'",
+          "suffix": "",
+          "raw": "Richard Muller, 'Divine Will and Human Choice: Freedom, Contingency, and Necessity in Early Modern Reformed Thought'",
+          "theologian": "Richard Muller"
+        },
+        {
+          "title": "'The Providence of God'",
+          "suffix": "",
+          "raw": "Paul Helm, 'The Providence of God'",
+          "theologian": "Paul Helm"
+        },
+        {
+          "title": "'The Mystery of the Trinity: A Trinitarian Approach to the Attributes of God'",
+          "suffix": "",
+          "raw": "Vern Poythress, 'The Mystery of the Trinity: A Trinitarian Approach to the Attributes of God'",
+          "theologian": "Vern Poythress"
+        },
+        {
+          "title": "'No Other God: A Response to Open Theism'",
+          "suffix": "",
+          "raw": "John Frame, 'No Other God: A Response to Open Theism'",
+          "theologian": "John Frame"
+        },
+        {
+          "title": "'The Binding of God: Calvin’s Role in the Development of Covenant Theology'",
+          "suffix": "",
+          "raw": "Peter Lillback, 'The Binding of God: Calvin’s Role in the Development of Covenant Theology'",
+          "theologian": "Peter Lillback"
+        },
+        {
+          "title": "'The Only Wise God: The Compatibility of Divine Foreknowledge and Human Freedom'",
+          "suffix": "",
+          "raw": "William Lane Craig, 'The Only Wise God: The Compatibility of Divine Foreknowledge and Human Freedom'",
+          "theologian": "William Lane Craig"
+        },
+        {
+          "title": "'Providence and Prayer: How Does God Work in the World?'",
+          "suffix": "",
+          "raw": "Terrance Tiessen, 'Providence and Prayer: How Does God Work in the World?'",
+          "theologian": "Terrance Tiessen"
+        },
+        {
+          "title": "'None Greater: The Undomesticated Attributes of God'",
+          "suffix": "",
+          "raw": "Matthew Barrett, 'None Greater: The Undomesticated Attributes of God'",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "'All That Is in God: Evangelical Theology and the Challenge of Classical Christian Theism'",
+          "suffix": "",
+          "raw": "James Dolezal, 'All That Is in God: Evangelical Theology and the Challenge of Classical Christian Theism'",
+          "theologian": "James E. Dolezal"
+        }
+      ]
+    }
+  },
+  "What if Adam had not sinned?": {
+    "fixed_core": {
+      "Early Church & Medieval": [
+        "Augustine",
+        "Thomas Aquinas"
+      ],
+      "Reformation / Post-Reformation": [
+        "Martin Luther",
+        "John Calvin",
+        "Francis Turretin"
+      ],
+      "Old Princeton": [
+        "Charles Hodge",
+        "B.B. Warfield"
+      ],
+      "Dutch Neo-Calvinist / High Reformed": [
+        "Herman Bavinck",
+        "Abraham Kuyper"
+      ],
+      "20th Century Reformed / Westminster": [
+        "John Murray",
+        "Cornelius Van Til",
+        "Geerhardus Vos",
+        "G.C. Berkouwer",
+        "John Frame",
+        "Vern Poythress"
+      ],
+      "Modern Non-Reformed / Liberal / Neo-Orthodox": [
+        "Friedrich Schleiermacher",
+        "Albrecht Ritschl",
+        "Emil Brunner",
+        "Rudolf Bultmann",
+        "Karl Barth",
+        "Paul Tillich",
+        "Karl Rahner",
+        "Jürgen Moltmann",
+        "Wolfhart Pannenberg"
+      ],
+      "Confessional Standards": [
+        "Westminster Standards",
+        "Three Forms of Unity"
+      ]
+    },
+    "generated": {
+      "topic": "What if Adam had not sinned?",
+      "topic_specific_theologians": [
+        "Meredith G. Kline",
+        "Richard B. Gaffin Jr.",
+        "Lane G. Tipton",
+        "Anthony A. Hoekema",
+        "Louis Berkhof",
+        "Peter Martyr Vermigli",
+        "Jonathan Edwards",
+        "Michael S. Horton"
+      ],
+      "wts_or_old_princeton_works": [
+        {
+          "title": "Biblical Theology",
+          "suffix": "",
+          "raw": "Geerhardus Vos, Biblical Theology",
+          "theologian": "Geerhardus Vos"
+        },
+        {
+          "title": "The Covenant of Grace",
+          "suffix": "",
+          "raw": "John Murray, The Covenant of Grace",
+          "theologian": "John Murray"
+        },
+        {
+          "title": "The Plan of Salvation",
+          "suffix": "",
+          "raw": "B.B. Warfield, The Plan of Salvation",
+          "theologian": "B.B. Warfield"
+        },
+        {
+          "title": "Resurrection and Redemption",
+          "suffix": "",
+          "raw": "Richard B. Gaffin Jr., Resurrection and Redemption",
+          "theologian": "Richard B. Gaffin Jr."
+        },
+        {
+          "title": "Kingdom Prologue",
+          "suffix": "",
+          "raw": "Meredith G. Kline, Kingdom Prologue",
+          "theologian": "Meredith G. Kline"
+        }
+      ],
+      "recent_works_discussions": [
+        {
+          "title": "The Federal Vision and Covenant Theology",
+          "suffix": "",
+          "raw": "Guy Prentiss Waters, The Federal Vision and Covenant Theology",
+          "theologian": "Guy Prentiss Waters"
+        },
+        {
+          "title": "Last Things First: Unlocking Genesis 1–3 with the Christ of Eschatology",
+          "suffix": "",
+          "raw": "J.V. Fesko, Last Things First: Unlocking Genesis 1–3 with the Christ of Eschatology",
+          "theologian": "J.V. Fesko"
+        },
+        {
+          "title": "Foundations of Covenant Theology",
+          "suffix": "",
+          "raw": "Lane G. Tipton, Foundations of Covenant Theology",
+          "theologian": "Lane Tipton"
+        },
+        {
+          "title": "Covenant and Salvation: Union with Christ",
+          "suffix": "",
+          "raw": "Michael S. Horton, Covenant and Salvation: Union with Christ",
+          "theologian": "Michael S. Horton"
+        },
+        {
+          "title": "The Gospel to the Nations: Perspectives on Paul's Mission",
+          "suffix": "& Mark D. Thompson (eds.)",
+          "raw": "Peter G. Bolt & Mark D. Thompson (eds.), The Gospel to the Nations: Perspectives on Paul's Mission",
+          "theologian": "Peter G. Bolt"
+        },
+        {
+          "title": "The God of the Gospel: Robert Jenson’s Trinitarian Theology",
+          "suffix": "",
+          "raw": "Scott Swain, The God of the Gospel: Robert Jenson’s Trinitarian Theology",
+          "theologian": "Scott Swain"
+        },
+        {
+          "title": "Heavenly Participation: The Weaving of a Sacramental Tapestry",
+          "suffix": "",
+          "raw": "Hans Boersma, Heavenly Participation: The Weaving of a Sacramental Tapestry",
+          "theologian": "Hans Boersma"
+        },
+        {
+          "title": "Through New Eyes: Developing a Biblical View of the World",
+          "suffix": "",
+          "raw": "James B. Jordan, Through New Eyes: Developing a Biblical View of the World",
+          "theologian": "James B. Jordan"
+        },
+        {
+          "title": "Progressive Covenantalism",
+          "suffix": "and Brent E. Parker (eds.)",
+          "raw": "Stephen J. Wellum and Brent E. Parker (eds.), Progressive Covenantalism",
+          "theologian": "Stephen Wellum"
+        },
+        {
+          "title": "Paul and the Faithfulness of God",
+          "suffix": "",
+          "raw": "N.T. Wright, Paul and the Faithfulness of God",
+          "theologian": "N.T. Wright"
+        },
+        {
+          "title": "God's Word Alone: The Authority of Scripture",
+          "suffix": "(ed.)",
+          "raw": "Matthew Barrett (ed.), God's Word Alone: The Authority of Scripture",
+          "theologian": "Matthew Barrett"
+        },
+        {
+          "title": "Covenant and God's Purpose for the World",
+          "suffix": "",
+          "raw": "Thomas Schreiner, Covenant and God's Purpose for the World",
+          "theologian": "Thomas Schreiner"
+        },
+        {
+          "title": "A New Testament Biblical Theology",
+          "suffix": "",
+          "raw": "Gregory K. Beale, A New Testament Biblical Theology",
+          "theologian": "Gregory K. Beale"
+        },
+        {
+          "title": "The Covenant of Works: The Origins, Development, and Reception of the Doctrine",
+          "suffix": "",
+          "raw": "J.V. Fesko, The Covenant of Works: The Origins, Development, and Reception of the Doctrine",
+          "theologian": "J.V. Fesko"
+        }
+      ]
+    }
+  }
+}

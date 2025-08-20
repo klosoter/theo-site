@@ -1,0 +1,402 @@
+[
+  {
+    "id": "work_e0fde1126f74",
+    "slug": "1-2-thessalonians-(ivp-new-testament-commentary-2003)",
+    "title": "\"1–2 Thessalonians\" (IVP New Testament Commentary, 2003)",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_cfa06cf99d84",
+    "slug": "a-brief-declaration-and-vindication-of-the-doctrine-of-the-trinity",
+    "title": "\"A Brief Declaration and Vindication of the Doctrine of the Trinity\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_9a8bad95ad9e",
+    "slug": "a-brief-declaration-and-vindication-of-the-doctrine-of-the-trinity-(for-anthropological-context)",
+    "title": "\"A Brief Declaration and Vindication of the Doctrine of the Trinity\" (for anthropological context)",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_97263a885a5f",
+    "slug": "a-brief-instruction-in-the-worship-of-god-(works-vol.-15)",
+    "title": "\"A Brief Instruction in the Worship of God\" (Works, vol. 15)",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_36e4b8f86177",
+    "slug": "a-cabinet-of-choice-jewels",
+    "title": "\"A Cabinet of Choice Jewels\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_ab40c7e97bf4",
+    "slug": "a-case-for-amillennialism-understanding-the-end-times",
+    "title": "\"A Case for Amillennialism: Understanding the End Times\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_19c3d7a0a1b2",
+    "slug": "a-cessationist-view-in-are-miraculous-gifts-for-today",
+    "title": "\"A Cessationist View\" in Are Miraculous Gifts for Today?",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_7e2f98077a97",
+    "slug": "a-cessationist-view-in-are-miraculous-gifts-for-today-four-views",
+    "title": "\"A Cessationist View\" in Are Miraculous Gifts for Today? Four Views",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_f5e3ea9b6732",
+    "slug": "a-concise-history-of-christian-doctrine-(2006)",
+    "title": "\"A Concise History of Christian Doctrine\" (2006)",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_e5585550ac82",
+    "slug": "a-declaration-of-the-glorious-mystery-of-the-person-of-christ-god-and-man",
+    "title": "\"A Declaration of the Glorious Mystery of the Person of Christ, God and Man\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_79881b3d7160",
+    "slug": "a-defence-of-virginia-and-through-her-of-the-south-(contextualizes-his-ecclesiology)",
+    "title": "\"A Defence of Virginia and Through Her, of the South\" (contextualizes his ecclesiology)",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_affbe93e71f2",
+    "slug": "a-discourse-concerning-evangelical-love-church-peace-and-unity",
+    "title": "\"A Discourse Concerning Evangelical Love, Church Peace, and Unity\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_ebdcdbd57928",
+    "slug": "a-discourse-concerning-the-holy-spirit",
+    "title": "\"A Discourse Concerning the Holy Spirit\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_e9c230415f76",
+    "slug": "a-discourse-of-the-work-of-the-holy-spirit-in-prayer",
+    "title": "\"A Discourse of the Work of the Holy Spirit in Prayer\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_31a5a2aeb129",
+    "slug": "a-discourse-on-gods-knowledge",
+    "title": "\"A Discourse on God's Knowledge\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_e0e44515004c",
+    "slug": "a-discourse-on-the-eternity-of-god",
+    "title": "\"A Discourse on the Eternity of God\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_7cf3786a5a66",
+    "slug": "a-discourse-on-the-existence-of-god",
+    "title": "\"A Discourse on the Existence of God\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_cf099540637c",
+    "slug": "a-discourse-on-the-omnipresence-of-god",
+    "title": "\"A Discourse on the Omnipresence of God\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_ea415cd05d59",
+    "slug": "a-display-of-arminianism",
+    "title": "\"A Display of Arminianism\"",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  },
+  {
+    "id": "work_31c3287fbcd1",
+    "slug": "a-display-of-arminianism-(1643)",
+    "title": "\"A Display of Arminianism\" (1643)",
+    "authors": [],
+    "year": null,
+    "publisher": null,
+    "type": "book",
+    "tradition": [],
+    "topics": [],
+    "summary": null,
+    "summary_status": "pending",
+    "notes": null,
+    "identifiers": {
+      "isbn": null,
+      "doi": null
+    },
+    "created_at": "2025-08-16",
+    "updated_at": "2025-08-16"
+  }
+]

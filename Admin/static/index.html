@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Canonical Works Mapper</title>
+<!--	<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>-->
+<!--	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>-->
+<!--	<script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>-->
+	
+	
+	<script src="/static/vendor/react.production.min.js"></script>
+	<script src="/static/vendor/react-dom.production.min.js"></script>
+	<script src="/static/vendor/babel.min.js"></script>
+	<style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background: #f8f8f8;
+        }
+
+        header {
+            padding: 12px 16px;
+            background: #333;
+            color: white;
+        }
+
+        details {
+            margin: 8px 0;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        summary {
+            padding: 8px 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 4px 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #f0f0f0;
+            text-align: left;
+        }
+
+        .muted {
+            color: #777;
+            font-size: 90%;
+        }
+
+        .merge-dock {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            padding: 8px 12px;
+        }
+
+        .merge-dock .inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        button {
+            padding: 4px 8px;
+            margin-left: 4px;
+        }
+
+        button.primary {
+            background: #0077cc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            max-width: 400px;
+            text-align: center;
+        }
+	</style>
+</head>
+<body>
+<header>
+	<h2>Canonical Works Mapper</h2>
+</header>
+<div id="app"></div>
+<script type="text/babel" data-presets="react">
+    function App() {
+        const [theos, setTheos] = React.useState([]);
+        const [worksByAid, setWorks] = React.useState({});
+        const [map, setMap] = React.useState([]);
+        const [activeAid, setActiveAid] = React.useState(null);
+        const [selCanon, setCanon] = React.useState({});
+        const [selMerge, setMerge] = React.useState({});
+        const [confirm, setConfirm] = React.useState(false);
+        const [hideCanonized, setHideCanonized] = React.useState(true);
+        const [titleIndex, setTitleIndex] = React.useState({});
+
+        React.useEffect(() => {
+            api('/api/authors').then(setTheos);
+            api('/api/map').then(setMap);
+        }, []);
+
+        // helper: ignore when typing in inputs/textareas or with modifier keys
+        function shouldIgnoreKey(e) {
+            const tag = (e.target.tagName || '').toLowerCase();
+            const editable = e.target.isContentEditable;
+            const inField = tag === 'input' || tag === 'textarea' || editable;
+            const withMods = e.metaKey || e.ctrlKey || e.altKey;
+            return inField || withMods;
+        }
+
+        React.useEffect(() => {
+            function shouldIgnoreKey(e) {
+                const tag = (e.target.tagName || '').toLowerCase();
+                const editable = e.target.isContentEditable;
+                const inField = tag === 'input' || tag === 'textarea' || editable;
+                const withMods = e.metaKey || e.ctrlKey || e.altKey;
+                return inField || withMods;
+            }
+
+            function onKey(e) {
+                if (shouldIgnoreKey(e)) return;
+
+                const aid = activeAid;
+                const hasAid = !!aid;
+                const canonicalId = hasAid ? selCanon[aid] : null;
+
+                const selSet = hasAid ? selMerge[aid] : null;
+                const size = selSet ? selSet.size : 0;
+                const hasCanonPicked = selSet ? selSet.has(canonicalId) : false;
+                const mergeCount = hasAid ? Math.max(0, size - (hasCanonPicked ? 1 : 0)) : 0;
+
+                const canOpenConfirm = hasAid && canonicalId && mergeCount > 0;
+
+                switch ((e.key || '').toLowerCase()) {
+                    case 'm':
+                        if (canOpenConfirm) {
+                            e.preventDefault();
+                            setConfirm(true);
+                        }
+                        break;
+                    case 'c':
+                    case 'enter':
+                        if (confirm && hasAid) {
+                            e.preventDefault();
+                            doMerge();
+                        }
+                        break;
+                    case 'escape':
+                        if (confirm) {
+                            e.preventDefault();
+                            setConfirm(false);
+                        }
+                        break;
+                    case 'h':
+                        e.preventDefault();
+                        setHideCanonized(v => !v);
+                        break;
+                    case 'x':
+                        if (hasAid) {
+                            e.preventDefault();
+                            setCanon(prev => ({...prev, [aid]: null}));
+                            setMerge(prev => ({...prev, [aid]: new Set()}));
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            window.addEventListener('keydown', onKey);
+            return () => window.removeEventListener('keydown', onKey);
+        }, [activeAid, selCanon, selMerge, confirm]);
+
+
+        function currentCanonInfo(wid) {
+            const r = map.find(x => x.work_id === wid);
+            const cid = r ? r.canonical_id : wid;
+            return {id: cid, title: titleIndex[cid] || ''};
+        }
+
+        function toggleAuthor(aid, open) {
+            if (open && !worksByAid[aid]) {
+                api('/api/works?author_id=' + aid).then(ws => {
+                    setWorks(prev => ({...prev, [aid]: ws}));
+                    setTitleIndex(prev => {
+                        const next = {...prev};
+                        for (const w of ws) next[w.id] = w.title || '';
+                        return next;
+                    });
+                });
+            }
+            if (open) setActiveAid(aid);
+        }
+
+        function togglePick(aid, wid) {
+            setMerge(p => {
+                const cur = new Set(p[aid] || []);
+                if (cur.has(wid)) cur.delete(wid); else cur.add(wid);
+                return {...p, [aid]: cur};
+            });
+        }
+
+        async function doMerge() {
+            const canonId = selCanon[activeAid];
+            const mergeIds = Array.from(selMerge[activeAid] || []).filter(x => x !== canonId);
+            if (!canonId || mergeIds.length === 0) return;
+
+            await fetch('/api/map/merge', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({canonical_id: canonId, merge_ids: mergeIds})
+            });
+
+            // ✅ refresh with GET (returns the array your UI expects)
+            const fresh = await api('/api/map');
+            setMap(fresh);
+
+            // clear selection
+            setCanon(p => ({...p, [activeAid]: null}));
+            setMerge(p => ({...p, [activeAid]: new Set()}));
+            setConfirm(false);
+        }
+
+
+        return (
+            <div style={{maxWidth: 900, margin: '16px auto', padding: '0 12px'}}>
+                {theos.map(a => {
+                    const allWorks = worksByAid[a.id] || [];
+                    const rows = hideCanonized ? allWorks.filter(w => currentCanonInfo(w.id).id === w.id) : allWorks;
+                    const hiddenCount = allWorks.length - rows.length;
+                    return (
+                        <details key={a.id} onToggle={e => toggleAuthor(a.id, e.target.open)}>
+                            <summary>{a.full_name} ({rows.length}/{allWorks.length})</summary>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th style={{width: '70px'}}>Canon</th>
+                                    <th style={{width: '70px'}}>Merge</th>
+                                    <th>Title</th>
+                                    <th className="muted">Current Canonical</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {rows.map(w => {
+                                    const isCanon = selCanon[a.id] === w.id;
+                                    const picked = (selMerge[a.id] || new Set()).has(w.id);
+                                    const canon = currentCanonInfo(w.id);
+                                    const canonLabel = canon.id === w.id ? '—' : (canon.title || canon.id);
+                                    return (<tr key={w.id}>
+                                            <td
+													// key={w.id}
+                                                onClick={() => {
+                                                    setCanon(p => ({...p, [a.id]: w.id}));
+                                                }}>
+                                                <input type="radio" name={`canon-${a.id}`} checked={!!isCanon}
+                                                       onChange={() => setCanon(p => ({...p, [a.id]: w.id}))}/>
+                                            </td>
+                                            <td
+													// key={w.id}
+                                                onClick={() => {
+                                                    togglePick(a.id, w.id);
+                                                }}>
+                                                <input type="checkbox" checked={picked} onChange={() => null}/>
+                                            </td>
+                                            <td>{w.title || <span className="muted">(untitled)</span>}</td>
+                                            <td className="muted">{canonLabel}</td>
+                                        </tr>
+                                    );
+                                })}
+                                </tbody>
+                            </table>
+                            {hideCanonized && hiddenCount > 0 &&
+                                <div className="small muted" style={{padding: '6px 2px'}}>
+                                    Hidden canonized works: <b>{hiddenCount}</b> ·
+                                    <button onClick={() => setHideCanonized(false)}>Show all</button>
+                                </div>}
+                        </details>
+                    );
+                })}
+                <div className="merge-dock">
+                    <div className="inner">
+                        <div>
+                            <label style={{display: 'inline-flex', alignItems: 'center', gap: 6}}>
+                                <input type="checkbox" checked={hideCanonized}
+                                       onChange={e => setHideCanonized(e.target.checked)}/>
+                                Hide canonized
+                            </label>
+                        </div>
+                        <div>
+                            <button onClick={() => {
+                                if (!activeAid) return;
+                                setCanon(p => ({...p, [activeAid]: null}));
+                                setMerge(p => ({...p, [activeAid]: new Set()}));
+                            }}>Clear
+                            </button>
+                            <button className="primary" onClick={() => setConfirm(true)}>Merge</button>
+                        </div>
+                    </div>
+                </div>
+                {confirm &&
+                    <div className="popup">
+                        <div className="popup-content">
+                            <p>Do you want to merge selected works into the chosen canonical?</p>
+                            <button onClick={doMerge} className="primary">Yes, merge</button>
+                            <button onClick={() => setConfirm(false)}>Cancel</button>
+                        </div>
+                    </div>}
+            </div>
+        );
+    }
+
+    function api(path) {
+        return fetch(path).then(r => r.json());
+    }
+
+    ReactDOM.createRoot(document.getElementById('app')).render(<App/>);
+</script>
+</body>
+</html>

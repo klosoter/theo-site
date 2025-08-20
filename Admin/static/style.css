@@ -1,0 +1,67 @@
+/* ===== base/reset ===== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+/* ===== header ===== */
+header {
+  position: sticky; top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 16px;
+  display: flex; gap: 12px; align-items: center;
+  z-index: 5;
+}
+header input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ddd; border-radius: 8px;
+}
+
+/* ===== layout ===== */
+.container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+/* Admin pages can set <body class="admin"> for full-width editing */
+body.admin .container { max-width: none; width: 100%; padding: 16px; }
+
+/* ===== cards & grids (main site) ===== */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.card {
+  border: 1px solid #eee; border-radius: 12px; padding: 12px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+.small { color: #555; font-size: 13px; }
+.badge {
+  display: inline-block; background:#f3f4f6; border:1px solid #e5e7eb;
+  border-radius:999px; padding:2px 8px; margin-left:6px; font-size:12px;
+}
+
+/* ===== buttons & inputs ===== */
+button {
+  padding: 6px 10px; border: 1px solid #ddd; border-radius: 8px;
+  background: #fafafa; cursor: pointer;
+}
+button:hover { background: #f3f4f6; }
+input[type="text"], input[type="number"] { padding: 6px 8px; border: 1px solid #ddd; border-radius: 8px; }
+
+/* ===== admin table ===== */
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border: 1px solid #eee; padding: 6px 8px; text-align: left; vertical-align: top; }
+.table th { background: #fafafa; position: sticky; top: 58px; z-index: 2; } /* below header */
+.table tr:nth-child(even) { background: #fcfcfc; }
+.table input[type="text"], .table input[type="number"] { width: 100%; }
+.table .row-controls { display: flex; gap: 8px; align-items: center; }
+
+/* make radio/checkbox cells fully clickable (matches your JS) */
+td[role="button"] { cursor: pointer; text-align: center; }
+td[role="button"]:focus { outline: 2px solid #a3bffa; outline-offset: 2px; }
+td[role="button"] input { pointer-events: none; } /* JS stops propagation on the input */
+
+/* utilities */
+.ellipsis { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.markdown :is(h1,h2,h3) { margin-top: 1.4em; }
+.markdown table { border-collapse: collapse; }
+.markdown th, .markdown td { border: 1px solid #ddd; padding: 6px 8px; }

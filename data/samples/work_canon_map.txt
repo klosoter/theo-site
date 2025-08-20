@@ -1,0 +1,82 @@
+[
+  {
+    "work_id": "work_0001c5eb428f",
+    "canonical_id": "work_487187e66de1"
+  },
+  {
+    "work_id": "work_0002fd54b266",
+    "canonical_id": "work_e0c0ab2a03e2"
+  },
+  {
+    "work_id": "work_00055127215d",
+    "canonical_id": "work_232791629f81"
+  },
+  {
+    "work_id": "work_00147def9641",
+    "canonical_id": "work_b8826f3ac5ef"
+  },
+  {
+    "work_id": "work_001dc9ad810a",
+    "canonical_id": "work_623744aac490"
+  },
+  {
+    "work_id": "work_001e372b053f",
+    "canonical_id": "work_b790a2b2764e"
+  },
+  {
+    "work_id": "work_001f74de0ab3",
+    "canonical_id": "work_001f74de0ab3"
+  },
+  {
+    "work_id": "work_00251e0c39dd",
+    "canonical_id": "work_045153db13f7"
+  },
+  {
+    "work_id": "work_002d49170d7d",
+    "canonical_id": "work_711a4f509805"
+  },
+  {
+    "work_id": "work_00319377d508",
+    "canonical_id": "work_b0bb14a31fbc"
+  },
+  {
+    "work_id": "work_003213a2ae58",
+    "canonical_id": "work_003213a2ae58"
+  },
+  {
+    "work_id": "work_003c481f76da",
+    "canonical_id": "work_003c481f76da"
+  },
+  {
+    "work_id": "work_003f3bb51d7c",
+    "canonical_id": "work_721229f3ec7b"
+  },
+  {
+    "work_id": "work_00458f2b2898",
+    "canonical_id": "work_00458f2b2898"
+  },
+  {
+    "work_id": "work_005cc70940d2",
+    "canonical_id": "work_c4571fa8dd03"
+  },
+  {
+    "work_id": "work_005d866f198d",
+    "canonical_id": "work_f6da709c9ef2"
+  },
+  {
+    "work_id": "work_00689e61b046",
+    "canonical_id": "work_163d78b8375b"
+  },
+  {
+    "work_id": "work_0077b78c52d7",
+    "canonical_id": "work_11c15342b809"
+  },
+  {
+    "work_id": "work_007f7850c0c1",
+    "canonical_id": "work_007f7850c0c1"
+  },
+  {
+    "work_id": "work_008c077795af",
+    "canonical_id": "work_008c077795af"
+  }
+]
