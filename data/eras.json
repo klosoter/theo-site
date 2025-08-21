@@ -1,0 +1,11 @@
+[
+  {"id": "era_patristic", "slug": "patristic", "label": "Patristic", "start": 100, "end": 749},
+  {"id": "era_early_medieval", "slug": "early-medieval", "label": "Early Medieval", "start": 750, "end": 1049},
+  {"id": "era_high_medieval", "slug": "high-medieval", "label": "High Medieval", "start": 1050, "end": 1299},
+  {"id": "era_late_medieval", "slug": "late-medieval", "label": "Late Medieval", "start": 1300, "end": 1499},
+  {"id": "era_reformation", "slug": "reformation", "label": "Reformation", "start": 1500, "end": 1599},
+  {"id": "era_post_reformation", "slug": "post-reformation", "label": "Post-Reformation & Protestant Scholasticism", "start": 1600, "end": 1699},
+  {"id": "era_enlightenment", "slug": "enlightenment", "label": "Enlightenment & Early Modern", "start": 1700, "end": 1799},
+  {"id": "era_modern", "slug": "modern", "label": "Modern", "start": 1800, "end": 1945},
+  {"id": "era_contemporary", "slug": "contemporary", "label": "Contemporary", "start": 1946, "end": 3000}
+]

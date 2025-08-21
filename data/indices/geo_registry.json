@@ -1,0 +1,68 @@
+{
+  "kind": "geo",
+  "items": {
+    "USA": {
+      "aliases": []
+    },
+    "GBR": {
+      "aliases": []
+    },
+    "NLD": {
+      "aliases": []
+    },
+    "ROU": {
+      "aliases": []
+    },
+    "CAN": {
+      "aliases": []
+    },
+    "DEU": {
+      "aliases": []
+    },
+    "AUS": {
+      "aliases": []
+    },
+    "SGP": {
+      "aliases": []
+    },
+    "ZAF": {
+      "aliases": []
+    },
+    "EGY": {
+      "aliases": []
+    },
+    "DZA": {
+      "aliases": []
+    },
+    "TUR": {
+      "aliases": []
+    },
+    "NZL": {
+      "aliases": []
+    },
+    "CHE": {
+      "aliases": []
+    },
+    "FRA": {
+      "aliases": []
+    },
+    "ITA": {
+      "aliases": []
+    },
+    "GRC": {
+      "aliases": []
+    },
+    "SYR": {
+      "aliases": []
+    },
+    "ESP": {
+      "aliases": []
+    },
+    "HRV": {
+      "aliases": []
+    },
+    "FIN": {
+      "aliases": []
+    }
+  }
+}

@@ -2,7 +2,7 @@
   {
     "id": "top_73dd29f4e3dd",
     "alternative": "top_dc6ef7045a79",
-    "slug": "1-a-nature-and-task-of-theology",
+    "slug": "nature-and-task-of-theology",
     "title": "1.A Nature and task of theology",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -207,7 +207,7 @@
   {
     "id": "top_0a257aa5da08",
     "alternative": "top_13a349a1f93a",
-    "slug": "1-b-general-and-special-revelation",
+    "slug": "general-and-special-revelation",
     "title": "1.B General and special revelation",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -409,7 +409,7 @@
   {
     "id": "top_24962dd00800",
     "alternative": "top_0b8b9b72aa9c",
-    "slug": "1-c-self-attestation-and-authority-of-scripture",
+    "slug": "self-attestation-and-authority-of-scripture",
     "title": "1.C Self-attestation and authority of Scripture",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -607,7 +607,7 @@
   {
     "id": "top_5cfabb0ffc0a",
     "alternative": "top_aa9d7dc7dde6",
-    "slug": "1-d-inspiration-and-inerrancy",
+    "slug": "inspiration-and-inerrancy",
     "title": "1.D Inspiration and inerrancy",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -806,7 +806,7 @@
   {
     "id": "top_f97189979aa0",
     "alternative": "top_f54087b12e6f",
-    "slug": "1-e-accommodation-and-incarnational-analogy",
+    "slug": "accommodation-and-incarnational-analogy",
     "title": "1.E Accommodation and incarnational analogy",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -1006,7 +1006,7 @@
   {
     "id": "top_b7f63fbbc29b",
     "alternative": "top_afc05f605e50",
-    "slug": "1-f-role-of-the-holy-spirit-in-revelation-and-illumination",
+    "slug": "role-of-the-holy-spirit-in-revelation-and-illumination",
     "title": "1.F Role of the Holy Spirit in revelation and illumination",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -1207,7 +1207,7 @@
   {
     "id": "top_893de9db2290",
     "alternative": "top_8c251981286f",
-    "slug": "1-g-canon-and-tradition",
+    "slug": "canon-and-tradition",
     "title": "1.G Canon and tradition",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -1412,7 +1412,7 @@
   {
     "id": "top_5aeece297aca",
     "alternative": "top_400696dd2f7d",
-    "slug": "1-h-biblical-theology-vs-systematic-theology",
+    "slug": "biblical-theology-vs-systematic-theology",
     "title": "1.H Biblical Theology vs Systematic Theology",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -1617,7 +1617,7 @@
   {
     "id": "top_51340b70fbc9",
     "alternative": "top_953a23ba3054",
-    "slug": "1-i-analogia-entis-vs-analogia-fidei",
+    "slug": "analogia-entis-vs-analogia-fidei",
     "title": "1.I Analogia entis vs analogia fidei",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -1819,7 +1819,7 @@
   {
     "id": "top_092eefee998a",
     "alternative": "top_e91f0d0417e8",
-    "slug": "1-j-theological-method-principia-theology-as-science",
+    "slug": "theological-method-(principia-theology-as-science)",
     "title": "1.J Theological method (principia, theology as science)",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -2027,7 +2027,7 @@
   {
     "id": "top_bf683e100ebe",
     "alternative": "top_dc7f5498ca92",
-    "slug": "1-k-epistemology-and-the-knowledge-of-god",
+    "slug": "epistemology-and-the-knowledge-of-god",
     "title": "1.K Epistemology and the knowledge of God",
     "category": "1. Bibliology",
     "created_at": "2025-08-16",
@@ -2231,7 +2231,7 @@
   {
     "id": "top_8c081315e830",
     "alternative": "top_003526692e5e",
-    "slug": "2-a-existence-and-knowability-of-god",
+    "slug": "existence-and-knowability-of-god",
     "title": "2.A Existence and knowability of God",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -2422,7 +2422,7 @@
   {
     "id": "top_a6ab38e08ca3",
     "alternative": "top_43353b61ea29",
-    "slug": "2-b-simplicity-aseity-immutability-impassibility",
+    "slug": "simplicity-aseity-immutability-impassibility",
     "title": "2.B Simplicity, aseity, immutability, impassibility",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -2627,7 +2627,7 @@
   {
     "id": "top_59ec9b4749fe",
     "alternative": "top_893a7b64cca0",
-    "slug": "2-c-absolute-and-relative-attributes",
+    "slug": "absolute-and-relative-attributes",
     "title": "2.C Absolute and relative attributes",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -2823,7 +2823,7 @@
   {
     "id": "top_0bb341578fd1",
     "alternative": "top_684dec36963b",
-    "slug": "2-d-divine-foreknowledge-providence-and-the-problem-of-evil",
+    "slug": "divine-foreknowledge-providence-and-the-problem-of-evil",
     "title": "2.D Divine foreknowledge, providence, and the problem of evil",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -3019,7 +3019,7 @@
   {
     "id": "top_35596deeb740",
     "alternative": "top_b344ce92078f",
-    "slug": "2-e-middle-knowledge-and-molinism",
+    "slug": "middle-knowledge-and-molinism",
     "title": "2.E Middle knowledge and Molinism",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -3215,7 +3215,7 @@
   {
     "id": "top_ef56eeea43c3",
     "alternative": "top_f08e4ea20a08",
-    "slug": "2-f-divine-decrees-election-and-reprobation",
+    "slug": "divine-decrees-election-and-reprobation",
     "title": "2.F Divine decrees: election and reprobation",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -3416,7 +3416,7 @@
   {
     "id": "top_7fceaa4bf7cd",
     "alternative": "top_ee6fe84660ce",
-    "slug": "2-g-theodicy-and-divine-justice",
+    "slug": "theodicy-and-divine-justice",
     "title": "2.G Theodicy and divine justice",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -3620,7 +3620,7 @@
   {
     "id": "top_d9e3a2b90ab8",
     "alternative": "top_673284643832",
-    "slug": "2-h-open-theism-and-divine-condescension",
+    "slug": "open-theism-and-divine-condescension",
     "title": "2.H Open theism and divine condescension",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -3816,7 +3816,7 @@
   {
     "id": "top_c569561e6c5c",
     "alternative": "top_34acf36f2d41",
-    "slug": "2-i-what-if-adam-had-not-sinned",
+    "slug": "what-if-adam-had-not-sinned",
     "title": "2.I What if Adam had not sinned?",
     "category": "2. Theology Proper",
     "created_at": "2025-08-16",
@@ -4008,7 +4008,7 @@
   {
     "id": "top_842a4a7549be",
     "alternative": "top_e9852bc99ca9",
-    "slug": "3-a-ontological-vs-economic-trinity",
+    "slug": "ontological-vs-economic-trinity",
     "title": "3.A Ontological vs economic Trinity",
     "category": "3. Doctrine Of The Trinity",
     "created_at": "2025-08-16",
@@ -4205,7 +4205,7 @@
   {
     "id": "top_ead51bf0fc19",
     "alternative": "top_b05291546133",
-    "slug": "3-b-biblical-basis-ot-and-nt-revelation-of-the-trinity",
+    "slug": "biblical-basis-ot-and-nt-revelation-of-the-trinity",
     "title": "3.B Biblical basis: OT and NT revelation of the Trinity",
     "category": "3. Doctrine Of The Trinity",
     "created_at": "2025-08-16",
@@ -4408,7 +4408,7 @@
   {
     "id": "top_a0bc1cbe3382",
     "alternative": "top_cd7175448e80",
-    "slug": "3-c-eternal-generation-and-spiration",
+    "slug": "eternal-generation-and-spiration",
     "title": "3.C Eternal generation and spiration",
     "category": "3. Doctrine Of The Trinity",
     "created_at": "2025-08-16",
@@ -4607,7 +4607,7 @@
   {
     "id": "top_f0438f11376d",
     "alternative": "top_3b78be73737c",
-    "slug": "3-d-filioque-and-ecumenical-creeds",
+    "slug": "filioque-and-ecumenical-creeds",
     "title": "3.D Filioque and ecumenical creeds",
     "category": "3. Doctrine Of The Trinity",
     "created_at": "2025-08-16",
@@ -4809,7 +4809,7 @@
   {
     "id": "top_4a04b146066a",
     "alternative": "top_e5e21a65467d",
-    "slug": "3-e-rahners-rule-and-barths-reformulation",
+    "slug": "rahners-rule-and-barths-reformulation",
     "title": "3.E Rahner’s Rule and Barth’s reformulation",
     "category": "3. Doctrine Of The Trinity",
     "created_at": "2025-08-16",
@@ -5010,7 +5010,7 @@
   {
     "id": "top_2faa3c3f1f60",
     "alternative": "top_13fc710eea2c",
-    "slug": "3-f-eternal-functional-subordination-debates",
+    "slug": "eternal-functional-subordination-debates",
     "title": "3.F Eternal Functional Subordination debates",
     "category": "3. Doctrine Of The Trinity",
     "created_at": "2025-08-16",
@@ -5205,7 +5205,7 @@
   {
     "id": "top_1ae090f64d92",
     "alternative": "top_bfb79031954b",
-    "slug": "3-g-van-tils-one-person-language-and-its-critique",
+    "slug": "van-tils-one-person-language-and-its-critique",
     "title": "3.G Van Til’s one person language and its critique",
     "category": "3. Doctrine Of The Trinity",
     "created_at": "2025-08-16",
@@ -5397,7 +5397,7 @@
   {
     "id": "top_f7def6611b72",
     "alternative": "top_2e3af1fe4e13",
-    "slug": "4-a-image-of-god",
+    "slug": "image-of-god",
     "title": "4.A Image of God",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -5596,7 +5596,7 @@
   {
     "id": "top_3e356f12a7e8",
     "alternative": "top_38461cca489f",
-    "slug": "4-b-days-of-creation",
+    "slug": "days-of-creation",
     "title": "4.B Days of creation",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -5788,7 +5788,7 @@
   {
     "id": "top_4562bb8d7d9e",
     "alternative": "top_271cc8b78574",
-    "slug": "4-c-science-and-scripture-genesis-111",
+    "slug": "science-and-scripture-genesis-1-11",
     "title": "4.C Science and Scripture: Genesis 1–11",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -5991,7 +5991,7 @@
   {
     "id": "top_05d674cd94ab",
     "alternative": "top_79165205c634",
-    "slug": "4-d-historicity-and-federal-headship-of-adam",
+    "slug": "historicity-and-federal-headship-of-adam",
     "title": "4.D Historicity and federal headship of Adam",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -6191,7 +6191,7 @@
   {
     "id": "top_b9288d484351",
     "alternative": "top_fee5aff52c0a",
-    "slug": "4-e-trichotomy-vs-dichotomy",
+    "slug": "trichotomy-vs-dichotomy",
     "title": "4.E Trichotomy vs dichotomy",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -6385,7 +6385,7 @@
   {
     "id": "top_751b5cc38691",
     "alternative": "top_1c427e61a471",
-    "slug": "4-f-traducianism-vs-creationism",
+    "slug": "traducianism-vs-creationism",
     "title": "4.F Traducianism vs creationism",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -6576,7 +6576,7 @@
   {
     "id": "top_70645069130b",
     "alternative": "top_68d9caf28fc8",
-    "slug": "4-g-human-nature-psychosomatic-unity",
+    "slug": "human-nature-psychosomatic-unity",
     "title": "4.G Human nature: psychosomatic unity",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -6775,7 +6775,7 @@
   {
     "id": "top_fa2d2ff2ad0b",
     "alternative": "top_3d330ec0a2cd",
-    "slug": "4-h-vocation-dominion-and-culture-mandate",
+    "slug": "vocation-dominion-and-culture-mandate",
     "title": "4.H Vocation, dominion, and culture mandate",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -6979,7 +6979,7 @@
   {
     "id": "top_d13293a2cece",
     "alternative": "top_bb02ae7ce448",
-    "slug": "4-i-eschatological-anthropology",
+    "slug": "eschatological-anthropology",
     "title": "4.I Eschatological anthropology",
     "category": "4. Anthropology & Doctrine Of Creation",
     "created_at": "2025-08-16",
@@ -7182,7 +7182,7 @@
   {
     "id": "top_0e8b884aa7cb",
     "alternative": "top_46da2e0805db",
-    "slug": "5-a-nature-and-origin-of-sin",
+    "slug": "nature-and-origin-of-sin",
     "title": "5.A Nature and origin of sin",
     "category": "5. Doctrine Of Sin",
     "created_at": "2025-08-16",
@@ -7378,7 +7378,7 @@
   {
     "id": "top_7e8a2612951f",
     "alternative": "top_4cd7ac7a6679",
-    "slug": "5-b-original-sin-and-imputation",
+    "slug": "original-sin-and-imputation",
     "title": "5.B Original sin and imputation",
     "category": "5. Doctrine Of Sin",
     "created_at": "2025-08-16",
@@ -7578,7 +7578,7 @@
   {
     "id": "top_56c2b4b21f94",
     "alternative": "top_629c6555c23a",
-    "slug": "5-c-total-depravity-and-total-inability",
+    "slug": "total-depravity-and-total-inability",
     "title": "5.C Total depravity and total inability",
     "category": "5. Doctrine Of Sin",
     "created_at": "2025-08-16",
@@ -7778,7 +7778,7 @@
   {
     "id": "top_dbb4a423f256",
     "alternative": "top_862e09501700",
-    "slug": "5-d-the-fall-and-its-consequences",
+    "slug": "the-fall-and-its-consequences",
     "title": "5.D The Fall and its consequences",
     "category": "5. Doctrine Of Sin",
     "created_at": "2025-08-16",
@@ -7976,7 +7976,7 @@
   {
     "id": "top_3cfc6df9b029",
     "alternative": "top_00942e13bee6",
-    "slug": "5-e-guilt-pollution-and-death",
+    "slug": "guilt-pollution-and-death",
     "title": "5.E Guilt, pollution, and death",
     "category": "5. Doctrine Of Sin",
     "created_at": "2025-08-16",
@@ -8178,7 +8178,7 @@
   {
     "id": "top_31f6d4fc5cf2",
     "alternative": "top_4f2c95868c97",
-    "slug": "5-f-pelagianism-semi-pelagianism-and-augustinianism",
+    "slug": "pelagianism-semi-pelagianism-and-augustinianism",
     "title": "5.F Pelagianism, Semi-Pelagianism, and Augustinianism",
     "category": "5. Doctrine Of Sin",
     "created_at": "2025-08-16",
@@ -8385,7 +8385,7 @@
   {
     "id": "top_dfb81633226f",
     "alternative": "top_201fa82e50a2",
-    "slug": "5-g-sin-and-free-will",
+    "slug": "sin-and-free-will",
     "title": "5.G Sin and free will",
     "category": "5. Doctrine Of Sin",
     "created_at": "2025-08-16",
@@ -8587,7 +8587,7 @@
   {
     "id": "top_81cb2424e15a",
     "alternative": "top_11abdcd87a15",
-    "slug": "6-a-covenant-theology-in-reformed-tradition",
+    "slug": "covenant-theology-in-reformed-tradition",
     "title": "6.A Covenant theology in Reformed tradition",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -8790,7 +8790,7 @@
   {
     "id": "top_b6fa04d6ef6b",
     "alternative": "top_2eaeda18bacb",
-    "slug": "6-b-covenant-of-redemption",
+    "slug": "covenant-of-redemption",
     "title": "6.B Covenant of Redemption",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -8989,7 +8989,7 @@
   {
     "id": "top_8fe3fe69aa08",
     "alternative": "top_8d8c73d9edb9",
-    "slug": "6-c-covenant-of-works",
+    "slug": "covenant-of-works",
     "title": "6.C Covenant of Works",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -9192,7 +9192,7 @@
   {
     "id": "top_21c3ce86a83e",
     "alternative": "top_6d4ec554f21c",
-    "slug": "6-d-covenant-of-grace",
+    "slug": "covenant-of-grace",
     "title": "6.D Covenant of Grace",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -9391,7 +9391,7 @@
   {
     "id": "top_ac07f9cc897d",
     "alternative": "top_da65a5cd95c4",
-    "slug": "6-e-biblical-covenants",
+    "slug": "biblical-covenants",
     "title": "6.E Biblical covenants",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -9590,7 +9590,7 @@
   {
     "id": "top_09c1f96def60",
     "alternative": "top_df42e33b22c2",
-    "slug": "6-f-mosaic-covenant-covenant-of-works-as-to-substance",
+    "slug": "mosaic-covenant-covenant-of-works-as-to-substance",
     "title": "6.F Mosaic covenant: covenant of works as to substance?",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -9785,7 +9785,7 @@
   {
     "id": "top_acae6fb0ac6d",
     "alternative": "top_48b52239d783",
-    "slug": "6-g-typology-and-fulfillment",
+    "slug": "typology-and-fulfillment",
     "title": "6.G Typology and fulfillment",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -9987,7 +9987,7 @@
   {
     "id": "top_d6a9cd162db3",
     "alternative": "top_1b670875dc77",
-    "slug": "6-h-confessional-formulations-of-covenant",
+    "slug": "confessional-formulations-of-covenant",
     "title": "6.H Confessional formulations of covenant",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -10186,7 +10186,7 @@
   {
     "id": "top_14f8205e146c",
     "alternative": "top_01676020e689",
-    "slug": "6-i-federal-vision-monocovenantalism",
+    "slug": "federal-vision-monocovenantalism",
     "title": "6.I Federal Vision, monocovenantalism",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -10390,7 +10390,7 @@
   {
     "id": "top_60a07ef7da83",
     "alternative": "top_3c7cc44b670c",
-    "slug": "6-j-dispensationalism-and-progressive-covenantalism",
+    "slug": "dispensationalism-and-progressive-covenantalism",
     "title": "6.J Dispensationalism and progressive covenantalism",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -10591,7 +10591,7 @@
   {
     "id": "top_fbddcff1d6f6",
     "alternative": "top_7ae8194b15e0",
-    "slug": "6-k-klinean-covenant-theology-and-intrusion-ethics",
+    "slug": "klinean-covenant-theology-and-intrusion-ethics",
     "title": "6.K Klinean covenant theology and intrusion ethics",
     "category": "6. Covenant Theology",
     "created_at": "2025-08-16",
@@ -10795,7 +10795,7 @@
   {
     "id": "top_06a687ae0e11",
     "alternative": "top_eea0c3b508f2",
-    "slug": "7-a-eternal-sonship-and-incarnation",
+    "slug": "eternal-sonship-and-incarnation",
     "title": "7.A Eternal Sonship and Incarnation",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -10998,7 +10998,7 @@
   {
     "id": "top_5917eae5d42b",
     "alternative": "top_c093d3026400",
-    "slug": "7-b-chalcedonian-definition-and-two-natures-doctrine",
+    "slug": "chalcedonian-definition-and-two-natures-doctrine",
     "title": "7.B Chalcedonian Definition and two-natures doctrine",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -11200,7 +11200,7 @@
   {
     "id": "top_1a5f902d7e5e",
     "alternative": "top_4199a8c5b0cb",
-    "slug": "7-c-hypostatic-union",
+    "slug": "hypostatic-union",
     "title": "7.C Hypostatic union",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -11398,7 +11398,7 @@
   {
     "id": "top_fca2b1c0505c",
     "alternative": "top_322e041ae9de",
-    "slug": "7-d-communicatio-idiomatum",
+    "slug": "communicatio-idiomatum",
     "title": "7.D Communicatio idiomatum",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -11598,7 +11598,7 @@
   {
     "id": "top_25865b61d590",
     "alternative": "top_e2f76f607f9b",
-    "slug": "7-e-kenosis-theories-and-critiques",
+    "slug": "kenosis-theories-and-critiques",
     "title": "7.E Kenosis theories and critiques",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -11796,7 +11796,7 @@
   {
     "id": "top_49542353d68b",
     "alternative": "top_4b39be29197d",
-    "slug": "7-f-impeccability-of-christ",
+    "slug": "impeccability-of-christ",
     "title": "7.F Impeccability of Christ",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -11990,7 +11990,7 @@
   {
     "id": "top_e6fbe497576e",
     "alternative": "top_422341c0cc02",
-    "slug": "7-g-christs-active-and-passive-obedience",
+    "slug": "christs-active-and-passive-obedience",
     "title": "7.G Christ’s active and passive obedience",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -12188,7 +12188,7 @@
   {
     "id": "top_5d2d02d30dbf",
     "alternative": "top_1e3bd157b5c6",
-    "slug": "7-h-munus-triplex",
+    "slug": "munus-triplex",
     "title": "7.H Munus triplex",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -12386,7 +12386,7 @@
   {
     "id": "top_e9f9e46d28c1",
     "alternative": "top_4ba86ff1919c",
-    "slug": "7-i-atonement-necessity-extent-and-theories",
+    "slug": "atonement-necessity-extent-and-theories",
     "title": "7.I Atonement: necessity, extent, and theories",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -12587,7 +12587,7 @@
   {
     "id": "top_2b12ab17ca1f",
     "alternative": "top_72bf0e148668",
-    "slug": "7-j-christs-messianic-consciousness-and-kingdom",
+    "slug": "christs-messianic-consciousness-and-kingdom",
     "title": "7.J Christ’s messianic consciousness and Kingdom",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -12789,7 +12789,7 @@
   {
     "id": "top_a08c7eb01fa2",
     "alternative": "top_16a17e86dce8",
-    "slug": "7-k-christ-in-ot-and-nt",
+    "slug": "christ-in-ot-and-nt",
     "title": "7.K Christ in OT and NT",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -12994,7 +12994,7 @@
   {
     "id": "top_b12aa43d48c0",
     "alternative": "top_b9b966f1c5e8",
-    "slug": "7-l-law-gospel-distinction",
+    "slug": "law-gospel-distinction",
     "title": "7.L Law-Gospel distinction",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -13196,7 +13196,7 @@
   {
     "id": "top_93f7217bd068",
     "alternative": "top_1bdc0d89b384",
-    "slug": "7-m-pactum-salutis-and-christ-as-covenant-head",
+    "slug": "pactum-salutis-and-christ-as-covenant-head",
     "title": "7.M Pactum salutis and Christ as covenant head",
     "category": "7. Christology",
     "created_at": "2025-08-16",
@@ -13395,7 +13395,7 @@
   {
     "id": "top_ae768ef7125f",
     "alternative": "top_6d7cd211218d",
-    "slug": "8-a-historia-salutis-vs-ordo-salutis",
+    "slug": "historia-salutis-vs-ordo-salutis",
     "title": "8.A Historia salutis vs ordo salutis",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -13597,7 +13597,7 @@
   {
     "id": "top_858357de003a",
     "alternative": "top_3d8f1492497a",
-    "slug": "8-b-union-with-christ",
+    "slug": "union-with-christ",
     "title": "8.B Union with Christ",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -13799,7 +13799,7 @@
   {
     "id": "top_ffaeb0af5519",
     "alternative": "top_d8d1a7d8da42",
-    "slug": "8-c-regeneration-and-effectual-calling",
+    "slug": "regeneration-and-effectual-calling",
     "title": "8.C Regeneration and effectual calling",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -13997,7 +13997,7 @@
   {
     "id": "top_2218757d871e",
     "alternative": "top_3ad8a6960ae8",
-    "slug": "8-d-faith-and-repentance",
+    "slug": "faith-and-repentance",
     "title": "8.D Faith and repentance",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -14203,7 +14203,7 @@
   {
     "id": "top_35f945a8703a",
     "alternative": "top_97e99a6138f7",
-    "slug": "8-e-justification-forensic-imputation-npp-critiques",
+    "slug": "justification-forensic-imputation-npp-critiques",
     "title": "8.E Justification: forensic, imputation, NPP critiques",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -14404,7 +14404,7 @@
   {
     "id": "top_a76905abad5a",
     "alternative": "top_0ff071e979e2",
-    "slug": "8-f-adoption",
+    "slug": "adoption",
     "title": "8.F Adoption",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -14603,7 +14603,7 @@
   {
     "id": "top_de5883e6a1c5",
     "alternative": "top_13264745d909",
-    "slug": "8-g-sanctification-definitive-and-progressive",
+    "slug": "sanctification-definitive-and-progressive",
     "title": "8.G Sanctification: definitive and progressive",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -14802,7 +14802,7 @@
   {
     "id": "top_d83fcc9d8eaa",
     "alternative": "top_255160f78efa",
-    "slug": "8-h-assurance-and-perseverance",
+    "slug": "assurance-and-perseverance",
     "title": "8.H Assurance and perseverance",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -15004,7 +15004,7 @@
   {
     "id": "top_ec2857b18ab9",
     "alternative": "top_0f3bdfb82198",
-    "slug": "8-i-common-grace-and-preparatory-grace",
+    "slug": "common-grace-and-preparatory-grace",
     "title": "8.I Common grace and preparatory grace",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -15208,7 +15208,7 @@
   {
     "id": "top_64e2f64bb983",
     "alternative": "top_9f5d068e95b0",
-    "slug": "8-j-good-works-and-merit-in-the-covenant-of-grace",
+    "slug": "good-works-and-merit-in-the-covenant-of-grace",
     "title": "8.J Good works and merit in the covenant of grace",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -15411,7 +15411,7 @@
   {
     "id": "top_b403ea981d4d",
     "alternative": "top_09d3330441f3",
-    "slug": "8-k-sacraments-as-means-of-grace",
+    "slug": "sacraments-as-means-of-grace",
     "title": "8.K Sacraments as means of grace",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -15612,7 +15612,7 @@
   {
     "id": "top_4038306a84a7",
     "alternative": "top_f688748eafcf",
-    "slug": "8-l-federal-vision-and-justification-by-faith",
+    "slug": "federal-vision-and-justification-by-faith",
     "title": "8.L Federal Vision and justification by faith",
     "category": "8. Soteriology",
     "created_at": "2025-08-16",
@@ -15813,7 +15813,7 @@
   {
     "id": "top_5f8935ddef79",
     "alternative": "top_35db27905d60",
-    "slug": "9-a-person-and-deity-of-the-holy-spirit",
+    "slug": "person-and-deity-of-the-holy-spirit",
     "title": "9.A Person and deity of the Holy Spirit",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -16011,7 +16011,7 @@
   {
     "id": "top_3b351d5a545c",
     "alternative": "top_3b4806ea1ec3",
-    "slug": "9-b-spirits-role-in-christs-ministry-and-resurrection",
+    "slug": "spirits-role-in-christs-ministry-and-resurrection",
     "title": "9.B Spirit’s role in Christ’s ministry and resurrection",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -16211,7 +16211,7 @@
   {
     "id": "top_d8d4e3eade79",
     "alternative": "top_740834dafb71",
-    "slug": "9-c-regeneration-and-indwelling",
+    "slug": "regeneration-and-indwelling",
     "title": "9.C Regeneration and indwelling",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -16413,7 +16413,7 @@
   {
     "id": "top_75286856d56e",
     "alternative": "top_3b203e8bd4c1",
-    "slug": "9-d-spiritual-gifts-and-sanctification",
+    "slug": "spiritual-gifts-and-sanctification",
     "title": "9.D Spiritual gifts and sanctification",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -16615,7 +16615,7 @@
   {
     "id": "top_c28e6ab43b2d",
     "alternative": "top_e2cd481f2396",
-    "slug": "9-e-baptism-of-the-holy-spirit",
+    "slug": "baptism-of-the-holy-spirit",
     "title": "9.E Baptism of the Holy Spirit",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -16817,7 +16817,7 @@
   {
     "id": "top_92604f919605",
     "alternative": "top_3fe929380fc3",
-    "slug": "9-f-continuationism-vs-cessationism",
+    "slug": "continuationism-vs-cessationism",
     "title": "9.F Continuationism vs cessationism",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -17014,7 +17014,7 @@
   {
     "id": "top_ce369aff319a",
     "alternative": "top_2034dcda04dc",
-    "slug": "9-g-pentecostalism-and-reformed-response",
+    "slug": "pentecostalism-and-reformed-response",
     "title": "9.G Pentecostalism and Reformed response",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -17217,7 +17217,7 @@
   {
     "id": "top_d158aad0de85",
     "alternative": "top_6420ccecaf0e",
-    "slug": "9-h-spirit-and-union-with-christ",
+    "slug": "spirit-and-union-with-christ",
     "title": "9.H Spirit and union with Christ",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -17421,7 +17421,7 @@
   {
     "id": "top_edf551402247",
     "alternative": "top_8e98edd5580f",
-    "slug": "9-i-the-spirit-in-redemptive-history",
+    "slug": "the-spirit-in-redemptive-history",
     "title": "9.I The Spirit in redemptive history",
     "category": "9. Pneumatology",
     "created_at": "2025-08-16",
@@ -17625,9 +17625,9 @@
   {
     "id": "top_c712f49a20c9",
     "alternative": "top_6892b8cdd310",
-    "slug": "10-a-nature-and-marks-of-the-church",
+    "slug": "nature-and-marks-of-the-church",
     "title": "10.A Nature and marks of the Church",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -17824,9 +17824,9 @@
   {
     "id": "top_9b743976a17c",
     "alternative": "top_6b56443dbbae",
-    "slug": "10-b-visible-and-invisible-church-distinction",
+    "slug": "visible-and-invisible-church-distinction",
     "title": "10.B Visible and invisible Church distinction",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -18022,9 +18022,9 @@
   {
     "id": "top_2be42d1a0a05",
     "alternative": "top_b88ab1502db3",
-    "slug": "10-c-one-holy-catholic-apostolic-church",
+    "slug": "one-holy-catholic-apostolic-church",
     "title": "10.C One, holy, catholic, apostolic Church",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -18225,9 +18225,9 @@
   {
     "id": "top_95f6db90a829",
     "alternative": "top_5a140c139240",
-    "slug": "10-d-church-government-presbyterian-polity-offices-discipline",
+    "slug": "church-government-presbyterian-polity-offices-discipline",
     "title": "10.D Church government: Presbyterian polity, offices, discipline",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -18422,9 +18422,9 @@
   {
     "id": "top_fad3d06fe699",
     "alternative": "top_39b85f50ae52",
-    "slug": "10-e-means-of-grace-preaching-sacraments-prayer",
+    "slug": "means-of-grace-preaching-sacraments-prayer",
     "title": "10.E Means of grace: preaching, sacraments, prayer",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -18628,9 +18628,9 @@
   {
     "id": "top_6cf266588fcf",
     "alternative": "top_347aef9ef2c9",
-    "slug": "10-f-baptism-mode-infant-vs-believers-efficacy",
+    "slug": "baptism-mode-infant-vs-believers-efficacy",
     "title": "10.F Baptism: mode, infant vs believer’s, efficacy",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -18822,9 +18822,9 @@
   {
     "id": "top_73cbf1a5f0bd",
     "alternative": "top_211a1e5d1ed9",
-    "slug": "10-g-lords-supper-presence-of-christ-fencing-and-admission",
+    "slug": "lords-supper-presence-of-christ-fencing-and-admission",
     "title": "10.G Lord’s Supper: presence of Christ, fencing and admission",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -19022,9 +19022,9 @@
   {
     "id": "top_98b75f059a25",
     "alternative": "top_d7de6f672e1c",
-    "slug": "10-h-reformation-ecclesiology",
+    "slug": "reformation-ecclesiology",
     "title": "10.H Reformation ecclesiology",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -19225,9 +19225,9 @@
   {
     "id": "top_5ee2943a1c10",
     "alternative": "top_b5e6285e9fbc",
-    "slug": "10-i-church-and-kingdom",
+    "slug": "church-and-kingdom",
     "title": "10.I Church and Kingdom",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -19428,9 +19428,9 @@
   {
     "id": "top_98b921136462",
     "alternative": "top_4044958db32e",
-    "slug": "10-j-church-and-state-relations",
+    "slug": "church-and-state-relations",
     "title": "10.J Church and State relations",
-    "category": "10. Ecclesiology & Sacraments",
+    "category": "10. 10. Ecclesiology & Sacraments",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -19630,9 +19630,9 @@
   {
     "id": "top_a47c49794b18",
     "alternative": "top_0e314a2b6350",
-    "slug": "11-a-resurrection-and-new-creation",
+    "slug": "resurrection-and-new-creation",
     "title": "11.A Resurrection and new creation",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -19834,9 +19834,9 @@
   {
     "id": "top_99edd6956d50",
     "alternative": "top_7c0f56227d91",
-    "slug": "11-b-individual-and-cosmic-eschatology",
+    "slug": "individual-and-cosmic-eschatology",
     "title": "11.B Individual and cosmic eschatology",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -20038,9 +20038,9 @@
   {
     "id": "top_c44b9de77e53",
     "alternative": "top_8fd9d3ffc0a4",
-    "slug": "11-c-delay-of-the-parousia",
+    "slug": "delay-of-the-parousia",
     "title": "11.C Delay of the Parousia",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -20236,9 +20236,9 @@
   {
     "id": "top_63d8723083d3",
     "alternative": "top_9ecb9a2088dc",
-    "slug": "11-d-realized-vs-future-eschatology",
+    "slug": "realized-vs-future-eschatology",
     "title": "11.D Realized vs future eschatology",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -20438,9 +20438,9 @@
   {
     "id": "top_bcdbe3b27a7f",
     "alternative": "top_86e31f98edbd",
-    "slug": "11-e-antichrist-and-man-of-lawlessness",
+    "slug": "antichrist-and-man-of-lawlessness",
     "title": "11.E Antichrist and man of lawlessness",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -20641,9 +20641,9 @@
   {
     "id": "top_8d8955b5310f",
     "alternative": "top_5050b30140fd",
-    "slug": "11-f-romans-11-and-israels-future",
+    "slug": "romans-11-and-israels-future",
     "title": "11.F Romans 11 and Israel’s future",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -20836,9 +20836,9 @@
   {
     "id": "top_d31900b00a67",
     "alternative": "top_57a8b5b4806e",
-    "slug": "11-g-revelation-20-and-the-millennium",
+    "slug": "revelation-20-and-the-millennium",
     "title": "11.G Revelation 20 and the millennium",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -21030,9 +21030,9 @@
   {
     "id": "top_cfca4bcdf259",
     "alternative": "top_56f4ec9d1de4",
-    "slug": "11-h-millennial-views",
+    "slug": "millennial-views",
     "title": "11.H Millennial views",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -21226,9 +21226,9 @@
   {
     "id": "top_59a9b4160c7c",
     "alternative": "top_2d12a49a7021",
-    "slug": "11-i-final-judgment-and-eternal-states",
+    "slug": "final-judgment-and-eternal-states",
     "title": "11.I Final judgment and eternal states",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -21428,9 +21428,9 @@
   {
     "id": "top_4d8a12d40876",
     "alternative": "top_fdbcfac72ce0",
-    "slug": "11-j-new-heavens-and-new-earth",
+    "slug": "new-heavens-and-new-earth",
     "title": "11.J New heavens and new earth",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [
@@ -21626,9 +21626,9 @@
   {
     "id": "top_41c8b461951d",
     "alternative": "top_c09dd0fbe590",
-    "slug": "11-k-christ-and-culture-in-eschatological-perspective",
+    "slug": "christ-and-culture-in-eschatological-perspective",
     "title": "11.K Christ and culture in eschatological perspective",
-    "category": "11. Eschatology",
+    "category": "11. 11. Eschatology",
     "created_at": "2025-08-16",
     "updated_at": "2025-08-16",
     "work_ids": [

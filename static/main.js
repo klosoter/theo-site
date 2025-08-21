@@ -371,6 +371,7 @@ function TopicPage({slug, datasets}) {
 
     const outlinesForTheo = (theologian_id) => {
         const tEntry = datasets.byTheo[theologian_id];
+        console.log(tEntry);
         if (!tEntry) return [];
         const groups = tEntry.outlines_by_topic_category || {};
         return Object.values(groups).flat().filter(o => o.topic_id === topic.id || o.topic_slug === topic.slug);
@@ -498,6 +499,7 @@ function TopicPage({slug, datasets}) {
             <div style={{marginTop: 18}}>
                 <h3>Outlines</h3>
                 <div className="grid" style={{gridTemplateColumns: '1fr'}}>
+
                     {entry.theologians.map(t => (
                         <div key={t.theologian_id} className="card">
                             <div className="section-head" onClick={(e) => {
@@ -557,6 +559,7 @@ function TheologianPage({slug, datasets}) {
 
     const entry = datasets.byTheo[theo.id] || {};
     const groups = entry.outlines_by_topic_category || {};
+    console.log(groups);
 
     // Canonical work buckets with counts already sorted by the backend
     const canonList = datasets.canonCountsTheo[theo.id] || []; // [{id,count}]

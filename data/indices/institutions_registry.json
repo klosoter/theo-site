@@ -1,0 +1,1185 @@
+{
+  "kind": "institutions",
+  "items": {
+    "inst_86c227e7501f": {
+      "name": "Elmhurst University",
+      "aliases": []
+    },
+    "inst_cc082bd7a711": {
+      "name": "Seton Hall University",
+      "aliases": []
+    },
+    "inst_72dd2c453edc": {
+      "name": "Princeton Theological Seminary",
+      "aliases": []
+    },
+    "inst_5164e4f11c9a": {
+      "name": "University of Edinburgh",
+      "aliases": []
+    },
+    "inst_07860441e42d": {
+      "name": "Highland Theological College",
+      "aliases": []
+    },
+    "inst_096b7a31b86e": {
+      "name": "Free University of Amsterdam",
+      "aliases": []
+    },
+    "inst_a35702316fa2": {
+      "name": "Biola University",
+      "aliases": []
+    },
+    "inst_4484b8868a38": {
+      "name": "Gordon-Conwell Theological Seminary",
+      "aliases": []
+    },
+    "inst_bf4bf7a0144d": {
+      "name": "Redeemer University College",
+      "aliases": []
+    },
+    "inst_39374437b152": {
+      "name": "Institute for Christian Studies",
+      "aliases": []
+    },
+    "inst_074a628a9fb4": {
+      "name": "Mid-America Reformed Seminary",
+      "aliases": []
+    },
+    "inst_90d874bcbe52": {
+      "name": "University of Aberdeen",
+      "aliases": []
+    },
+    "inst_78d2edbc9455": {
+      "name": "Oklahoma Baptist University",
+      "aliases": []
+    },
+    "inst_8460ad6abff6": {
+      "name": "New Orleans Baptist Theological Seminary",
+      "aliases": []
+    },
+    "inst_6fed25eb2347": {
+      "name": "University of Bonn",
+      "aliases": []
+    },
+    "inst_46aca5fd7363": {
+      "name": "University of Göttingen",
+      "aliases": []
+    },
+    "inst_292931ab0ace": {
+      "name": "Trinity College, Bristol",
+      "aliases": []
+    },
+    "inst_01ff529d4e7e": {
+      "name": "Wycliffe Hall, Oxford",
+      "aliases": []
+    },
+    "inst_38652628acf1": {
+      "name": "University of Oxford",
+      "aliases": []
+    },
+    "inst_c9f343c698cc": {
+      "name": "King's College London",
+      "aliases": []
+    },
+    "inst_faa2856638ca": {
+      "name": "University of Birmingham",
+      "aliases": []
+    },
+    "inst_9565dec515d2": {
+      "name": "University of Notre Dame",
+      "aliases": []
+    },
+    "inst_391e5b911b5e": {
+      "name": "Calvin University",
+      "aliases": []
+    },
+    "inst_d428ac5f04e6": {
+      "name": "Free Church of Scotland",
+      "aliases": []
+    },
+    "inst_b78e7695fa79": {
+      "name": "Center for Cultural Leadership",
+      "aliases": []
+    },
+    "inst_33684beaa2fd": {
+      "name": "Creation Ministries International",
+      "aliases": []
+    },
+    "inst_9332049823a2": {
+      "name": "Institute for Creation Research",
+      "aliases": []
+    },
+    "inst_e50121367a3a": {
+      "name": "Horizon College and Seminary",
+      "aliases": []
+    },
+    "inst_cb8b7981ae41": {
+      "name": "University of Durham",
+      "aliases": []
+    },
+    "inst_009ce3b1b2a9": {
+      "name": "University of St Andrews",
+      "aliases": []
+    },
+    "inst_9a181e1f9ff4": {
+      "name": "University of Gloucestershire",
+      "aliases": []
+    },
+    "inst_fa76e7885e2d": {
+      "name": "University of Sheffield",
+      "aliases": []
+    },
+    "inst_5ec8539036af": {
+      "name": "Hong Kong Baptist University",
+      "aliases": []
+    },
+    "inst_647a959abf37": {
+      "name": "University of London",
+      "aliases": []
+    },
+    "inst_a5e07493c14b": {
+      "name": "Westminster Theological Seminary",
+      "aliases": []
+    },
+    "inst_a737edb3a194": {
+      "name": "Ridley College",
+      "aliases": []
+    },
+    "inst_8d40a25ebf72": {
+      "name": "Moore Theological College",
+      "aliases": []
+    },
+    "inst_8a60d0571b04": {
+      "name": "Pittsburgh Theological Seminary",
+      "aliases": []
+    },
+    "inst_5b8d35446597": {
+      "name": "Texas Tech University",
+      "aliases": []
+    },
+    "inst_35f04c2987b6": {
+      "name": "King's Church London",
+      "aliases": []
+    },
+    "inst_a951eb3c314d": {
+      "name": "Fuller Theological Seminary",
+      "aliases": []
+    },
+    "inst_2b4d555b3b51": {
+      "name": "Christianity Today",
+      "aliases": []
+    },
+    "inst_19bb21588c0a": {
+      "name": "Canterbury",
+      "aliases": []
+    },
+    "inst_a154eb771eea": {
+      "name": "The King's College",
+      "aliases": []
+    },
+    "inst_2d897139054a": {
+      "name": "University of Nottingham",
+      "aliases": []
+    },
+    "inst_5df251aa341d": {
+      "name": "University of Chester",
+      "aliases": []
+    },
+    "inst_7ea3009f63f7": {
+      "name": "Calvin Theological Seminary",
+      "aliases": []
+    },
+    "inst_7362fe6bf64f": {
+      "name": "London School of Theology",
+      "aliases": []
+    },
+    "inst_4b75feeb7542": {
+      "name": "Houston Baptist University",
+      "aliases": []
+    },
+    "inst_114dd9f6a8b9": {
+      "name": "Asbury Theological Seminary",
+      "aliases": []
+    },
+    "inst_97eedfa74b9a": {
+      "name": "Jewish Theological Seminary of America",
+      "aliases": []
+    },
+    "inst_e5920f55e892": {
+      "name": "Reformed Theological Seminary",
+      "aliases": []
+    },
+    "inst_4c0494351fda": {
+      "name": "Charles Sturt University",
+      "aliases": []
+    },
+    "inst_e3f4e0fcd148": {
+      "name": "United Theological College",
+      "aliases": []
+    },
+    "inst_f56db3b07c7b": {
+      "name": "Liberty University",
+      "aliases": []
+    },
+    "inst_ee6357502403": {
+      "name": "Southern Baptist Theological Seminary",
+      "aliases": []
+    },
+    "inst_ae79700fb717": {
+      "name": "Notre Dame Seminary",
+      "aliases": []
+    },
+    "inst_b11f7da05d6e": {
+      "name": "Augustine Institute",
+      "aliases": []
+    },
+    "inst_1a6505b4ef64": {
+      "name": "Rutgers University",
+      "aliases": []
+    },
+    "inst_b1f34edc0741": {
+      "name": "Dallas Theological Seminary",
+      "aliases": []
+    },
+    "inst_c284995ee563": {
+      "name": "Regent College",
+      "aliases": []
+    },
+    "inst_cb8f2d095cc7": {
+      "name": "Vrije Universiteit Amsterdam",
+      "aliases": []
+    },
+    "inst_8a26159b8e22": {
+      "name": "Calvin College",
+      "aliases": []
+    },
+    "inst_014762e6bcb7": {
+      "name": "University of Glasgow",
+      "aliases": []
+    },
+    "inst_13156236ac48": {
+      "name": "Cambridge University",
+      "aliases": []
+    },
+    "inst_6b014b07406a": {
+      "name": "University of Hong Kong",
+      "aliases": []
+    },
+    "inst_913c46cdcdbb": {
+      "name": "Durham University",
+      "aliases": []
+    },
+    "inst_8c403d00286b": {
+      "name": "Duke University",
+      "aliases": []
+    },
+    "inst_83c94185cc09": {
+      "name": "University of Cambridge",
+      "aliases": []
+    },
+    "inst_da4ca59c081c": {
+      "name": "Capitol Hill Baptist Church",
+      "aliases": []
+    },
+    "inst_63083355ae9c": {
+      "name": "Augsburg University",
+      "aliases": []
+    },
+    "inst_3d268b68c418": {
+      "name": "Southeastern Baptist Theological Seminary",
+      "aliases": []
+    },
+    "inst_8aa07b7c0d62": {
+      "name": "Trinity Evangelical Divinity School",
+      "aliases": []
+    },
+    "inst_b6cacefa7e96": {
+      "name": "Covenant Theological Seminary",
+      "aliases": []
+    },
+    "inst_f1c41711c0ec": {
+      "name": "Westminster Seminary California",
+      "aliases": []
+    },
+    "inst_5fdc090e2ea0": {
+      "name": "Yale Divinity School",
+      "aliases": []
+    },
+    "inst_4015b10fd319": {
+      "name": "Moody Bible Institute",
+      "aliases": []
+    },
+    "inst_e8e295ce7c45": {
+      "name": "University of Manchester",
+      "aliases": []
+    },
+    "inst_2891cca3e005": {
+      "name": "Grove City College",
+      "aliases": []
+    },
+    "inst_68727a90d90d": {
+      "name": "University of Heidelberg",
+      "aliases": []
+    },
+    "inst_9b55aa967943": {
+      "name": "Oxford University",
+      "aliases": []
+    },
+    "inst_7d18067ab55d": {
+      "name": "University of North Carolina at Chapel Hill",
+      "aliases": []
+    },
+    "inst_15c079bc4308": {
+      "name": "All Nations Christian College",
+      "aliases": []
+    },
+    "inst_eb4b15de0343": {
+      "name": "Langham Partnership",
+      "aliases": []
+    },
+    "inst_2b47110f319f": {
+      "name": "University of Otago",
+      "aliases": []
+    },
+    "inst_cf3e6b227834": {
+      "name": "California Baptist University",
+      "aliases": []
+    },
+    "inst_a0cfb68294c2": {
+      "name": "Northeastern Seminary",
+      "aliases": []
+    },
+    "inst_eece4992f06a": {
+      "name": "McMaster Divinity College",
+      "aliases": []
+    },
+    "inst_3bc4106a8288": {
+      "name": "Southwestern Baptist Theological Seminary",
+      "aliases": []
+    },
+    "inst_35fbcaa16e1b": {
+      "name": "Tyndale University",
+      "aliases": []
+    },
+    "inst_a052d04776c2": {
+      "name": "Heritage Theological Seminary",
+      "aliases": []
+    },
+    "inst_212850fbb60a": {
+      "name": "Acadia Divinity College",
+      "aliases": []
+    },
+    "inst_30f5ae1402c0": {
+      "name": "Redeemer University",
+      "aliases": []
+    },
+    "inst_20e2d1727905": {
+      "name": "Trinity Western University",
+      "aliases": []
+    },
+    "inst_2415aa8a3c1f": {
+      "name": "Denver Seminary",
+      "aliases": []
+    },
+    "inst_afa5b14b69af": {
+      "name": "Sterling College",
+      "aliases": []
+    },
+    "inst_87dd9e79060e": {
+      "name": "Anderson University",
+      "aliases": []
+    },
+    "inst_7b678ed59929": {
+      "name": "Marquette University",
+      "aliases": []
+    },
+    "inst_21e222fd635e": {
+      "name": "Garrett-Evangelical Theological Seminary",
+      "aliases": []
+    },
+    "inst_b4e139dbc11f": {
+      "name": "Hillsdale College",
+      "aliases": []
+    },
+    "inst_56a624de076f": {
+      "name": "State University of New York at Fredonia",
+      "aliases": []
+    },
+    "inst_874c1d129808": {
+      "name": "Seattle Pacific University",
+      "aliases": []
+    },
+    "inst_993cc4822a0e": {
+      "name": "Wheaton College",
+      "aliases": []
+    },
+    "inst_11cc9a191581": {
+      "name": "Oak Hill College",
+      "aliases": []
+    },
+    "inst_cf2554fa1444": {
+      "name": "Crosslands Forum",
+      "aliases": []
+    },
+    "inst_47107ff2eae5": {
+      "name": "University of Virginia",
+      "aliases": []
+    },
+    "inst_0d91715cb1f4": {
+      "name": "St. Louis University",
+      "aliases": []
+    },
+    "inst_6f545bf09b83": {
+      "name": "Fordham University",
+      "aliases": []
+    },
+    "inst_7178fac52620": {
+      "name": "Grand Rapids Theological Seminary",
+      "aliases": []
+    },
+    "inst_a4a2a6043e15": {
+      "name": "The King's University",
+      "aliases": []
+    },
+    "inst_959b7cc98544": {
+      "name": "Messiah University",
+      "aliases": []
+    },
+    "inst_d434212ae01e": {
+      "name": "BioLogos",
+      "aliases": []
+    },
+    "inst_d27a0d7f2214": {
+      "name": "Faraday Institute for Science and Religion",
+      "aliases": []
+    },
+    "inst_12c3dd5f9333": {
+      "name": "University of Alberta",
+      "aliases": []
+    },
+    "inst_689aef05bc9a": {
+      "name": "St. Joseph's College",
+      "aliases": []
+    },
+    "inst_e0c30c15159f": {
+      "name": "Free Church of Scotland College",
+      "aliases": []
+    },
+    "inst_1ab559c95a2f": {
+      "name": "McGill University",
+      "aliases": []
+    },
+    "inst_0b834f154b1f": {
+      "name": "New Saint Andrews College",
+      "aliases": []
+    },
+    "inst_99a5ed558792": {
+      "name": "University of Tübingen",
+      "aliases": []
+    },
+    "inst_75f2fcbb311b": {
+      "name": "University of Basel",
+      "aliases": []
+    },
+    "inst_6dce04fbe51b": {
+      "name": "Saint Louis University",
+      "aliases": []
+    },
+    "inst_ae69a5c6de79": {
+      "name": "University of Zurich",
+      "aliases": []
+    },
+    "inst_9af957561be6": {
+      "name": "University of Munich",
+      "aliases": []
+    },
+    "inst_e6120893e34b": {
+      "name": "Gregorian University",
+      "aliases": []
+    },
+    "inst_45eb103b9f52": {
+      "name": "Geneva College",
+      "aliases": []
+    },
+    "inst_34beaa088501": {
+      "name": "Union Theological Seminary",
+      "aliases": []
+    },
+    "inst_38f27a625bea": {
+      "name": "Virginia Theological Seminary",
+      "aliases": []
+    },
+    "inst_794b58c40b54": {
+      "name": "University of Geneva",
+      "aliases": []
+    },
+    "inst_7be07092e1ee": {
+      "name": "Vanguard University",
+      "aliases": []
+    },
+    "inst_5a6cf45aee52": {
+      "name": "University of Halle",
+      "aliases": []
+    },
+    "inst_f6f9f5655314": {
+      "name": "University of Berlin",
+      "aliases": []
+    },
+    "inst_637b50928890": {
+      "name": "Union School of Theology",
+      "aliases": []
+    },
+    "inst_4a6dbdaf7be0": {
+      "name": "Beeson Divinity School",
+      "aliases": []
+    },
+    "inst_b0ecb6fb08ae": {
+      "name": "Pontifical Gregorian University",
+      "aliases": []
+    },
+    "inst_f91f79b7a54c": {
+      "name": "University of Fribourg",
+      "aliases": []
+    },
+    "inst_2142575a70dd": {
+      "name": "University of Bristol",
+      "aliases": []
+    },
+    "inst_b270c74db069": {
+      "name": "Ambrose University",
+      "aliases": []
+    },
+    "inst_5f1bf89bc842": {
+      "name": "Monash University",
+      "aliases": []
+    },
+    "inst_78be604a5801": {
+      "name": "Trinity International University",
+      "aliases": []
+    },
+    "inst_2458799a12cf": {
+      "name": "University of Mississippi",
+      "aliases": []
+    },
+    "inst_35bbbf2b16b7": {
+      "name": "Bethel University",
+      "aliases": []
+    },
+    "inst_3066c4c7f311": {
+      "name": "Yale University",
+      "aliases": []
+    },
+    "inst_5e95b6d4d50f": {
+      "name": "Sorbonne University",
+      "aliases": []
+    },
+    "inst_755b03064b46": {
+      "name": "New York University",
+      "aliases": []
+    },
+    "inst_61983cb7e657": {
+      "name": "Nashotah House",
+      "aliases": []
+    },
+    "inst_64862a1d226a": {
+      "name": "Covenant College",
+      "aliases": []
+    },
+    "inst_c2bccefd1f7c": {
+      "name": "University of Regensburg",
+      "aliases": []
+    },
+    "inst_ecdaebea732c": {
+      "name": "Jesuit Order",
+      "aliases": []
+    },
+    "inst_4c6ee16e7d6d": {
+      "name": "Grossmünster",
+      "aliases": []
+    },
+    "inst_e7164df39dd8": {
+      "name": "Faculté Libre de Théologie Évangélique",
+      "aliases": []
+    },
+    "inst_dc3038c79c14": {
+      "name": "Theological University of Kampen",
+      "aliases": []
+    },
+    "inst_592f8488b790": {
+      "name": "Theological University of Apeldoorn",
+      "aliases": []
+    },
+    "inst_04569b722eb5": {
+      "name": "University of Franeker",
+      "aliases": []
+    },
+    "inst_d1a82447d9f8": {
+      "name": "University of Utrecht",
+      "aliases": []
+    },
+    "inst_11d03e6f2e9c": {
+      "name": "University of Leiden",
+      "aliases": []
+    },
+    "inst_df8a7c16bc4c": {
+      "name": "Reasons to Believe",
+      "aliases": []
+    },
+    "inst_85e0beb2096c": {
+      "name": "Leiden University",
+      "aliases": []
+    },
+    "inst_da36995901a8": {
+      "name": "Union University",
+      "aliases": []
+    },
+    "inst_435bcb472d3e": {
+      "name": "Catholic University of America",
+      "aliases": []
+    },
+    "inst_cbfd3d1c147a": {
+      "name": "St John's College, Nottingham",
+      "aliases": []
+    },
+    "inst_ac87b6294473": {
+      "name": "Bluffton University",
+      "aliases": []
+    },
+    "inst_9bef6f90a9d1": {
+      "name": "Queensland Theological College",
+      "aliases": []
+    },
+    "inst_1ca56a826ad0": {
+      "name": "Roberts Wesleyan University",
+      "aliases": []
+    },
+    "inst_c7ddcad70280": {
+      "name": "Western Theological Seminary",
+      "aliases": []
+    },
+    "inst_90090a2b2655": {
+      "name": "Talbot School of Theology",
+      "aliases": []
+    },
+    "inst_497fb25fdbab": {
+      "name": "Cairn University",
+      "aliases": []
+    },
+    "inst_88b0551d5739": {
+      "name": "Loyola University Maryland",
+      "aliases": []
+    },
+    "inst_2728db53cbf8": {
+      "name": "College of the Ozarks",
+      "aliases": []
+    },
+    "inst_7c778e06463a": {
+      "name": "Alpha and Omega Ministries",
+      "aliases": []
+    },
+    "inst_84c04fca988d": {
+      "name": "Villanova University",
+      "aliases": []
+    },
+    "inst_67a129221577": {
+      "name": "Bethlehem College & Seminary",
+      "aliases": []
+    },
+    "inst_f9f146ea88d7": {
+      "name": "Midwestern Baptist Theological Seminary",
+      "aliases": []
+    },
+    "inst_128e01827c08": {
+      "name": "University of Paris IV-Sorbonne",
+      "aliases": []
+    },
+    "inst_b28e8b218d5a": {
+      "name": "University of Chicago",
+      "aliases": []
+    },
+    "inst_f822ff2894e4": {
+      "name": "Reformed Presbyterian Church in the United States",
+      "aliases": []
+    },
+    "inst_940ab86310c1": {
+      "name": "Humboldt University of Berlin",
+      "aliases": []
+    },
+    "inst_da97ba1f94b0": {
+      "name": "Heidelberg University",
+      "aliases": []
+    },
+    "inst_ca059b0523fc": {
+      "name": "University of Strasbourg",
+      "aliases": []
+    },
+    "inst_2d4b1d70ad2f": {
+      "name": "Puritan Reformed Theological Seminary",
+      "aliases": []
+    },
+    "inst_c0efb045857e": {
+      "name": "St. Vladimir's Orthodox Theological Seminary",
+      "aliases": []
+    },
+    "inst_47aa8eb8a067": {
+      "name": "Andrews University",
+      "aliases": []
+    },
+    "inst_032af2c0f4d8": {
+      "name": "University of Thessaloniki",
+      "aliases": []
+    },
+    "inst_fe6ffd7b2b8b": {
+      "name": "The Master's Seminary",
+      "aliases": []
+    },
+    "inst_a83562c37791": {
+      "name": "Grace Community Church",
+      "aliases": []
+    },
+    "inst_8c7037efa8de": {
+      "name": "Claremont Graduate University",
+      "aliases": []
+    },
+    "inst_1ae8abbb1700": {
+      "name": "Bethlehem Baptist Church",
+      "aliases": []
+    },
+    "inst_1dbc896cc7d0": {
+      "name": "Desiring God",
+      "aliases": []
+    },
+    "inst_369e37a50e75": {
+      "name": "All Souls Church, Langham Place",
+      "aliases": []
+    },
+    "inst_3d993c24e8c8": {
+      "name": "Huntington University",
+      "aliases": []
+    },
+    "inst_1152afec36b5": {
+      "name": "Olivet Nazarene University",
+      "aliases": []
+    },
+    "inst_d2b83770f926": {
+      "name": "Mercersburg Seminary",
+      "aliases": []
+    },
+    "inst_bbd2e8cc1df3": {
+      "name": "Emory University",
+      "aliases": []
+    },
+    "inst_5fa82ee5d049": {
+      "name": "Regent University",
+      "aliases": []
+    },
+    "inst_d9b5e9cdc50a": {
+      "name": "Assemblies of God Theological Seminary",
+      "aliases": []
+    },
+    "inst_1f6b06a42487": {
+      "name": "Yale College",
+      "aliases": []
+    },
+    "inst_3c663a4a05dc": {
+      "name": "Oklahoma Wesleyan University",
+      "aliases": []
+    },
+    "inst_6060f98171ce": {
+      "name": "University of Innsbruck",
+      "aliases": []
+    },
+    "inst_442f90215d0b": {
+      "name": "University of Münster",
+      "aliases": []
+    },
+    "inst_9926c7a76553": {
+      "name": "Reformation Bible College",
+      "aliases": []
+    },
+    "inst_b295fad897e1": {
+      "name": "Vineyard Church",
+      "aliases": []
+    },
+    "inst_88b228e6b3c8": {
+      "name": "Eastern University",
+      "aliases": []
+    },
+    "inst_6d137d9ac2fc": {
+      "name": "University of Leicester",
+      "aliases": []
+    },
+    "inst_f7bff8708a2a": {
+      "name": "Boston College",
+      "aliases": []
+    },
+    "inst_3075f9e0ef38": {
+      "name": "Christ Reformed Church",
+      "aliases": []
+    },
+    "inst_cd52b3a98bd0": {
+      "name": "University of Illinois",
+      "aliases": []
+    },
+    "inst_b7f5c9be6bfa": {
+      "name": "Presbyterian Church in America",
+      "aliases": []
+    },
+    "inst_fc209548bbc9": {
+      "name": "Church of South India",
+      "aliases": []
+    },
+    "inst_329f87f3e086": {
+      "name": "World Council of Churches",
+      "aliases": []
+    },
+    "inst_649d22e04fa5": {
+      "name": "Society of Jesus",
+      "aliases": []
+    },
+    "inst_1b34f10ec84c": {
+      "name": "Western Seminary",
+      "aliases": []
+    },
+    "inst_abfae01c1bcb": {
+      "name": "Greenville Presbyterian Theological Seminary",
+      "aliases": []
+    },
+    "inst_8884239de885": {
+      "name": "Concordia Seminary",
+      "aliases": []
+    },
+    "inst_64b8159213f0": {
+      "name": "University of Western Ontario",
+      "aliases": []
+    },
+    "inst_7b5b2a447eb9": {
+      "name": "Messianic Jewish Theological Institute",
+      "aliases": []
+    },
+    "inst_41490e159679": {
+      "name": "University of Wittenberg",
+      "aliases": []
+    },
+    "inst_147e10b90547": {
+      "name": "Westminster Chapel",
+      "aliases": []
+    },
+    "inst_c891e98e88cc": {
+      "name": "University of Dayton",
+      "aliases": []
+    },
+    "inst_aa79eba5aab0": {
+      "name": "Ave Maria University",
+      "aliases": []
+    },
+    "inst_df854a6b1f4d": {
+      "name": "Mundelein Seminary",
+      "aliases": []
+    },
+    "inst_e4a5d2efe7e9": {
+      "name": "Grace College and Theological Seminary",
+      "aliases": []
+    },
+    "inst_11ec749e5974": {
+      "name": "Knox Theological Seminary",
+      "aliases": []
+    },
+    "inst_0b3ae0b2d132": {
+      "name": "Saint Mary's College of California",
+      "aliases": []
+    },
+    "inst_19007061265e": {
+      "name": "Wycliffe Hall",
+      "aliases": []
+    },
+    "inst_104f01fb3df6": {
+      "name": "Reformed Presbyterian Theological Seminary",
+      "aliases": []
+    },
+    "inst_bf70cd184ec9": {
+      "name": "University of Wisconsin-Madison",
+      "aliases": []
+    },
+    "inst_b2feda2258e8": {
+      "name": "Vancouver School of Theology",
+      "aliases": []
+    },
+    "inst_84dcf6edf09d": {
+      "name": "Baylor University",
+      "aliases": []
+    },
+    "inst_121303a5b05d": {
+      "name": "African Bible University",
+      "aliases": []
+    },
+    "inst_894c8c551317": {
+      "name": "Sorbonne",
+      "aliases": []
+    },
+    "inst_b01ee490bd05": {
+      "name": "University of Exeter",
+      "aliases": []
+    },
+    "inst_1b9e4185c0c6": {
+      "name": "St. John's University",
+      "aliases": []
+    },
+    "inst_0a2aa71c4cc1": {
+      "name": "Trinity School for Ministry",
+      "aliases": []
+    },
+    "inst_f35a469cdeba": {
+      "name": "Cathedral Church of the Advent",
+      "aliases": []
+    },
+    "inst_a85d504b45d9": {
+      "name": "University of Liverpool",
+      "aliases": []
+    },
+    "inst_047bde7e166f": {
+      "name": "University of Illinois at Chicago",
+      "aliases": []
+    },
+    "inst_d178880e9444": {
+      "name": "Loyola University Chicago",
+      "aliases": []
+    },
+    "inst_09dfec7f357d": {
+      "name": "Roanoke College",
+      "aliases": []
+    },
+    "inst_ed654c41349b": {
+      "name": "Comenius University",
+      "aliases": []
+    },
+    "inst_543e2a7958e9": {
+      "name": "University of Marburg",
+      "aliases": []
+    },
+    "inst_c870970928ca": {
+      "name": "Harvard University",
+      "aliases": []
+    },
+    "inst_f7dd894e4fb7": {
+      "name": "University of Paris",
+      "aliases": []
+    },
+    "inst_a823f434a10a": {
+      "name": "London Theological Seminary",
+      "aliases": []
+    },
+    "inst_592c863d9178": {
+      "name": "Theopolis Institute",
+      "aliases": []
+    },
+    "inst_4da651ae6489": {
+      "name": "University of Duisburg",
+      "aliases": []
+    },
+    "inst_9431a52ad94b": {
+      "name": "Lutheran School of Theology at Chicago",
+      "aliases": []
+    },
+    "inst_59d68f5cf67d": {
+      "name": "Baker Academic",
+      "aliases": []
+    },
+    "inst_e96fab9cc3f9": {
+      "name": "Ligonier Ministries",
+      "aliases": []
+    },
+    "inst_4b156102255b": {
+      "name": "First Things",
+      "aliases": []
+    },
+    "inst_fd73be776986": {
+      "name": "Institute on Religion and Public Life",
+      "aliases": []
+    },
+    "inst_c51298046860": {
+      "name": "St. Victor Abbey",
+      "aliases": []
+    },
+    "inst_efd10a228139": {
+      "name": "Loma Linda University",
+      "aliases": []
+    },
+    "inst_89d945a90c08": {
+      "name": "University of Keele",
+      "aliases": []
+    },
+    "inst_5a3aa96d24cd": {
+      "name": "Institute of Lutheran Theology",
+      "aliases": []
+    },
+    "inst_06f1385ca0ba": {
+      "name": "Westmont College",
+      "aliases": []
+    },
+    "inst_4b4660f4cdef": {
+      "name": "Lutheran Theological Seminary at Gettysburg",
+      "aliases": []
+    },
+    "inst_4bea383ada2e": {
+      "name": "St. Olaf College",
+      "aliases": []
+    },
+    "inst_8a05323b3885": {
+      "name": "Princeton University",
+      "aliases": []
+    },
+    "inst_440677789165": {
+      "name": "Union Theological Seminary in Virginia",
+      "aliases": []
+    },
+    "inst_233742a5d46a": {
+      "name": "University of Wales",
+      "aliases": []
+    },
+    "inst_b74201c5c48f": {
+      "name": "Lambeth Palace",
+      "aliases": []
+    },
+    "inst_db6d8c45b194": {
+      "name": "Washington University in St. Louis",
+      "aliases": []
+    },
+    "inst_094b98b8d698": {
+      "name": "University of Texas",
+      "aliases": []
+    },
+    "inst_6c8d19cafe9e": {
+      "name": "IRBS Theological Seminary",
+      "aliases": []
+    },
+    "inst_45c7dd8b8612": {
+      "name": "St. Andrews University",
+      "aliases": []
+    },
+    "inst_58e90971eb68": {
+      "name": "Northern Seminary",
+      "aliases": []
+    },
+    "inst_70820191285c": {
+      "name": "Franciscan University of Steubenville",
+      "aliases": []
+    },
+    "inst_17e27b826958": {
+      "name": "Trinity Theological College, Singapore",
+      "aliases": []
+    },
+    "inst_a2c9293290ec": {
+      "name": "Answers in Genesis",
+      "aliases": []
+    },
+    "inst_7ad74a1169c3": {
+      "name": "Carey Theological College",
+      "aliases": []
+    },
+    "inst_578b804c8c10": {
+      "name": "Discovery Institute",
+      "aliases": []
+    },
+    "inst_4621c52a664e": {
+      "name": "Crandall University",
+      "aliases": []
+    },
+    "inst_b160557d341d": {
+      "name": "The Southern Baptist Theological Seminary",
+      "aliases": []
+    },
+    "inst_22e72752efd4": {
+      "name": "McMaster University",
+      "aliases": []
+    },
+    "inst_6a8986e43c83": {
+      "name": "Queen's University Belfast",
+      "aliases": []
+    },
+    "inst_4f9b6a59dbd1": {
+      "name": "Messiah's Congregation",
+      "aliases": []
+    },
+    "inst_2cd7f7452650": {
+      "name": "Phoenix Seminary",
+      "aliases": []
+    },
+    "inst_e743b402e803": {
+      "name": "Gardner-Webb University",
+      "aliases": []
+    },
+    "inst_26b78e5b4e49": {
+      "name": "Union Theological College",
+      "aliases": []
+    },
+    "inst_bdd88337dcf3": {
+      "name": "Providence Theological Seminary",
+      "aliases": []
+    },
+    "inst_88031e9b1689": {
+      "name": "University of Naples",
+      "aliases": []
+    },
+    "inst_873c49bd492b": {
+      "name": "University of Cologne",
+      "aliases": []
+    },
+    "inst_08b8b3d6deb7": {
+      "name": "Drew University",
+      "aliases": []
+    },
+    "inst_8ec7f0fa42bc": {
+      "name": "Pontifical University of St. Thomas Aquinas",
+      "aliases": []
+    },
+    "inst_d9a72bfd1f9f": {
+      "name": "Dominican House of Studies",
+      "aliases": []
+    },
+    "inst_5aadea95a06c": {
+      "name": "Redeemer Presbyterian Church",
+      "aliases": []
+    },
+    "inst_6c93add5dc6c": {
+      "name": "Gospel Coalition",
+      "aliases": []
+    },
+    "inst_632f00c211eb": {
+      "name": "Pentecostal Theological Seminary",
+      "aliases": []
+    },
+    "inst_b5aa032fa411": {
+      "name": "Coral Ridge Presbyterian Church",
+      "aliases": []
+    },
+    "inst_3b214896cbb2": {
+      "name": "Institut Saint-Serge",
+      "aliases": []
+    },
+    "inst_7ec4be8b435c": {
+      "name": "Erskine College",
+      "aliases": []
+    },
+    "inst_38a066aa9eb5": {
+      "name": "DePaul University",
+      "aliases": []
+    },
+    "inst_5a428c1847ef": {
+      "name": "University of St. Thomas",
+      "aliases": []
+    },
+    "inst_1a5605e9f071": {
+      "name": "Northwest Theological Seminary",
+      "aliases": []
+    },
+    "inst_28144129b445": {
+      "name": "Southern Methodist University",
+      "aliases": []
+    },
+    "inst_78a6108da0ae": {
+      "name": "North Alabama Conference of the United Methodist Church",
+      "aliases": []
+    }
+  }
+}
