@@ -189,6 +189,12 @@ def topic_work_edges():
 def api_canon_map():
     return jsonify(CANON_MAP)
 
+@app.get("/api/works/reverse_canon_map")
+def api_reverse_canon_map():
+    reverse_canon_map = reverse_map = {canonical_id: list(set([wid for wid, cid in CANON_MAP.items() if cid == canonical_id] + [canonical_id])) for canonical_id in set(CANON_MAP.values())}
+
+    return jsonify(reverse_canon_map)
+
 @app.get("/api/indices/canon_counts_by_theologian")
 def api_canon_counts_by_theologian():
     # Convert to [{id,count}] for each theologian id

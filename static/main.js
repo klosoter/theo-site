@@ -93,21 +93,55 @@ function uniq(arr) {
     return Array.from(new Set(arr || []));
 }
 
-function featuredTopicsForWork(workId, topics) {
-    const out = [];
-    for (const t of topics || []) {
-        const kw = t.key_works || {};
-        const inWts = (kw.wts_old_princeton || []).includes(workId);
-        const inRecent = (kw.recent || []).includes(workId);
-        if (inWts || inRecent) out.push({
-            topic_id: t.id,
-            topic_slug: t.slug,
-            title: t.title,
-            bucket: inWts ? 'WTS' : 'Recent'
-        });
+// canonId -> [aliasWorkIds]; may or may not include canonId itself
+// topics[*].key_works.{ wts_old_princeton: string[], recent: string[] }
+
+function featuredTopicsForWork(canonId, topics, reverseCanonMap) {
+  const aliasIds = new Set([
+    canonId,
+    ...(reverseCanonMap[canonId] || [])
+  ]);
+
+  const out = [];
+  for (const t of (topics || [])) {
+    const kw = t.key_works || {};
+    const wtsSet = new Set(kw.wts_old_princeton || []);
+    const recentSet = new Set(kw.recent || []);
+
+    let inWts = false, inRecent = false;
+    for (const id of aliasIds) {
+      if (wtsSet.has(id)) inWts = true;
+      if (recentSet.has(id)) inRecent = true;
+      if (inWts && inRecent) break; // early exit
     }
-    return out;
+
+    if (inWts || inRecent) {
+      out.push({
+        topic_id: t.id,
+        topic_slug: t.slug,
+        title: t.title,
+        bucket: inWts && inRecent ? ['WTS','Recent'] : (inWts ? ['WTS'] : ['Recent'])
+      });
+    }
+  }
+  return out;
 }
+
+// function featuredTopicsForWork(workId, topics, reverseCanonMap) {
+//     const out = [];
+//     for (const t of topics || []) {
+//         const kw = t.key_works || {};
+//         const inWts = (kw.wts_old_princeton || []).includes(workId);
+//         const inRecent = (kw.recent || []).includes(workId);
+//         if (inWts || inRecent) out.push({
+//             topic_id: t.id,
+//             topic_slug: t.slug,
+//             title: t.title,
+//             bucket: inWts ? 'WTS' : 'Recent'
+//         });
+//     }
+//     return out;
+// }
 
 // Resolve authors for a work id → [{display, theo}] where theo is a theologian object or null
 function resolveAuthorsForWork(wid, datasets) {
@@ -186,7 +220,7 @@ function App() {
         (async () => {
             const [
                 topics, theologians, works, byTopic, byTheo, byWork,
-                canonMap, canonCountsTheo, canonCountsTopic
+                canonMap, reverseCanonMap, canonCountsTheo, canonCountsTopic
             ] = await Promise.all([
                 api('/api/topics'),
                 api('/api/theologians'),
@@ -195,12 +229,14 @@ function App() {
                 api('/api/indices/by_theologian'),
                 api('/api/indices/by_work'),
                 api('/api/works/canon_map'),
+                api('/api/works/reverse_canon_map'),
                 api('/api/indices/canon_counts_by_theologian'),
                 api('/api/indices/canon_counts_by_topic'),
             ]);
             setDatasets({
                 topics, theologians, works, byTopic, byTheo, byWork,
                 canonMap,
+                reverseCanonMap,
                 canonCountsTheo,     // {theoId: [{id: canonicalWorkId, count}]}
                 canonCountsTopic,    // {topicId: {WTS: [{id,count}], Recent: [{id,count}]}}
             });
@@ -527,7 +563,7 @@ function TheologianPage({slug, datasets}) {
 
     function WorkCardTheo({wId}) {
         const w = (datasets.works || []).find(x => x.id === wId) || {id: wId, title: wId};
-        const topicsFeaturing = featuredTopicsForWork(w.id, datasets.topics);
+        const topicsFeaturing = featuredTopicsForWork(w.id, datasets.topics, datasets.reverseCanonMap);
         return (
             <div className="card">
                 {(() => {
@@ -662,7 +698,7 @@ function WorkPage({id, datasets}) {
     const authors = resolveAuthorsForWork(canonicalId, datasets);
 
     // featured topics chips (kept)
-    const featured = featuredTopicsForWork(canonicalId, datasets.topics);
+    const featured = featuredTopicsForWork(canonicalId, datasets.topics, datasets.reverseCanonMap);
 
     // refs → grouped like theologian page: { "Christology": [items], ... }
     const [openCats, setOpenCats] = useState({});

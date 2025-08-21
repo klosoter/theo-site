@@ -1,0 +1,20 @@
+from utils import get_files
+
+CACHE = get_files()
+authors_registry, authors_registry_path = CACHE["authors_registry"]
+outlines_jsonl, outlines_jsonl_path = CACHE["outlines_jsonl"]
+theologians, theologians_path = CACHE["theologians"]
+topic_mapping, topic_mapping_path = CACHE["topic_mapping"]
+topics, topics_path = CACHE["topics"]
+traditions, traditions_path = CACHE["traditions"]
+work_canon_map, work_canon_map_path = CACHE["work_canon_map"]
+works, works_path = CACHE["works"]
+by_theologian, by_theologian_path = CACHE["by_theologian"]
+by_topic, by_topic_path = CACHE["by_topic"]
+by_topic_keyworks, by_topic_keyworks_path = CACHE["by_topic_keyworks"]
+by_work, by_work_path = CACHE["by_work"]
+eras_registry, eras_registry_path = CACHE["eras_registry"]
+institutions_registry, institutions_registry_path = CACHE["institutions_registry"]
+theologian_profiles, theologian_profiles_path = CACHE["theologian_profiles"]
+topic_work_edges, topic_work_edges_path = CACHE["topic_work_edges"]
+search_index, search_index_path = CACHE["search_index"]
