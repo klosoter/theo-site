@@ -371,9 +371,9 @@ function TopicPage({slug, datasets}) {
 
     const outlinesForTheo = (theologian_id) => {
         const tEntry = datasets.byTheo[theologian_id];
-        console.log(tEntry);
         if (!tEntry) return [];
         const groups = tEntry.outlines_by_topic_category || {};
+        console.log(groups);
         return Object.values(groups).flat().filter(o => o.topic_id === topic.id || o.topic_slug === topic.slug);
     };
 
@@ -559,8 +559,6 @@ function TheologianPage({slug, datasets}) {
 
     const entry = datasets.byTheo[theo.id] || {};
     const groups = entry.outlines_by_topic_category || {};
-    console.log(groups);
-
     // Canonical work buckets with counts already sorted by the backend
     const canonList = datasets.canonCountsTheo[theo.id] || []; // [{id,count}]
 

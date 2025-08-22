@@ -3984,30 +3984,28 @@
       }
     ],
     "key_work_ids": [
-      "work_0483c6201cdb",
-      "work_0660a13c428b",
-      "work_0fcf04d6f344",
-      "work_3a8a91717f81",
-      "work_4d5332295fbe",
-      "work_5aa6ab6bf643",
-      "work_5f9be24ab193",
-      "work_6837d0ed6c1d",
-      "work_6c740aa6d58d",
-      "work_6e09b6d6074d",
-      "work_70e28aeb8b8a",
-      "work_792e97ac034b",
       "work_7db70259efee",
+      "work_0fcf04d6f344",
+      "work_792e97ac034b",
       "work_87f6fe39d6ed",
-      "work_8c49ddb99bf1",
-      "work_9a094643924c",
       "work_9ed150331cd1",
+      "work_6e09b6d6074d",
+      "work_0483c6201cdb",
       "work_c4909d4ecb8d",
+      "work_e4b135d1f721",
+      "work_0660a13c428b",
       "work_c8bfdebbb234",
+      "work_3a8a91717f81",
+      "work_70e28aeb8b8a",
+      "work_ff00388ff0c1",
       "work_d3593d216050",
       "work_e39886286879",
-      "work_e4b135d1f721",
       "work_eb67b8fef7be",
-      "work_ff00388ff0c1"
+      "work_4d5332295fbe",
+      "work_8c49ddb99bf1",
+      "work_5aa6ab6bf643",
+      "work_5f9be24ab193",
+      "work_6837d0ed6c1d"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -5028,41 +5026,34 @@
       }
     ],
     "key_work_ids": [
-      "work_0344af5c5679",
-      "work_08b2de69f837",
-      "work_08ff27696886",
-      "work_13cca635cddd",
-      "work_1fa1b45c418d",
-      "work_2ee6da8bea75",
-      "work_3050602e5b24",
-      "work_3eb424ddb6e6",
-      "work_4dbae5e8080f",
-      "work_55bb9a43fa48",
-      "work_5e64b6fafebe",
-      "work_60df5e01e1a4",
-      "work_634909e68eab",
       "work_663e8e5cf3e2",
-      "work_6f805ced1670",
-      "work_7e1da77dd255",
-      "work_8e5e904fd9ab",
-      "work_8e685d58cc09",
-      "work_8ed8eecea547",
-      "work_9dff1e065f4a",
-      "work_a225ecb403cd",
-      "work_a613f75fdd62",
-      "work_a7b81d7920e4",
-      "work_b071fc4a6029",
-      "work_b75b04b61ee3",
-      "work_bafef35e59ca",
-      "work_bfc968a6db4c",
-      "work_d0b75ffea339",
-      "work_d0cf4ee56f9a",
+      "work_55bb9a43fa48",
       "work_d279b88ba88f",
-      "work_d327a623c9fa",
       "work_db54d02c3bbe",
+      "work_0344af5c5679",
+      "work_6f805ced1670",
+      "work_4dbae5e8080f",
+      "work_8ed8eecea547",
+      "work_d0b75ffea339",
+      "work_bfc968a6db4c",
+      "work_d0cf4ee56f9a",
+      "work_fb77a060d596",
+      "work_a7b81d7920e4",
+      "work_5e64b6fafebe",
       "work_ea2befff6838",
+      "work_9dff1e065f4a",
+      "work_8e5e904fd9ab",
+      "work_60df5e01e1a4",
+      "work_b071fc4a6029",
+      "work_634909e68eab",
+      "work_2ee6da8bea75",
+      "work_13cca635cddd",
+      "work_a613f75fdd62",
+      "work_a225ecb403cd",
+      "work_1fa1b45c418d",
+      "work_bafef35e59ca",
       "work_f6c23d324196",
-      "work_fb77a060d596"
+      "work_8e685d58cc09"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -5280,30 +5271,29 @@
       }
     ],
     "key_work_ids": [
-      "work_00689e61b046",
-      "work_06e2d42d409a",
-      "work_1fff5ebc32cc",
-      "work_41e633c2a56d",
-      "work_45c31c35cc25",
       "work_4a836dd5db90",
-      "work_70de98a97a97",
+      "work_e76b3479e361",
+      "work_41e633c2a56d",
+      "work_9f81a095ae1e",
+      "work_b96b775a5283",
+      "work_1fff5ebc32cc",
+      "work_e3d99cfce0ad",
+      "work_8afaeebfdbe4",
+      "work_bae452e18aad",
+      "work_89f1fbae6a40",
+      "work_ffc066a002e4",
       "work_77e715fc9599",
+      "work_70de98a97a97",
+      "work_45c31c35cc25",
+      "work_dd674a00a913",
+      "work_c643356f2fe6",
       "work_7a68411ef3a3",
       "work_7d2c154d5d1c",
-      "work_89f1fbae6a40",
-      "work_8afaeebfdbe4",
       "work_949d43d090b1",
-      "work_9f81a095ae1e",
+      "work_06e2d42d409a",
       "work_b41f5e67f02e",
-      "work_b96b775a5283",
-      "work_bae452e18aad",
-      "work_bc6e435f5670",
-      "work_c643356f2fe6",
-      "work_dd674a00a913",
-      "work_dedc186541e8",
-      "work_e3d99cfce0ad",
-      "work_e76b3479e361",
-      "work_ffc066a002e4"
+      "work_00689e61b046",
+      "work_dedc186541e8"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -5570,15 +5560,15 @@
       }
     ],
     "key_work_ids": [
-      "work_091b2ba7d4cd",
-      "work_0e3e122b61c6",
-      "work_14e574b12f75",
-      "work_17b46ec99fb7",
-      "work_4a565f98e922",
       "work_6f41a2a4bf2f",
       "work_76c201ed2863",
-      "work_c716d185b3e1",
-      "work_f946d80a1b8b"
+      "work_4a565f98e922",
+      "work_14e574b12f75",
+      "work_17b46ec99fb7",
+      "work_0e3e122b61c6",
+      "work_f946d80a1b8b",
+      "work_091b2ba7d4cd",
+      "work_c716d185b3e1"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -5781,11 +5771,11 @@
       }
     ],
     "key_work_ids": [
-      "work_4826585f07a0",
-      "work_6db748cfb8d9",
-      "work_a7b323669dce",
       "work_c0f849d47ff5",
-      "work_efd2e53817c1"
+      "work_6db748cfb8d9",
+      "work_4826585f07a0",
+      "work_efd2e53817c1",
+      "work_a7b323669dce"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -6062,18 +6052,14 @@
       }
     ],
     "key_work_ids": [
-      "work_1409c60695dc",
-      "work_175908b0d5ec",
       "work_30de79418804",
-      "work_63968be99409",
-      "work_65822dd31a7d",
-      "work_72fee4520fc3",
-      "work_7a96595e90bf",
-      "work_ad4dc8b68f6a",
       "work_c1b6a7a8b11f",
+      "work_fe0ffc3352ce",
       "work_d47f3eb8e12f",
-      "work_ee43657ddf33",
-      "work_fe0ffc3352ce"
+      "work_7a96595e90bf",
+      "work_1409c60695dc",
+      "work_63968be99409",
+      "work_ad4dc8b68f6a"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -6211,39 +6197,39 @@
       }
     ],
     "key_work_ids": [
-      "work_001e372b053f",
-      "work_01a63d4fb3cc",
-      "work_0791b8985613",
-      "work_1efe8e840118",
-      "work_281bab4362d9",
-      "work_2d17b56fbce8",
-      "work_3b4fd9208f83",
-      "work_575b84a008ff",
-      "work_5b049cbd9896",
-      "work_5b542650e248",
-      "work_5bd70010aa12",
-      "work_5d725dd1b15c",
-      "work_678937bff8ba",
-      "work_68c6304e8021",
-      "work_722f954c8c54",
-      "work_7ab43e4c9999",
-      "work_83de20168f97",
       "work_9325bb4f2b0f",
-      "work_946775c6295e",
-      "work_a6dbe504d658",
-      "work_ab0928eb1b08",
-      "work_b067e3a97e45",
-      "work_b6ae5d109921",
-      "work_bf2e16220be9",
-      "work_c346d3b01cc9",
-      "work_c46874076ce2",
-      "work_d1d5d9ab9390",
-      "work_d32627fcd5cc",
-      "work_d3acaaa04609",
-      "work_d49529b4851e",
-      "work_ddd2c88dbd1c",
+      "work_5d725dd1b15c",
+      "work_68c6304e8021",
+      "work_5bd70010aa12",
+      "work_2d17b56fbce8",
+      "work_0791b8985613",
       "work_e331e57dd9f1",
-      "work_ec57d3b0f685"
+      "work_d3acaaa04609",
+      "work_b067e3a97e45",
+      "work_d49529b4851e",
+      "work_83de20168f97",
+      "work_001e372b053f",
+      "work_ab0928eb1b08",
+      "work_ddd2c88dbd1c",
+      "work_3b4fd9208f83",
+      "work_5b049cbd9896",
+      "work_bf2e16220be9",
+      "work_d1d5d9ab9390",
+      "work_ec57d3b0f685",
+      "work_722f954c8c54",
+      "work_01a63d4fb3cc",
+      "work_1efe8e840118",
+      "work_678937bff8ba",
+      "work_b6ae5d109921",
+      "work_c46874076ce2",
+      "work_575b84a008ff",
+      "work_5b542650e248",
+      "work_281bab4362d9",
+      "work_7ab43e4c9999",
+      "work_c346d3b01cc9",
+      "work_a6dbe504d658",
+      "work_946775c6295e",
+      "work_d32627fcd5cc"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -6450,8 +6436,8 @@
     ],
     "key_work_ids": [
       "work_1da8e52b48b1",
-      "work_81f83ff9ea87",
-      "work_a5ea16ff3266"
+      "work_a5ea16ff3266",
+      "work_81f83ff9ea87"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -6597,8 +6583,8 @@
       }
     ],
     "key_work_ids": [
-      "work_7d009b3b452c",
-      "work_e4743adb5eea"
+      "work_e4743adb5eea",
+      "work_7d009b3b452c"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -6938,9 +6924,7 @@
         "event": "Passed away"
       }
     ],
-    "key_work_ids": [
-      "work_8690eaaebbe4"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -7146,9 +7130,7 @@
         "event": "Passed away in California, USA"
       }
     ],
-    "key_work_ids": [
-      "work_f16c96be5523"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -7218,8 +7200,6 @@
     ],
     "key_work_ids": [
       "work_3abde47e6d64",
-      "work_602d985ec253",
-      "work_7408a4fd2b22",
       "work_8830c806280d",
       "work_dfc1fdb40ade"
     ],
@@ -7352,11 +7332,10 @@
       }
     ],
     "key_work_ids": [
-      "work_03b33aef7166",
       "work_0d24801e6402",
-      "work_3bec97849cb4",
-      "work_49b7e746f7b0",
-      "work_c485c583cf7b"
+      "work_c485c583cf7b",
+      "work_03b33aef7166",
+      "work_3bec97849cb4"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -7554,8 +7533,6 @@
       }
     ],
     "key_work_ids": [
-      "work_250706d8adcb",
-      "work_2b03af25e784",
       "work_321a600ee5e7"
     ],
     "wts_relevance": true,
@@ -7975,14 +7952,14 @@
       }
     ],
     "key_work_ids": [
-      "work_00319377d508",
-      "work_0b5dca0d533c",
-      "work_17b252f5192d",
-      "work_550cd1a1596b",
-      "work_64798e251835",
       "work_7f0f18ba1c93",
+      "work_0b5dca0d533c",
+      "work_9fc57c0c0bdf",
+      "work_17b252f5192d",
       "work_8705ff2e1e89",
-      "work_9fc57c0c0bdf"
+      "work_00319377d508",
+      "work_550cd1a1596b",
+      "work_64798e251835"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -8322,8 +8299,8 @@
       }
     ],
     "key_work_ids": [
-      "work_19d6f7c14885",
-      "work_717508b79e66"
+      "work_717508b79e66",
+      "work_19d6f7c14885"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -8393,14 +8370,14 @@
       }
     ],
     "key_work_ids": [
-      "work_0642066c1c33",
-      "work_0c83fbaa24d9",
-      "work_1310f4ce41ea",
-      "work_13906d6bac94",
       "work_3229cd5a4c45",
+      "work_13906d6bac94",
       "work_8ba0d271214b",
+      "work_0642066c1c33",
+      "work_e8e0d1b376b5",
+      "work_0c83fbaa24d9",
       "work_9b03e4a1c3b0",
-      "work_e8e0d1b376b5"
+      "work_1310f4ce41ea"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -8747,7 +8724,6 @@
       }
     ],
     "key_work_ids": [
-      "work_0e1613ce8227",
       "work_768989aa4b1a",
       "work_fb67824231a6"
     ],
@@ -9020,9 +8996,7 @@
       }
     ],
     "key_work_ids": [
-      "work_35e3b9e28870",
-      "work_4bd6d1f421e1",
-      "work_5fe9b994d35a"
+      "work_35e3b9e28870"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -9221,8 +9195,8 @@
       }
     ],
     "key_work_ids": [
-      "work_7caf6308f4f4",
-      "work_c72643517ce2"
+      "work_c72643517ce2",
+      "work_7caf6308f4f4"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -9555,8 +9529,8 @@
       }
     ],
     "key_work_ids": [
-      "work_c04fde703a61",
-      "work_e378f2f89e1b"
+      "work_e378f2f89e1b",
+      "work_c04fde703a61"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -9697,8 +9671,8 @@
     ],
     "key_work_ids": [
       "work_3256020d5aef",
-      "work_7ecda1b3c00a",
-      "work_a0477ec68417"
+      "work_a0477ec68417",
+      "work_7ecda1b3c00a"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -10102,33 +10076,28 @@
     ],
     "key_work_ids": [
       "work_120049788b35",
-      "work_1a1becb74547",
-      "work_2277bc20f8eb",
-      "work_249b7d40e35f",
-      "work_31f26f082956",
-      "work_4251ff44ffe8",
-      "work_484b3a621281",
-      "work_53f5e52e47ef",
-      "work_579f9bbaafd2",
-      "work_77307979380d",
-      "work_811428f75178",
-      "work_82f6bed846d3",
-      "work_8380a2b1c197",
-      "work_84a94616b884",
-      "work_8594cb05c4b1",
-      "work_8b7a341f1bba",
-      "work_91186fc80a9b",
-      "work_9239db0ee95f",
-      "work_96c5e40161e6",
-      "work_9cb903ec150d",
-      "work_bdd85ad52147",
-      "work_c090b8357a64",
       "work_c8a9ddae7dab",
-      "work_d9cd873f21f0",
-      "work_e61d83e59d84",
-      "work_e9be7e2b2570",
       "work_ef7ee16d5ccf",
-      "work_f68c5ab25196"
+      "work_8380a2b1c197",
+      "work_53f5e52e47ef",
+      "work_91186fc80a9b",
+      "work_d9cd873f21f0",
+      "work_77307979380d",
+      "work_31f26f082956",
+      "work_1a1becb74547",
+      "work_8b7a341f1bba",
+      "work_e9be7e2b2570",
+      "work_e61d83e59d84",
+      "work_96c5e40161e6",
+      "work_249b7d40e35f",
+      "work_9cb903ec150d",
+      "work_579f9bbaafd2",
+      "work_bdd85ad52147",
+      "work_8594cb05c4b1",
+      "work_484b3a621281",
+      "work_2277bc20f8eb",
+      "work_4251ff44ffe8",
+      "work_c090b8357a64"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -10267,9 +10236,7 @@
         "event": "Passed away"
       }
     ],
-    "key_work_ids": [
-      "work_302982b8d8be"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -10340,7 +10307,6 @@
       }
     ],
     "key_work_ids": [
-      "work_1ab846810c46",
       "work_885b0df1541e"
     ],
     "wts_relevance": true,
@@ -10537,8 +10503,6 @@
       }
     ],
     "key_work_ids": [
-      "work_40b323c333c6",
-      "work_699e094102d3",
       "work_7c836ea0bf55",
       "work_ccf76bcfc121"
     ],
@@ -10608,7 +10572,6 @@
       }
     ],
     "key_work_ids": [
-      "work_7e5adcafdaa9",
       "work_98d326b55abd",
       "work_9ba9ce7a1873"
     ],
@@ -10677,8 +10640,8 @@
       }
     ],
     "key_work_ids": [
-      "work_2ed775b10e53",
-      "work_c0742126db26"
+      "work_c0742126db26",
+      "work_2ed775b10e53"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -10818,13 +10781,13 @@
       }
     ],
     "key_work_ids": [
+      "work_b4d9a71e90ac",
       "work_204962fe903e",
+      "work_ab70a2715305",
+      "work_ec37278482dd",
       "work_28739173fcbc",
       "work_29248e004b4f",
-      "work_ab70a2715305",
-      "work_b0b08ea38a27",
-      "work_b4d9a71e90ac",
-      "work_ec37278482dd"
+      "work_b0b08ea38a27"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -10969,19 +10932,19 @@
       }
     ],
     "key_work_ids": [
-      "work_210011145998",
-      "work_2ae3bc5e5d02",
-      "work_2dcdecdae89c",
+      "work_6ed0c173d0ba",
       "work_48ee329884d0",
+      "work_210011145998",
+      "work_d6dc9eb48233",
+      "work_2ae3bc5e5d02",
       "work_6d4da1a7adce",
       "work_6d5fe6b94485",
-      "work_6ed0c173d0ba",
-      "work_9c1ee1f38eb0",
-      "work_9df50aa531b7",
+      "work_2dcdecdae89c",
       "work_cd39b9864c29",
-      "work_d6dc9eb48233",
+      "work_f9bb18cf5178",
+      "work_9c1ee1f38eb0",
       "work_eeab1c8327f4",
-      "work_f9bb18cf5178"
+      "work_9df50aa531b7"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -11189,9 +11152,7 @@
         "event": "Retired from Free Church of Scotland College"
       }
     ],
-    "key_work_ids": [
-      "work_c75d12836a07"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -11253,11 +11214,11 @@
       }
     ],
     "key_work_ids": [
-      "work_0191f4a5a914",
-      "work_812cd7fec622",
       "work_aadbb78f7494",
+      "work_0191f4a5a914",
+      "work_ffcd56af50d6",
       "work_b4fbd0b3a2f7",
-      "work_ffcd56af50d6"
+      "work_812cd7fec622"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -11325,17 +11286,15 @@
       }
     ],
     "key_work_ids": [
-      "work_03a812474d5d",
-      "work_16ca890fee36",
       "work_2d256f8e01f4",
-      "work_58a2caf570ac",
-      "work_5ea5243c3d3c",
-      "work_ab080322808f",
-      "work_cbbd00c1a998",
       "work_e443d7292a5f",
+      "work_16ca890fee36",
+      "work_cbbd00c1a998",
+      "work_ab080322808f",
+      "work_5ea5243c3d3c",
+      "work_03a812474d5d",
       "work_ef26734f8b55",
-      "work_f7220c89792d",
-      "work_f7d7568613ad"
+      "work_58a2caf570ac"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -11865,8 +11824,8 @@
       }
     ],
     "key_work_ids": [
-      "work_67cbba483407",
-      "work_f3853fad7abb"
+      "work_f3853fad7abb",
+      "work_67cbba483407"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -12007,11 +11966,11 @@
     ],
     "key_work_ids": [
       "work_03f56036abef",
-      "work_08a4f3f72261",
-      "work_1aba80272c69",
       "work_23f8c93087d0",
+      "work_e3b9b9374a31",
+      "work_08a4f3f72261",
       "work_474bb0f7cf78",
-      "work_e3b9b9374a31"
+      "work_1aba80272c69"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -12212,9 +12171,7 @@
         "event": "Published 'The Biblical Canon: Its Origin, Transmission, and Authority'"
       }
     ],
-    "key_work_ids": [
-      "work_ab109fbb46bf"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -12346,8 +12303,8 @@
       }
     ],
     "key_work_ids": [
-      "work_102e554760ff",
-      "work_ccad600ccae9"
+      "work_ccad600ccae9",
+      "work_102e554760ff"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -13214,8 +13171,8 @@
       }
     ],
     "key_work_ids": [
-      "work_473ac5828826",
-      "work_d177e263f839"
+      "work_d177e263f839",
+      "work_473ac5828826"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -13484,19 +13441,18 @@
       }
     ],
     "key_work_ids": [
-      "work_10a7ffbaccc7",
-      "work_30eb015082a0",
-      "work_34aa607cd9c4",
-      "work_62b92f4d1f70",
-      "work_66636b3bd2f2",
-      "work_7adb2955490e",
-      "work_93fa59354286",
-      "work_9d9f7764b0cf",
       "work_ad659243f87c",
-      "work_d1c818f1da3f",
+      "work_eac1533d97c5",
+      "work_7adb2955490e",
+      "work_62b92f4d1f70",
       "work_decb96feb69d",
       "work_e386dddfe199",
-      "work_eac1533d97c5"
+      "work_34aa607cd9c4",
+      "work_93fa59354286",
+      "work_30eb015082a0",
+      "work_66636b3bd2f2",
+      "work_10a7ffbaccc7",
+      "work_9d9f7764b0cf"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -13638,10 +13594,8 @@
       }
     ],
     "key_work_ids": [
-      "work_3cb8181772fe",
-      "work_59f5a10428ed",
       "work_a9a85758c48c",
-      "work_defc834b744e"
+      "work_59f5a10428ed"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -13707,9 +13661,9 @@
       }
     ],
     "key_work_ids": [
+      "work_f7c08b944a44",
       "work_1db7a04f08c7",
-      "work_4606749c2b55",
-      "work_f7c08b944a44"
+      "work_4606749c2b55"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -13776,9 +13730,9 @@
       }
     ],
     "key_work_ids": [
-      "work_4564296476bf",
       "work_81d318956408",
-      "work_c7430ac82ba7"
+      "work_c7430ac82ba7",
+      "work_4564296476bf"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -13850,8 +13804,8 @@
     ],
     "key_work_ids": [
       "work_34df946d722e",
-      "work_7b4e7b291611",
-      "work_9cce753ee6c0"
+      "work_9cce753ee6c0",
+      "work_7b4e7b291611"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -13921,18 +13875,18 @@
       }
     ],
     "key_work_ids": [
-      "work_1abce87d14f8",
-      "work_283a33670d8d",
-      "work_2c792e192df7",
-      "work_55a49935af9f",
-      "work_62f346624b04",
       "work_660c4a4bd0dd",
+      "work_62f346624b04",
       "work_73e246e4a3e9",
-      "work_953cb38d629e",
       "work_a1d970fe1d8d",
-      "work_b1c88813e206",
+      "work_1abce87d14f8",
+      "work_55a49935af9f",
+      "work_2c792e192df7",
       "work_b384273298ec",
-      "work_f431139f6b2d"
+      "work_b1c88813e206",
+      "work_f431139f6b2d",
+      "work_953cb38d629e",
+      "work_283a33670d8d"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -14070,8 +14024,6 @@
       }
     ],
     "key_work_ids": [
-      "work_3b1835696dfc",
-      "work_5c8463fc804d",
       "work_f463bcf9d5d0"
     ],
     "wts_relevance": true,
@@ -14337,9 +14289,9 @@
       }
     ],
     "key_work_ids": [
-      "work_2ac8f1228bf6",
+      "work_8e463a6637a1",
       "work_675b46064e81",
-      "work_8e463a6637a1"
+      "work_2ac8f1228bf6"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -14547,8 +14499,8 @@
       }
     ],
     "key_work_ids": [
-      "work_48d5438c0d05",
-      "work_6e4e20dc98bb"
+      "work_6e4e20dc98bb",
+      "work_48d5438c0d05"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -14615,8 +14567,8 @@
       }
     ],
     "key_work_ids": [
-      "work_7480ee533545",
-      "work_f32fbbb22b58"
+      "work_f32fbbb22b58",
+      "work_7480ee533545"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -14957,20 +14909,19 @@
     ],
     "key_work_ids": [
       "work_1613a9b020df",
-      "work_38ef293fee5a",
-      "work_3ff64bc0d025",
-      "work_43757eedcaef",
-      "work_4dc0ccc4012f",
-      "work_54ac42153dab",
-      "work_584f5c37da90",
-      "work_5c1ac000e05e",
-      "work_5c40d7ec4899",
       "work_80686ff8e734",
+      "work_f2fe21f0ded2",
+      "work_5c40d7ec4899",
+      "work_4dc0ccc4012f",
+      "work_5c1ac000e05e",
+      "work_54ac42153dab",
       "work_872788d0f37c",
+      "work_584f5c37da90",
+      "work_3ff64bc0d025",
+      "work_e3517b91a07a",
       "work_a7eef6a603fe",
       "work_c5d850dc999a",
-      "work_e3517b91a07a",
-      "work_f2fe21f0ded2"
+      "work_43757eedcaef"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -15037,10 +14988,8 @@
       }
     ],
     "key_work_ids": [
-      "work_097469e2db3d",
-      "work_19ffa92ee366",
       "work_4f53c14b8d0a",
-      "work_ce7d95a2ab76"
+      "work_097469e2db3d"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -15178,12 +15127,12 @@
       }
     ],
     "key_work_ids": [
-      "work_79435d2800f6",
-      "work_8891c0da3d3d",
       "work_a6d49135e3cc",
+      "work_79435d2800f6",
       "work_c94441a344cb",
-      "work_ec1d0bf7c746",
-      "work_f5830cc2bc2d"
+      "work_f5830cc2bc2d",
+      "work_8891c0da3d3d",
+      "work_ec1d0bf7c746"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -15250,10 +15199,10 @@
       }
     ],
     "key_work_ids": [
+      "work_6a849128c9ce",
       "work_07ad247aee1f",
-      "work_560db0ac3847",
       "work_663d76750594",
-      "work_6a849128c9ce"
+      "work_560db0ac3847"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -15453,8 +15402,8 @@
       }
     ],
     "key_work_ids": [
-      "work_822211e12de8",
-      "work_f248d79b2d4b"
+      "work_f248d79b2d4b",
+      "work_822211e12de8"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -15657,11 +15606,10 @@
       }
     ],
     "key_work_ids": [
-      "work_62befb476a83",
-      "work_a5a11237cfdd",
+      "work_f7346787fb27",
       "work_b06966e5e8a5",
       "work_b8e9b54a1fba",
-      "work_f7346787fb27"
+      "work_62befb476a83"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -15729,20 +15677,18 @@
       }
     ],
     "key_work_ids": [
-      "work_0df6a3008d62",
-      "work_4f5d932ee86d",
+      "work_7dd05091bff8",
+      "work_d164ab57d411",
       "work_5e45c2279463",
       "work_5e9ebc7d2fd6",
-      "work_7cd6986b22da",
-      "work_7dd05091bff8",
-      "work_81541116dcf0",
+      "work_df0b2de70103",
       "work_9f0e6638dda4",
-      "work_b14a49c7a811",
       "work_bcefacb5aa84",
       "work_c6edc662c475",
+      "work_81541116dcf0",
       "work_ca9641222d99",
-      "work_d164ab57d411",
-      "work_df0b2de70103"
+      "work_b14a49c7a811",
+      "work_7cd6986b22da"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -16214,19 +16160,19 @@
       }
     ],
     "key_work_ids": [
-      "work_0ee844e2ae8e",
-      "work_4c8463f5a07f",
       "work_50c8999e610f",
-      "work_6660d5ac37c2",
       "work_759dfe2247d1",
       "work_7c4e412b50e9",
-      "work_93eb5ae6d6ea",
-      "work_a91f3fc4c42c",
+      "work_4c8463f5a07f",
       "work_afc0f43ab91a",
       "work_c2d3791f0010",
-      "work_c31e13e80bb0",
+      "work_a91f3fc4c42c",
       "work_c33649e4957e",
-      "work_e9bcffe8be25"
+      "work_6660d5ac37c2",
+      "work_93eb5ae6d6ea",
+      "work_c31e13e80bb0",
+      "work_e9bcffe8be25",
+      "work_0ee844e2ae8e"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -16426,14 +16372,13 @@
       }
     ],
     "key_work_ids": [
-      "work_050b045fed79",
-      "work_8095ed115a54",
       "work_866863caa380",
-      "work_b2dda476601b",
-      "work_c1a4e2d1a9ad",
-      "work_c491623c7560",
       "work_d01b2843352a",
       "work_e8028f7bd3db",
+      "work_c1a4e2d1a9ad",
+      "work_c491623c7560",
+      "work_050b045fed79",
+      "work_b2dda476601b",
       "work_ec24cc105b14"
     ],
     "wts_relevance": true,
@@ -16500,8 +16445,8 @@
       }
     ],
     "key_work_ids": [
-      "work_78ce7e3597af",
-      "work_c402862011e2"
+      "work_c402862011e2",
+      "work_78ce7e3597af"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -16572,14 +16517,13 @@
       }
     ],
     "key_work_ids": [
-      "work_5e5e7ce47b62",
       "work_6f6ec209084e",
-      "work_94141293511f",
       "work_aada9a1cd8ec",
-      "work_c7bf125bf1f2",
-      "work_e4b3fa62a055",
+      "work_5e5e7ce47b62",
+      "work_94141293511f",
       "work_f82d3bc82915",
-      "work_ff31d825bf22"
+      "work_ff31d825bf22",
+      "work_e4b3fa62a055"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -16714,8 +16658,8 @@
       }
     ],
     "key_work_ids": [
-      "work_d3553744cb5c",
-      "work_f5adf61c026e"
+      "work_f5adf61c026e",
+      "work_d3553744cb5c"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -16985,10 +16929,10 @@
       }
     ],
     "key_work_ids": [
-      "work_61211cf2b628",
+      "work_e87eb496905c",
       "work_772aa3dac9cb",
-      "work_9a703873024f",
-      "work_e87eb496905c"
+      "work_61211cf2b628",
+      "work_9a703873024f"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -17059,8 +17003,8 @@
       }
     ],
     "key_work_ids": [
-      "work_dc2f949b03fc",
-      "work_e3095f3f7686"
+      "work_e3095f3f7686",
+      "work_dc2f949b03fc"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -17129,8 +17073,8 @@
     "key_work_ids": [
       "work_039666389ee0",
       "work_641e6413607e",
-      "work_ccee8fca49f2",
       "work_cf49f4873aa1",
+      "work_ccee8fca49f2",
       "work_e9c786523966"
     ],
     "wts_relevance": false,
@@ -17412,11 +17356,10 @@
       }
     ],
     "key_work_ids": [
-      "work_2d1b3687d5a5",
       "work_32c7cee4d8df",
-      "work_be9fbc4e2b2b",
-      "work_d8bd9ff84f91",
-      "work_f9c266566ac5"
+      "work_f9c266566ac5",
+      "work_2d1b3687d5a5",
+      "work_be9fbc4e2b2b"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -17551,9 +17494,8 @@
       }
     ],
     "key_work_ids": [
-      "work_45d3fa03256c",
-      "work_c45649e6b3d7",
-      "work_dac5118abb58"
+      "work_dac5118abb58",
+      "work_45d3fa03256c"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -17625,7 +17567,6 @@
     ],
     "key_work_ids": [
       "work_317e6b7a5eb0",
-      "work_4a97010cc492",
       "work_4adc30b47e0d",
       "work_d88a633e8d3b"
     ],
@@ -17694,8 +17635,8 @@
       }
     ],
     "key_work_ids": [
-      "work_8672c9269bae",
-      "work_998efb5bce2a"
+      "work_998efb5bce2a",
+      "work_8672c9269bae"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -17894,10 +17835,7 @@
       }
     ],
     "key_work_ids": [
-      "work_1312c8957561",
-      "work_60cd17ea3cd2",
-      "work_ad931dd735cb",
-      "work_d6926d42e834"
+      "work_1312c8957561"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -17963,11 +17901,11 @@
       }
     ],
     "key_work_ids": [
-      "work_08dd9c0068a7",
+      "work_d2c4445d5658",
       "work_384b123f70c3",
-      "work_659ac100e4df",
       "work_adbfe5b6887d",
-      "work_d2c4445d5658"
+      "work_659ac100e4df",
+      "work_08dd9c0068a7"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -18034,8 +17972,8 @@
       }
     ],
     "key_work_ids": [
-      "work_2a7a04fee3f2",
-      "work_41a74d9fcdf0"
+      "work_41a74d9fcdf0",
+      "work_2a7a04fee3f2"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -18102,10 +18040,10 @@
     ],
     "key_work_ids": [
       "work_2916e2ecfff4",
-      "work_5f39c18c5805",
-      "work_70a58827902d",
       "work_7af65a2ed1f0",
-      "work_971ec6b69208"
+      "work_971ec6b69208",
+      "work_70a58827902d",
+      "work_5f39c18c5805"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -18171,10 +18109,10 @@
       }
     ],
     "key_work_ids": [
-      "work_a6c4cbfb230c",
-      "work_b1dd7a88e9b3",
       "work_b3aa30ff1731",
-      "work_ef35d6af414e"
+      "work_ef35d6af414e",
+      "work_a6c4cbfb230c",
+      "work_b1dd7a88e9b3"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -18240,8 +18178,8 @@
       }
     ],
     "key_work_ids": [
-      "work_87c5d67469e3",
-      "work_f221f2f35047"
+      "work_f221f2f35047",
+      "work_87c5d67469e3"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -18378,7 +18316,6 @@
       }
     ],
     "key_work_ids": [
-      "work_5c3d69d52244",
       "work_62a316906549",
       "work_d97f70504d83"
     ],
@@ -18447,9 +18384,8 @@
       }
     ],
     "key_work_ids": [
-      "work_27a39ebfd871",
-      "work_a335aee8f21d",
-      "work_d8a950e8805d"
+      "work_d8a950e8805d",
+      "work_27a39ebfd871"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -18585,8 +18521,7 @@
       }
     ],
     "key_work_ids": [
-      "work_3582b1e7972f",
-      "work_aba32f867506"
+      "work_3582b1e7972f"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -18721,9 +18656,9 @@
       }
     ],
     "key_work_ids": [
+      "work_fc5e05dd7714",
       "work_614b9b260538",
-      "work_ecd409d84f8f",
-      "work_fc5e05dd7714"
+      "work_ecd409d84f8f"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -18860,8 +18795,8 @@
       }
     ],
     "key_work_ids": [
-      "work_50f686381eaa",
-      "work_c4b8e84cac45"
+      "work_c4b8e84cac45",
+      "work_50f686381eaa"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -19063,10 +18998,10 @@
       }
     ],
     "key_work_ids": [
-      "work_37b8347b9a8c",
+      "work_fc8f0f5cd858",
       "work_4e1f83597106",
       "work_c8c9fa29359d",
-      "work_fc8f0f5cd858"
+      "work_37b8347b9a8c"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -19471,8 +19406,8 @@
       }
     ],
     "key_work_ids": [
-      "work_806219629c4b",
-      "work_94d6d8296c1d"
+      "work_94d6d8296c1d",
+      "work_806219629c4b"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -19601,10 +19536,10 @@
       }
     ],
     "key_work_ids": [
-      "work_0efbb3db89e9",
-      "work_116d2ff8499f",
       "work_45433c87285d",
-      "work_8a88e8e8bc67"
+      "work_8a88e8e8bc67",
+      "work_116d2ff8499f",
+      "work_0efbb3db89e9"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -19670,25 +19605,24 @@
       }
     ],
     "key_work_ids": [
+      "work_f036c5ccc425",
       "work_0001c5eb428f",
+      "work_8f9f6ddb2c8d",
+      "work_6672a1cb43a9",
+      "work_65726a4ce254",
+      "work_9990fd2c98b8",
+      "work_487187e66de1",
+      "work_51200c29edaf",
+      "work_425171b769f1",
+      "work_d765cfb51ebe",
       "work_04e4d73fb44c",
       "work_19e60925f3de",
-      "work_3676cd7fd132",
-      "work_38d30f8a2921",
-      "work_425171b769f1",
-      "work_487187e66de1",
-      "work_4ba770359e42",
-      "work_51200c29edaf",
-      "work_65726a4ce254",
-      "work_6672a1cb43a9",
-      "work_7b02d8ae6279",
-      "work_89ab1223f43b",
-      "work_8f9f6ddb2c8d",
-      "work_9990fd2c98b8",
       "work_a5ae6572f630",
+      "work_38d30f8a2921",
+      "work_4ba770359e42",
       "work_b430b91c4339",
-      "work_d765cfb51ebe",
-      "work_f036c5ccc425"
+      "work_7b02d8ae6279",
+      "work_89ab1223f43b"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -19754,8 +19688,8 @@
       }
     ],
     "key_work_ids": [
-      "work_1a849e5ffadb",
-      "work_6ed310bb7b6d"
+      "work_6ed310bb7b6d",
+      "work_1a849e5ffadb"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -19818,9 +19752,9 @@
       }
     ],
     "key_work_ids": [
-      "work_19cf0607a714",
+      "work_a1e10c905bb5",
       "work_9645f94da676",
-      "work_a1e10c905bb5"
+      "work_19cf0607a714"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -19954,16 +19888,16 @@
       }
     ],
     "key_work_ids": [
-      "work_0161c4cb8539",
-      "work_0a76d3ab1995",
-      "work_497728f4440d",
-      "work_660ae0aedd2f",
-      "work_79384c02a7b9",
-      "work_be544db43685",
+      "work_fa83dea2fb86",
       "work_c68de7761583",
-      "work_e091b2463f4d",
+      "work_79384c02a7b9",
+      "work_0161c4cb8539",
       "work_ef03b9ef09b2",
-      "work_fa83dea2fb86"
+      "work_be544db43685",
+      "work_660ae0aedd2f",
+      "work_497728f4440d",
+      "work_0a76d3ab1995",
+      "work_e091b2463f4d"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -20307,8 +20241,8 @@
       }
     ],
     "key_work_ids": [
-      "work_436a18dddae4",
-      "work_f5c8fbafc0cd"
+      "work_f5c8fbafc0cd",
+      "work_436a18dddae4"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -20704,13 +20638,13 @@
       }
     ],
     "key_work_ids": [
-      "work_08586ec8d8a7",
-      "work_0afc4169eaa2",
-      "work_0f2dd5a8fc78",
-      "work_14bed32668e4",
-      "work_466259a4f068",
       "work_870f056f84b4",
-      "work_ec157e33f85c"
+      "work_0afc4169eaa2",
+      "work_14bed32668e4",
+      "work_0f2dd5a8fc78",
+      "work_ec157e33f85c",
+      "work_08586ec8d8a7",
+      "work_466259a4f068"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -20913,9 +20847,9 @@
       }
     ],
     "key_work_ids": [
-      "work_0c49a94f90ca",
-      "work_28a40c22360c",
       "work_6b20a84aed13",
+      "work_28a40c22360c",
+      "work_0c49a94f90ca",
       "work_76defa522d21"
     ],
     "wts_relevance": false,
@@ -20982,14 +20916,14 @@
       }
     ],
     "key_work_ids": [
-      "work_121b9f4fd473",
-      "work_3c3c1119758b",
-      "work_587c5cebe251",
       "work_a547cd35ecdb",
-      "work_aa78422caa97",
+      "work_587c5cebe251",
       "work_bf4f99dbc8aa",
+      "work_121b9f4fd473",
       "work_e9a6dae204af",
-      "work_f6a9baada80a"
+      "work_f6a9baada80a",
+      "work_aa78422caa97",
+      "work_3c3c1119758b"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -21187,8 +21121,8 @@
       }
     ],
     "key_work_ids": [
-      "work_a7d1b0a80b42",
-      "work_b4a2b858ab28"
+      "work_b4a2b858ab28",
+      "work_a7d1b0a80b42"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -21462,10 +21396,10 @@
     ],
     "key_work_ids": [
       "work_0803e1c75a02",
+      "work_f542fe78f541",
       "work_2000719fb209",
-      "work_4043dec92c7f",
       "work_558e2b9ac864",
-      "work_f542fe78f541"
+      "work_4043dec92c7f"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -21598,14 +21532,11 @@
       }
     ],
     "key_work_ids": [
-      "work_07615ef42105",
-      "work_2974924d0e24",
-      "work_4886537ad293",
       "work_4f2329574498",
+      "work_c5e87e6cbb9f",
       "work_4f24e97ff123",
-      "work_773be975b051",
-      "work_a984f932a0f0",
-      "work_c5e87e6cbb9f"
+      "work_07615ef42105",
+      "work_2974924d0e24"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -21807,9 +21738,9 @@
     ],
     "key_work_ids": [
       "work_3b607d61ae45",
-      "work_6aa814268404",
       "work_6b1df6c22f2c",
-      "work_c953c407ae7c"
+      "work_c953c407ae7c",
+      "work_6aa814268404"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -21946,9 +21877,9 @@
       }
     ],
     "key_work_ids": [
-      "work_4929bc1660ff",
       "work_6067d7b62a47",
-      "work_b2e16a863094"
+      "work_b2e16a863094",
+      "work_4929bc1660ff"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -22085,8 +22016,8 @@
       }
     ],
     "key_work_ids": [
-      "work_2bbbda588247",
       "work_5ff3e5ae6036",
+      "work_2bbbda588247",
       "work_8dc9990f6949"
     ],
     "wts_relevance": false,
@@ -22219,9 +22150,7 @@
         "event": "Published 'Introducing Biblical Hermeneutics'"
       }
     ],
-    "key_work_ids": [
-      "work_797a11dc2279"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -22287,14 +22216,14 @@
       }
     ],
     "key_work_ids": [
-      "work_09e6aa5f27c3",
-      "work_2724a4ba44b9",
-      "work_33a25ee15235",
-      "work_639ecd8cd52c",
-      "work_a5c8360122c6",
       "work_ad1c4f17ff6b",
+      "work_f6aca58ea4b5",
+      "work_639ecd8cd52c",
+      "work_2724a4ba44b9",
+      "work_09e6aa5f27c3",
+      "work_a5c8360122c6",
       "work_d26b96812b47",
-      "work_f6aca58ea4b5"
+      "work_33a25ee15235"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -22361,8 +22290,8 @@
     ],
     "key_work_ids": [
       "work_4a4015dfcf69",
-      "work_b38641912a55",
-      "work_e5e8c83da832"
+      "work_e5e8c83da832",
+      "work_b38641912a55"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -22765,9 +22694,9 @@
       }
     ],
     "key_work_ids": [
-      "work_47c713b78508",
-      "work_78506fe896b4",
       "work_ae638ee5927c",
+      "work_78506fe896b4",
+      "work_47c713b78508",
       "work_d9ec02e6c1e5"
     ],
     "wts_relevance": true,
@@ -22834,11 +22763,11 @@
       }
     ],
     "key_work_ids": [
-      "work_2c7f67742c46",
-      "work_3f6863973d3c",
-      "work_3fb2f951af66",
-      "work_627816168c7a",
       "work_c0eeb41f4003",
+      "work_3fb2f951af66",
+      "work_2c7f67742c46",
+      "work_627816168c7a",
+      "work_3f6863973d3c",
       "work_ecef108fe315"
     ],
     "wts_relevance": true,
@@ -23037,8 +22966,8 @@
       }
     ],
     "key_work_ids": [
-      "work_361a09bd99f5",
-      "work_b7127ae0b96c"
+      "work_b7127ae0b96c",
+      "work_361a09bd99f5"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -23167,8 +23096,8 @@
       }
     ],
     "key_work_ids": [
-      "work_d0df7b274344",
-      "work_e6a0d9ab2e61"
+      "work_e6a0d9ab2e61",
+      "work_d0df7b274344"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -23231,8 +23160,8 @@
     ],
     "key_work_ids": [
       "work_251ac5fe9e59",
-      "work_c49f40eecfa0",
-      "work_df35bc8124ff"
+      "work_df35bc8124ff",
+      "work_c49f40eecfa0"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -23299,8 +23228,8 @@
       }
     ],
     "key_work_ids": [
-      "work_3f78c17f6f22",
-      "work_69011d096ec5"
+      "work_69011d096ec5",
+      "work_3f78c17f6f22"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -23631,8 +23560,8 @@
       }
     ],
     "key_work_ids": [
-      "work_1a8f9089abcc",
-      "work_976ef1cccbd3"
+      "work_976ef1cccbd3",
+      "work_1a8f9089abcc"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -23962,9 +23891,7 @@
         "event": "Continues to teach at the Jewish Theological Seminary of America"
       }
     ],
-    "key_work_ids": [
-      "work_c5cfceab9f99"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -24225,8 +24152,8 @@
       }
     ],
     "key_work_ids": [
-      "work_500b374802e1",
-      "work_d1f77e0f60a2"
+      "work_d1f77e0f60a2",
+      "work_500b374802e1"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -24293,8 +24220,8 @@
       }
     ],
     "key_work_ids": [
-      "work_61a23620c14c",
-      "work_bd8dcaeab647"
+      "work_bd8dcaeab647",
+      "work_61a23620c14c"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -24690,9 +24617,7 @@
         "event": "Became Chair of the New Testament Department"
       }
     ],
-    "key_work_ids": [
-      "work_f0cf931348a4"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -24761,8 +24686,8 @@
       }
     ],
     "key_work_ids": [
-      "work_9b072a2aeafa",
-      "work_e1ff289a6fe3"
+      "work_e1ff289a6fe3",
+      "work_9b072a2aeafa"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -25878,8 +25803,8 @@
       }
     ],
     "key_work_ids": [
-      "work_396d48b19db6",
-      "work_85b2fc69f935"
+      "work_85b2fc69f935",
+      "work_396d48b19db6"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -25945,8 +25870,8 @@
       }
     ],
     "key_work_ids": [
-      "work_7594b44d307c",
-      "work_fc55a9318717"
+      "work_fc55a9318717",
+      "work_7594b44d307c"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -26142,8 +26067,8 @@
       }
     ],
     "key_work_ids": [
-      "work_064c4bce9ba8",
-      "work_6464a0c50986"
+      "work_6464a0c50986",
+      "work_064c4bce9ba8"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -26343,8 +26268,8 @@
     ],
     "key_work_ids": [
       "work_27f71719f1bd",
-      "work_b9bf802cae23",
-      "work_d67285cb6521"
+      "work_d67285cb6521",
+      "work_b9bf802cae23"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -26531,8 +26456,8 @@
       }
     ],
     "key_work_ids": [
-      "work_88eb4d832006",
-      "work_e5336b1bf9b2"
+      "work_e5336b1bf9b2",
+      "work_88eb4d832006"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -26664,29 +26589,27 @@
       }
     ],
     "key_work_ids": [
-      "work_02f1e6ca8fa8",
-      "work_03c8c67ea2ce",
-      "work_1935e2a034c9",
-      "work_22de1a84ed32",
-      "work_25ec11bc5a94",
-      "work_4c721c536a23",
-      "work_58ea940a1684",
-      "work_66f6d78a8fdd",
-      "work_711ab976b3e8",
-      "work_8c9bd3f2c9f9",
       "work_8e7ac9dd0431",
-      "work_92d71a54e372",
-      "work_9e9b299df685",
       "work_b24a568d48eb",
-      "work_b5414d55f447",
-      "work_b554406ca6d6",
-      "work_bd2632e38982",
-      "work_c89356149d6e",
       "work_da62b01faa07",
-      "work_e896ea19c011",
-      "work_f4ffcd40b0c4",
+      "work_25ec11bc5a94",
+      "work_92d71a54e372",
+      "work_1935e2a034c9",
+      "work_b554406ca6d6",
+      "work_4c721c536a23",
+      "work_c89356149d6e",
       "work_f512c3ad91bd",
-      "work_fe8712f63adf"
+      "work_03c8c67ea2ce",
+      "work_02f1e6ca8fa8",
+      "work_e896ea19c011",
+      "work_fe8712f63adf",
+      "work_f4ffcd40b0c4",
+      "work_711ab976b3e8",
+      "work_22de1a84ed32",
+      "work_9e9b299df685",
+      "work_58ea940a1684",
+      "work_b5414d55f447",
+      "work_66f6d78a8fdd"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -27016,8 +26939,8 @@
     ],
     "key_work_ids": [
       "work_0eb98d3174f8",
-      "work_c87978d6da3c",
-      "work_f05b2ee79dd0"
+      "work_f05b2ee79dd0",
+      "work_c87978d6da3c"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -27212,14 +27135,13 @@
       }
     ],
     "key_work_ids": [
-      "work_1abcbda1e2fe",
-      "work_1d7ca786963f",
-      "work_20397275c124",
-      "work_62f724ddb054",
-      "work_8c7a18f0f738",
-      "work_a7573f661d74",
       "work_e5f45c95987b",
-      "work_f02032889f72"
+      "work_8c7a18f0f738",
+      "work_62f724ddb054",
+      "work_1d7ca786963f",
+      "work_1abcbda1e2fe",
+      "work_f02032889f72",
+      "work_a7573f661d74"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -27420,8 +27342,8 @@
       }
     ],
     "key_work_ids": [
-      "work_3507870663b1",
       "work_bbe4076e0161",
+      "work_3507870663b1",
       "work_fff4b4a7a3de"
     ],
     "wts_relevance": false,
@@ -27626,8 +27548,8 @@
       }
     ],
     "key_work_ids": [
-      "work_30db5f505d63",
-      "work_9be4862cb8b7"
+      "work_9be4862cb8b7",
+      "work_30db5f505d63"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -27760,8 +27682,8 @@
       }
     ],
     "key_work_ids": [
-      "work_97fdb94e3a9b",
-      "work_e8365ddc062f"
+      "work_e8365ddc062f",
+      "work_97fdb94e3a9b"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -27893,9 +27815,9 @@
       }
     ],
     "key_work_ids": [
-      "work_906c14ff997b",
+      "work_b22ceaed1fd3",
       "work_a7a9753d68f7",
-      "work_b22ceaed1fd3"
+      "work_906c14ff997b"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -28028,11 +27950,11 @@
       }
     ],
     "key_work_ids": [
-      "work_1d72cd0d3667",
+      "work_ad4f959eee7a",
       "work_2442d9274524",
-      "work_44ff193838e5",
       "work_991748e96b7b",
-      "work_ad4f959eee7a"
+      "work_1d72cd0d3667",
+      "work_44ff193838e5"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -28099,8 +28021,8 @@
       }
     ],
     "key_work_ids": [
-      "work_328af2e9b8d4",
-      "work_ba46d97f8874"
+      "work_ba46d97f8874",
+      "work_328af2e9b8d4"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -28367,14 +28289,14 @@
       }
     ],
     "key_work_ids": [
-      "work_01bb67328521",
       "work_04838d5a257a",
-      "work_1baf22e72cb5",
-      "work_2f7fad94f56d",
       "work_5470cec4daf3",
-      "work_65fec37478a6",
       "work_8611aa4a0be4",
-      "work_da8caa274378"
+      "work_65fec37478a6",
+      "work_da8caa274378",
+      "work_2f7fad94f56d",
+      "work_1baf22e72cb5",
+      "work_01bb67328521"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -28707,15 +28629,13 @@
       }
     ],
     "key_work_ids": [
-      "work_0a5195003166",
-      "work_20804007cbf4",
       "work_5d90d4842717",
-      "work_642f2a8284de",
       "work_7b011e9289e4",
-      "work_7dfec0da910c",
       "work_a31ef029be5a",
-      "work_cbd5d2d84537",
-      "work_dd2b93e9f2c4"
+      "work_20804007cbf4",
+      "work_dd2b93e9f2c4",
+      "work_0a5195003166",
+      "work_cbd5d2d84537"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -28977,10 +28897,10 @@
       }
     ],
     "key_work_ids": [
-      "work_37ed05d8e80c",
-      "work_57b538e64137",
+      "work_de96b5268c6e",
       "work_82e9f94448e6",
-      "work_de96b5268c6e"
+      "work_57b538e64137",
+      "work_37ed05d8e80c"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -29113,20 +29033,20 @@
       }
     ],
     "key_work_ids": [
-      "work_1cf977ddada9",
-      "work_671b46898ac4",
-      "work_86742799679a",
-      "work_86fdeb3f3ed2",
-      "work_8b449aa05eaf",
-      "work_9564ccf66f3f",
-      "work_a2f693b4e6b2",
-      "work_a904fee4b959",
-      "work_ba38045e601e",
-      "work_be1f191f2184",
-      "work_c282f99592da",
-      "work_cd1c7995c1b5",
-      "work_cf27ead60cad",
       "work_da70893ae297",
+      "work_1cf977ddada9",
+      "work_86fdeb3f3ed2",
+      "work_a904fee4b959",
+      "work_be1f191f2184",
+      "work_a2f693b4e6b2",
+      "work_671b46898ac4",
+      "work_c282f99592da",
+      "work_9564ccf66f3f",
+      "work_cd1c7995c1b5",
+      "work_ba38045e601e",
+      "work_8b449aa05eaf",
+      "work_86742799679a",
+      "work_cf27ead60cad",
       "work_e92dd358402e"
     ],
     "wts_relevance": false,
@@ -29193,14 +29113,14 @@
       }
     ],
     "key_work_ids": [
-      "work_2d4a33f73395",
-      "work_366641d98266",
       "work_3a06e2226d87",
-      "work_6483a9a52197",
+      "work_366641d98266",
+      "work_f5d0ae789e2d",
       "work_762a2378bdae",
-      "work_89ec5e49c463",
       "work_9fb761ea91c1",
-      "work_f5d0ae789e2d"
+      "work_2d4a33f73395",
+      "work_6483a9a52197",
+      "work_89ec5e49c463"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -29267,9 +29187,9 @@
       }
     ],
     "key_work_ids": [
+      "work_da32e8c8867c",
       "work_1f95e1d9dce2",
-      "work_673eab610e7f",
-      "work_da32e8c8867c"
+      "work_673eab610e7f"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -29401,8 +29321,8 @@
       }
     ],
     "key_work_ids": [
-      "work_78548c805f57",
-      "work_acc1d4f99d24"
+      "work_acc1d4f99d24",
+      "work_78548c805f57"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -29469,9 +29389,9 @@
       }
     ],
     "key_work_ids": [
-      "work_1e41dcc8add7",
       "work_3b39a881be06",
       "work_ba2dabad7a1a",
+      "work_1e41dcc8add7",
       "work_c7a4a9e53d08"
     ],
     "wts_relevance": false,
@@ -29671,12 +29591,12 @@
       }
     ],
     "key_work_ids": [
-      "work_552bb9c4a407",
-      "work_662f73864668",
       "work_8816af0e2838",
+      "work_552bb9c4a407",
       "work_903f330cfa92",
-      "work_90e2fac514fe",
-      "work_9cea866ec92b"
+      "work_662f73864668",
+      "work_9cea866ec92b",
+      "work_90e2fac514fe"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -29938,8 +29858,8 @@
       }
     ],
     "key_work_ids": [
-      "work_27435a9e454c",
       "work_434b2ee124e3",
+      "work_27435a9e454c",
       "work_59e1beaba11b"
     ],
     "wts_relevance": false,
@@ -30006,14 +29926,14 @@
       }
     ],
     "key_work_ids": [
+      "work_a2fff2c19763",
       "work_20b98a01388c",
+      "work_9f52eae38736",
       "work_40185a755117",
       "work_7b77f99bb9fe",
-      "work_9f52eae38736",
-      "work_a2fff2c19763",
       "work_b0dad26104ab",
-      "work_cc4c63672873",
-      "work_e887e83c8b43"
+      "work_e887e83c8b43",
+      "work_cc4c63672873"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -30081,12 +30001,12 @@
       }
     ],
     "key_work_ids": [
-      "work_038c67061c69",
-      "work_1fcb964d93af",
-      "work_21254e3d0d36",
       "work_2e022b6f1cac",
+      "work_038c67061c69",
+      "work_f1d7e8a3194a",
+      "work_1fcb964d93af",
       "work_e790c087205a",
-      "work_f1d7e8a3194a"
+      "work_21254e3d0d36"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -30218,9 +30138,7 @@
         "event": "Became lead pastor of Church Without Religion"
       }
     ],
-    "key_work_ids": [
-      "work_cf5a9d09ffe1"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",
@@ -30351,12 +30269,10 @@
       }
     ],
     "key_work_ids": [
+      "work_aea81cfdb137",
+      "work_99a57196cf3c",
       "work_21e8c052b6a3",
       "work_63a8349f17ce",
-      "work_71933e8e50a1",
-      "work_82e915a20a2f",
-      "work_99a57196cf3c",
-      "work_aea81cfdb137",
       "work_e0c624dc25d5"
     ],
     "wts_relevance": true,
@@ -30423,8 +30339,8 @@
       }
     ],
     "key_work_ids": [
-      "work_21825378d828",
-      "work_c4ee3e264dea"
+      "work_c4ee3e264dea",
+      "work_21825378d828"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -30490,8 +30406,8 @@
       }
     ],
     "key_work_ids": [
-      "work_69cc921b2a5d",
-      "work_d5dd2507dcd7"
+      "work_d5dd2507dcd7",
+      "work_69cc921b2a5d"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -30563,14 +30479,14 @@
       }
     ],
     "key_work_ids": [
-      "work_03626551bcd8",
-      "work_0f7b3b44de62",
-      "work_65256a4df048",
-      "work_6bd233283d30",
-      "work_84ca0f0b8b88",
       "work_981fae1d407f",
+      "work_84ca0f0b8b88",
       "work_b7428e3905d0",
-      "work_d532acdd715c"
+      "work_6bd233283d30",
+      "work_03626551bcd8",
+      "work_d532acdd715c",
+      "work_65256a4df048",
+      "work_0f7b3b44de62"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -30706,9 +30622,9 @@
       }
     ],
     "key_work_ids": [
-      "work_5fafbacc3144",
       "work_738b322103b8",
       "work_7a7c48fcac6e",
+      "work_5fafbacc3144",
       "work_e73120708b41",
       "work_ffb21e764590"
     ],
@@ -30843,8 +30759,8 @@
       }
     ],
     "key_work_ids": [
-      "work_695739755163",
-      "work_969c3358a69e"
+      "work_969c3358a69e",
+      "work_695739755163"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -30972,8 +30888,8 @@
       }
     ],
     "key_work_ids": [
-      "work_4faa1d12bf84",
-      "work_536187864988"
+      "work_536187864988",
+      "work_4faa1d12bf84"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -31106,8 +31022,8 @@
     ],
     "key_work_ids": [
       "work_587327ba45a3",
-      "work_cb8337659830",
-      "work_e95395bd7c29"
+      "work_e95395bd7c29",
+      "work_cb8337659830"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -31173,9 +31089,8 @@
       }
     ],
     "key_work_ids": [
-      "work_1a21c037f3ed",
-      "work_9ce54cbc4de5",
-      "work_a1cf657b504e"
+      "work_a1cf657b504e",
+      "work_9ce54cbc4de5"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -31305,17 +31220,15 @@
       }
     ],
     "key_work_ids": [
-      "work_1ae6509ecd91",
-      "work_30594985c668",
+      "work_bffb34806ef9",
       "work_339b927c078e",
+      "work_97ff90736200",
+      "work_e91dada8f457",
+      "work_4d058f2d21fe",
+      "work_b05e891afe9a",
       "work_3852457b77df",
       "work_474cb90c776d",
-      "work_4d058f2d21fe",
-      "work_97ff90736200",
-      "work_b05e891afe9a",
-      "work_bffb34806ef9",
-      "work_d41bf712d6f8",
-      "work_e91dada8f457"
+      "work_d41bf712d6f8"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -31381,18 +31294,18 @@
       }
     ],
     "key_work_ids": [
-      "work_07078fe48fe1",
-      "work_07f1f4ecf2a9",
       "work_2f11be4704d4",
-      "work_3425fef37cba",
-      "work_395891a03c4f",
-      "work_61d08695b814",
-      "work_843cd50088d4",
+      "work_07078fe48fe1",
       "work_b21858895b09",
       "work_bad87e4b1cba",
+      "work_843cd50088d4",
+      "work_395891a03c4f",
+      "work_3425fef37cba",
+      "work_f877fb095279",
+      "work_07f1f4ecf2a9",
       "work_cb75cf884c07",
       "work_ccd725367bad",
-      "work_f877fb095279"
+      "work_61d08695b814"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -31459,10 +31372,10 @@
     ],
     "key_work_ids": [
       "work_085bc0b42280",
-      "work_0b8c64593b35",
-      "work_483d448d5f44",
       "work_6b347f8c2891",
-      "work_7cec6c85c4b9"
+      "work_483d448d5f44",
+      "work_7cec6c85c4b9",
+      "work_0b8c64593b35"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -31858,8 +31771,8 @@
     ],
     "key_work_ids": [
       "work_6e8202a54396",
-      "work_a7809b8af6ce",
-      "work_dba17569fbf7"
+      "work_dba17569fbf7",
+      "work_a7809b8af6ce"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -31926,8 +31839,8 @@
       }
     ],
     "key_work_ids": [
-      "work_394adbfd51b4",
-      "work_b2d27e80bf8f"
+      "work_b2d27e80bf8f",
+      "work_394adbfd51b4"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -31993,9 +31906,9 @@
       }
     ],
     "key_work_ids": [
+      "work_6a731d63177b",
       "work_014bccebc50d",
-      "work_1e3d638e770e",
-      "work_6a731d63177b"
+      "work_1e3d638e770e"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -32328,10 +32241,10 @@
       }
     ],
     "key_work_ids": [
-      "work_165bf3e71653",
-      "work_4aaa76a8f23b",
-      "work_6bf1b7066933",
       "work_ab775368fe9f",
+      "work_6bf1b7066933",
+      "work_4aaa76a8f23b",
+      "work_165bf3e71653",
       "work_be635f5f3bad"
     ],
     "wts_relevance": true,
@@ -32926,20 +32839,20 @@
       }
     ],
     "key_work_ids": [
-      "work_06277ca3f2e2",
-      "work_08823315cc21",
-      "work_1d80197130dd",
-      "work_5a707a79b59a",
-      "work_5e6ba452afc8",
-      "work_6aefea6402aa",
-      "work_6ba6fce82954",
-      "work_a662af194139",
       "work_b4a81a9c64b5",
-      "work_c36043b483bd",
-      "work_cfb5c2bfac07",
       "work_dad1e711441f",
+      "work_5a707a79b59a",
+      "work_6ba6fce82954",
+      "work_f03c71427ec9",
+      "work_08823315cc21",
       "work_e8ef636b68c8",
-      "work_f03c71427ec9"
+      "work_a662af194139",
+      "work_cfb5c2bfac07",
+      "work_1d80197130dd",
+      "work_c36043b483bd",
+      "work_5e6ba452afc8",
+      "work_06277ca3f2e2",
+      "work_6aefea6402aa"
     ],
     "wts_relevance": true,
     "created_at": "2025-08-16",
@@ -33072,10 +32985,10 @@
       }
     ],
     "key_work_ids": [
-      "work_6854311e6f33",
-      "work_75990ab04c52",
+      "work_d6728d9105c3",
       "work_a8e2f9322e53",
-      "work_d6728d9105c3"
+      "work_75990ab04c52",
+      "work_6854311e6f33"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -33279,12 +33192,12 @@
       }
     ],
     "key_work_ids": [
-      "work_416776f2a0a9",
-      "work_42aea8514b88",
-      "work_5aae7ff92be3",
       "work_6e71a1ebd0ab",
-      "work_cbead557d5c5",
-      "work_ceea6ee65ef6"
+      "work_5aae7ff92be3",
+      "work_ceea6ee65ef6",
+      "work_42aea8514b88",
+      "work_416776f2a0a9",
+      "work_cbead557d5c5"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -33554,8 +33467,8 @@
       }
     ],
     "key_work_ids": [
-      "work_5e1971e0ec04",
-      "work_ec77f9e34697"
+      "work_ec77f9e34697",
+      "work_5e1971e0ec04"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -33822,12 +33735,12 @@
       }
     ],
     "key_work_ids": [
-      "work_3b88876de5bc",
       "work_57f0bd4add90",
-      "work_653691907fb4",
       "work_725f67585825",
-      "work_a9ed3944a621",
-      "work_c0f64902ee99"
+      "work_c0f64902ee99",
+      "work_653691907fb4",
+      "work_3b88876de5bc",
+      "work_a9ed3944a621"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -34421,8 +34334,8 @@
       }
     ],
     "key_work_ids": [
-      "work_1d1455acc026",
-      "work_3073db1169bc"
+      "work_3073db1169bc",
+      "work_1d1455acc026"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -34493,21 +34406,21 @@
     ],
     "key_work_ids": [
       "work_023cf703730d",
-      "work_046b201a2146",
       "work_2cbce1507ce5",
-      "work_42b1200dae63",
-      "work_51725accc0e4",
-      "work_52f3b477bbf3",
-      "work_69830442ed68",
-      "work_7e112e95d0cf",
-      "work_a189b84e3c5c",
+      "work_e7b85c9fa298",
       "work_a8e9270fcfa9",
-      "work_c18ca7ed9a29",
-      "work_c416d5667d45",
       "work_d64426dcb175",
       "work_e5dcc7388976",
-      "work_e7b85c9fa298",
-      "work_fa8ae7cf2c74"
+      "work_fa8ae7cf2c74",
+      "work_c18ca7ed9a29",
+      "work_52f3b477bbf3",
+      "work_c416d5667d45",
+      "work_51725accc0e4",
+      "work_42b1200dae63",
+      "work_69830442ed68",
+      "work_046b201a2146",
+      "work_a189b84e3c5c",
+      "work_7e112e95d0cf"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -34636,10 +34549,10 @@
       }
     ],
     "key_work_ids": [
+      "work_dbcd9ef2d096",
       "work_0f8983972cb7",
-      "work_85671663f488",
       "work_aab49436155c",
-      "work_dbcd9ef2d096"
+      "work_85671663f488"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -34763,9 +34676,9 @@
       }
     ],
     "key_work_ids": [
+      "work_ca7b3cab3403",
       "work_23e63ad44563",
-      "work_5d6e97dabfe5",
-      "work_ca7b3cab3403"
+      "work_5d6e97dabfe5"
     ],
     "wts_relevance": false,
     "created_at": "2025-08-16",
@@ -35089,9 +35002,7 @@
         "event": "Retired from active teaching"
       }
     ],
-    "key_work_ids": [
-      "work_1e3f008aa06e"
-    ],
+    "key_work_ids": [],
     "wts_relevance": true,
     "created_at": "2025-08-16",
     "updated_at": "2025-08-21",

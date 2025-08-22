@@ -52,7 +52,7 @@ date_str = today.strftime("%Y-%m-%d")
 
 # populate theologians.json with profiles
 theologians_dict = {theo["id"]: theo for theo in theologians}
-new_theologians = {}
+new_theologians = []
 
 
 for tp, tpdata in theologian_profiles.items():
@@ -67,7 +67,7 @@ for tp, tpdata in theologian_profiles.items():
                 "created_at": theologian["created_at"], "updated_at": date_str, "themes": tpdata["themes"],
                 "country_primary_iso": tpdata["country_primary_iso"]}
 
-    new_theologians[tp] = new_theo
+    new_theologians.append(new_theo)
 
-write_json(theologians_path, theologian_profiles)
-write_json("data/theologians.json", theologian_profiles)
+write_json(theologians_path, new_theologians)
+write_json("data/theologians.json", new_theologians)
