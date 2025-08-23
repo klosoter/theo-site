@@ -174,6 +174,18 @@ function resolveAuthorsForWork(wid, datasets) {
     return out;
 }
 
+function parseCategoryKey(catName) {
+    const m = /^(\d+)\./.exec(catName);
+    return m ? parseInt(m[1], 10) : Number.MAX_SAFE_INTEGER;
+}
+
+function parseTopicKey(topic) {
+    const m = /^(\d+)-([a-z])/.exec(topic.slug || '');
+    if (!m) return [Number.MAX_SAFE_INTEGER, ''];
+    return [parseInt(m[1], 10), m[2]];
+}
+
+
 /* ---------- App ---------- */
 function App() {
     const router = useRouter();
@@ -282,28 +294,37 @@ function Home({datasets}) {
 
     return (
         <div>
-            {Object.entries(byCat).map(([cat, items]) => (
-                <section key={cat} style={{marginBottom: '16px'}}>
-                    <div className={'section ' + (open[cat] ? 'open' : '')}>
-                        <div className="section-head" onClick={() => toggle(cat)}>
-                            <div className="caret">▸</div>
-                            <h2><CategoryLink name={cat} stop>{cat}</CategoryLink></h2>
-                        </div>
-                        {open[cat] && (
-                            <div className="grid">
-                                {items.map(t => (
-                                    <div key={t.id} className="card">
-                                        <b><TopicLink topic={t}/></b>
-                                        <div className="small"><CategoryLink name={t.category}/></div>
-                                    </div>
-                                ))}
+            {Object.entries(byCat)
+                .sort(([a], [b]) => parseCategoryKey(a) - parseCategoryKey(b))
+                .map(([cat, items]) => (
+                    <section key={cat} style={{marginBottom: '16px'}}>
+                        <div className={'section ' + (open[cat] ? 'open' : '')}>
+                            <div className="section-head" onClick={() => toggle(cat)}>
+                                <div className="caret">▸</div>
+                                <h2><CategoryLink name={cat} stop>{cat}</CategoryLink></h2>
                             </div>
-                        )}
-                    </div>
-                </section>
-            ))}
+                            {open[cat] && (
+                                <div className="grid">
+                                    {[...items]
+                                        .sort((ta, tb) => {
+                                            const [na, la] = parseTopicKeyFromSlug(ta.slug);
+                                            const [nb, lb] = parseTopicKeyFromSlug(tb.slug);
+                                            return na !== nb ? na - nb : la.localeCompare(lb);
+                                        })
+                                        .map(t => (
+                                            <div key={t.id} className="card">
+                                                <b><TopicLink topic={t}/></b>
+                                                <div className="small"><CategoryLink name={t.category}/></div>
+                                            </div>
+                                        ))}
+                                </div>
+                            )}
+                        </div>
+                    </section>
+                ))}
         </div>
     );
+
 }
 
 /* ---------- Topic Page ---------- */
@@ -360,14 +381,14 @@ function TopicPage({slug, datasets}) {
                 })()}
 
                 {resolveAuthorsForWork(wid, datasets).length ? (
-                  <div className="small">
-                    {resolveAuthorsForWork(wid, datasets).map((a, i) => (
-                      <span key={i}>
+                    <div className="small">
+                        {resolveAuthorsForWork(wid, datasets).map((a, i) => (
+                            <span key={i}>
                         {i ? ', ' : ''}
-                        {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
+                                {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
                       </span>
-                    ))}
-                  </div>
+                        ))}
+                    </div>
                 ) : null}
                 <div style={{marginTop: 6, display: 'flex', gap: 6, flexWrap: 'wrap'}}>
                     {bucket === 'WTS' ? <span className="chip">WTS</span> : <span className="chip2">Recent</span>}
@@ -590,19 +611,19 @@ function TheologianPage({slug, datasets}) {
         return (
             <div className="card">
                 {(() => {
-                  const byW = datasets.byWork[w.id] || {};
-                  const label = workTitleWithSuffix(w, byW);
-                  return <div><b><WorkLink id={w.id} work={w}>{label}</WorkLink></b></div>;
+                    const byW = datasets.byWork[w.id] || {};
+                    const label = workTitleWithSuffix(w, byW);
+                    return <div><b><WorkLink id={w.id} work={w}>{label}</WorkLink></b></div>;
                 })()}
                 {resolveAuthorsForWork(w.id, datasets).length ? (
-                  <div className="small">
-                    {resolveAuthorsForWork(w.id, datasets).map((a, i) => (
-                      <span key={i}>
+                    <div className="small">
+                        {resolveAuthorsForWork(w.id, datasets).map((a, i) => (
+                            <span key={i}>
                         {i ? ', ' : ''}
-                        {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
+                                {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
                       </span>
-                    ))}
-                  </div>
+                        ))}
+                    </div>
                 ) : null}
 
                 {/*{authors.length ? <div className="small">{authors.map((a, i) => <span key={i}>{i ? ', ' : ''}<TheoLink*/}
@@ -661,140 +682,374 @@ function TheologianPage({slug, datasets}) {
 
             <div style={{marginTop: 18}}>
                 <h3>Outlines</h3>
-                {Object.entries(groups).map(([cat, items]) => {
-                    const open = !!openCats[cat];
-                    const catSlug = slugify(cat);
-                    return (
-                        <div key={cat} className={'card section ' + (open ? 'open' : '')} style={{marginBottom: 12}}>
-                            <div className="section-head"
-                                 onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
-                                <div className="caret">▸</div>
-                                <div className="small"><b><a href={`/category/${catSlug}`} onClick={(e) => {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    window.history.pushState({}, '', `/category/${catSlug}`);
-                                    window.dispatchEvent(new PopStateEvent('popstate'));
-                                }}>{cat}</a></b></div>
-                            </div>
-                            {open && items.map((it, i) => {
+                {Object.entries(groups)
+                    .sort(([a], [b]) => parseCategoryKey(a) - parseCategoryKey(b))
+                    .map(([cat, items]) => {
+                        const open = !!openCats[cat];
+                        const catSlug = slugify(cat);
+
+                        const normalized = [...items]
+                            .sort((a, b) => {
+                                const tA = datasets.topics.find(tt => tt.id === a.topic_id);
+                                const tB = datasets.topics.find(tt => tt.id === b.topic_id);
+                                const [na, la] = parseTopicKeyFromSlug(tA?.slug);
+                                const [nb, lb] = parseTopicKeyFromSlug(tB?.slug);
+                                return na !== nb ? na - nb : la.localeCompare(lb);
+                            })
+                            .map(it => {
                                 const tRec = datasets.topics.find(tt => tt.id === it.topic_id);
-                                const tSlug = tRec?.slug || '';
-                                return (
-                                    <div key={i}
-                                         style={{padding: '8px 0', borderTop: i ? '1px solid #f0f0f0' : 'none'}}>
-                                        <div className="toggle" onClick={() => toggleTheoOutline(it.markdown_path)}
-                                             style={{
-                                                 display: 'flex',
-                                                 justifyContent: 'space-between',
-                                                 alignItems: 'center',
-                                                 gap: 8
-                                             }}>
-                                            <div>
-                                                {tRec ? <a href={`/topic/${tSlug}`} onClick={(e) => {
-                                                    e.preventDefault();
-                                                    e.stopPropagation();
-                                                    window.history.pushState({}, '', `/topic/${tSlug}`);
-                                                    window.dispatchEvent(new PopStateEvent('popstate'));
-                                                }}><b>{tRec.title}</b></a> : <b>Untitled topic</b>}
-                                                <div className="small">updated {it.updated_at}</div>
-                                            </div>
-                                            <div
-                                                className="small">{openOutlinePath === it.markdown_path ? '▾' : '▸'}</div>
-                                        </div>
-                                        {openOutlinePath === it.markdown_path && (
-                                            <div className="markdown" style={{marginTop: 8}}
-                                                 dangerouslySetInnerHTML={{__html: outlineHTML}}/>
-                                        )}
+                                return {
+                                    topic_id: it.topic_id,
+                                    topic_slug: tRec?.slug || '',
+                                    topic_title: tRec?.title || 'Untitled topic',
+                                    markdown_path: it.markdown_path,
+                                    updated_at: it.updated_at,
+                                };
+                            });
+
+                        return (
+                            <div key={cat} className={'card section ' + (open ? 'open' : '')}
+                                 style={{marginBottom: 12}}>
+                                <div className="section-head"
+                                     onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
+                                    <div className="caret">▸</div>
+                                    <div className="small">
+                                        <b>
+                                            <a href={`/category/${catSlug}`} onClick={(e) => {
+                                                e.preventDefault();
+                                                e.stopPropagation();
+                                                window.history.pushState({}, '', `/category/${catSlug}`);
+                                                window.dispatchEvent(new PopStateEvent('popstate'));
+                                            }}>{cat}</a>
+                                        </b>
                                     </div>
-                                );
-                            })}
-                        </div>
-                    );
-                })}
+                                </div>
+                                {open && <OutlineList items={normalized} datasets={datasets}/>}
+                            </div>
+                        );
+                    })}
             </div>
         </div>
     );
 }
 
 /* ---------- Work Page ---------- */
-function WorkPage({id, datasets}) {
-    const live = (datasets.works || []).find(x => x.id === id) || {};
-    const by = datasets.byWork[id] || {};
-    const w = {...by, ...live, title: (live.title || by.title || id)};
-    const title = workTitleWithSuffix(live, by) || w.title || id;
+// function WorkPage({id, datasets}) {
+//     const live = (datasets.works || []).find(x => x.id === id) || {};
+//     const by = datasets.byWork[id] || {};
+//     const w = {...by, ...live, title: (live.title || by.title || id)};
+//     const title = workTitleWithSuffix(live, by) || w.title || id;
+//
+//     const featured = featuredTopicsForWork(id, datasets.topics);
+//     const refs = (by.referenced_in || []);
+//
+//     // resolve authors → names
+//     let authors = (w.authors && w.authors.length) ? w.authors : [];
+//     if (!authors.length && w.primary_author_theologian_id) {
+//         const t = datasets.theologians.find(x => x.id === w.primary_author_theologian_id);
+//         if (t) authors = [{full_name: t.full_name, slug: t.slug}];
+//     }
+//
+//     return (
+//         <div>
+//             <h1>{title}</h1>
+//             {authors.length ? (
+//                 <div className="small">
+//                     {authors.map((a, i) => <span key={i}>{i ? ', ' : ''}<TheoLink
+//                         theo={{slug: a.slug, full_name: a.full_name}}/></span>)}
+//                 </div>
+//             ) : null}
+//
+//             <h3 style={{marginTop: 16}}>Featured in Topics</h3>
+//             {!featured.length ? <div className="small">Not listed as a key work in any topic.</div> : (
+//                 <div className="grid">
+//                     {featured.map((t, i) => (
+//                         <div key={i} className="card">
+//                             <div><b><a href={`/topic/${t.topic_slug}`} onClick={(e) => {
+//                                 e.preventDefault();
+//                                 window.history.pushState({}, '', `/topic/${t.topic_slug}`);
+//                                 window.dispatchEvent(new PopStateEvent('popstate'));
+//                             }}>{t.title}</a></b></div>
+//                             <div style={{marginTop: 6}}><span
+//                                 className={t.bucket === 'WTS' ? 'chip' : 'chip2'}>{t.bucket}</span></div>
+//                         </div>
+//                     ))}
+//                 </div>
+//             )}
+//
+//             <h3 style={{marginTop: 16}}>Referenced in Outlines</h3>
+//             {!refs.length ? <div className="small">No references yet.</div> : (
+//                 <div className="grid">
+//                     {refs.map((ref, i) => {
+//                         const tRec = datasets.topics.find(t => t.id === ref.topic_id);
+//                         const tSlug = tRec?.slug;
+//                         return (
+//                             <div className="card" key={i}>
+//                                 <div className="small">
+//                                     Topic: {tSlug ? <a href={`/topic/${tSlug}`} onClick={(e) => {
+//                                     e.preventDefault();
+//                                     window.history.pushState({}, '', `/topic/${tSlug}`);
+//                                     window.dispatchEvent(new PopStateEvent('popstate'));
+//                                 }}>{tRec.title}</a> : ref.topic_id}
+//                                 </div>
+//                                 <div className="small">Theologian: <TheoLink id={ref.theologian_id}
+//                                                                              datasets={datasets}/></div>
+//                                 {ref.outline_id && (
+//                                     <a className="small"
+//                                        href={`/outline?path=${encodeURIComponent(ref.markdown_path || '')}`}
+//                                        onClick={(e) => {
+//                                            e.preventDefault();
+//                                            window.history.pushState({}, '', `/outline?path=${encodeURIComponent(ref.markdown_path || '')}`);
+//                                            window.dispatchEvent(new PopStateEvent('popstate'));
+//                                        }}>
+//                                         Open outline
+//                                     </a>
+//                                 )}
+//                             </div>
+//                         );
+//                     })}
+//                 </div>
+//             )}
+//         </div>
+//     );
+// }
 
-    const featured = featuredTopicsForWork(id, datasets.topics);
-    const refs = (by.referenced_in || []);
 
-    // resolve authors → names
-    let authors = (w.authors && w.authors.length) ? w.authors : [];
-    if (!authors.length && w.primary_author_theologian_id) {
-        const t = datasets.theologians.find(x => x.id === w.primary_author_theologian_id);
-        if (t) authors = [{full_name: t.full_name, slug: t.slug}];
+function WorkPage({ id, datasets }) {
+  const go = useGo();
+
+  // --- canonicalize id & redirect if needed ---
+  const canonMap = datasets.canonMap || {};
+  const canonicalId = canonMap[id] || id;
+  React.useEffect(() => {
+    if (id !== canonicalId) {
+      go(null, `/work/${canonicalId}`, true);
+    }
+  }, [id, canonicalId]);
+
+  // --- lookups ---
+  const live = (datasets.works || []).find(x => x.id === canonicalId) || {};
+  const by   = datasets.byWork[canonicalId] || {};
+  const w    = { ...by, ...live, id: canonicalId, title: (live.title || by.title || canonicalId) };
+
+  const title = workTitleWithSuffix(live, by) || w.title || canonicalId;
+
+  // authors (reuse robust resolver so IDs, names, arrays all work)
+  const authors = resolveAuthorsForWork(canonicalId, datasets);
+
+  // chips of featured topics (WTS/Recent) using reverseCanonMap-aware helper
+  const featured = featuredTopicsForWork(canonicalId, datasets.topics, datasets.reverseCanonMap);
+
+  // -------- sorting helpers (deterministic) --------
+  // "5. Doctrine Of Sin" -> 5
+  const parseCategoryKey = (name = "") => {
+    const m = String(name).match(/^\s*(\d+)\s*\./);
+    return m ? parseInt(m[1], 10) : Number.MAX_SAFE_INTEGER;
+  };
+
+  // "5.A Nature and origin of sin" -> [5, "A"]
+  const parseTopicKey = (topicTitle = "") => {
+    const m = String(topicTitle).match(/^\s*(\d+)\s*\.\s*([A-Z])/i);
+    if (!m) return [Number.MAX_SAFE_INTEGER, ""]; // fallback (won't be used per your data guarantee)
+    return [parseInt(m[1], 10), m[2].toUpperCase()];
+  };
+
+  // -------- build groups exactly like other pages --------
+  const [openCats, setOpenCats] = React.useState({});
+  const [openOutlinePath, setOpenOutlinePath] = React.useState(null);
+  const [outlineHTML, setOutlineHTML] = React.useState("");
+
+  // Build: { "1. Bibliology": [ {topic_id, topic_slug, topic_title, markdown_path, updated_at}, ... ], ... }
+  const groups = React.useMemo(() => {
+    const refs = by.referenced_in || [];
+    const tmap = new Map((datasets.topics || []).map(t => [t.id, t]));
+
+    // group by category name from topic record (already "n. Name")
+    const byCat = {};
+    for (const ref of refs) {
+      const t = tmap.get(ref.topic_id) || {};
+      const cat = t.category || "Other";
+      (byCat[cat] ??= []).push({
+        topic_id: t.id,
+        topic_slug: t.slug,
+        topic_title: t.title || ref.topic_id,   // title like "5.A …"
+        markdown_path: ref.markdown_path,
+        updated_at: ref.updated_at,
+      });
     }
 
-    return (
-        <div>
-            <h1>{title}</h1>
-            {authors.length ? (
-                <div className="small">
-                    {authors.map((a, i) => <span key={i}>{i ? ', ' : ''}<TheoLink
-                        theo={{slug: a.slug, full_name: a.full_name}}/></span>)}
-                </div>
-            ) : null}
+    // sort categories numerically by the number before "."
+    const sortedEntries = Object.entries(byCat).sort(([a], [b]) => (
+      parseCategoryKey(a) - parseCategoryKey(b)
+    ));
 
-            <h3 style={{marginTop: 16}}>Featured in Topics</h3>
-            {!featured.length ? <div className="small">Not listed as a key work in any topic.</div> : (
-                <div className="grid">
-                    {featured.map((t, i) => (
-                        <div key={i} className="card">
-                            <div><b><a href={`/topic/${t.topic_slug}`} onClick={(e) => {
-                                e.preventDefault();
-                                window.history.pushState({}, '', `/topic/${t.topic_slug}`);
-                                window.dispatchEvent(new PopStateEvent('popstate'));
-                            }}>{t.title}</a></b></div>
-                            <div style={{marginTop: 6}}><span
-                                className={t.bucket === 'WTS' ? 'chip' : 'chip2'}>{t.bucket}</span></div>
-                        </div>
-                    ))}
-                </div>
-            )}
+    // sort topics inside each category by (catNumber, letter A-Z)
+    for (const [, items] of sortedEntries) {
+      items.sort((ta, tb) => {
+        const [na, la] = parseTopicKey(ta.topic_title);
+        const [nb, lb] = parseTopicKey(tb.topic_title);
+        if (na !== nb) return na - nb;
+        return la.localeCompare(lb);
+      });
+    }
 
-            <h3 style={{marginTop: 16}}>Referenced in Outlines</h3>
-            {!refs.length ? <div className="small">No references yet.</div> : (
-                <div className="grid">
-                    {refs.map((ref, i) => {
-                        const tRec = datasets.topics.find(t => t.id === ref.topic_id);
-                        const tSlug = tRec?.slug;
-                        return (
-                            <div className="card" key={i}>
-                                <div className="small">
-                                    Topic: {tSlug ? <a href={`/topic/${tSlug}`} onClick={(e) => {
-                                    e.preventDefault();
-                                    window.history.pushState({}, '', `/topic/${tSlug}`);
-                                    window.dispatchEvent(new PopStateEvent('popstate'));
-                                }}>{tRec.title}</a> : ref.topic_id}
-                                </div>
-                                <div className="small">Theologian: <TheoLink id={ref.theologian_id}
-                                                                             datasets={datasets}/></div>
-                                {ref.outline_id && (
-                                    <a className="small"
-                                       href={`/outline?path=${encodeURIComponent(ref.markdown_path || '')}`}
-                                       onClick={(e) => {
-                                           e.preventDefault();
-                                           window.history.pushState({}, '', `/outline?path=${encodeURIComponent(ref.markdown_path || '')}`);
-                                           window.dispatchEvent(new PopStateEvent('popstate'));
-                                       }}>
-                                        Open outline
-                                    </a>
-                                )}
-                            </div>
-                        );
-                    })}
-                </div>
-            )}
+    // rehydrate as a stable object in sorted order
+    const out = {};
+    for (const [cat, items] of sortedEntries) out[cat] = items;
+    return out;
+  }, [by.referenced_in, datasets.topics]);
+
+  async function toggleOutline(p) {
+    if (!p) return;
+    if (openOutlinePath === p) {
+      setOpenOutlinePath(null);
+      setOutlineHTML("");
+      return;
+    }
+    setOpenOutlinePath(p);
+    setOutlineHTML("Loading…");
+    try {
+      const r = await api("/api/outline?path=" + encodeURIComponent(p));
+      setOutlineHTML(r.html);
+    } catch (e) {
+      setOutlineHTML('<div class="small">' + String(e).replace(/</g, "&lt;") + "</div>");
+    }
+  }
+
+  return (
+    <div>
+      <h1>{title}</h1>
+
+      {authors.length ? (
+        <div className="small">
+          {authors.map((a, i) => (
+            <span key={i}>
+              {i ? ", " : ""}
+              {a.theo ? <TheoLink theo={a.theo} /> : <span>{a.display}</span>}
+            </span>
+          ))}
         </div>
-    );
+      ) : null}
+
+      {/* Featured topic chips (same as theologian page) */}
+      {featured.length ? (
+        <div style={{ marginTop: 8, display: "flex", gap: 6, flexWrap: "wrap" }}>
+          {featured.slice(0, 4).map((t, i) => (
+            <a
+              key={i}
+              className={t.bucket === "WTS" ? "chip" : "chip2"}
+              href={`/topic/${t.topic_slug}`}
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, "", `/topic/${t.topic_slug}`);
+                window.dispatchEvent(new PopStateEvent("popstate"));
+              }}
+            >
+              {t.bucket}: {t.title}
+            </a>
+          ))}
+          {featured.length > 4 && <span className="count">+{featured.length - 4} topics</span>}
+        </div>
+      ) : null}
+
+      <div style={{ marginTop: 18 }}>
+        <h3>Outlines</h3>
+
+        {Object.keys(groups).length === 0 ? (
+          <div className="small">No references yet.</div>
+        ) : (
+          Object.entries(groups).map(([cat, items]) => {
+            const open = !!openCats[cat];
+            const catSlug = slugify(cat);
+            return (
+              <div key={cat} className={"card section " + (open ? "open" : "")} style={{ marginBottom: 12 }}>
+                <div
+                  className="section-head"
+                  onClick={() => setOpenCats((prev) => ({ ...prev, [cat]: !open }))}
+                >
+                  <div className="caret">▸</div>
+                  <div className="small">
+                    <b>
+                      <a
+                        href={`/category/${catSlug}`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          window.history.pushState({}, "", `/category/${catSlug}`);
+                          window.dispatchEvent(new PopStateEvent("popstate"));
+                        }}
+                      >
+                        {cat}
+                      </a>
+                    </b>
+                  </div>
+                </div>
+
+                {open &&
+                  items.map((it, i) => (
+                    <div key={i} style={{ padding: "8px 0", borderTop: i ? "1px solid #f0f0f0" : "none" }}>
+                      <div
+                        className="toggle"
+                        onClick={() => toggleOutline(it.markdown_path)}
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                          gap: 8,
+                        }}
+                      >
+                        <div>
+                          {it.topic_slug ? (
+                            <a
+                              href={`/topic/${it.topic_slug}`}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                window.history.pushState({}, "", `/topic/${it.topic_slug}`);
+                                window.dispatchEvent(new PopStateEvent("popstate"));
+                              }}
+                            >
+                              <b>{it.topic_title}</b>
+                            </a>
+                          ) : (
+                            <b>{it.topic_title}</b>
+                          )}
+                          {it.updated_at ? <div className="small">updated {it.updated_at}</div> : null}
+                        </div>
+                        <div className="small">{openOutlinePath === it.markdown_path ? "▾" : "▸"}</div>
+                      </div>
+
+                      {openOutlinePath === it.markdown_path && (
+                        <div
+                          className="markdown"
+                          style={{ marginTop: 8 }}
+                          dangerouslySetInnerHTML={{ __html: outlineHTML }}
+                        />
+                      )}
+
+                      {it.markdown_path ? (
+                        <div className="small" style={{ marginTop: 8 }}>
+                          <a
+                            href={`/outline?path=${encodeURIComponent(it.markdown_path)}`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              window.history.pushState({}, "", `/outline?path=${encodeURIComponent(it.markdown_path)}`);
+                              window.dispatchEvent(new PopStateEvent("popstate"));
+                            }}
+                          >
+                            Open full page
+                          </a>
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+              </div>
+            );
+          })
+        )}
+      </div>
+    </div>
+  );
 }
 
 /* ---------- Outline standalone ---------- */
@@ -824,19 +1079,19 @@ function TopicCategoryPage({slug, datasets}) {
     }, [slug, topics]);
     return (
         <div>
-          <h1>{catName}</h1>
-          <div className="grid">
-            {items.map(t => (
-              <div
-                key={t.id}
-                className="card"
-                style={{cursor: "pointer"}}
-                onClick={(e) => go(e, `/topic/${t.slug}`)}
-              >
-                <b>{t.title}</b>
-              </div>
-            ))}
-          </div>
+            <h1>{catName}</h1>
+            <div className="grid">
+                {items.map(t => (
+                    <div
+                        key={t.id}
+                        className="card"
+                        style={{cursor: "pointer"}}
+                        onClick={(e) => go(e, `/topic/${t.slug}`)}
+                    >
+                        <b>{t.title}</b>
+                    </div>
+                ))}
+            </div>
         </div>
 
         // <div>

@@ -10,10 +10,10 @@ async function api(path) {
 }
 
 const slugify = s => (s || '')
-  .toLowerCase()
-  .replace(/[^a-z0-9]+/g, '-')   // non-alnum -> -
-  .replace(/^-+|-+$/g, '')       // trim leading/trailing -
-  .replace(/\.+$/g, '');
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')   // non-alnum -> -
+    .replace(/^-+|-+$/g, '')       // trim leading/trailing -
+    .replace(/\.+$/g, '');
 
 /* ---------- router ---------- */
 function useRouter() {
@@ -97,51 +97,54 @@ function uniq(arr) {
 // topics[*].key_works.{ wts_old_princeton: string[], recent: string[] }
 
 function featuredTopicsForWork(canonId, topics, reverseCanonMap) {
-  const aliasIds = new Set([
-    canonId,
-    ...(reverseCanonMap[canonId] || [])
-  ]);
+    const aliasIds = new Set([
+        canonId,
+        ...(reverseCanonMap[canonId] || [])
+    ]);
 
-  const out = [];
-  for (const t of (topics || [])) {
-    const kw = t.key_works || {};
-    const wtsSet = new Set(kw.wts_old_princeton || []);
-    const recentSet = new Set(kw.recent || []);
+    const out = [];
+    for (const t of (topics || [])) {
+        const kw = t.key_works || {};
+        const wtsSet = new Set(kw.wts_old_princeton || []);
+        const recentSet = new Set(kw.recent || []);
 
-    let inWts = false, inRecent = false;
-    for (const id of aliasIds) {
-      if (wtsSet.has(id)) inWts = true;
-      if (recentSet.has(id)) inRecent = true;
-      if (inWts && inRecent) break; // early exit
+        let inWts = false, inRecent = false;
+        for (const id of aliasIds) {
+            if (wtsSet.has(id)) inWts = true;
+            if (recentSet.has(id)) inRecent = true;
+            if (inWts && inRecent) break; // early exit
+        }
+
+        if (inWts || inRecent) {
+            out.push({
+                topic_id: t.id,
+                topic_slug: t.slug,
+                title: t.title,
+                bucket: inWts && inRecent ? ['WTS', 'Recent'] : (inWts ? ['WTS'] : ['Recent'])
+            });
+        }
     }
-
-    if (inWts || inRecent) {
-      out.push({
-        topic_id: t.id,
-        topic_slug: t.slug,
-        title: t.title,
-        bucket: inWts && inRecent ? ['WTS','Recent'] : (inWts ? ['WTS'] : ['Recent'])
-      });
-    }
-  }
-  return out;
+    return out;
 }
 
-// function featuredTopicsForWork(workId, topics, reverseCanonMap) {
-//     const out = [];
-//     for (const t of topics || []) {
-//         const kw = t.key_works || {};
-//         const inWts = (kw.wts_old_princeton || []).includes(workId);
-//         const inRecent = (kw.recent || []).includes(workId);
-//         if (inWts || inRecent) out.push({
-//             topic_id: t.id,
-//             topic_slug: t.slug,
-//             title: t.title,
-//             bucket: inWts ? 'WTS' : 'Recent'
-//         });
-//     }
-//     return out;
-// }
+const parseCategoryKey = (name = "") => {
+    const m = String(name).match(/^\s*(\d+)\s*\./);
+    return m ? parseInt(m[1], 10) : Number.MAX_SAFE_INTEGER;
+};
+
+// "5.A Nature and origin of sin" -> [5, "A"]
+const parseTopicKey = (topicTitle = "") => {
+    const m = String(topicTitle).match(/^\s*(\d+)\s*\.\s*([A-Z])/i);
+    if (!m) return [Number.MAX_SAFE_INTEGER, ""]; // fallback (won't be used per your data guarantee)
+    return [parseInt(m[1], 10), m[2].toUpperCase()];
+};
+
+function parseTopicKeyFromSlug(slug) {
+    // e.g., "5-b-original-sin-and-imputation" -> [5, "b"]
+    const m = /^(\d+)-([a-z])\b/.exec(slug || '');
+    return [parseInt(m?.[1] || '0', 10), (m?.[2] || '')];
+}
+
 
 // Resolve authors for a work id → [{display, theo}] where theo is a theologian object or null
 function resolveAuthorsForWork(wid, datasets) {
@@ -210,6 +213,81 @@ function resolveAuthorsForWork(wid, datasets) {
     for (const nm of candNames) pushName(nm);
 
     return out;
+}
+
+/* ---------- Reusable Outline list (identical item markup) ---------- */
+function OutlineList({items, datasets}) {
+    const [openPath, setOpenPath] = React.useState(null);
+    const [html, setHtml] = React.useState('');
+
+    async function toggleOutline(p) {
+        if (!p) return;
+        if (openPath === p) {
+            setOpenPath(null);
+            setHtml('');
+            return;
+        }
+        setOpenPath(p);
+        setHtml('Loading…');
+        try {
+            const r = await api('/api/outline?path=' + encodeURIComponent(p));
+            setHtml(r.html);
+        } catch (e) {
+            setHtml('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
+        }
+    }
+
+    return (
+        <div>
+            {items.map((it, i) => {
+                // Accept either a topic_slug or a topic_id; resolve Topic for link+title.
+                const topic =
+                    (it.topic_slug && (datasets.topics || []).find(t => t.slug === it.topic_slug)) ||
+                    (it.topic_id && (datasets.topics || []).find(t => t.id === it.topic_id)) ||
+                    null;
+                const topicSlug = topic?.slug || it.topic_slug || '';
+                const topicTitle = topic?.title || it.topic_title || 'Untitled topic';
+
+                return (
+                    <div key={i} style={{marginBottom: 12}}>
+                        <div className="toggle" onClick={() => toggleOutline(it.markdown_path)}
+                             style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8}}>
+                            <div>
+                                {topic ? (
+                                    <a href={`/topic/${topicSlug}`} onClick={(e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        window.history.pushState({}, '', `/topic/${topicSlug}`);
+                                        window.dispatchEvent(new PopStateEvent('popstate'));
+                                    }}>
+                                        <b>{topicTitle}</b>
+                                    </a>
+                                ) : <b>{topicTitle}</b>}
+                                {it.updated_at ? <div className="small">updated {it.updated_at}</div> : null}
+                            </div>
+                            <div className="small">{openPath === it.markdown_path ? '▾' : '▸'}</div>
+                        </div>
+
+                        {openPath === it.markdown_path && (
+                            <div style={{gridColumn: '1 / -1'}}>
+                                <div className="markdown" dangerouslySetInnerHTML={{__html: html}}/>
+                                <div className="small" style={{marginTop: 8}}>
+                                    <a href={`/outline?path=${encodeURIComponent(it.markdown_path || '')}`}
+                                       onClick={(e) => {
+                                           e.preventDefault();
+                                           window.history.pushState({}, '', `/outline?path=${encodeURIComponent(it.markdown_path || '')}`);
+                                           window.dispatchEvent(new PopStateEvent('popstate'));
+                                       }}>
+                                        Open full page
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                );
+            })}
+        </div>
+    );
 }
 
 /* ---------- App ---------- */
@@ -516,21 +594,32 @@ function TopicPage({slug, datasets}) {
                                         return (
                                             <div key={i} style={{marginBottom: 12}}>
                                                 <div className="toggle" onClick={() => toggleOutline(o.markdown_path)}
-                                                     style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8}}>
+                                                     style={{
+                                                         display: 'flex',
+                                                         justifyContent: 'space-between',
+                                                         alignItems: 'center',
+                                                         gap: 8
+                                                     }}>
                                                     <div>
                                                         <b><TopicLink topic={tobj} stop/></b>
                                                         <div className="small">updated {o.updated_at}</div>
                                                     </div>
-                                                    <div className="small">{openOutlinePath === o.markdown_path ? '▾' : '▸'}</div>
+                                                    <div
+                                                        className="small">{openOutlinePath === o.markdown_path ? '▾' : '▸'}</div>
                                                 </div>
                                                 {openOutlinePath === o.markdown_path && (
                                                     <div style={{gridColumn: '1 / -1'}}>
-                                                        <div className="markdown" dangerouslySetInnerHTML={{__html: outlineHTML}}/>
+                                                        <div className="markdown"
+                                                             dangerouslySetInnerHTML={{__html: outlineHTML}}/>
                                                         <div className="small" style={{marginTop: 8}}>
                                                             <a href={`/outline?path=${encodeURIComponent(o.markdown_path || '')}`}
-                                                               onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', `/outline?path=${encodeURIComponent(o.markdown_path || '')}`); window.dispatchEvent(new PopStateEvent('popstate')); }}>
-                                                                Open full page
+                                                               onClick={(e) => {
+                                                                   e.preventDefault();
+                                                                   window.history.pushState({}, '', `/outline?path=${encodeURIComponent(o.markdown_path || '')}`);
+                                                                   window.dispatchEvent(new PopStateEvent('popstate'));
+                                                               }}>
                                                             </a>
+                                                            <div className="small">updated {o.updated_at}</div>
                                                         </div>
                                                     </div>
                                                 )}
@@ -583,10 +672,15 @@ function TheologianPage({slug, datasets}) {
                     </div>
                 ) : null}
                 <div style={{marginTop: 6, display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center'}}>
-                    <span className="badge">{(datasets.canonCountsTheo[theo.id] || []).find(x => x.id === w.id)?.count || 0}</span>
+                    <span
+                        className="badge">{(datasets.canonCountsTheo[theo.id] || []).find(x => x.id === w.id)?.count || 0}</span>
                     {topicsFeaturing.slice(0, 2).map((t, i) => (
                         <a key={i} className={t.bucket === 'WTS' ? 'chip' : 'chip2'} href={`/topic/${t.topic_slug}`}
-                           onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', `/topic/${t.topic_slug}`); window.dispatchEvent(new PopStateEvent('popstate')); }}>
+                           onClick={(e) => {
+                               e.preventDefault();
+                               window.history.pushState({}, '', `/topic/${t.topic_slug}`);
+                               window.dispatchEvent(new PopStateEvent('popstate'));
+                           }}>
                             {t.bucket}: {t.title}
                         </a>
                     ))}
@@ -615,8 +709,10 @@ function TheologianPage({slug, datasets}) {
     return (
         <div>
             <h1>{theo.full_name || theo.name} {theo.dates ? <span className="small">{theo.dates}</span> : null}</h1>
-            {(theo.era_category || theo.eras || []).map((e, i) => <span key={i} className="badge" style={{marginRight: 6}}>{e}</span>)}
-            {(theo.traditions || []).map((e, i) => <span key={'tr' + i} className="badge" style={{marginRight: 6}}>{e}</span>)}
+            {(theo.era_category || theo.eras || []).map((e, i) => <span key={i} className="badge"
+                                                                        style={{marginRight: 6}}>{e}</span>)}
+            {(theo.traditions || []).map((e, i) => <span key={'tr' + i} className="badge"
+                                                         style={{marginRight: 6}}>{e}</span>)}
 
             <div className={'section ' + (openWorks ? 'open' : '')} style={{marginTop: 18}}>
                 <div className="section-head" onClick={() => setOpenWorks(!openWorks)}>
@@ -630,49 +726,58 @@ function TheologianPage({slug, datasets}) {
                 </div>}
             </div>
 
+            {/* ---------- Outlines (same HTML as Topic/Home outline items) ---------- */}
             <div style={{marginTop: 18}}>
                 <h3>Outlines</h3>
-                {Object.entries(groups).map(([cat, items]) => {
-                    const open = !!openCats[cat];
-                    const catSlug = slugify(cat);
-                    return (
-                        <div key={cat} className={'card section ' + (open ? 'open' : '')} style={{marginBottom: 12}}>
-                            <div className="section-head" onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
-                                <div className="caret">▸</div>
-                                <div className="small"><b><a href={`/category/${catSlug}`} onClick={(e) => {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-                                    window.history.pushState({}, '', `/category/${catSlug}`);
-                                    window.dispatchEvent(new PopStateEvent('popstate'));
-                                }}>{cat}</a></b></div>
-                            </div>
-                            {open && items.map((it, i) => {
+                {Object.entries(groups)
+                    .sort(([a], [b]) => parseCategoryKey(a) - parseCategoryKey(b))
+                    .map(([cat, items]) => {
+                        const open = !!openCats[cat];
+                        const catSlug = slugify(cat);
+
+                        const normalized = [...items]
+                            .sort((a, b) => {
+                                const tA = datasets.topics.find(tt => tt.id === a.topic_id);
+                                const tB = datasets.topics.find(tt => tt.id === b.topic_id);
+                                const [na, la] = parseTopicKeyFromSlug(tA?.slug);
+                                const [nb, lb] = parseTopicKeyFromSlug(tB?.slug);
+                                return na !== nb ? na - nb : la.localeCompare(lb);
+                            })
+                            .map(it => {
                                 const tRec = datasets.topics.find(tt => tt.id === it.topic_id);
-                                const tSlug = tRec?.slug || '';
-                                return (
-                                    <div key={i} style={{padding: '8px 0', borderTop: i ? '1px solid #f0f0f0' : 'none'}}>
-                                        <div className="toggle" onClick={() => toggleTheoOutline(it.markdown_path)}
-                                             style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8}}>
-                                            <div>
-                                                {tRec ? <a href={`/topic/${tSlug}`} onClick={(e) => {
-                                                    e.preventDefault(); e.stopPropagation();
-                                                    window.history.pushState({}, '', `/topic/${tSlug}`);
-                                                    window.dispatchEvent(new PopStateEvent('popstate'));
-                                                }}><b>{tRec.title}</b></a> : <b>Untitled topic</b>}
-                                                <div className="small">updated {it.updated_at}</div>
-                                            </div>
-                                            <div className="small">{openOutlinePath === it.markdown_path ? '▾' : '▸'}</div>
-                                        </div>
-                                        {openOutlinePath === it.markdown_path && (
-                                            <div className="markdown" style={{marginTop: 8}} dangerouslySetInnerHTML={{__html: outlineHTML}}/>
-                                        )}
+                                return {
+                                    topic_id: it.topic_id,
+                                    topic_slug: tRec?.slug || '',
+                                    topic_title: tRec?.title || 'Untitled topic',
+                                    markdown_path: it.markdown_path,
+                                    updated_at: it.updated_at,
+                                };
+                            });
+
+                        return (
+                            <div key={cat} className={'card section ' + (open ? 'open' : '')}
+                                 style={{marginBottom: 12}}>
+                                <div className="section-head"
+                                     onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
+                                    <div className="caret">▸</div>
+                                    <div className="small">
+                                        <b>
+                                            <a href={`/category/${catSlug}`} onClick={(e) => {
+                                                e.preventDefault();
+                                                e.stopPropagation();
+                                                window.history.pushState({}, '', `/category/${catSlug}`);
+                                                window.dispatchEvent(new PopStateEvent('popstate'));
+                                            }}>{cat}</a>
+                                        </b>
                                     </div>
-                                );
-                            })}
-                        </div>
-                    );
-                })}
+                                </div>
+                                {open && <OutlineList items={normalized} datasets={datasets}/>}
+                            </div>
+                        );
+                    })}
+
             </div>
+
         </div>
     );
 }
@@ -680,72 +785,77 @@ function TheologianPage({slug, datasets}) {
 /* ---------- Work Page (canonical-only; alias redirects) ---------- */
 function WorkPage({id, datasets}) {
     const go = useGo();
+
+    // --- canonicalize id & redirect if needed ---
     const canonMap = datasets.canonMap || {};
     const canonicalId = canonMap[id] || id;
-
-    // redirect alias → canonical
-    useEffect(() => {
+    React.useEffect(() => {
         if (id !== canonicalId) {
             go(null, `/work/${canonicalId}`, true);
         }
     }, [id, canonicalId]);
 
+    // --- lookups ---
     const live = (datasets.works || []).find(x => x.id === canonicalId) || {};
     const by = datasets.byWork[canonicalId] || {};
     const w = {...by, ...live, id: canonicalId, title: (live.title || by.title || canonicalId)};
+
     const title = workTitleWithSuffix(live, by) || w.title || canonicalId;
 
-    // authors (same logic as elsewhere)
+    // authors (reuse robust resolver so IDs, names, arrays all work)
     const authors = resolveAuthorsForWork(canonicalId, datasets);
 
-    // featured topics chips (kept)
+    // chips of featured topics (WTS/Recent) using reverseCanonMap-aware helper
     const featured = featuredTopicsForWork(canonicalId, datasets.topics, datasets.reverseCanonMap);
 
-    // refs → grouped like theologian page: { "Christology": [items], ... }
-    const [openCats, setOpenCats] = useState({});
-    const [openOutlinePath, setOpenOutlinePath] = useState(null);
-    const [outlineHTML, setOutlineHTML] = useState('');
+    // -------- sorting helpers (deterministic) --------
+    // "5. Doctrine Of Sin" -> 5
 
-    function buildGroups() {
-        const refs = (by.referenced_in || []);
+
+    // -------- build groups exactly like other pages --------
+    const [openCats, setOpenCats] = React.useState({});
+    const [openOutlinePath, setOpenOutlinePath] = React.useState(null);
+    const [outlineHTML, setOutlineHTML] = React.useState("");
+
+    // Build: { "1. Bibliology": [ {topic_id, topic_slug, topic_title, markdown_path, updated_at}, ... ], ... }
+    const groups = React.useMemo(() => {
+        const refs = by.referenced_in || [];
         const tmap = new Map((datasets.topics || []).map(t => [t.id, t]));
-        const groups = {};
+
+        // group by category name from topic record (already "n. Name")
+        const byCat = {};
         for (const ref of refs) {
             const t = tmap.get(ref.topic_id) || {};
-            const cat = t.category || 'Other';
-            (groups[cat] ??= []).push({
+            const cat = t.category || "Other";
+            (byCat[cat] ??= []).push({
                 topic_id: t.id,
                 topic_slug: t.slug,
-                topic_title: t.title || ref.topic_id,
+                topic_title: t.title || ref.topic_id,   // title like "5.A …"
                 markdown_path: ref.markdown_path,
                 updated_at: ref.updated_at,
             });
         }
-        // sort items by topic title
-        for (const k of Object.keys(groups)) {
-            groups[k].sort((a, b) => (a.topic_title || '').localeCompare(b.topic_title || ''));
-        }
-        return groups;
-    }
 
-    const groups = useMemo(buildGroups, [by.referenced_in, datasets.topics]);
+        // sort categories numerically by the number before "."
+        const sortedEntries = Object.entries(byCat).sort(([a], [b]) => (
+            parseCategoryKey(a) - parseCategoryKey(b)
+        ));
 
-    async function toggleOutline(p) {
-        if (!p) return;
-        if (openOutlinePath === p) {
-            setOpenOutlinePath(null);
-            setOutlineHTML('');
-            return;
+        // sort topics inside each category by (catNumber, letter A-Z)
+        for (const [, items] of sortedEntries) {
+            items.sort((ta, tb) => {
+                const [na, la] = parseTopicKey(ta.topic_title);
+                const [nb, lb] = parseTopicKey(tb.topic_title);
+                if (na !== nb) return na - nb;
+                return la.localeCompare(lb);
+            });
         }
-        setOpenOutlinePath(p);
-        setOutlineHTML('Loading…');
-        try {
-            const r = await api('/api/outline?path=' + encodeURIComponent(p));
-            setOutlineHTML(r.html);
-        } catch (e) {
-            setOutlineHTML('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
-        }
-    }
+
+        // rehydrate as a stable object in sorted order
+        const out = {};
+        for (const [cat, items] of sortedEntries) out[cat] = items;
+        return out;
+    }, [by.referenced_in, datasets.topics]);
 
     return (
         <div>
@@ -755,25 +865,27 @@ function WorkPage({id, datasets}) {
                 <div className="small">
                     {authors.map((a, i) => (
                         <span key={i}>
-                            {i ? ', ' : ''}
+              {i ? ", " : ""}
                             {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
-                        </span>
+            </span>
                     ))}
                 </div>
             ) : null}
 
-            {/* optional: keep the same little topic chips row as theologian page shows topic chips */}
+            {/* Featured topic chips (same as theologian page) */}
             {featured.length ? (
-                <div style={{marginTop: 8, display: 'flex', gap: 6, flexWrap: 'wrap'}}>
+                <div style={{marginTop: 8, display: "flex", gap: 6, flexWrap: "wrap"}}>
                     {featured.slice(0, 4).map((t, i) => (
-                        <a key={i}
-                           className={t.bucket === 'WTS' ? 'chip' : 'chip2'}
-                           href={`/topic/${t.topic_slug}`}
-                           onClick={(e) => {
-                               e.preventDefault();
-                               window.history.pushState({}, '', `/topic/${t.topic_slug}`);
-                               window.dispatchEvent(new PopStateEvent('popstate'));
-                           }}>
+                        <a
+                            key={i}
+                            className={t.bucket === "WTS" ? "chip" : "chip2"}
+                            href={`/topic/${t.topic_slug}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.history.pushState({}, "", `/topic/${t.topic_slug}`);
+                                window.dispatchEvent(new PopStateEvent("popstate"));
+                            }}
+                        >
                             {t.bucket}: {t.title}
                         </a>
                     ))}
@@ -787,70 +899,34 @@ function WorkPage({id, datasets}) {
                 {Object.keys(groups).length === 0 ? (
                     <div className="small">No references yet.</div>
                 ) : (
-                    Object.entries(groups).map(([cat, items]) => {
-                        const open = !!openCats[cat];
-                        const catSlug = slugify(cat);
-                        return (
-                            <div key={cat} className={'card section ' + (open ? 'open' : '')} style={{marginBottom: 12}}>
-                                <div className="section-head"
-                                     onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
-                                    <div className="caret">▸</div>
-                                    <div className="small">
-                                        <b>
-                                            <a href={`/category/${catSlug}`} onClick={(e) => {
-                                                e.preventDefault();
-                                                e.stopPropagation();
-                                                window.history.pushState({}, '', `/category/${catSlug}`);
-                                                window.dispatchEvent(new PopStateEvent('popstate'));
-                                            }}>
-                                                {cat}
-                                            </a>
-                                        </b>
-                                    </div>
-                                </div>
-
-                                {open && items.map((it, i) => (
-                                    <div key={i} style={{padding: '8px 0', borderTop: i ? '1px solid #f0f0f0' : 'none'}}>
-                                        <div className="toggle" onClick={() => toggleOutline(it.markdown_path)}
-                                             style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8}}>
-                                            <div>
-                                                {it.topic_slug ? (
-                                                    <a href={`/topic/${it.topic_slug}`} onClick={(e) => {
-                                                        e.preventDefault();
-                                                        e.stopPropagation();
-                                                        window.history.pushState({}, '', `/topic/${it.topic_slug}`);
-                                                        window.dispatchEvent(new PopStateEvent('popstate'));
-                                                    }}>
-                                                        <b>{it.topic_title}</b>
-                                                    </a>
-                                                ) : <b>{it.topic_title}</b>}
-                                                {it.updated_at ? <div className="small">updated {it.updated_at}</div> : null}
-                                            </div>
-                                            <div className="small">{openOutlinePath === it.markdown_path ? '▾' : '▸'}</div>
+                    Object.entries(groups)
+                        .sort(([a], [b]) => parseCategoryKey(a) - parseCategoryKey(b))
+                        .map(([cat, items]) => {
+                            const open = !!openCats[cat];
+                            const catSlug = slugify(cat);
+                            return (
+                                <div key={cat} className={'card section ' + (open ? 'open' : '')}
+                                     style={{marginBottom: 12}}>
+                                    <div className="section-head"
+                                         onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
+                                        <div className="caret">▸</div>
+                                        <div className="small">
+                                            <b>
+                                                <a href={`/category/${catSlug}`} onClick={(e) => {
+                                                    e.preventDefault();
+                                                    e.stopPropagation();
+                                                    window.history.pushState({}, '', `/category/${catSlug}`);
+                                                    window.dispatchEvent(new PopStateEvent('popstate'));
+                                                }}>{cat}</a>
+                                            </b>
                                         </div>
-
-                                        {openOutlinePath === it.markdown_path && (
-                                            <div className="markdown" style={{marginTop: 8}} dangerouslySetInnerHTML={{__html: outlineHTML}}/>
-                                        )}
-
-                                        {it.markdown_path ? (
-                                            <div className="small" style={{marginTop: 8}}>
-                                                <a href={`/outline?path=${encodeURIComponent(it.markdown_path)}`}
-                                                   onClick={(e) => {
-                                                       e.preventDefault();
-                                                       window.history.pushState({}, '', `/outline?path=${encodeURIComponent(it.markdown_path)}`);
-                                                       window.dispatchEvent(new PopStateEvent('popstate'));
-                                                   }}>
-                                                    Open full page
-                                                </a>
-                                            </div>
-                                        ) : null}
                                     </div>
-                                ))}
-                            </div>
-                        );
-                    })
+                                    {open && <OutlineList items={items} datasets={datasets}/>}
+                                </div>
+                            );
+                        })
                 )}
+
             </div>
         </div>
     );
@@ -883,19 +959,19 @@ function TopicCategoryPage({slug, datasets}) {
     }, [slug, topics]);
     return (
         <div>
-          <h1>{catName}</h1>
-          <div className="grid">
-            {items.map(t => (
-              <div
-                key={t.id}
-                className="card"
-                style={{cursor: "pointer"}}
-                onClick={(e) => go(e, `/topic/${t.slug}`)}
-              >
-                <b>{t.title}</b>
-              </div>
-            ))}
-          </div>
+            <h1>{catName}</h1>
+            <div className="grid">
+                {items.map(t => (
+                    <div
+                        key={t.id}
+                        className="card"
+                        style={{cursor: "pointer"}}
+                        onClick={(e) => go(e, `/topic/${t.slug}`)}
+                    >
+                        <b>{t.title}</b>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
