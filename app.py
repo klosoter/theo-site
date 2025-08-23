@@ -1,5 +1,5 @@
 import os, json, pathlib, re
-from collections import Counter, defaultdict
+from collections import Counter
 from typing import Dict, List, Tuple
 from flask import Flask, jsonify, send_from_directory, request, abort
 from markdown import markdown
@@ -13,23 +13,16 @@ DATA_DIR = pathlib.Path(os.getenv("DATA_DIR", ROOT / "data")).resolve()
 BY_WORKS_FILE = pathlib.Path(os.getenv("BY_WORKS_FILE", DATA_DIR / "indices" / "by_work.json"))
 WORK_CANON_FILE = pathlib.Path(os.getenv("WORK_CANON_FILE", DATA_DIR / "work_canon_map.json"))
 
-# Allow .txt (JSON-per-file in repo) or .json
 def _load_json_maybe_txt(pathish: pathlib.Path, default=None):
+    """Load JSON from .json or the same path with .txt (used in repo)."""
     pathish = pathlib.Path(pathish)
-    if pathish.exists():
-        try:
-            with pathish.open("r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            pass
-    # try .txt neighbor if present
-    txt_path = pathish.with_suffix(".txt")
-    if txt_path.exists():
-        try:
-            with txt_path.open("r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return default
+    for p in (pathish, pathish.with_suffix(".txt")):
+        if p.exists():
+            try:
+                with p.open("r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
     return default
 
 app = Flask(__name__, static_folder=str(ROOT / "static"))  # assets served at /static
@@ -63,18 +56,70 @@ CACHE = {
     "by_topic_keyworks": _load_json(DATA_DIR / "indices" / "by_topic_keyworks.json", {}),
     "topic_work_edges": _load_json(DATA_DIR / "indices" / "topic_work_edges.json", []),
     "search": _load_json(DATA_DIR / "indices" / "search_index.json", []),
+    # registries
+    "institutions_registry": _load_json(DATA_DIR / "indices" / "institutions_registry.json", {"kind":"institutions","items":{}}),
+    "geo_registry": _load_json(DATA_DIR / "indices" / "geo_registry.json", {"kind":"geo","items":{}}),
+    "eras": _load_json(DATA_DIR / "eras.json", []),
+    "traditions": _load_json(DATA_DIR / "traditions.json", []),
 }
 
 THEO_MAP = {t["id"]: t for t in (CACHE["theologians"] or []) if isinstance(t, dict) and "id" in t}
 TOPIC_MAP = {t["id"]: t for t in (CACHE["topics"] or []) if isinstance(t, dict) and "id" in t}
 WORK_MAP = {w["id"]: w for w in (CACHE["works"] or []) if isinstance(w, dict) and "id" in w}
 
+
+# --- add near other helpers ---
+def _parse_frontmatter(text: str):
+    """
+    Parse a very small '--- ... ---' front-matter block.
+    Returns (meta_dict, body_without_frontmatter).
+    Only extracts simple scalars and key_work_ids (array of quoted strings).
+    """
+    if not text.startswith('---'):
+        return {}, text
+    end = text.find('\n---', 3)
+    if end == -1:
+        return {}, text
+    block = text[3:end].strip()
+    body = text[end+4:].lstrip('\n')
+
+    meta = {}
+    for line in block.splitlines():
+        m = re.match(r'^\s*([A-Za-z0-9_]+)\s*:\s*(.*)\s*$', line)
+        if not m:
+            continue
+        key, raw = m.group(1), m.group(2)
+        # strip quotes if present
+        if raw.startswith('"') and raw.endswith('"'):
+            val = raw[1:-1]
+        elif raw.startswith("'") and raw.endswith("'"):
+            val = raw[1:-1]
+        else:
+            val = raw
+
+        if key == 'key_work_ids':
+            # Expect YAML-ish: ["work_x","work_y",...]
+            ids = re.findall(r'"([^"]+)"|\'([^\']+)\'', raw)
+            meta[key] = [a or b for a, b in ids]
+        else:
+            meta[key] = val
+    return meta, body
+
+
 # ---------- Canonical works mapping ----------
 def _build_canon_map(raw) -> Dict[str, str]:
-    return {i["work_id"]: i["canonical_id"] for i in raw}
+    """Accepts either list[{work_id, canonical_id}] or direct mapping."""
+    if isinstance(raw, dict):
+        return {str(k): str(v) for k, v in raw.items()}
+    out = {}
+    for i in raw or []:
+        wid = i.get("work_id")
+        cid = i.get("canonical_id")
+        if wid and cid:
+            out[wid] = cid
+    return out
 
 def _load_canon_map() -> Dict[str, str]:
-    # Load from JSON; if missing, try .txt neighbor as JSON
     raw = _load_json_maybe_txt(WORK_CANON_FILE, default={})
     cmap = _build_canon_map(raw or {})
     # Ensure canonical IDs map to themselves
@@ -102,43 +147,29 @@ def _top_canonical_for_theologians() -> Dict[str, List[Tuple[str,int]]]:
     result: Dict[str, List[Tuple[str,int]]] = {}
     for tid, ctr in counter_by_theo.items():
         pairs = list(ctr.items())
-        def sort_key(kv):
-            cid, n = kv
-            title = (WORK_MAP.get(cid, {}) or {}).get("title", cid)
-            return (-n, title)
-        pairs.sort(key=sort_key)
+        pairs.sort(key=lambda kv: (-kv[1], (WORK_MAP.get(kv[0], {}) or {}).get("title", kv[0])))
         result[tid] = pairs
     return result
 
 def _canon_counts_by_topic() -> Dict[str, Dict[str, List[Tuple[str,int]]]]:
-    """
-    For each topic, compute two buckets: WTS and Recent.
-    Count alias hits to their canonical, then return sorted (desc count, then title).
-    """
+    """For each topic, compute two buckets: WTS and Recent; collapse aliases -> canonical, sort by count desc then title."""
     topics = CACHE["topics"] or []
     out: Dict[str, Dict[str, List[Tuple[str,int]]]] = {}
     for t in topics:
         kw = t.get("key_works", {}) or {}
-        wts_ids = [ _canonicalize(w) for w in (kw.get("wts_old_princeton") or []) ]
-        recent_ids = [ _canonicalize(w) for w in (kw.get("recent") or []) ]
+        wts_ids = [_canonicalize(w) for w in (kw.get("wts_old_princeton") or [])]
+        recent_ids = [_canonicalize(w) for w in (kw.get("recent") or [])]
         wts_ctr = Counter(wts_ids)
         recent_ctr = Counter(recent_ids)
         def sorted_list(ctr: Counter):
             items = list(ctr.items())
-            def srt(kv):
-                cid, n = kv
-                title = (WORK_MAP.get(cid, {}) or {}).get("title", cid)
-                return (-n, title)
-            items.sort(key=srt)
+            items.sort(key=lambda kv: (-kv[1], (WORK_MAP.get(kv[0], {}) or {}).get("title", kv[0])))
             return items
-        out[t["id"]] = {
-            "WTS": sorted_list(wts_ctr),
-            "Recent": sorted_list(recent_ctr),
-        }
+        out[t["id"]] = {"WTS": sorted_list(wts_ctr), "Recent": sorted_list(recent_ctr)}
     return out
 
-CANON_COUNTS_THEO_PAIRS = _top_canonical_for_theologians()   # {theoId: [(cid,count), ...]}
-CANON_COUNTS_TOPIC_PAIRS = _canon_counts_by_topic()          # {topicId: {"WTS":[(cid,count)], "Recent":[(cid,count)]}}
+CANON_COUNTS_THEO_PAIRS = _top_canonical_for_theologians()
+CANON_COUNTS_TOPIC_PAIRS = _canon_counts_by_topic()
 
 # ---------- request logging ----------
 @app.before_request
@@ -161,7 +192,6 @@ def theologians():
 
 @app.get("/api/works")
 def works():
-    # Only return canonical works? Keep full for compatibility; UI only links to canon.
     return jsonify(CACHE.get("works") or [])
 
 @app.get("/api/indices/by_topic")
@@ -174,7 +204,9 @@ def by_theologian():
 
 @app.get("/api/indices/by_work")
 def by_work():
-    return jsonify(CACHE["by_work"])
+    # Allow file override via env if needed
+    data = CACHE["by_work"] or _load_json_maybe_txt(BY_WORKS_FILE, {})
+    return jsonify(data)
 
 @app.get("/api/indices/by_topic_keyworks")
 def by_topic_keyworks():
@@ -184,20 +216,21 @@ def by_topic_keyworks():
 def topic_work_edges():
     return jsonify(CACHE["topic_work_edges"])
 
-# ---------- NEW: Canonical endpoints ----------
+# ---------- Canonical endpoints ----------
 @app.get("/api/works/canon_map")
 def api_canon_map():
     return jsonify(CANON_MAP)
 
 @app.get("/api/works/reverse_canon_map")
 def api_reverse_canon_map():
-    reverse_canon_map = reverse_map = {canonical_id: list(set([wid for wid, cid in CANON_MAP.items() if cid == canonical_id] + [canonical_id])) for canonical_id in set(CANON_MAP.values())}
-
+    reverse_canon_map = {
+        canonical_id: list(set([wid for wid, cid in CANON_MAP.items() if cid == canonical_id] + [canonical_id]))
+        for canonical_id in set(CANON_MAP.values())
+    }
     return jsonify(reverse_canon_map)
 
 @app.get("/api/indices/canon_counts_by_theologian")
 def api_canon_counts_by_theologian():
-    # Convert to [{id,count}] for each theologian id
     out = {tid: [{"id": cid, "count": n} for (cid, n) in pairs] for tid, pairs in CANON_COUNTS_THEO_PAIRS.items()}
     return jsonify(out)
 
@@ -210,6 +243,27 @@ def api_canon_counts_by_topic():
             "Recent": [{"id": cid, "count": n} for (cid, n) in (buckets.get("Recent") or [])],
         }
     return jsonify(out)
+
+# ---------- Registries ----------
+@app.get("/api/registries/institutions")
+def institutions_registry():
+    reg = CACHE.get("institutions_registry") or {}
+    items = reg.get("items", {})
+    flat = {k: (v.get("name") if isinstance(v, dict) else str(v)) for k, v in items.items()}
+    return jsonify(flat)
+
+@app.get("/api/registries/geo")
+def geo_registry():
+    reg = CACHE.get("geo_registry") or {}
+    return jsonify(reg.get("items", {}))
+
+@app.get("/api/eras")
+def api_eras():
+    return jsonify(CACHE.get("eras") or [])
+
+@app.get("/api/traditions")
+def api_traditions():
+    return jsonify(CACHE.get("traditions") or [])
 
 # ---------- API: search ----------
 @app.get("/api/search")
@@ -228,7 +282,6 @@ def search():
             item.get("type", ""),
         ]).lower()
         if all(t in hay for t in terms):
-            # If a search item is a work alias, replace id with canonical ID
             if item.get("type") == "work":
                 wid = item.get("id")
                 if wid:
@@ -241,7 +294,7 @@ def search():
     seen = set()
     deduped = []
     for r in results:
-        key = (r.get("type"), r.get("id") if r.get("type")=="work" else r.get("slug") or r.get("title"))
+        key = (r.get("type"), r.get("id") if r.get("type") == "work" else r.get("slug") or r.get("title"))
         if key in seen:
             continue
         seen.add(key)
@@ -250,7 +303,6 @@ def search():
 
 # ---------- Markdown normalization ----------
 def normalize_md(text: str) -> str:
-    import re
     lines = text.splitlines()
     first_h1 = None
     for i, ln in enumerate(lines):
@@ -290,7 +342,6 @@ def outline_html():
         return jsonify({"error": "Missing 'path' query param"}), 400
 
     rel = rel.lstrip("/\\")
-    print(rel)
     candidates = [rel]
     if rel.startswith("outlines/"):
         candidates.append(rel[len("outlines/"):])
@@ -303,19 +354,15 @@ def outline_html():
             continue
         md_path = (OUTLINES_DIR / cand).resolve()
         tried.append(str(md_path))
-        print(md_path.parents)
         if OUTLINES_DIR in md_path.parents and md_path.exists():
-            print("FOUND", md_path)
             text = md_path.read_text(encoding="utf-8")
-            text = normalize_md(text)
-            html = markdown(text, extensions=["fenced_code", "tables", "toc"])
-            return jsonify({"html": html})
+            # NEW: parse front-matter and strip it before markdown render
+            meta, body = _parse_frontmatter(text)
+            body = normalize_md(body)
+            html = markdown(body, extensions=["fenced_code", "tables", "toc"])
+            return jsonify({"html": html, "meta": meta})
 
-    return jsonify({
-        "error": "Not found",
-        "outlines_dir": str(OUTLINES_DIR),
-        "tried": tried
-    }), 404
+    return jsonify({"error": "Not found", "outlines_dir": str(OUTLINES_DIR), "tried": tried}), 404
 
 # ---------- Static SPA ----------
 @app.get("/", defaults={"path": ""})

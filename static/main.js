@@ -3,28 +3,29 @@ const {useState, useEffect, useMemo} = React;
 /* ---------------- api helper ---------------- */
 async function api(path) {
     const r = await fetch(path);
-    const ct = r.headers.get('content-type') || '';
-    if (!ct.includes('application/json')) throw new Error(`Expected JSON from ${path}`);
+    const ct = r.headers.get("content-type") || "";
+    if (!ct.includes("application/json")) throw new Error(`Expected JSON from ${path}`);
     if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
     return r.json();
 }
 
-const slugify = s => (s || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')   // non-alnum -> -
-    .replace(/^-+|-+$/g, '')       // trim leading/trailing -
-    .replace(/\.+$/g, '');
+const slugify = (s) =>
+    (s || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-") // non-alnum -> -
+        .replace(/^-+|-+$/g, "") // trim leading/trailing -
+        .replace(/\.+$/g, "");
 
 /* ---------- router ---------- */
 function useRouter() {
     const [path, setPath] = useState(window.location.pathname + window.location.search);
     useEffect(() => {
         const onPop = () => setPath(window.location.pathname + window.location.search);
-        window.addEventListener('popstate', onPop);
-        return () => window.removeEventListener('popstate', onPop);
+        window.addEventListener("popstate", onPop);
+        return () => window.removeEventListener("popstate", onPop);
     }, []);
     const navigate = (to) => {
-        window.history.pushState({}, '', to);
+        window.history.pushState({}, "", to);
         setPath(to);
     };
     return {path, navigate};
@@ -46,38 +47,54 @@ function useGo() {
 
 function CategoryLink({name, children, className, stop}) {
     const go = useGo();
-    const slug = slugify(name || 'other');
+    const slug = slugify(name || "other");
     const to = `/category/${slug}`;
-    return <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>{children || name}</a>;
+    return (
+        <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>
+            {children || name}
+        </a>
+    );
 }
 
 function TopicLink({topic, children, className, stop}) {
     const go = useGo();
     if (!topic) return <span>{children}</span>;
     const to = `/topic/${topic.slug}`;
-    return <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>{children || topic.title}</a>;
+    return (
+        <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>
+            {children || topic.title}
+        </a>
+    );
 }
 
 function TheoLink({theo, id, datasets, children, className, stop}) {
     const go = useGo();
-    const t = theo || (datasets?.theologians || []).find(x => x.id === id);
+    const t = theo || (datasets?.theologians || []).find((x) => x.id === id);
     if (!t) return <span className={className}>{children || id}</span>;
     const to = `/theologian/${t.slug}`;
-    return <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>{children || t.full_name}</a>;
+    return (
+        <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>
+            {children || t.full_name}
+        </a>
+    );
 }
 
 function WorkLink({work, id, datasets, children, className, stop}) {
     const go = useGo();
     const canonMap = datasets?.canonMap || {};
-    const wid = (work?.id) || id;
+    const wid = work?.id || id;
     const cid = canonMap[wid] || wid; // always link to canonical id
-    const w = (datasets?.works || []).find(x => x.id === cid) || work || {id: cid};
+    const w = (datasets?.works || []).find((x) => x.id === cid) || work || {id: cid};
     const to = `/work/${cid}`;
-    return <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>{children || (w.title || cid)}</a>;
+    return (
+        <a href={to} className={className} onClick={(e) => go(e, to, !!stop)}>
+            {children || w.title || cid}
+        </a>
+    );
 }
 
 function workTitleWithSuffix(liveWork = {}, byWork = {}) {
-    const title = liveWork.title || byWork.title || '';
+    const title = liveWork.title || byWork.title || "";
     const suffix =
         liveWork.reference ||
         liveWork.title_suffix ||
@@ -85,34 +102,68 @@ function workTitleWithSuffix(liveWork = {}, byWork = {}) {
         byWork.reference ||
         byWork.title_suffix ||
         byWork.suffix ||
-        '';
-    return title;
+        "";
+    return title; // suffix kept for future if you want to display it
 }
 
 function uniq(arr) {
     return Array.from(new Set(arr || []));
 }
 
-// canonId -> [aliasWorkIds]; may or may not include canonId itself
-// topics[*].key_works.{ wts_old_princeton: string[], recent: string[] }
+function enhanceKeyWorks(html, keyWorkIds, datasets) {
+    if (!html || !Array.isArray(keyWorkIds) || keyWorkIds.length === 0) return html;
 
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
+
+    // Find a "Key Works" header (H2/H3/H4 or a bold 'Key Works')
+    const isKW = (el) => /key\s*works/i.test(el.textContent || "");
+    let header = [...doc.querySelectorAll("h1,h2,h3,h4,strong,b")].find(isKW);
+    if (!header) return html;
+
+    // The list immediately after the header
+    let list = header.nextElementSibling;
+    if (!list || !/^(UL|OL)$/i.test(list.tagName)) return html;
+
+    const canonMap = datasets?.canonMap || {};
+    const lis = [...list.querySelectorAll("li")];
+    const n = Math.min(lis.length, keyWorkIds.length);
+
+    for (let i = 0; i < n; i++) {
+        const li = lis[i];
+        const wid = keyWorkIds[i];
+        const cid = canonMap[wid] || wid;
+
+        const title = (li.textContent || "").trim();
+        li.textContent = "";
+
+        const a = doc.createElement("a");
+        a.href = `/work/${cid}`;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        a.textContent = title + " ↗";     // new-tab indicator
+        li.appendChild(a);
+    }
+
+    return doc.body.innerHTML;
+}
+
+/* ---------- featured topics for a work (canonical-aware) ---------- */
 function featuredTopicsForWork(canonId, topics, reverseCanonMap) {
-    const aliasIds = new Set([
-        canonId,
-        ...(reverseCanonMap[canonId] || [])
-    ]);
+    const aliasIds = new Set([canonId, ...(reverseCanonMap?.[canonId] || [])]);
 
     const out = [];
-    for (const t of (topics || [])) {
+    for (const t of topics || []) {
         const kw = t.key_works || {};
         const wtsSet = new Set(kw.wts_old_princeton || []);
         const recentSet = new Set(kw.recent || []);
 
-        let inWts = false, inRecent = false;
+        let inWts = false,
+            inRecent = false;
         for (const id of aliasIds) {
             if (wtsSet.has(id)) inWts = true;
             if (recentSet.has(id)) inRecent = true;
-            if (inWts && inRecent) break; // early exit
+            if (inWts && inRecent) break;
         }
 
         if (inWts || inRecent) {
@@ -120,13 +171,14 @@ function featuredTopicsForWork(canonId, topics, reverseCanonMap) {
                 topic_id: t.id,
                 topic_slug: t.slug,
                 title: t.title,
-                bucket: inWts && inRecent ? ['WTS', 'Recent'] : (inWts ? ['WTS'] : ['Recent'])
+                bucket: inWts && inRecent ? ["WTS", "Recent"] : inWts ? ["WTS"] : ["Recent"],
             });
         }
     }
     return out;
 }
 
+/* ---------- ordering helpers for categories/topics ---------- */
 const parseCategoryKey = (name = "") => {
     const m = String(name).match(/^\s*(\d+)\s*\./);
     return m ? parseInt(m[1], 10) : Number.MAX_SAFE_INTEGER;
@@ -135,57 +187,55 @@ const parseCategoryKey = (name = "") => {
 // "5.A Nature and origin of sin" -> [5, "A"]
 const parseTopicKey = (topicTitle = "") => {
     const m = String(topicTitle).match(/^\s*(\d+)\s*\.\s*([A-Z])/i);
-    if (!m) return [Number.MAX_SAFE_INTEGER, ""]; // fallback (won't be used per your data guarantee)
+    if (!m) return [Number.MAX_SAFE_INTEGER, ""];
     return [parseInt(m[1], 10), m[2].toUpperCase()];
 };
 
 function parseTopicKeyFromSlug(slug) {
     // e.g., "5-b-original-sin-and-imputation" -> [5, "b"]
-    const m = /^(\d+)-([a-z])\b/.exec(slug || '');
-    return [parseInt(m?.[1] || '0', 10), (m?.[2] || '')];
+    const m = /^(\d+)-([a-z])\b/.exec(slug || "");
+    return [parseInt(m?.[1] || "0", 10), m?.[2] || ""];
 }
 
-
-// Resolve authors for a work id → [{display, theo}] where theo is a theologian object or null
+/* ---------- Resolve authors for a work ---------- */
 function resolveAuthorsForWork(wid, datasets) {
-    const live = (datasets.works || []).find(w => w.id === wid) || {};
+    const live = (datasets.works || []).find((w) => w.id === wid) || {};
     const by = datasets.byWork[wid] || {};
     const theos = datasets.theologians || [];
-
     const out = [];
 
     const pushTheo = (t) => {
         if (!t) return;
-        if (!out.some(o => o.theo?.id === t.id || o.display === t.full_name)) {
+        if (!out.some((o) => o.theo?.id === t.id || o.display === t.full_name)) {
             out.push({display: t.full_name, theo: t});
         }
     };
 
     const pushName = (nm) => {
         if (!nm) return;
-        if (!out.some(o => o.display === nm)) {
-            const t = theos.find(x => x.full_name === nm || x.name === nm);
+        if (!out.some((o) => o.display === nm)) {
+            const t = theos.find((x) => x.full_name === nm || x.name === nm);
             out.push({display: nm, theo: t || null});
         }
     };
 
-    // 1) authors arrays (prefer live, then byWork)
-    const authorLists = []
+    // authors arrays (prefer live, then byWork)
+    const authorLists = [];
     if (Array.isArray(live.authors) && live.authors.length) authorLists.push(live.authors);
     if (Array.isArray(by.authors) && by.authors.length) authorLists.push(by.authors);
 
     for (const arr of authorLists) {
         for (const a of arr) {
-            if (typeof a === 'string') {
+            if (typeof a === "string") {
                 if (/^theo_[a-f0-9]+$/i.test(a)) {
-                    pushTheo(theos.find(x => x.id === a));
+                    pushTheo(theos.find((x) => x.id === a));
                 } else {
                     pushName(a);
                 }
-            } else if (a && typeof a === 'object') {
+            } else if (a && typeof a === "object") {
                 const id = a.id || a.theologian_id;
                 if (id) {
-                    pushTheo(theos.find(x => x.id === id));
+                    pushTheo(theos.find((x) => x.id === id));
                     continue;
                 }
                 const nm = a.full_name || a.name || a.slug;
@@ -194,22 +244,17 @@ function resolveAuthorsForWork(wid, datasets) {
         }
     }
 
-    // 2) primary/associated theologian IDs
+    // primary/associated theologian IDs
     const candTheoIds = [
         by.primary_author_theologian_id,
         live.primary_author_theologian_id,
         by.theologian_id,
         live.theologian_id,
     ].filter(Boolean);
-    for (const tid of candTheoIds) pushTheo(theos.find(x => x.id === tid));
+    for (const tid of candTheoIds) pushTheo(theos.find((x) => x.id === tid));
 
-    // 3) name fallbacks
-    const candNames = [
-        by.primary_author_name,
-        by.author_name,
-        by.mapping_author_name,
-        by.theologian_name,
-    ].filter(Boolean);
+    // name fallbacks
+    const candNames = [by.primary_author_name, by.author_name, by.mapping_author_name, by.theologian_name].filter(Boolean);
     for (const nm of candNames) pushName(nm);
 
     return out;
@@ -218,66 +263,81 @@ function resolveAuthorsForWork(wid, datasets) {
 /* ---------- Reusable Outline list (identical item markup) ---------- */
 function OutlineList({items, datasets}) {
     const [openPath, setOpenPath] = React.useState(null);
-    const [html, setHtml] = React.useState('');
+    const [html, setHtml] = React.useState("");
 
-    async function toggleOutline(p) {
+    async function toggleOutline(item) {
+        const p = item?.markdown_path;
         if (!p) return;
+
         if (openPath === p) {
             setOpenPath(null);
-            setHtml('');
+            setHtml("");
             return;
         }
         setOpenPath(p);
-        setHtml('Loading…');
+        setHtml("Loading…");
         try {
-            const r = await api('/api/outline?path=' + encodeURIComponent(p));
-            setHtml(r.html);
+            const r = await api("/api/outline?path=" + encodeURIComponent(p));
+            const keyIds = (item && item.key_work_ids && item.key_work_ids.length)
+                ? item.key_work_ids
+                : (r.meta && r.meta.key_work_ids) || [];
+            const enhanced = enhanceKeyWorks(r.html, keyIds, datasets);
+            setHtml(enhanced);
         } catch (e) {
-            setHtml('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
+            setHtml('<div class="small">' + String(e).replace(/</g, "&lt;") + "</div>");
         }
     }
 
     return (
         <div>
             {items.map((it, i) => {
-                // Accept either a topic_slug or a topic_id; resolve Topic for link+title.
                 const topic =
                     (it.topic_slug && (datasets.topics || []).find(t => t.slug === it.topic_slug)) ||
                     (it.topic_id && (datasets.topics || []).find(t => t.id === it.topic_id)) ||
                     null;
-                const topicSlug = topic?.slug || it.topic_slug || '';
-                const topicTitle = topic?.title || it.topic_title || 'Untitled topic';
+                const topicSlug = topic?.slug || it.topic_slug || "";
+                const topicTitle = topic?.title || it.topic_title || "Untitled topic";
 
                 return (
                     <div key={i} style={{marginBottom: 12}}>
-                        <div className="toggle" onClick={() => toggleOutline(it.markdown_path)}
-                             style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8}}>
+                        <div
+                            className="toggle"
+                            onClick={() => toggleOutline(it)}   // <-- pass whole item
+                            style={{display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8}}
+                        >
                             <div>
                                 {topic ? (
-                                    <a href={`/topic/${topicSlug}`} onClick={(e) => {
-                                        e.preventDefault();
-                                        e.stopPropagation();
-                                        window.history.pushState({}, '', `/topic/${topicSlug}`);
-                                        window.dispatchEvent(new PopStateEvent('popstate'));
-                                    }}>
+                                    <a
+                                        href={`/topic/${topicSlug}`}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            e.stopPropagation();
+                                            window.history.pushState({}, "", `/topic/${topicSlug}`);
+                                            window.dispatchEvent(new PopStateEvent("popstate"));
+                                        }}
+                                    >
                                         <b>{topicTitle}</b>
                                     </a>
-                                ) : <b>{topicTitle}</b>}
+                                ) : (
+                                    <b>{topicTitle}</b>
+                                )}
                                 {it.updated_at ? <div className="small">updated {it.updated_at}</div> : null}
                             </div>
-                            <div className="small">{openPath === it.markdown_path ? '▾' : '▸'}</div>
+                            <div className="small">{openPath === it.markdown_path ? "▾" : "▸"}</div>
                         </div>
 
                         {openPath === it.markdown_path && (
-                            <div style={{gridColumn: '1 / -1'}}>
+                            <div style={{gridColumn: "1 / -1"}}>
                                 <div className="markdown" dangerouslySetInnerHTML={{__html: html}}/>
                                 <div className="small" style={{marginTop: 8}}>
-                                    <a href={`/outline?path=${encodeURIComponent(it.markdown_path || '')}`}
-                                       onClick={(e) => {
-                                           e.preventDefault();
-                                           window.history.pushState({}, '', `/outline?path=${encodeURIComponent(it.markdown_path || '')}`);
-                                           window.dispatchEvent(new PopStateEvent('popstate'));
-                                       }}>
+                                    <a
+                                        href={`/outline?path=${encodeURIComponent(it.markdown_path || "")}`}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            window.history.pushState({}, "", `/outline?path=${encodeURIComponent(it.markdown_path || "")}`);
+                                            window.dispatchEvent(new PopStateEvent("popstate"));
+                                        }}
+                                    >
                                         Open full page
                                     </a>
                                 </div>
@@ -290,33 +350,90 @@ function OutlineList({items, datasets}) {
     );
 }
 
+/* ---------- THEO HELPERS + badges ---------- */
+const SUFFIXES = new Set(["jr.", "sr.", "ii", "iii", "iv", "v"]);
+
+function lastNameKey(full = "") {
+    const parts = String(full).trim().split(/\s+/);
+    if (parts.length === 0) return "";
+    const last = parts[parts.length - 1];
+    const maybeSuffix = last.replace(/\.$/, "").toLowerCase();
+    const idx = SUFFIXES.has(maybeSuffix) && parts.length >= 2 ? parts.length - 2 : parts.length - 1;
+    return parts[idx].toLowerCase();
+}
+
+function getEra(theo = {}) {
+    if (theo.era && (theo.era.label || theo.era.slug)) {
+        return {label: theo.era.label || theo.era.slug, start: theo.era.start ?? 99999, end: theo.era.end ?? 99999};
+    }
+    const label = (theo.era_category || (theo.eras || [])[0] || "").toString();
+    return {label, start: 99999, end: 99999};
+}
+
+function getTraditionLabel(theo = {}) {
+    if (theo.tradition && (theo.tradition.label || theo.tradition.slug)) return theo.tradition.label || theo.tradition.slug;
+    return (theo.tradition_label || theo.tradition_slug || (theo.traditions || [])[0] || "Other").toString();
+}
+
+function birthYear(theo = {}) {
+    return Number.isFinite(theo.birth_year) ? theo.birth_year : 99999;
+}
+
+function TheoBadges({theo}) {
+    const era = getEra(theo);
+    const trad = getTraditionLabel(theo);
+    return (
+        <>
+            {era.label ? <span className="badge" style={{marginRight: 6}}>{era.label}</span> : null}
+            {trad ? <span className="badge" style={{marginRight: 6}}>{trad}</span> : null}
+        </>
+    );
+}
+
+function TheoCard({theo, onClick}) {
+    return (
+        <div className="card" style={{cursor: "pointer"}} onClick={onClick}>
+            <b>
+                <TheoLink theo={theo} stop/>
+            </b>
+            {theo.dates ? <div className="small">{theo.dates}</div> : null}
+            <div style={{marginTop: 6}}>
+                <TheoBadges theo={theo}/>
+            </div>
+        </div>
+    );
+}
+
 /* ---------- App ---------- */
 function App() {
     const router = useRouter();
     const [datasets, setDatasets] = useState(null);
     useEffect(() => {
         (async () => {
-            const [
-                topics, theologians, works, byTopic, byTheo, byWork,
-                canonMap, reverseCanonMap, canonCountsTheo, canonCountsTopic
-            ] = await Promise.all([
-                api('/api/topics'),
-                api('/api/theologians'),
-                api('/api/works'),
-                api('/api/indices/by_topic'),
-                api('/api/indices/by_theologian'),
-                api('/api/indices/by_work'),
-                api('/api/works/canon_map'),
-                api('/api/works/reverse_canon_map'),
-                api('/api/indices/canon_counts_by_theologian'),
-                api('/api/indices/canon_counts_by_topic'),
-            ]);
+            const [topics, theologians, works, byTopic, byTheo, byWork, canonMap, reverseCanonMap, canonCountsTheo, canonCountsTopic] =
+                await Promise.all([
+                    api("/api/topics"),
+                    api("/api/theologians"),
+                    api("/api/works"),
+                    api("/api/indices/by_topic"),
+                    api("/api/indices/by_theologian"),
+                    api("/api/indices/by_work"),
+                    api("/api/works/canon_map"),
+                    api("/api/works/reverse_canon_map"),
+                    api("/api/indices/canon_counts_by_theologian"),
+                    api("/api/indices/canon_counts_by_topic"),
+                ]);
             setDatasets({
-                topics, theologians, works, byTopic, byTheo, byWork,
+                topics,
+                theologians,
+                works,
+                byTopic,
+                byTheo,
+                byWork,
                 canonMap,
                 reverseCanonMap,
-                canonCountsTheo,     // {theoId: [{id: canonicalWorkId, count}]}
-                canonCountsTopic,    // {topicId: {WTS: [{id,count}], Recent: [{id,count}]}}
+                canonCountsTheo, // {theoId: [{id: canonicalWorkId, count}]}
+                canonCountsTopic, // {topicId: {WTS: [{id,count}], Recent: [{id,count}]}}
             });
         })().catch(console.error);
     }, []);
@@ -324,105 +441,171 @@ function App() {
     return (
         <RouterCtx.Provider value={router}>
             <Header/>
-            <div className="container"><Routes datasets={datasets}/></div>
+            <div className="container">
+                <Routes datasets={datasets}/>
+            </div>
         </RouterCtx.Provider>
     );
 }
 
 /* ---------- Header ---------- */
 function Header() {
-    const go = useGo();
-    const [q, setQ] = useState('');
-    const [results, setResults] = useState([]);
-    useEffect(() => {
-        const id = setTimeout(async () => {
-            if (!q) return setResults([]);
-            try {
-                setResults(await api('/api/search?q=' + encodeURIComponent(q)));
-            } catch {
-                setResults([]);
-            }
-        }, 180);
-        return () => clearTimeout(id);
-    }, [q]);
+  const go = useGo();
+  const [q, setQ] = useState("");
+  const [results, setResults] = useState([]);
+  const [open, setOpen] = useState(false);        // controls visibility
+  const boxRef = React.useRef(null);              // for outside-click
 
-    return (
-        <header>
-            <a href="/" onClick={(e) => go(e, '/')}>Topics</a>
-            <a href="/theologians" onClick={(e) => go(e, '/theologians')}>Theologians</a>
-            <input placeholder="Search topics, theologians, works…" value={q} onChange={e => setQ(e.target.value)}/>
-            {q && results.length > 0 && (
-                <div className="card" style={{
-                    position: 'absolute',
-                    top: '56px',
-                    right: '16px',
-                    width: '520px',
-                    maxHeight: '60vh',
-                    overflow: 'auto',
-                    zIndex: 30
-                }}>
-                    {results.map((r, i) => (
-                        <div key={i} style={{padding: '6px 4px', cursor: 'pointer'}} onClick={(e) => {
-                            if (r.type === 'theologian') return go(e, `/theologian/${r.slug}`);
-                            if (r.type === 'topic') return go(e, `/topic/${r.slug}`);
-                            if (r.type === 'work') return go(e, `/work/${r.id}`);
-                            if (r.type === 'outline') return go(e, `/outline?path=${encodeURIComponent(r.markdown_path || '')}`);
-                        }}>
-                            <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
-                            {r.slug && <div className="small">{r.slug}</div>}
-                        </div>
-                    ))}
-                </div>
-            )}
-        </header>
-    );
+  // debounce search + control "open"
+  useEffect(() => {
+    const id = setTimeout(async () => {
+      const query = q.trim();
+      if (!query) {
+        setResults([]);
+        setOpen(false);
+        return;
+      }
+      try {
+        const r = await api("/api/search?q=" + encodeURIComponent(query));
+        setResults(r);
+        setOpen(r.length > 0);
+      } catch {
+        setResults([]);
+        setOpen(false);
+      }
+    }, 180);
+    return () => clearTimeout(id);
+  }, [q]);
+
+  // close on outside click or Esc
+  useEffect(() => {
+    function onDocClick(e) {
+      if (!boxRef.current) return;
+      if (!boxRef.current.contains(e.target)) setOpen(false);
+    }
+    function onKey(e) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("mousedown", onDocClick);
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDocClick);
+      window.removeEventListener("keydown", onKey);
+    };
+  }, []);
+
+  // navigate + close dropdown
+  const select = (e, to) => {
+    setOpen(false);
+    setResults([]);
+    setQ("");            // also clear the input so it doesn’t re-open
+    go(e, to);
+  };
+
+  return (
+    <header ref={boxRef}>
+      <a href="/" onClick={(e) => select(e, "/")}>Topics</a>
+      <a href="/theologians" onClick={(e) => select(e, "/theologians")}>Theologians</a>
+
+      <input
+        placeholder="Search topics, theologians, works…"
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        onFocus={() => setOpen((results || []).length > 0)}
+      />
+
+      {open && results.length > 0 && (
+        <div
+          className="card"
+          style={{
+            position: "absolute",
+            top: "56px",
+            right: "16px",
+            width: "520px",
+            maxHeight: "60vh",
+            overflow: "auto",
+            zIndex: 30,
+          }}
+        >
+          {results.map((r, i) => {
+            const to =
+              r.type === "theologian" ? `/theologian/${r.slug}` :
+              r.type === "topic"      ? `/topic/${r.slug}` :
+              r.type === "work"       ? `/work/${r.id}` :
+              r.type === "outline"    ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` :
+              "/";
+            return (
+              <div
+                key={i}
+                style={{ padding: "6px 4px", cursor: "pointer" }}
+                onClick={(e) => select(e, to)}
+              >
+                <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
+                {r.slug && <div className="small">{r.slug}</div>}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </header>
+  );
 }
 
 /* ---------- Routes ---------- */
 function Routes({datasets}) {
     const {path} = React.useContext(RouterCtx);
     const url = new URL(window.location.origin + path);
-    const pathname = url.pathname.replace(/\/+$/, '').toLowerCase();
+    const pathname = url.pathname.replace(/\/+$/, "").toLowerCase();
 
-    if (pathname === '') return <Home datasets={datasets}/>;
-    if (pathname === '/theologians') return <TheologiansPage datasets={datasets}/>;
-    if (pathname.startsWith('/topic/')) return <TopicPage slug={decodeURIComponent(url.pathname.split('/').pop())}
-                                                          datasets={datasets}/>;
-    if (pathname.startsWith('/theologian/')) return <TheologianPage
-        slug={decodeURIComponent(url.pathname.split('/').pop())} datasets={datasets}/>;
-    if (pathname.startsWith('/work/')) return <WorkPage id={decodeURIComponent(url.pathname.split('/').pop())}
-                                                        datasets={datasets}/>;
-    if (pathname.startsWith('/outline')) return <OutlinePage/>;
-    if (pathname.startsWith('/category/')) return <TopicCategoryPage
-        slug={decodeURIComponent(url.pathname.split('/').pop())} datasets={datasets}/>;
+    if (pathname === "") return <Home datasets={datasets}/>;
+    if (pathname === "/theologians") return <TheologiansPage datasets={datasets}/>;
+    if (pathname.startsWith("/topic/"))
+        return <TopicPage slug={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets}/>;
+    if (pathname.startsWith("/theologian/"))
+        return <TheologianPage slug={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets}/>;
+    if (pathname.startsWith("/work/"))
+        return <WorkPage id={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets}/>;
+    if (pathname.startsWith("/outline")) return <OutlinePage/>;
+    if (pathname.startsWith("/category/"))
+        return <TopicCategoryPage slug={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets}/>;
     return <div>Not found.</div>;
 }
 
 /* ---------- Home ---------- */
 function Home({datasets}) {
     const {topics} = datasets;
-    const byCat = useMemo(() => topics.reduce((m, t) => {
-        (m[t.category || 'Other'] ??= []).push(t);
-        return m;
-    }, {}), [topics]);
+    const byCat = useMemo(() => {
+        return topics.reduce((m, t) => {
+            (m[t.category || "Other"] ??= []).push(t);
+            return m;
+        }, {});
+    }, [topics]);
     const [open, setOpen] = useState({});
-    const toggle = (cat) => setOpen(prev => ({...prev, [cat]: !prev[cat]}));
+    const toggle = (cat) => setOpen((prev) => ({...prev, [cat]: !prev[cat]}));
 
     return (
         <div>
             {Object.entries(byCat).map(([cat, items]) => (
-                <section key={cat} style={{marginBottom: '16px'}}>
-                    <div className={'section ' + (open[cat] ? 'open' : '')}>
+                <section key={cat} style={{marginBottom: "16px"}}>
+                    <div className={"section " + (open[cat] ? "open" : "")}>
                         <div className="section-head" onClick={() => toggle(cat)}>
                             <div className="caret">▸</div>
-                            <h2><CategoryLink name={cat} stop>{cat}</CategoryLink></h2>
+                            <h2>
+                                <CategoryLink name={cat} stop>
+                                    {cat}
+                                </CategoryLink>
+                            </h2>
                         </div>
                         {open[cat] && (
                             <div className="grid">
-                                {items.map(t => (
+                                {items.map((t) => (
                                     <div key={t.id} className="card">
-                                        <b><TopicLink topic={t}/></b>
-                                        <div className="small"><CategoryLink name={t.category}/></div>
+                                        <b>
+                                            <TopicLink topic={t}/>
+                                        </b>
+                                        <div className="small">
+                                            <CategoryLink name={t.category}/>
+                                        </div>
                                     </div>
                                 ))}
                             </div>
@@ -435,6 +618,8 @@ function Home({datasets}) {
 }
 
 /* ---------- Topic Page (canonical-only) ---------- */
+
+/* ---------- Topic Page (canonical-only) ---------- */
 function TopicPage({slug, datasets}) {
     const topic = datasets.topics.find(t => t.slug === slug);
     if (!topic) return <div>Topic not found.</div>;
@@ -444,6 +629,8 @@ function TopicPage({slug, datasets}) {
 
     const entry = datasets.byTopic[topic.id] || {theologians: []};
     const [openTheoId, setOpenTheoId] = useState(null);
+
+    // for outline preview
     const [openOutlinePath, setOpenOutlinePath] = useState(null);
     const [outlineHTML, setOutlineHTML] = useState('');
 
@@ -451,11 +638,12 @@ function TopicPage({slug, datasets}) {
         const tEntry = datasets.byTheo[theologian_id];
         if (!tEntry) return [];
         const groups = tEntry.outlines_by_topic_category || {};
-        console.log(groups);
-        return Object.values(groups).flat().filter(o => o.topic_id === topic.id || o.topic_slug === topic.slug);
+        // these items already include `key_work_ids` (use them!)
+        return Object.values(groups)
+            .flat()
+            .filter(o => o.topic_id === topic.id || o.topic_slug === topic.slug);
     };
 
-    // Canonical WTS/Recent lists with counts and sorting (desc count, then title)
     const canonCounts = datasets.canonCountsTopic[topic.id] || {WTS: [], Recent: []};
 
     function WorkCard({wid, bucket}) {
@@ -477,34 +665,43 @@ function TopicPage({slug, datasets}) {
                     <div className="small">
                         {authorsDisplay.map((a, i) => (
                             <span key={i}>
-                                {i ? ', ' : ''}
+                {i ? ', ' : ''}
                                 {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
-                            </span>
+              </span>
                         ))}
                     </div>
                 ) : null}
                 <div style={{marginTop: 6, display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center'}}>
                     <span className={bucket === 'WTS' ? 'chip' : 'chip2'}>{bucket}</span>
-                    {/* count badge comes from backend pre-aggregated */}
                     <span className="badge">
-                        {(canonCounts[bucket] || []).find(x => x.id === wid)?.count || 0}
-                    </span>
+            {(canonCounts[bucket] || []).find(x => x.id === wid)?.count || 0}
+          </span>
                 </div>
             </div>
         );
     }
 
-    async function toggleOutline(p) {
+    // UPDATED: accept the whole outline item so we can use key_work_ids
+    async function toggleOutline(item) {
+        const p = item?.markdown_path;
+        if (!p) return;
+
         if (openOutlinePath === p) {
             setOpenOutlinePath(null);
             setOutlineHTML('');
             return;
         }
+
         setOpenOutlinePath(p);
         setOutlineHTML('Loading…');
         try {
             const r = await api('/api/outline?path=' + encodeURIComponent(p));
-            setOutlineHTML(r.html);
+            // prefer item.key_work_ids; fall back to front-matter
+            const keyIds = (item.key_work_ids && item.key_work_ids.length)
+                ? item.key_work_ids
+                : (r.meta && r.meta.key_work_ids) || [];
+            const enhanced = enhanceKeyWorks(r.html, keyIds, datasets);
+            setOutlineHTML(enhanced);
         } catch (e) {
             setOutlineHTML('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
         }
@@ -513,15 +710,21 @@ function TopicPage({slug, datasets}) {
     async function toggleTheoCard(t) {
         const willOpen = openTheoId !== t.theologian_id;
         setOpenTheoId(willOpen ? t.theologian_id : null);
+
+        // auto-load first outline when opening
         if (willOpen) {
             const list = outlinesForTheo(t.theologian_id);
             if (list.length) {
-                const p = list[0].markdown_path;
-                setOpenOutlinePath(p);
+                const first = list[0];
+                setOpenOutlinePath(first.markdown_path);
                 setOutlineHTML('Loading…');
                 try {
-                    const r = await api('/api/outline?path=' + encodeURIComponent(p));
-                    setOutlineHTML(r.html);
+                    const r = await api('/api/outline?path=' + encodeURIComponent(first.markdown_path));
+                    const keyIds = (first.key_work_ids && first.key_work_ids.length)
+                        ? first.key_work_ids
+                        : (r.meta && r.meta.key_work_ids) || [];
+                    const enhanced = enhanceKeyWorks(r.html, keyIds, datasets);
+                    setOutlineHTML(enhanced);
                 } catch (e) {
                     setOutlineHTML('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
                 }
@@ -577,7 +780,6 @@ function TopicPage({slug, datasets}) {
             <div style={{marginTop: 18}}>
                 <h3>Outlines</h3>
                 <div className="grid" style={{gridTemplateColumns: '1fr'}}>
-
                     {entry.theologians.map(t => (
                         <div key={t.theologian_id} className="card">
                             <div className="section-head" onClick={(e) => {
@@ -587,19 +789,23 @@ function TopicPage({slug, datasets}) {
                                 <div className="caret">{openTheoId === t.theologian_id ? '▾' : '▸'}</div>
                                 <b><TheoLink id={t.theologian_id} datasets={datasets} stop/></b>
                             </div>
+
                             {openTheoId === t.theologian_id && (
                                 <div className="details">
                                     {outlinesForTheo(t.theologian_id).map((o, i) => {
                                         const tobj = datasets.topics.find(tt => tt.id === o.topic_id);
                                         return (
                                             <div key={i} style={{marginBottom: 12}}>
-                                                <div className="toggle" onClick={() => toggleOutline(o.markdown_path)}
-                                                     style={{
-                                                         display: 'flex',
-                                                         justifyContent: 'space-between',
-                                                         alignItems: 'center',
-                                                         gap: 8
-                                                     }}>
+                                                <div
+                                                    className="toggle"
+                                                    onClick={() => toggleOutline(o)}
+                                                    style={{
+                                                        display: 'flex',
+                                                        justifyContent: 'space-between',
+                                                        alignItems: 'center',
+                                                        gap: 8
+                                                    }}
+                                                >
                                                     <div>
                                                         <b><TopicLink topic={tobj} stop/></b>
                                                         <div className="small">updated {o.updated_at}</div>
@@ -607,19 +813,22 @@ function TopicPage({slug, datasets}) {
                                                     <div
                                                         className="small">{openOutlinePath === o.markdown_path ? '▾' : '▸'}</div>
                                                 </div>
+
                                                 {openOutlinePath === o.markdown_path && (
                                                     <div style={{gridColumn: '1 / -1'}}>
                                                         <div className="markdown"
                                                              dangerouslySetInnerHTML={{__html: outlineHTML}}/>
                                                         <div className="small" style={{marginTop: 8}}>
-                                                            <a href={`/outline?path=${encodeURIComponent(o.markdown_path || '')}`}
-                                                               onClick={(e) => {
-                                                                   e.preventDefault();
-                                                                   window.history.pushState({}, '', `/outline?path=${encodeURIComponent(o.markdown_path || '')}`);
-                                                                   window.dispatchEvent(new PopStateEvent('popstate'));
-                                                               }}>
+                                                            <a
+                                                                href={`/outline?path=${encodeURIComponent(o.markdown_path || '')}`}
+                                                                onClick={(e) => {
+                                                                    e.preventDefault();
+                                                                    window.history.pushState({}, '', `/outline?path=${encodeURIComponent(o.markdown_path || '')}`);
+                                                                    window.dispatchEvent(new PopStateEvent('popstate'));
+                                                                }}
+                                                            >
+                                                                Open full page
                                                             </a>
-                                                            <div className="small">updated {o.updated_at}</div>
                                                         </div>
                                                     </div>
                                                 )}
@@ -636,51 +845,63 @@ function TopicPage({slug, datasets}) {
     );
 }
 
+
 /* ---------- Theologian Page (canonical-only) ---------- */
 function TheologianPage({slug, datasets}) {
-    const theo = datasets.theologians.find(x => x.slug === slug);
+    const theo = datasets.theologians.find((x) => x.slug === slug);
     if (!theo) return <div>Theologian not found.</div>;
 
     const [openWorks, setOpenWorks] = useState(false);
     const [openCats, setOpenCats] = useState({});
     const [openOutlinePath, setOpenOutlinePath] = useState(null);
-    const [outlineHTML, setOutlineHTML] = useState('');
+    const [outlineHTML, setOutlineHTML] = useState("");
 
     const entry = datasets.byTheo[theo.id] || {};
     const groups = entry.outlines_by_topic_category || {};
-    // Canonical work buckets with counts already sorted by the backend
     const canonList = datasets.canonCountsTheo[theo.id] || []; // [{id,count}]
 
     function WorkCardTheo({wId}) {
-        const w = (datasets.works || []).find(x => x.id === wId) || {id: wId, title: wId};
+        const w = (datasets.works || []).find((x) => x.id === wId) || {id: wId, title: wId};
         const topicsFeaturing = featuredTopicsForWork(w.id, datasets.topics, datasets.reverseCanonMap);
         return (
             <div className="card">
                 {(() => {
                     const byW = datasets.byWork[w.id] || {};
                     const label = workTitleWithSuffix(w, byW);
-                    return <div><b><WorkLink id={w.id} work={w} datasets={datasets}>{label}</WorkLink></b></div>;
+                    return (
+                        <div>
+                            <b>
+                                <WorkLink id={w.id} work={w} datasets={datasets}>
+                                    {label}
+                                </WorkLink>
+                            </b>
+                        </div>
+                    );
                 })()}
                 {resolveAuthorsForWork(w.id, datasets).length ? (
                     <div className="small">
                         {resolveAuthorsForWork(w.id, datasets).map((a, i) => (
                             <span key={i}>
-                                {i ? ', ' : ''}
+                {i ? ", " : ""}
                                 {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
-                            </span>
+              </span>
                         ))}
                     </div>
                 ) : null}
-                <div style={{marginTop: 6, display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center'}}>
+                <div style={{marginTop: 6, display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center"}}>
                     <span
-                        className="badge">{(datasets.canonCountsTheo[theo.id] || []).find(x => x.id === w.id)?.count || 0}</span>
+                        className="badge">{(datasets.canonCountsTheo[theo.id] || []).find((x) => x.id === w.id)?.count || 0}</span>
                     {topicsFeaturing.slice(0, 2).map((t, i) => (
-                        <a key={i} className={t.bucket === 'WTS' ? 'chip' : 'chip2'} href={`/topic/${t.topic_slug}`}
-                           onClick={(e) => {
-                               e.preventDefault();
-                               window.history.pushState({}, '', `/topic/${t.topic_slug}`);
-                               window.dispatchEvent(new PopStateEvent('popstate'));
-                           }}>
+                        <a
+                            key={i}
+                            className={t.bucket === "WTS" ? "chip" : "chip2"}
+                            href={`/topic/${t.topic_slug}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.history.pushState({}, "", `/topic/${t.topic_slug}`);
+                                window.dispatchEvent(new PopStateEvent("popstate"));
+                            }}
+                        >
                             {t.bucket}: {t.title}
                         </a>
                     ))}
@@ -693,40 +914,44 @@ function TheologianPage({slug, datasets}) {
     async function toggleTheoOutline(p) {
         if (openOutlinePath === p) {
             setOpenOutlinePath(null);
-            setOutlineHTML('');
+            setOutlineHTML("");
             return;
         }
         setOpenOutlinePath(p);
-        setOutlineHTML('Loading…');
+        setOutlineHTML("Loading…");
         try {
-            const r = await api('/api/outline?path=' + encodeURIComponent(p));
+            const r = await api("/api/outline?path=" + encodeURIComponent(p));
             setOutlineHTML(r.html);
         } catch (e) {
-            setOutlineHTML('<div className="small">' + String(e).replace(/</g, '&lt;') + '</div>');
+            setOutlineHTML('<div className="small">' + String(e).replace(/</g, "&lt;") + "</div>");
         }
     }
 
     return (
         <div>
-            <h1>{theo.full_name || theo.name} {theo.dates ? <span className="small">{theo.dates}</span> : null}</h1>
-            {(theo.era_category || theo.eras || []).map((e, i) => <span key={i} className="badge"
-                                                                        style={{marginRight: 6}}>{e}</span>)}
-            {(theo.traditions || []).map((e, i) => <span key={'tr' + i} className="badge"
-                                                         style={{marginRight: 6}}>{e}</span>)}
+            <h1>
+                {theo.full_name || theo.name} {theo.dates ? <span className="small">{theo.dates}</span> : null}
+            </h1>
+            <TheoBadges theo={theo}/>
 
-            <div className={'section ' + (openWorks ? 'open' : '')} style={{marginTop: 18}}>
+            <div className={"section " + (openWorks ? "open" : "")} style={{marginTop: 18}}>
                 <div className="section-head" onClick={() => setOpenWorks(!openWorks)}>
                     <div className="caret">▸</div>
                     <h3>Canonical Works</h3>
                     {canonList.length ? <span className="count">{canonList.length}</span> : null}
                 </div>
-                {openWorks && <div className="grid two">
-                    {canonList.length === 0 ? <div className="small">No works found.</div> :
-                        canonList.map(({id}) => <WorkCardTheo key={id} wId={id}/>)}
-                </div>}
+                {openWorks && (
+                    <div className="grid two">
+                        {canonList.length === 0 ? (
+                            <div className="small">No works found.</div>
+                        ) : (
+                            canonList.map(({id}) => <WorkCardTheo key={id} wId={id}/>)
+                        )}
+                    </div>
+                )}
             </div>
 
-            {/* ---------- Outlines (same HTML as Topic/Home outline items) ---------- */}
+            {/* Outlines (same HTML as Topic/Home outline items) */}
             <div style={{marginTop: 18}}>
                 <h3>Outlines</h3>
                 {Object.entries(groups)
@@ -737,37 +962,43 @@ function TheologianPage({slug, datasets}) {
 
                         const normalized = [...items]
                             .sort((a, b) => {
-                                const tA = datasets.topics.find(tt => tt.id === a.topic_id);
-                                const tB = datasets.topics.find(tt => tt.id === b.topic_id);
+                                const tA = datasets.topics.find((tt) => tt.id === a.topic_id);
+                                const tB = datasets.topics.find((tt) => tt.id === b.topic_id);
                                 const [na, la] = parseTopicKeyFromSlug(tA?.slug);
                                 const [nb, lb] = parseTopicKeyFromSlug(tB?.slug);
                                 return na !== nb ? na - nb : la.localeCompare(lb);
                             })
-                            .map(it => {
-                                const tRec = datasets.topics.find(tt => tt.id === it.topic_id);
+                            .map((it) => {
+                                const tRec = datasets.topics.find((tt) => tt.id === it.topic_id);
                                 return {
                                     topic_id: it.topic_id,
-                                    topic_slug: tRec?.slug || '',
-                                    topic_title: tRec?.title || 'Untitled topic',
+                                    topic_slug: tRec?.slug || "",
+                                    topic_title: tRec?.title || "Untitled topic",
                                     markdown_path: it.markdown_path,
                                     updated_at: it.updated_at,
+                                    key_work_ids: it.key_work_ids || [],
                                 };
                             });
 
                         return (
-                            <div key={cat} className={'card section ' + (open ? 'open' : '')}
+                            <div key={cat} className={"card section " + (open ? "open" : "")}
                                  style={{marginBottom: 12}}>
                                 <div className="section-head"
-                                     onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
+                                     onClick={() => setOpenCats((prev) => ({...prev, [cat]: !open}))}>
                                     <div className="caret">▸</div>
                                     <div className="small">
                                         <b>
-                                            <a href={`/category/${catSlug}`} onClick={(e) => {
-                                                e.preventDefault();
-                                                e.stopPropagation();
-                                                window.history.pushState({}, '', `/category/${catSlug}`);
-                                                window.dispatchEvent(new PopStateEvent('popstate'));
-                                            }}>{cat}</a>
+                                            <a
+                                                href={`/category/${catSlug}`}
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    e.stopPropagation();
+                                                    window.history.pushState({}, "", `/category/${catSlug}`);
+                                                    window.dispatchEvent(new PopStateEvent("popstate"));
+                                                }}
+                                            >
+                                                {cat}
+                                            </a>
                                         </b>
                                     </div>
                                 </div>
@@ -775,9 +1006,7 @@ function TheologianPage({slug, datasets}) {
                             </div>
                         );
                     })}
-
             </div>
-
         </div>
     );
 }
@@ -786,7 +1015,7 @@ function TheologianPage({slug, datasets}) {
 function WorkPage({id, datasets}) {
     const go = useGo();
 
-    // --- canonicalize id & redirect if needed ---
+    // canonicalize id & redirect if needed
     const canonMap = datasets.canonMap || {};
     const canonicalId = canonMap[id] || id;
     React.useEffect(() => {
@@ -795,34 +1024,19 @@ function WorkPage({id, datasets}) {
         }
     }, [id, canonicalId]);
 
-    // --- lookups ---
-    const live = (datasets.works || []).find(x => x.id === canonicalId) || {};
+    const live = (datasets.works || []).find((x) => x.id === canonicalId) || {};
     const by = datasets.byWork[canonicalId] || {};
-    const w = {...by, ...live, id: canonicalId, title: (live.title || by.title || canonicalId)};
-
+    const w = {...by, ...live, id: canonicalId, title: live.title || by.title || canonicalId};
     const title = workTitleWithSuffix(live, by) || w.title || canonicalId;
 
-    // authors (reuse robust resolver so IDs, names, arrays all work)
     const authors = resolveAuthorsForWork(canonicalId, datasets);
-
-    // chips of featured topics (WTS/Recent) using reverseCanonMap-aware helper
     const featured = featuredTopicsForWork(canonicalId, datasets.topics, datasets.reverseCanonMap);
 
-    // -------- sorting helpers (deterministic) --------
-    // "5. Doctrine Of Sin" -> 5
-
-
-    // -------- build groups exactly like other pages --------
     const [openCats, setOpenCats] = React.useState({});
-    const [openOutlinePath, setOpenOutlinePath] = React.useState(null);
-    const [outlineHTML, setOutlineHTML] = React.useState("");
-
-    // Build: { "1. Bibliology": [ {topic_id, topic_slug, topic_title, markdown_path, updated_at}, ... ], ... }
     const groups = React.useMemo(() => {
         const refs = by.referenced_in || [];
-        const tmap = new Map((datasets.topics || []).map(t => [t.id, t]));
+        const tmap = new Map((datasets.topics || []).map((t) => [t.id, t]));
 
-        // group by category name from topic record (already "n. Name")
         const byCat = {};
         for (const ref of refs) {
             const t = tmap.get(ref.topic_id) || {};
@@ -830,18 +1044,13 @@ function WorkPage({id, datasets}) {
             (byCat[cat] ??= []).push({
                 topic_id: t.id,
                 topic_slug: t.slug,
-                topic_title: t.title || ref.topic_id,   // title like "5.A …"
+                topic_title: t.title || ref.topic_id, // title like "5.A …"
                 markdown_path: ref.markdown_path,
                 updated_at: ref.updated_at,
             });
         }
 
-        // sort categories numerically by the number before "."
-        const sortedEntries = Object.entries(byCat).sort(([a], [b]) => (
-            parseCategoryKey(a) - parseCategoryKey(b)
-        ));
-
-        // sort topics inside each category by (catNumber, letter A-Z)
+        const sortedEntries = Object.entries(byCat).sort(([a], [b]) => parseCategoryKey(a) - parseCategoryKey(b));
         for (const [, items] of sortedEntries) {
             items.sort((ta, tb) => {
                 const [na, la] = parseTopicKey(ta.topic_title);
@@ -850,8 +1059,6 @@ function WorkPage({id, datasets}) {
                 return la.localeCompare(lb);
             });
         }
-
-        // rehydrate as a stable object in sorted order
         const out = {};
         for (const [cat, items] of sortedEntries) out[cat] = items;
         return out;
@@ -872,7 +1079,6 @@ function WorkPage({id, datasets}) {
                 </div>
             ) : null}
 
-            {/* Featured topic chips (same as theologian page) */}
             {featured.length ? (
                 <div style={{marginTop: 8, display: "flex", gap: 6, flexWrap: "wrap"}}>
                     {featured.slice(0, 4).map((t, i) => (
@@ -905,19 +1111,24 @@ function WorkPage({id, datasets}) {
                             const open = !!openCats[cat];
                             const catSlug = slugify(cat);
                             return (
-                                <div key={cat} className={'card section ' + (open ? 'open' : '')}
+                                <div key={cat} className={"card section " + (open ? "open" : "")}
                                      style={{marginBottom: 12}}>
                                     <div className="section-head"
-                                         onClick={() => setOpenCats(prev => ({...prev, [cat]: !open}))}>
+                                         onClick={() => setOpenCats((prev) => ({...prev, [cat]: !open}))}>
                                         <div className="caret">▸</div>
                                         <div className="small">
                                             <b>
-                                                <a href={`/category/${catSlug}`} onClick={(e) => {
-                                                    e.preventDefault();
-                                                    e.stopPropagation();
-                                                    window.history.pushState({}, '', `/category/${catSlug}`);
-                                                    window.dispatchEvent(new PopStateEvent('popstate'));
-                                                }}>{cat}</a>
+                                                <a
+                                                    href={`/category/${catSlug}`}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        e.stopPropagation();
+                                                        window.history.pushState({}, "", `/category/${catSlug}`);
+                                                        window.dispatchEvent(new PopStateEvent("popstate"));
+                                                    }}
+                                                >
+                                                    {cat}
+                                                </a>
                                             </b>
                                         </div>
                                     </div>
@@ -926,7 +1137,6 @@ function WorkPage({id, datasets}) {
                             );
                         })
                 )}
-
             </div>
         </div>
     );
@@ -934,13 +1144,13 @@ function WorkPage({id, datasets}) {
 
 /* ---------- Outline standalone ---------- */
 function OutlinePage() {
-    const [html, setHtml] = useState('');
+    const [html, setHtml] = useState("");
     useEffect(() => {
         (async () => {
             const url = new URL(window.location.href);
-            const rel = url.searchParams.get('path');
+            const rel = url.searchParams.get("path");
             if (rel) {
-                const r = await api('/api/outline?path=' + encodeURIComponent(rel));
+                const r = await api("/api/outline?path=" + encodeURIComponent(rel));
                 setHtml(r.html);
             }
         })();
@@ -953,21 +1163,17 @@ function TopicCategoryPage({slug, datasets}) {
     const go = useGo();
     const {topics} = datasets;
     const {catName, items} = React.useMemo(() => {
-        const sample = topics.find(t => slugify(t.category || 'Other') === slug);
+        const sample = topics.find((t) => slugify(t.category || "Other") === slug);
         const name = sample ? sample.category : slug;
-        return {catName: name, items: topics.filter(t => slugify(t.category || 'Other') === slug)};
+        return {catName: name, items: topics.filter((t) => slugify(t.category || "Other") === slug)};
     }, [slug, topics]);
     return (
         <div>
             <h1>{catName}</h1>
             <div className="grid">
-                {items.map(t => (
-                    <div
-                        key={t.id}
-                        className="card"
-                        style={{cursor: "pointer"}}
-                        onClick={(e) => go(e, `/topic/${t.slug}`)}
-                    >
+                {items.map((t) => (
+                    <div key={t.id} className="card" style={{cursor: "pointer"}}
+                         onClick={(e) => go(e, `/topic/${t.slug}`)}>
                         <b>{t.title}</b>
                     </div>
                 ))}
@@ -976,22 +1182,202 @@ function TopicCategoryPage({slug, datasets}) {
     );
 }
 
-/* ---------- Theologians index ---------- */
+/* ---------- Theologians index (sortable, with badges) ---------- */
 function TheologiansPage({datasets}) {
-    const list = useMemo(() => [...(datasets.theologians || [])].sort((a, b) => (a.full_name || '').localeCompare(b.full_name || '')), [datasets.theologians]);
+    const go = useGo();
+
+    // remember mode across visits (default: alphabetical)
+    const MODE_KEY = "theologians_sort_mode";
+    const [mode, setMode] = React.useState(() => {
+        try {
+            return localStorage.getItem(MODE_KEY) || "alpha";
+        } catch {
+            return "alpha";
+        }
+    });
+    React.useEffect(() => {
+        try {
+            localStorage.setItem(MODE_KEY, mode);
+        } catch {
+        }
+    }, [mode]);
+
+    // collapse state for grouped view
+    const [openEra, setOpenEra] = React.useState({});
+    const [openTrad, setOpenTrad] = React.useState({});
+
+    const list = useMemo(() => [...(datasets.theologians || [])], [datasets.theologians]);
+
+    // helpers
+    const cmpAlpha = (a, b) =>
+        lastNameKey(a.full_name).localeCompare(lastNameKey(b.full_name)) ||
+        (a.full_name || "").localeCompare(b.full_name || "");
+    const cmpBirth = (a, b) => birthYear(a) - birthYear(b) || cmpAlpha(a, b);
+
+    // compact, full-width row (badges included)
+    const TheoRow = ({theo}) => (
+        <div
+            className="card"
+            style={{cursor: "pointer", padding: "10px 12px"}}
+            onClick={(e) => go(e, `/theologian/${theo.slug}`)}
+        >
+            <div
+                style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    justifyContent: "space-between",
+                    flexWrap: "wrap"
+                }}
+            >
+                {/* left: name + badges */}
+                <div style={{display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap"}}>
+                    <b><TheoLink theo={theo} stop/></b>
+                    <div className="small" style={{display: "flex", gap: 6, flexWrap: "wrap"}}>
+                        <TheoBadges theo={theo}/>
+                    </div>
+                </div>
+                {/* right: dates */}
+                {theo.dates ? <div className="small">{theo.dates}</div> : null}
+            </div>
+        </div>
+    );
+
+    // grouped render: Era → Tradition → (rows)
+    const renderEraMode = () => {
+        // group by era
+        const eraGroups = new Map();
+        for (const t of list) {
+            const era = getEra(t);
+            const key = `${era.start}|||${era.label}`;
+            if (!eraGroups.has(key)) eraGroups.set(key, []);
+            eraGroups.get(key).push(t);
+        }
+        const sortedEras = [...eraGroups.keys()].sort((A, B) => {
+            const [sa, la] = A.split("|||");
+            const [sb, lb] = B.split("|||");
+            return Number(sa) - Number(sb) || la.localeCompare(lb);
+        });
+
+        return (
+            <>
+                {sortedEras.map((ekey) => {
+                    const [, label] = ekey.split("|||");
+                    const eraList = eraGroups.get(ekey) || [];
+
+                    // tradition buckets within era
+                    const tradGroups = new Map();
+                    for (const t of eraList) {
+                        const tr = getTraditionLabel(t);
+                        if (!tradGroups.has(tr)) tradGroups.set(tr, []);
+                        tradGroups.get(tr).push(t);
+                    }
+
+                    const sortedTrads =
+                        mode === "trad_count"
+                            ? [...tradGroups.keys()].sort(
+                                (a, b) =>
+                                    (tradGroups.get(b)?.length || 0) - (tradGroups.get(a)?.length || 0) ||
+                                    a.localeCompare(b)
+                            )
+                            : [...tradGroups.keys()].sort((a, b) => a.localeCompare(b));
+
+                    const eOpen = !!openEra[label];
+                    return (
+                        <section key={ekey} style={{marginBottom: 16}}>
+                            <div className={"section " + (eOpen ? "open" : "")}>
+                                <div
+                                    className="section-head"
+                                    onClick={() => setOpenEra((s) => ({...s, [label]: !eOpen}))}
+                                >
+                                    <div className="caret">▸</div>
+                                    <h2>{label}</h2>
+                                    <span className="count">{eraList.length}</span>
+                                </div>
+
+                                {eOpen && (
+                                    <div>
+                                        {sortedTrads.map((tr) => {
+                                            const tid = `${label}:::${tr}`;
+                                            const tOpen = !!openTrad[tid];
+                                            const items = (tradGroups.get(tr) || []).sort(
+                                                (mode === "trad" || mode === "trad_count") ? cmpAlpha : cmpBirth
+                                            );
+
+                                            return (
+                                                <div key={tid} className={"card section " + (tOpen ? "open" : "")}
+                                                     style={{marginBottom: 12}}>
+                                                    <div
+                                                        className="section-head"
+                                                        onClick={() => setOpenTrad((s) => ({...s, [tid]: !tOpen}))}
+                                                    >
+                                                        <div className="caret">▸</div>
+                                                        <div className="small"><b>{tr}</b></div>
+                                                        <span className="count">{items.length}</span>
+                                                    </div>
+
+                                                    {tOpen && (
+                                                        <div>
+                                                            {items.map((t) => <TheoRow key={t.id} theo={t}/>)}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                )}
+                            </div>
+                        </section>
+                    );
+                })}
+            </>
+        );
+    };
+
+    // flat render: simple list of rows
+    const renderFlat = (arr) => (
+        <div>
+            {arr.map((t) => <TheoRow key={t.id} theo={t}/>)}
+        </div>
+    );
+
+    // choose body
+    let body = null;
+    if (mode === "era" || mode === "trad" || mode === "trad_count") {
+        body = renderEraMode();
+    } else if (mode === "alpha") {
+        body = renderFlat([...list].sort(cmpAlpha));
+    } else if (mode === "birth") {
+        body = renderFlat([...list].sort(cmpBirth));
+    }
+
     return (
         <div>
             <h1>Theologians</h1>
-            <div className="grid two">
-                {list.map(t => (
-                    <div key={t.id} className="card">
-                        <b><TheoLink theo={t}/></b>
-                        {t.dates ? <div className="small">{t.dates}</div> : null}
-                    </div>
-                ))}
+
+            {/* Sort control */}
+            <div className="sortbar">
+                <label className="sortbar-label" htmlFor="sort-mode">Sort</label>
+                <div className="select-wrap">
+                    <select
+                        id="sort-mode"
+                        className="select"
+                        value={mode}
+                        onChange={(e) => setMode(e.target.value)}
+                    >
+                        <option value="alpha">Alphabetical (last name)</option>
+                        <option value="birth">By Birth Year</option>
+                        <option value="era">Era → Tradition → Birth year</option>
+                        <option value="trad">Tradition → Alphabetical</option>
+                        <option value="trad_count">Tradition → By Count</option>
+                    </select>
+                </div>
             </div>
+
+
+            {body}
         </div>
     );
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);

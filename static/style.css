@@ -103,7 +103,7 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 
 /* Header nav */
 header a { color: #111827; font-weight: 600; }
-header a + a { margin-left: 14px; }
+header a + a { margin-left: 14px; color: inherit; }
 
 /* Links inside cards should inherit color too */
 .card a { color: inherit; }
@@ -113,3 +113,49 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 
 /* Card links inherit color */
 .card a { color: inherit; }
+
+
+/* toolbar */
+.sortbar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:4px 0 12px;
+  flex-wrap:wrap;
+}
+.sortbar-label{
+  font-size:14px;
+  color:#64748b;          /* slate-500 */
+}
+
+/* pretty select (pill) */
+.select-wrap{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+}
+.select-wrap::after{
+  content:"▾";
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#64748b;
+  font-size:12px;
+  pointer-events:none;
+}
+.select{
+  appearance:none; -webkit-appearance:none; -moz-appearance:none;
+  padding:8px 30px 8px 12px;
+  border:1px solid #e5e7eb;          /* gray-200 */
+  border-radius:9999px;               /* full pill */
+  background:#f8fafc;                 /* slate-50 */
+  font-size:14px;
+  line-height:1.2;
+  color:#0f172a;                      /* slate-900 */
+  outline:none;
+}
+.select:focus{
+  border-color:#94a3b8;               /* slate-400 */
+  box-shadow:0 0 0 3px rgba(100,116,139,.15); /* subtle ring */
+}
