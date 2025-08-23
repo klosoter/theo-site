@@ -106,10 +106,6 @@ function workTitleWithSuffix(liveWork = {}, byWork = {}) {
     return title; // suffix kept for future if you want to display it
 }
 
-function uniq(arr) {
-    return Array.from(new Set(arr || []));
-}
-
 function enhanceKeyWorks(html, keyWorkIds, datasets) {
     if (!html || !Array.isArray(keyWorkIds) || keyWorkIds.length === 0) return html;
 
@@ -260,6 +256,41 @@ function resolveAuthorsForWork(wid, datasets) {
     return out;
 }
 
+function WorkRow({wid, datasets, badge, count}) {
+    const go = useGo();
+    const w = (datasets.works || []).find(x => x.id === wid) || {id: wid, title: wid};
+    const byW = datasets.byWork[wid] || {};
+    const label = workTitleWithSuffix(w, byW);
+    const authors = resolveAuthorsForWork(wid, datasets);
+
+    return (
+        <div className="work-row" onClick={(e) => go(e, `/work/${wid}`)}>
+            <div className="work-main">
+                <b>
+                    <WorkLink id={wid} work={w} datasets={datasets}>
+                        {label}
+                    </WorkLink>
+                </b>
+                {authors.length ? (
+                    <span className="muted">
+            {" — "}
+                        {authors.map((a, i) => (
+                            <span key={i}>
+                                {i ? ", " : ""}
+                                <TheoLink theo={a.theo}></TheoLink>
+                            </span>
+                        ))}
+          </span>
+                ) : null}
+            </div>
+            <div className="work-meta">
+                {badge ? <span className={badge === "WTS" ? "chip" : "chip2"}>{badge}</span> : null}
+                <span className="badge">{count || 0}</span>
+            </div>
+        </div>
+    );
+}
+
 /* ---------- Reusable Outline list (identical item markup) ---------- */
 function OutlineList({items, datasets}) {
     const [openPath, setOpenPath] = React.useState(null);
@@ -390,6 +421,49 @@ function TheoBadges({theo}) {
     );
 }
 
+function TheoRow({theo, hasClick = true, className = "card", children}) {
+    const go = useGo();
+
+    const clickableProps = hasClick
+        ? {onClick: (e) => go(e, `/theologian/${theo.slug}`)}
+        : {};
+
+    return (
+        <div
+            className={className}
+            style={{
+                cursor: hasClick ? "pointer" : "default",
+                // padding: "10px 12px"
+            }}
+            {...clickableProps}
+        >
+            <div
+                style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    justifyContent: "space-between",
+                    flexWrap: "wrap"
+                }}
+            >
+                {/* left: name + badges */}
+                <div style={{display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap"}}>
+                    <b><TheoLink theo={theo}/></b>
+                    <div className="small" style={{display: "flex", gap: 6, flexWrap: "wrap"}}>
+                        <TheoBadges theo={theo}/>
+                    </div>
+                </div>
+
+                {/* right: dates + any children (like caret) */}
+                <div style={{display: "flex", alignItems: "center", gap: 8}}>
+                    {theo.dates ? <div className="small">{theo.dates}</div> : null}
+                    {children}
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function TheoCard({theo, onClick}) {
     return (
         <div className="card" style={{cursor: "pointer"}} onClick={onClick}>
@@ -450,105 +524,107 @@ function App() {
 
 /* ---------- Header ---------- */
 function Header() {
-  const go = useGo();
-  const [q, setQ] = useState("");
-  const [results, setResults] = useState([]);
-  const [open, setOpen] = useState(false);        // controls visibility
-  const boxRef = React.useRef(null);              // for outside-click
+    const go = useGo();
+    const [q, setQ] = useState("");
+    const [results, setResults] = useState([]);
+    const [open, setOpen] = useState(false);        // controls visibility
+    const boxRef = React.useRef(null);              // for outside-click
 
-  // debounce search + control "open"
-  useEffect(() => {
-    const id = setTimeout(async () => {
-      const query = q.trim();
-      if (!query) {
-        setResults([]);
-        setOpen(false);
-        return;
-      }
-      try {
-        const r = await api("/api/search?q=" + encodeURIComponent(query));
-        setResults(r);
-        setOpen(r.length > 0);
-      } catch {
-        setResults([]);
-        setOpen(false);
-      }
-    }, 180);
-    return () => clearTimeout(id);
-  }, [q]);
+    // debounce search + control "open"
+    useEffect(() => {
+        const id = setTimeout(async () => {
+            const query = q.trim();
+            if (!query) {
+                setResults([]);
+                setOpen(false);
+                return;
+            }
+            try {
+                const r = await api("/api/search?q=" + encodeURIComponent(query));
+                setResults(r);
+                setOpen(r.length > 0);
+            } catch {
+                setResults([]);
+                setOpen(false);
+            }
+        }, 180);
+        return () => clearTimeout(id);
+    }, [q]);
 
-  // close on outside click or Esc
-  useEffect(() => {
-    function onDocClick(e) {
-      if (!boxRef.current) return;
-      if (!boxRef.current.contains(e.target)) setOpen(false);
-    }
-    function onKey(e) {
-      if (e.key === "Escape") setOpen(false);
-    }
-    document.addEventListener("mousedown", onDocClick);
-    window.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("mousedown", onDocClick);
-      window.removeEventListener("keydown", onKey);
+    // close on outside click or Esc
+    useEffect(() => {
+        function onDocClick(e) {
+            if (!boxRef.current) return;
+            if (!boxRef.current.contains(e.target)) setOpen(false);
+        }
+
+        function onKey(e) {
+            if (e.key === "Escape") setOpen(false);
+        }
+
+        document.addEventListener("mousedown", onDocClick);
+        window.addEventListener("keydown", onKey);
+        return () => {
+            document.removeEventListener("mousedown", onDocClick);
+            window.removeEventListener("keydown", onKey);
+        };
+    }, []);
+
+    // navigate + close dropdown
+    const select = (e, to) => {
+        setOpen(false);
+        setResults([]);
+        setQ("");            // also clear the input so it doesn’t re-open
+        go(e, to);
     };
-  }, []);
 
-  // navigate + close dropdown
-  const select = (e, to) => {
-    setOpen(false);
-    setResults([]);
-    setQ("");            // also clear the input so it doesn’t re-open
-    go(e, to);
-  };
+    return (
+        <header ref={boxRef}>
+            <a href="/" onClick={(e) => select(e, "/")}>Topics</a>
+            <a href="/theologians" onClick={(e) => select(e, "/theologians")}>Theologians</a>
 
-  return (
-    <header ref={boxRef}>
-      <a href="/" onClick={(e) => select(e, "/")}>Topics</a>
-      <a href="/theologians" onClick={(e) => select(e, "/theologians")}>Theologians</a>
+            <input
+                placeholder="Search topics, theologians, works…"
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                onFocus={() => setOpen((results || []).length > 0)}
+            />
 
-      <input
-        placeholder="Search topics, theologians, works…"
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        onFocus={() => setOpen((results || []).length > 0)}
-      />
-
-      {open && results.length > 0 && (
-        <div
-          className="card"
-          style={{
-            position: "absolute",
-            top: "56px",
-            right: "16px",
-            width: "520px",
-            maxHeight: "60vh",
-            overflow: "auto",
-            zIndex: 30,
-          }}
-        >
-          {results.map((r, i) => {
-            const to =
-              r.type === "theologian" ? `/theologian/${r.slug}` :
-              r.type === "topic"      ? `/topic/${r.slug}` :
-              r.type === "work"       ? `/work/${r.id}` :
-              r.type === "outline"    ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` :
-              "/";
-            return (
-              <div
-                key={i}
-                style={{ padding: "6px 4px", cursor: "pointer" }}
-                onClick={(e) => select(e, to)}
-              >
-                <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
-                {r.slug && <div className="small">{r.slug}</div>}
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </header>
-  );
+            {open && results.length > 0 && (
+                <div
+                    className="card"
+                    style={{
+                        position: "absolute",
+                        top: "56px",
+                        right: "16px",
+                        width: "520px",
+                        maxHeight: "60vh",
+                        overflow: "auto",
+                        zIndex: 30,
+                    }}
+                >
+                    {results.map((r, i) => {
+                        const to =
+                            r.type === "theologian" ? `/theologian/${r.slug}` :
+                                r.type === "topic" ? `/topic/${r.slug}` :
+                                    r.type === "work" ? `/work/${r.id}` :
+                                        r.type === "outline" ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` :
+                                            "/";
+                        return (
+                            <div
+                                key={i}
+                                style={{padding: "6px 4px", cursor: "pointer"}}
+                                onClick={(e) => select(e, to)}
+                            >
+                                <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
+                                {r.slug && <div className="small">{r.slug}</div>}
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
+        </header>
+    );
 }
 
 /* ---------- Routes ---------- */
@@ -620,6 +696,244 @@ function Home({datasets}) {
 /* ---------- Topic Page (canonical-only) ---------- */
 
 /* ---------- Topic Page (canonical-only) ---------- */
+// function TopicPage({slug, datasets}) {
+//     const topic = datasets.topics.find(t => t.slug === slug);
+//     if (!topic) return <div>Topic not found.</div>;
+//
+//     const [openWts, setOpenWts] = useState(false);
+//     const [openRecent, setOpenRecent] = useState(false);
+//
+//     const entry = datasets.byTopic[topic.id] || {theologians: []};
+//     const [openTheoId, setOpenTheoId] = useState(null);
+//
+//     // for outline preview
+//     const [openOutlinePath, setOpenOutlinePath] = useState(null);
+//     const [outlineHTML, setOutlineHTML] = useState('');
+//
+//     const outlinesForTheo = (theologian_id) => {
+//         const tEntry = datasets.byTheo[theologian_id];
+//         if (!tEntry) return [];
+//         const groups = tEntry.outlines_by_topic_category || {};
+//         // these items already include `key_work_ids` (use them!)
+//         return Object.values(groups)
+//             .flat()
+//             .filter(o => o.topic_id === topic.id || o.topic_slug === topic.slug);
+//     };
+//
+//     const canonCounts = datasets.canonCountsTopic[topic.id] || {WTS: [], Recent: []};
+//
+//     function WorkCard({wid, bucket, compact}) {
+//         const w = (datasets.works || []).find(x => x.id === wid) || {id: wid, title: wid};
+//         const authorsDisplay = resolveAuthorsForWork(wid, datasets);
+//
+//         return (
+//             <div
+//                 className={'card' + (compact ? ' work-row' : '')}
+//                 onClick={(e) => {
+//                     if (e.target.tagName === 'A') return;
+//                     window.history.pushState({}, '', `/work/${wid}`);
+//                     window.dispatchEvent(new PopStateEvent('popstate'));
+//                 }}
+//                 style={{cursor: 'pointer'}}
+//             >
+//                 {(() => {
+//                     const byW = datasets.byWork[wid] || {};
+//                     const label = workTitleWithSuffix(w, byW);
+//                     return <div><b><WorkLink id={wid} work={w} datasets={datasets}>{label}</WorkLink></b></div>;
+//                 })()}
+//
+//                 {authorsDisplay.length ? (
+//                     <div className={compact ? 'meta' : 'small'}>
+//                         {authorsDisplay.map((a, i) => (
+//                             <span key={i}>
+//               {i ? ', ' : ''}
+//                                 {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
+//             </span>
+//                         ))}
+//                     </div>
+//                 ) : null}
+//
+//                 <div style={{
+//                     marginTop: compact ? 4 : 6,
+//                     display: 'flex',
+//                     gap: 6,
+//                     flexWrap: 'wrap',
+//                     alignItems: 'center'
+//                 }}>
+//                     <span className={bucket === 'WTS' ? 'chip' : 'chip2'}>{bucket}</span>
+//                     <span className="badge">{(canonCounts[bucket] || []).find(x => x.id === wid)?.count || 0}</span>
+//                 </div>
+//             </div>
+//         );
+//     }
+//
+//     // UPDATED: accept the whole outline item so we can use key_work_ids
+//     async function toggleOutline(item) {
+//         const p = item?.markdown_path;
+//         if (!p) return;
+//
+//         if (openOutlinePath === p) {
+//             setOpenOutlinePath(null);
+//             setOutlineHTML('');
+//             return;
+//         }
+//
+//         setOpenOutlinePath(p);
+//         setOutlineHTML('Loading…');
+//         try {
+//             const r = await api('/api/outline?path=' + encodeURIComponent(p));
+//             // prefer item.key_work_ids; fall back to front-matter
+//             const keyIds = (item.key_work_ids && item.key_work_ids.length)
+//                 ? item.key_work_ids
+//                 : (r.meta && r.meta.key_work_ids) || [];
+//             const enhanced = enhanceKeyWorks(r.html, keyIds, datasets);
+//             setOutlineHTML(enhanced);
+//         } catch (e) {
+//             setOutlineHTML('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
+//         }
+//     }
+//
+//     async function toggleTheoCard(t) {
+//         const willOpen = openTheoId !== t.theologian_id;
+//         setOpenTheoId(willOpen ? t.theologian_id : null);
+//
+//         // auto-load first outline when opening
+//         if (willOpen) {
+//             const list = outlinesForTheo(t.theologian_id);
+//             if (list.length) {
+//                 const first = list[0];
+//                 setOpenOutlinePath(first.markdown_path);
+//                 setOutlineHTML('Loading…');
+//                 try {
+//                     const r = await api('/api/outline?path=' + encodeURIComponent(first.markdown_path));
+//                     const keyIds = (first.key_work_ids && first.key_work_ids.length)
+//                         ? first.key_work_ids
+//                         : (r.meta && r.meta.key_work_ids) || [];
+//                     const enhanced = enhanceKeyWorks(r.html, keyIds, datasets);
+//                     setOutlineHTML(enhanced);
+//                 } catch (e) {
+//                     setOutlineHTML('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
+//                 }
+//             } else {
+//                 setOpenOutlinePath(null);
+//                 setOutlineHTML('');
+//             }
+//         } else {
+//             setOpenOutlinePath(null);
+//             setOutlineHTML('');
+//         }
+//     }
+//
+//     return (
+//         <div>
+//             <h1>
+//                 {topic.title}{' '}
+//                 {topic.category && <span className="badge"><CategoryLink name={topic.category}/></span>}
+//             </h1>
+//
+//             <div style={{display: 'flex', gap: 8, flexWrap: 'wrap', margin: '4px 0 8px'}}>
+//                 <span className="badge">WTS/Princeton: {(canonCounts.WTS || []).length}</span>
+//                 <span className="badge">Recent: {(canonCounts.Recent || []).length}</span>
+//                 <span className="badge">Cited in outlines: {(topic.work_ids || []).length}</span>
+//             </div>
+//             {/* Key Works buckets */}
+//             {(() => {
+//                 const renderBucket = (label, bucketKey, open, setOpen) => (
+//                     <div className={'section ' + (open ? 'open' : '')}>
+//                         <div className="section-head" onClick={() => setOpen(!open)}>
+//                             <div className="caret">▸</div>
+//                             <h3>Key Works — {label}</h3>
+//                             <span className="count">{(canonCounts[bucketKey] || []).length}</span>
+//                         </div>
+//                         {open && (
+//                             <div className="work-list">
+//                                 {(canonCounts[bucketKey] || []).map(({id}) => (
+//                                     <WorkCard key={id} wid={id} bucket={bucketKey} compact/>
+//                                 ))}
+//                             </div>
+//                         )}
+//
+//                     </div>
+//                 );
+//
+//                 return (
+//                     <>
+//                         {renderBucket('WTS / Old Princeton', 'WTS', openWts, setOpenWts)}
+//                         {renderBucket('Recent Scholarship', 'Recent', openRecent, setOpenRecent)}
+//                     </>
+//                 );
+//             })()}
+//
+//
+//             <div style={{marginTop: 18}}>
+//                 <h3>Outlines</h3>
+//                 <div className="grid" style={{gridTemplateColumns: '1fr'}}>
+//                     {entry.theologians.map(t => (
+//                         <div key={t.theologian_id} className="card">
+//                             <div className="section-head" onClick={(e) => {
+//                                 e.stopPropagation();
+//                                 toggleTheoCard(t);
+//                             }}>
+//                                 <div className="caret">{openTheoId === t.theologian_id ? '▾' : '▸'}</div>
+//                                 <b><TheoLink id={t.theologian_id} datasets={datasets} stop/></b>
+//                             </div>
+//
+//                             {openTheoId === t.theologian_id && (
+//                                 <div className="details">
+//                                     {outlinesForTheo(t.theologian_id).map((o, i) => {
+//                                         const tobj = datasets.topics.find(tt => tt.id === o.topic_id);
+//                                         return (
+//                                             <div key={i} style={{marginBottom: 12}}>
+//                                                 <div
+//                                                     className="toggle"
+//                                                     onClick={() => toggleOutline(o)}
+//                                                     style={{
+//                                                         display: 'flex',
+//                                                         justifyContent: 'space-between',
+//                                                         alignItems: 'center',
+//                                                         gap: 8
+//                                                     }}
+//                                                 >
+//                                                     <div>
+//                                                         <b><TopicLink topic={tobj} stop/></b>
+//                                                         <div className="small">updated {o.updated_at}</div>
+//                                                     </div>
+//                                                     <div
+//                                                         className="small">{openOutlinePath === o.markdown_path ? '▾' : '▸'}</div>
+//                                                 </div>
+//
+//                                                 {openOutlinePath === o.markdown_path && (
+//                                                     <div style={{gridColumn: '1 / -1'}}>
+//                                                         <div className="markdown"
+//                                                              dangerouslySetInnerHTML={{__html: outlineHTML}}/>
+//                                                         <div className="small" style={{marginTop: 8}}>
+//                                                             <a
+//                                                                 href={`/outline?path=${encodeURIComponent(o.markdown_path || '')}`}
+//                                                                 onClick={(e) => {
+//                                                                     e.preventDefault();
+//                                                                     window.history.pushState({}, '', `/outline?path=${encodeURIComponent(o.markdown_path || '')}`);
+//                                                                     window.dispatchEvent(new PopStateEvent('popstate'));
+//                                                                 }}
+//                                                             >
+//                                                                 Open full page
+//                                                             </a>
+//                                                         </div>
+//                                                     </div>
+//                                                 )}
+//                                             </div>
+//                                         );
+//                                     })}
+//                                 </div>
+//                             )}
+//                         </div>
+//                     ))}
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
+//
+
 function TopicPage({slug, datasets}) {
     const topic = datasets.topics.find(t => t.slug === slug);
     if (!topic) return <div>Topic not found.</div>;
@@ -630,221 +944,242 @@ function TopicPage({slug, datasets}) {
     const entry = datasets.byTopic[topic.id] || {theologians: []};
     const [openTheoId, setOpenTheoId] = useState(null);
 
-    // for outline preview
     const [openOutlinePath, setOpenOutlinePath] = useState(null);
-    const [outlineHTML, setOutlineHTML] = useState('');
+    const [outlineHTML, setOutlineHTML] = useState("");
 
     const outlinesForTheo = (theologian_id) => {
         const tEntry = datasets.byTheo[theologian_id];
         if (!tEntry) return [];
         const groups = tEntry.outlines_by_topic_category || {};
-        // these items already include `key_work_ids` (use them!)
-        return Object.values(groups)
-            .flat()
-            .filter(o => o.topic_id === topic.id || o.topic_slug === topic.slug);
+        return Object.values(groups).flat().filter(o => o.topic_id === topic.id || o.topic_slug === topic.slug);
     };
 
     const canonCounts = datasets.canonCountsTopic[topic.id] || {WTS: [], Recent: []};
 
-    function WorkCard({wid, bucket}) {
-        const w = (datasets.works || []).find(x => x.id === wid) || {id: wid, title: wid};
-        const authorsDisplay = resolveAuthorsForWork(wid, datasets);
-
-        return (
-            <div className="card" onClick={(e) => {
-                if (e.target.tagName === 'A') return;
-                window.history.pushState({}, '', `/work/${wid}`);
-                window.dispatchEvent(new PopStateEvent('popstate'));
-            }} style={{cursor: 'pointer'}}>
-                {(() => {
-                    const byW = datasets.byWork[wid] || {};
-                    const label = workTitleWithSuffix(w, byW);
-                    return <div><b><WorkLink id={wid} work={w} datasets={datasets}>{label}</WorkLink></b></div>;
-                })()}
-                {authorsDisplay.length ? (
-                    <div className="small">
-                        {authorsDisplay.map((a, i) => (
-                            <span key={i}>
-                {i ? ', ' : ''}
-                                {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
-              </span>
-                        ))}
-                    </div>
-                ) : null}
-                <div style={{marginTop: 6, display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center'}}>
-                    <span className={bucket === 'WTS' ? 'chip' : 'chip2'}>{bucket}</span>
-                    <span className="badge">
-            {(canonCounts[bucket] || []).find(x => x.id === wid)?.count || 0}
-          </span>
-                </div>
-            </div>
-        );
-    }
-
-    // UPDATED: accept the whole outline item so we can use key_work_ids
     async function toggleOutline(item) {
         const p = item?.markdown_path;
         if (!p) return;
-
         if (openOutlinePath === p) {
             setOpenOutlinePath(null);
-            setOutlineHTML('');
+            setOutlineHTML("");
             return;
         }
-
         setOpenOutlinePath(p);
-        setOutlineHTML('Loading…');
+        setOutlineHTML("Loading…");
         try {
-            const r = await api('/api/outline?path=' + encodeURIComponent(p));
-            // prefer item.key_work_ids; fall back to front-matter
-            const keyIds = (item.key_work_ids && item.key_work_ids.length)
-                ? item.key_work_ids
-                : (r.meta && r.meta.key_work_ids) || [];
+            const r = await api("/api/outline?path=" + encodeURIComponent(p));
+            const keyIds = (item.key_work_ids && item.key_work_ids.length) ? item.key_work_ids : (r.meta && r.meta.key_work_ids) || [];
             const enhanced = enhanceKeyWorks(r.html, keyIds, datasets);
             setOutlineHTML(enhanced);
         } catch (e) {
-            setOutlineHTML('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
+            setOutlineHTML('<div class="small">' + String(e).replace(/</g, "&lt;") + "</div>");
         }
     }
 
     async function toggleTheoCard(t) {
         const willOpen = openTheoId !== t.theologian_id;
         setOpenTheoId(willOpen ? t.theologian_id : null);
-
-        // auto-load first outline when opening
         if (willOpen) {
             const list = outlinesForTheo(t.theologian_id);
             if (list.length) {
                 const first = list[0];
                 setOpenOutlinePath(first.markdown_path);
-                setOutlineHTML('Loading…');
+                setOutlineHTML("Loading…");
                 try {
-                    const r = await api('/api/outline?path=' + encodeURIComponent(first.markdown_path));
-                    const keyIds = (first.key_work_ids && first.key_work_ids.length)
-                        ? first.key_work_ids
-                        : (r.meta && r.meta.key_work_ids) || [];
+                    const r = await api("/api/outline?path=" + encodeURIComponent(first.markdown_path));
+                    const keyIds = (first.key_work_ids && first.key_work_ids.length) ? first.key_work_ids : (r.meta && r.meta.key_work_ids) || [];
                     const enhanced = enhanceKeyWorks(r.html, keyIds, datasets);
                     setOutlineHTML(enhanced);
                 } catch (e) {
-                    setOutlineHTML('<div class="small">' + String(e).replace(/</g, '&lt;') + '</div>');
+                    setOutlineHTML('<div class="small">' + String(e).replace(/</g, "&lt;") + "</div>");
                 }
             } else {
                 setOpenOutlinePath(null);
-                setOutlineHTML('');
+                setOutlineHTML("");
             }
         } else {
             setOpenOutlinePath(null);
-            setOutlineHTML('');
+            setOutlineHTML("");
         }
     }
+
+    const [openEra, setOpenEra] = useState({});
+    const theosByEra = useMemo(() => {
+        const map = new Map();
+        for (const t of entry.theologians || []) {
+            const T = (datasets.theologians || []).find(x => x.id === t.theologian_id);
+            if (!T) continue;
+            const era = getEra(T);
+            const key = `${era.start}|||${era.label}`;
+            if (!map.has(key)) map.set(key, {label: era.label, start: era.start, items: []});
+            map.get(key).items.push(T);
+        }
+        return [...map.values()].sort((a, b) => a.start - b.start || a.label.localeCompare(b.label));
+    }, [entry.theologians, datasets.theologians]);
 
     return (
         <div>
             <h1>
-                {topic.title}{' '}
+                {topic.title}{" "}
                 {topic.category && <span className="badge"><CategoryLink name={topic.category}/></span>}
             </h1>
 
-            <div style={{display: 'flex', gap: 8, flexWrap: 'wrap', margin: '4px 0 8px'}}>
+            <div style={{display: "flex", gap: 8, flexWrap: "wrap", margin: "4px 0 8px"}}>
                 <span className="badge">WTS/Princeton: {(canonCounts.WTS || []).length}</span>
                 <span className="badge">Recent: {(canonCounts.Recent || []).length}</span>
                 <span className="badge">Cited in outlines: {(topic.work_ids || []).length}</span>
             </div>
 
-            <div className={'section ' + (openWts ? 'open' : '')}>
+            <div className={"section " + (openWts ? "open" : "")}>
                 <div className="section-head" onClick={() => setOpenWts(!openWts)}>
                     <div className="caret">▸</div>
                     <h3>Key Works — WTS / Old Princeton</h3>
                     <span className="count">{(canonCounts.WTS || []).length}</span>
                 </div>
                 {openWts && (
-                    <div className="grid two">
-                        {(canonCounts.WTS || []).map(({id}) => <WorkCard key={id} wid={id} bucket="WTS"/>)}
+                    <div className="work-list">
+                        {(canonCounts.WTS || []).map(({id}) => (
+                            <WorkRow
+                                key={id}
+                                wid={id}
+                                datasets={datasets}
+                                badge="WTS"
+                                count={(canonCounts.WTS || []).find(x => x.id === id)?.count || 0}
+                            />
+                        ))}
                     </div>
                 )}
             </div>
 
-            <div className={'section ' + (openRecent ? 'open' : '')}>
+            <div className={"section " + (openRecent ? "open" : "")}>
                 <div className="section-head" onClick={() => setOpenRecent(!openRecent)}>
                     <div className="caret">▸</div>
                     <h3>Key Works — Recent Scholarship</h3>
                     <span className="count">{(canonCounts.Recent || []).length}</span>
                 </div>
                 {openRecent && (
-                    <div className="grid two">
-                        {(canonCounts.Recent || []).map(({id}) => <WorkCard key={id} wid={id} bucket="Recent"/>)}
+                    <div className="work-list">
+                        {(canonCounts.Recent || []).map(({id}) => (
+                            <WorkRow
+                                key={id}
+                                wid={id}
+                                datasets={datasets}
+                                badge="Recent"
+                                count={(canonCounts.Recent || []).find(x => x.id === id)?.count || 0}
+                            />
+                        ))}
                     </div>
                 )}
             </div>
 
             <div style={{marginTop: 18}}>
                 <h3>Outlines</h3>
-                <div className="grid" style={{gridTemplateColumns: '1fr'}}>
-                    {entry.theologians.map(t => (
-                        <div key={t.theologian_id} className="card">
-                            <div className="section-head" onClick={(e) => {
-                                e.stopPropagation();
-                                toggleTheoCard(t);
-                            }}>
-                                <div className="caret">{openTheoId === t.theologian_id ? '▾' : '▸'}</div>
-                                <b><TheoLink id={t.theologian_id} datasets={datasets} stop/></b>
-                            </div>
-
-                            {openTheoId === t.theologian_id && (
-                                <div className="details">
-                                    {outlinesForTheo(t.theologian_id).map((o, i) => {
-                                        const tobj = datasets.topics.find(tt => tt.id === o.topic_id);
-                                        return (
-                                            <div key={i} style={{marginBottom: 12}}>
-                                                <div
-                                                    className="toggle"
-                                                    onClick={() => toggleOutline(o)}
-                                                    style={{
-                                                        display: 'flex',
-                                                        justifyContent: 'space-between',
-                                                        alignItems: 'center',
-                                                        gap: 8
-                                                    }}
-                                                >
-                                                    <div>
-                                                        <b><TopicLink topic={tobj} stop/></b>
-                                                        <div className="small">updated {o.updated_at}</div>
-                                                    </div>
-                                                    <div
-                                                        className="small">{openOutlinePath === o.markdown_path ? '▾' : '▸'}</div>
-                                                </div>
-
-                                                {openOutlinePath === o.markdown_path && (
-                                                    <div style={{gridColumn: '1 / -1'}}>
-                                                        <div className="markdown"
-                                                             dangerouslySetInnerHTML={{__html: outlineHTML}}/>
-                                                        <div className="small" style={{marginTop: 8}}>
-                                                            <a
-                                                                href={`/outline?path=${encodeURIComponent(o.markdown_path || '')}`}
-                                                                onClick={(e) => {
-                                                                    e.preventDefault();
-                                                                    window.history.pushState({}, '', `/outline?path=${encodeURIComponent(o.markdown_path || '')}`);
-                                                                    window.dispatchEvent(new PopStateEvent('popstate'));
-                                                                }}
-                                                            >
-                                                                Open full page
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                )}
-                                            </div>
-                                        );
-                                    })}
+                <div className="grid" style={{gridTemplateColumns: "1fr", gap: 6}}>
+                    {theosByEra.map(era => {
+                        const opened = !!openEra[era.label];
+                        return (
+                            <div key={era.label} className={"section " + (opened ? "open" : "")}
+                                 style={{marginBottom: 6}}>
+                                <div className="section-head"
+                                     onClick={() => setOpenEra(s => ({...s, [era.label]: !opened}))}>
+                                    <div className="caret">▸</div>
+                                    <div className="small"><b>{era.label}</b></div>
+                                    <span className="count">{era.items.length}</span>
                                 </div>
-                            )}
-                        </div>
-                    ))}
+
+                                {opened && (
+                                    <div>
+                                        {era.items
+                                            .sort((a, b) => birthYear(a) - birthYear(b) || lastNameKey(a.full_name).localeCompare(lastNameKey(b.full_name)))
+                                            .map(T => {
+                                                const outs = outlinesForTheo(T.id);
+                                                return (
+                                                    <div>
+
+                                                        <div
+                                                            className="section-head"
+                                                            style={{
+                                                                marginLeft: 14,
+                                                                display: "flex",
+                                                                alignItems: "center",
+                                                                gap: 6,
+                                                                cursor: "pointer"
+                                                            }}
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                toggleTheoCard({theologian_id: T.id});
+                                                            }}
+                                                        >
+                                                            <div className="caret">
+                                                                {openTheoId === T.id ? "▾" : "▸"}
+                                                            </div>
+                                                            <TheoRow key={T.id} theo={T} hasClick={false} className=""/>
+                                                        </div>
+
+
+                                                        {openTheoId === T.id && (
+                                                            <div className="details">
+                                                                {outs.map((o, i) => {
+                                                                    const tobj = datasets.topics.find(tt => tt.id === o.topic_id);
+                                                                    return (
+                                                                        <div key={i} style={{marginBottom: 12}}>
+                                                                            <div
+                                                                                className="toggle"
+                                                                                onClick={() => toggleOutline(o)}
+                                                                                style={{
+                                                                                    display: "flex",
+                                                                                    justifyContent: "space-between",
+                                                                                    alignItems: "center",
+                                                                                    gap: 8
+                                                                                }}
+                                                                            >
+                                                                                <div>
+                                                                                    <b><TopicLink topic={tobj}
+                                                                                                  stop/></b>
+                                                                                    <div
+                                                                                        className="small">updated {o.updated_at}</div>
+                                                                                </div>
+                                                                                <div
+                                                                                    className="small">{openOutlinePath === o.markdown_path ? "▾" : "▸"}</div>
+                                                                            </div>
+
+                                                                            {openOutlinePath === o.markdown_path && (
+                                                                                <div style={{gridColumn: "1 / -1"}}>
+                                                                                    <div className="markdown"
+                                                                                         dangerouslySetInnerHTML={{__html: outlineHTML}}/>
+                                                                                    <div className="small"
+                                                                                         style={{marginTop: 8}}>
+                                                                                        <a
+                                                                                            href={`/outline?path=${encodeURIComponent(o.markdown_path || "")}`}
+                                                                                            onClick={(e) => {
+                                                                                                e.preventDefault();
+                                                                                                window.history.pushState({}, "", `/outline?path=${encodeURIComponent(o.markdown_path || "")}`);
+                                                                                                window.dispatchEvent(new PopStateEvent("popstate"));
+                                                                                            }}
+                                                                                        >
+                                                                                            Open full page
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            )}
+                                                                        </div>
+                                                                    );
+                                                                })}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                );
+                                            })}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </div>
     );
 }
-
 
 /* ---------- Theologian Page (canonical-only) ---------- */
 function TheologianPage({slug, datasets}) {
@@ -855,53 +1190,45 @@ function TheologianPage({slug, datasets}) {
     const [openCats, setOpenCats] = useState({});
     const [openOutlinePath, setOpenOutlinePath] = useState(null);
     const [outlineHTML, setOutlineHTML] = useState("");
+    const [aboutOpen, setAboutOpen] = useState(true);
+
 
     const entry = datasets.byTheo[theo.id] || {};
     const groups = entry.outlines_by_topic_category || {};
     const canonList = datasets.canonCountsTheo[theo.id] || []; // [{id,count}]
 
-    function WorkCardTheo({wId}) {
-        const w = (datasets.works || []).find((x) => x.id === wId) || {id: wId, title: wId};
+    function WorkCardTheo({wId, compact}) {
+        const w = (datasets.works || []).find(x => x.id === wId) || {id: wId, title: wId};
         const topicsFeaturing = featuredTopicsForWork(w.id, datasets.topics, datasets.reverseCanonMap);
+        const authors = resolveAuthorsForWork(w.id, datasets);
+
         return (
-            <div className="card">
-                {(() => {
-                    const byW = datasets.byWork[w.id] || {};
-                    const label = workTitleWithSuffix(w, byW);
-                    return (
-                        <div>
-                            <b>
-                                <WorkLink id={w.id} work={w} datasets={datasets}>
-                                    {label}
-                                </WorkLink>
-                            </b>
-                        </div>
-                    );
-                })()}
-                {resolveAuthorsForWork(w.id, datasets).length ? (
-                    <div className="small">
-                        {resolveAuthorsForWork(w.id, datasets).map((a, i) => (
-                            <span key={i}>
-                {i ? ", " : ""}
-                                {a.theo ? <TheoLink theo={a.theo}/> : <span>{a.display}</span>}
-              </span>
-                        ))}
+            <div className={'card' + (compact ? ' work-row' : '')}>
+                <div><b><WorkLink id={w.id} work={w}
+                                  datasets={datasets}>{workTitleWithSuffix(w, datasets.byWork[w.id] || {})}</WorkLink></b>
+                </div>
+                {authors.length ? (
+                    <div className={compact ? 'meta' : 'small'}>
+                        {authors.map((a, i) => <span key={i}>{i ? ', ' : ''}{a.theo ?
+                            <TheoLink theo={a.theo}/> : a.display}</span>)}
                     </div>
                 ) : null}
-                <div style={{marginTop: 6, display: "flex", gap: 6, flexWrap: "wrap", alignItems: "center"}}>
+                <div style={{
+                    marginTop: compact ? 4 : 6,
+                    display: 'flex',
+                    gap: 6,
+                    flexWrap: 'wrap',
+                    alignItems: 'center'
+                }}>
                     <span
-                        className="badge">{(datasets.canonCountsTheo[theo.id] || []).find((x) => x.id === w.id)?.count || 0}</span>
+                        className="badge">{(datasets.canonCountsTheo[theo.id] || []).find(x => x.id === w.id)?.count || 0}</span>
                     {topicsFeaturing.slice(0, 2).map((t, i) => (
-                        <a
-                            key={i}
-                            className={t.bucket === "WTS" ? "chip" : "chip2"}
-                            href={`/topic/${t.topic_slug}`}
-                            onClick={(e) => {
-                                e.preventDefault();
-                                window.history.pushState({}, "", `/topic/${t.topic_slug}`);
-                                window.dispatchEvent(new PopStateEvent("popstate"));
-                            }}
-                        >
+                        <a key={i} className={t.bucket === 'WTS' ? 'chip' : 'chip2'} href={`/topic/${t.topic_slug}`}
+                           onClick={(e) => {
+                               e.preventDefault();
+                               window.history.pushState({}, '', `/topic/${t.topic_slug}`);
+                               window.dispatchEvent(new PopStateEvent('popstate'));
+                           }}>
                             {t.bucket}: {t.title}
                         </a>
                     ))}
@@ -910,6 +1237,7 @@ function TheologianPage({slug, datasets}) {
             </div>
         );
     }
+
 
     async function toggleTheoOutline(p) {
         if (openOutlinePath === p) {
@@ -927,12 +1255,63 @@ function TheologianPage({slug, datasets}) {
         }
     }
 
+    const aboutCounts = {
+        timeline: Array.isArray(theo.timeline) ? theo.timeline.length : 0,
+        themes: Array.isArray(theo.themes) ? theo.themes.length : 0,
+    };
+
     return (
         <div>
             <h1>
                 {theo.full_name || theo.name} {theo.dates ? <span className="small">{theo.dates}</span> : null}
             </h1>
             <TheoBadges theo={theo}/>
+            <div className="card" style={{marginTop: 12, padding: 0}}>
+                <div className={'section ' + (aboutOpen ? 'open' : '')}>
+                    <div className="section-head" onClick={() => setAboutOpen(!aboutOpen)}>
+                        <div className="caret">▸</div>
+                        <h3 style={{margin: 0}}>About</h3>
+                    </div>
+
+                    {aboutOpen && (
+                        <div style={{padding: 16}}>
+                            {theo.bio ? (
+                                <div className="prose" style={{marginBottom: 16}}>{theo.bio}</div>
+                            ) : null}
+
+                            {Array.isArray(theo.timeline) && theo.timeline.length ? (
+                                <div style={{marginTop: 10}}>
+                                    <h4>Timeline</h4>
+                                    <ul className="timeline">
+                                        {[...theo.timeline]
+                                            .sort((a, b) => (a.year ?? 0) - (b.year ?? 0))
+                                            .map((evt, i) => (
+                                                <li key={i}>
+                                                    <span className="yr">{evt.year}</span>
+                                                    <span className="evt">{evt.event}</span>
+                                                </li>
+                                            ))}
+                                    </ul>
+                                </div>
+                            ) : null}
+
+                            {Array.isArray(theo.themes) && theo.themes.length ? (
+                                <div style={{marginTop: 10}}>
+                                    <h4>Themes</h4>
+                                    <ul className="theme-list">
+                                        {theo.themes.map((t, i) => (
+                                            <li key={i}>
+                                                <b>{t.label}.</b> {t.gloss}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ) : null}
+                        </div>
+                    )}
+                </div>
+            </div>
+
 
             <div className={"section " + (openWorks ? "open" : "")} style={{marginTop: 18}}>
                 <div className="section-head" onClick={() => setOpenWorks(!openWorks)}>
@@ -941,17 +1320,25 @@ function TheologianPage({slug, datasets}) {
                     {canonList.length ? <span className="count">{canonList.length}</span> : null}
                 </div>
                 {openWorks && (
-                    <div className="grid two">
+                    <div className="work-list">
                         {canonList.length === 0 ? (
                             <div className="small">No works found.</div>
                         ) : (
-                            canonList.map(({id}) => <WorkCardTheo key={id} wId={id}/>)
+                            canonList.map(({id}) => (
+                                <WorkRow
+                                    key={id}
+                                    wid={id}
+                                    datasets={datasets}
+                                    count={(datasets.canonCountsTheo[theo.id] || []).find(x => x.id === id)?.count || 0}
+                                />
+                            ))
                         )}
                     </div>
                 )}
+
+
             </div>
 
-            {/* Outlines (same HTML as Topic/Home outline items) */}
             <div style={{marginTop: 18}}>
                 <h3>Outlines</h3>
                 {Object.entries(groups)
@@ -1009,7 +1396,7 @@ function TheologianPage({slug, datasets}) {
             </div>
         </div>
     );
-}
+};
 
 /* ---------- Work Page (canonical-only; alias redirects) ---------- */
 function WorkPage({id, datasets}) {
@@ -1213,35 +1600,6 @@ function TheologiansPage({datasets}) {
         lastNameKey(a.full_name).localeCompare(lastNameKey(b.full_name)) ||
         (a.full_name || "").localeCompare(b.full_name || "");
     const cmpBirth = (a, b) => birthYear(a) - birthYear(b) || cmpAlpha(a, b);
-
-    // compact, full-width row (badges included)
-    const TheoRow = ({theo}) => (
-        <div
-            className="card"
-            style={{cursor: "pointer", padding: "10px 12px"}}
-            onClick={(e) => go(e, `/theologian/${theo.slug}`)}
-        >
-            <div
-                style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 10,
-                    justifyContent: "space-between",
-                    flexWrap: "wrap"
-                }}
-            >
-                {/* left: name + badges */}
-                <div style={{display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap"}}>
-                    <b><TheoLink theo={theo} stop/></b>
-                    <div className="small" style={{display: "flex", gap: 6, flexWrap: "wrap"}}>
-                        <TheoBadges theo={theo}/>
-                    </div>
-                </div>
-                {/* right: dates */}
-                {theo.dates ? <div className="small">{theo.dates}</div> : null}
-            </div>
-        </div>
-    );
 
     // grouped render: Era → Tradition → (rows)
     const renderEraMode = () => {
