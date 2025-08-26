@@ -278,13 +278,21 @@ for theo in theologians.values():
         "type": "theologian",
         "name": theo.get("full_name"),
         "slug": theo.get("slug"),
-        "eras": theo.get("era_category") or [],
+        "eras": theo[.get("era_category")] or [],
         "traditions": theo.get("traditions") or [],
     })
 for w in works.values():
-    search_index.append({"type": "work", "title": w.get("title"), "id": w.get("id")})
+    search_index.append({
+        "type": "work",
+        "title": w.get("title"),
+        "id": w.get("id")
+    })
 for t in topics_list:
-    search_index.append({"type": "topic", "title": t.get("title"), "slug": t.get("slug")})
+    search_index.append({
+        "type": "topic",
+        "title": t.get("title"),
+        "slug": t.get("slug")
+    })
 
 # ---------------- Write back (preserve list shapes) ----------------
 # lists
