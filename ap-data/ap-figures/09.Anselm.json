@@ -1,0 +1,15 @@
+{
+  "apologist": "Anselm",
+  "file_txt": "out-apol/09.Anselm.txt",
+  "generated_at": "2025-10-07T23:46:25.589607Z",
+  "essay_word_count": 1919,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

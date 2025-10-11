@@ -1,0 +1,16 @@
+{
+  "period": "Method Foundations",
+  "question": "The Creator-creature distinction as methodological foundation in Van Til",
+  "file_txt": "out/Method Foundations/01.The Creator-creature distinction as methodological foundation in Van Til.txt",
+  "generated_at": "2025-10-08T03:27:17.981036Z",
+  "essay_word_count": 1440,
+  "issues": [
+    "### ESSAY: word count 1440 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

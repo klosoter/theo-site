@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "Name four nineteenth-century missionaries the field of their labors and any",
+  "file_txt": "out/Modern/17.Name four nineteenth-century missionaries the field of their labors and any.txt",
+  "generated_at": "2025-10-08T01:20:46.875714Z",
+  "essay_word_count": 1345,
+  "issues": [
+    "### ESSAY: word count 1345 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

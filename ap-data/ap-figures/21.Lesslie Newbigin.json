@@ -1,0 +1,15 @@
+{
+  "apologist": "Lesslie Newbigin",
+  "file_txt": "out-apol/21.Lesslie Newbigin.txt",
+  "generated_at": "2025-10-08T01:34:38.365228Z",
+  "essay_word_count": 1828,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

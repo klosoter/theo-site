@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "What is the so-called Clarendon Code and how was it designed to impact",
+  "file_txt": "out/Modern/01.What is the so-called Clarendon Code and how was it designed to impact.txt",
+  "generated_at": "2025-10-07T23:29:03.025701Z",
+  "essay_word_count": 1579,
+  "issues": [
+    "### ESSAY: word count 1579 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

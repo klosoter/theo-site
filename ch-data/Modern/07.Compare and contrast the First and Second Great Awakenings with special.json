@@ -1,0 +1,14 @@
+{
+  "period": "Modern",
+  "question": "Compare and contrast the First and Second Great Awakenings with special",
+  "file_txt": "out/Modern/07.Compare and contrast the First and Second Great Awakenings with special.txt",
+  "generated_at": "2025-10-08T00:14:12.708522Z",
+  "essay_word_count": 1190,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

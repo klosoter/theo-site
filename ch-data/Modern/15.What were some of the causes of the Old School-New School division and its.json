@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "What were some of the causes of the Old School-New School division and its",
+  "file_txt": "out/Modern/15.What were some of the causes of the Old School-New School division and its.txt",
+  "generated_at": "2025-10-08T01:01:17.113934Z",
+  "essay_word_count": 1326,
+  "issues": [
+    "### ESSAY: word count 1326 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

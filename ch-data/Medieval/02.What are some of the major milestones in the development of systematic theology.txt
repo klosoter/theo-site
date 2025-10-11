@@ -1,0 +1,75 @@
+### TITLE
+From Lectio to Summa: Milestones in Medieval Systematic Theology
+
+### PREVIEW NOTES
+- Time and setting: Latin West, c 800 to 1350, from Carolingian reform to late scholastic diversification
+- Central aim: How Christian doctrine became an ordered science of God, creation, and salvation
+- John Scotus Eriugena, early synthetic metaphysician
+- Anselm of Canterbury, method of faith seeking understanding
+- Peter Abelard, dialectical questions and the art of doubt
+- Hugh of St Victor, sacramental and pedagogical synthesis
+- Peter Lombard, architect of the Sentences textbook
+- Thomas Aquinas and Bonaventure, high scholastic summae
+- Duns Scotus and William of Ockham, late scholastic reconfigurations
+- Key themes: lectio to disputatio, authority to reasoned synthesis, sacramental realism, grace and nature, Trinity and Christology, analogy and univocity
+- Major texts and events: Decretum of Gratian c 1140 shaped legal method, Lateran IV 1215 fixed Eucharistic doctrine, Aristotelian translations mid thirteenth century transformed tools, Condemnations of 1277 reset limits
+- Wider context: rise of universities and mendicant orders, renewed Aristotle, canon law and exegesis institutionalized
+- Legacy cue: from Lombard and Aquinas to the Sentences curriculum and later confessional systems
+
+### ESSAY
+The story of medieval systematic theology turns on a persistent tension and an achievement. The tension was between the inherited authority of Scripture and the Fathers and the growing confidence that reason, disciplined and reverent, could order doctrine into a science. The achievement was the emergence of stable genres, common questions, and shared tools that enabled theology to be taught, disputed, and advanced within the schools from the twelfth to the fourteenth century.
+
+The context begins in the Carolingian and early medieval world. Under Charlemagne, crowned emperor in 800, learning was reorganized and libraries multiplied. John Scotus Eriugena, active in the court circle and writing On the Division of Nature around 862 to 866, attempted a vast synthesis of Scripture and Neoplatonism. His speculative metaphysics did not become standard, yet his ambition foreshadowed later system building. In monasteries, the practice of lectio, the slow authoritative reading of Scripture with patristic glosses, kept doctrine tied to exegesis. By the late eleventh century, however, intellectual needs were changing. Schools in cathedrals and cities, notably Laon and Paris, began to train clerics not only to read but to argue.
+
+A first milestone is the formulation of method by Anselm of Canterbury, 1033 to 1109. In the Proslogion, completed around 1078, he coined the programmatic phrase faith seeking understanding. In Cur Deus Homo, written around 1098, he investigated the necessity of the incarnation and atonement in terms of divine justice, human sin, and satisfaction. Anselm drew no map of theology as a whole, but he demonstrated the possibility of deductive, reasoned treatment of central doctrines. He modeled argument that was loyal to authority yet rigorous enough to test premises, anticipate objections, and seek fittingness.
+
+A second milestone is the introduction of overt dialectic. Peter Abelard, 1079 to 1142, compiled Sic et Non around 1120, gathering contradictory patristic statements under headings and inviting the student to reconcile them by weighing language, context, and logic. The guiding assumption was that apparent contradictions could discipline the mind into precision. Around the same time, Gratian produced the Decretum around 1140, organizing church law into a systematic concordance. Although a legal work, the Decretum habituated the schools to the concordance method, to the sorting of authorities, and to the quaestio as a unit of inquiry.
+
+A third milestone is the Victorine turn to ordered pedagogy and sacramental synthesis. Hugh of St Victor, 1096 to 1141, wrote the Didascalicon around 1125 as a handbook of the arts, showing how human disciplines serve sacred learning, and De Sacramentis, an early attempt at a comprehensive account of creation, fall, and restoration. Hugh kept exegesis central, yet he provided outlines and definitions that prefigured the later summa.
+
+The decisive milestone of the twelfth century is Peter Lombard, 1100 to 1160. His Four Books of Sentences, composed around 1155 to 1158, arranged theology under four headings. Book One treated God and the Trinity, Book Two creation and sin, Book Three the incarnation and virtues, Book Four the sacraments and last things. He excerpted Augustine, Ambrose, and other Fathers, posed dubia, and offered resolutions. The work became the standard textbook at Paris and beyond. From the later twelfth century onward, the master of theology earned his degree by lecturing on Scripture and by writing a commentary on the Sentences. The very habit of raising questions on the Lombard, then proposing distinctions and solutions, standardized the quaestio form and gave systematic theology a common scaffold.
+
+The rise of universities is the institutional frame for the next advances. Paris received royal and papal support around 1200 and 1215. The mendicant orders entered these schools, the Franciscans approved in 1209 and the Dominicans in 1216, bringing discipline and international networks. The university curriculum fostered two genres. One was the commentary on the Bible or the Sentences, the other was the summa, a didactic synthesis ordered by questions and articles with objections, sed contra, respondeo, and replies.
+
+A fourth milestone is the infusion of Aristotelian philosophy. Translations of Aristotle, along with commentaries by Avicenna and Averroes, reached Latin readers in the twelfth and early thirteenth centuries. William of Moerbeke produced reliable translations in the 1260s. Logic, physics, metaphysics, and ethics offered sharper concepts of causality, substance, and act and potency. This altered theological method, not by displacing Scripture, but by furnishing tools of analysis for topics such as divine simplicity, creation ex nihilo, and the virtues.
+
+The high scholastic synthesis appears most classically in Thomas Aquinas, 1224 to 1274. In the Summa contra Gentiles, written around 1259 to 1265, he ordered arguments about God and creation oriented to dialogue with philosophers. In the Summa Theologiae, composed from 1265 until his death in 1274, he set the pattern for systematic theology as a science ordered to beatitude. The structure begins with God, moves to creation and human action, then to Christ and the sacraments. He forged a disciplined use of Aristotelian concepts, especially act and potency, form and matter, and the four causes. He articulated analogy of being, divine simplicity and attributes, a doctrine of grace that integrates nature and the gifts, and a sacramental theology centered on instrumentality and causality culminating in transubstantiation. Aquinas did not invent the summa genre, but his clarity of order and argumentative cadence made the model canonical.
+
+Alongside Aquinas, Bonaventure of Bagnoregio, 1221 to 1274, gave the Franciscan synthesis a sacramental and mystical hue. His Breviloquium offered a compact system, while his Itinerarium mentis in Deum, written in 1259, interpreted doctrine as a journey of the mind to God. He emphasized exemplarism, the vestiges of the Trinity in creation, and a sapiential integration of study and contemplation. The council of Lateran IV in 1215 forms an important doctrinal marker in this period, defining the Trinity in standard terms and teaching Eucharistic transubstantiation, thus stabilizing eucharistic language and giving the schools fixed points for reflection.
+
+The next milestone arrives with crisis and recalibration. On March 7, 1277, Stephen Tempier, bishop of Paris, issued condemnations of propositions drawn from arts and theology teaching, targeting determinist readings of Aristotle and assertions that limited divine omnipotence. Oxford issued similar judgments soon after. The intent was to safeguard doctrines of creation and providence. The effect was twofold. It encouraged caution about necessary chains of causes and widened theological space for contingency and divine freedom. It also prompted new emphases in metaphysics and theology.
+
+John Duns Scotus, 1266 to 1308, working in Oxford and Paris, composed the Ordinatio, a reworked Sentences commentary, and Quodlibetal Questions. He argued for the univocity of being as a logical predicate across God and creatures, refined the formal distinction to parse relations in God and attributes in creatures, and gave a high account of the will in both God and humans. His theology of the incarnation, where Christ is the first intention of God for creation, and his defense of the Immaculate Conception, exemplify a reorientation that preserved core dogmas while shifting metaphysical accents.
+
+William of Ockham, 1287 to 1347, advanced nominalism and insisted on divine absolute power and the contingency of created order. His Summa Logicae and Sentences commentary sharpened logical analysis, stressed intuitive and abstractive cognition, and resisted thick metaphysical necessities. In theological terms, this tended to underscore the free institution of sacraments, the primacy of Scripture, and the limits of natural reason in proving specific articles of faith. The scholastic project did not collapse, but its unity fractured into schools with divergent metaphysical premises.
+
+By the mid fourteenth century, the core achievements of medieval systematic theology were in place. A shared curriculum united exegesis and doctrine. The Sentences commentary established a stable sequence of topics. The summa offered a pedagogical order that moved from God to Christ and the sacraments. Aristotle had been baptized as a tool, though not without limits. Doctrinal nodes had been clarified, especially Trinity, Christology, grace, and the sacraments. Debate about analogy and univocity, intellect and will, universals and particulars, set the terms for later theology.
+
+The reception and legacy stretched far. Medieval systems trained generations of clergy and framed the questions later addressed in councils and reform. Thomists, Scotists, and nominalists formed recognizable schools that continued into the fifteenth and sixteenth centuries. Even critics worked within the inherited formats of quaestio and disputation and often wrote commentaries on the same Lombard. The medieval period did not produce a single immutable system, but it forged the genres and the discipline that made systematic theology a public, arguable, teachable enterprise.
+
+In sum, medieval milestones moved theology from monastic lectio to scholastic summa, created common tools and formats, and set permanent lines of inquiry for the science of God.
+
+### RECAP NOTES
+- Setting: Latin West, c 800 to 1350, from Carolingian reforms through universities and mendicant schools
+- Focus: How doctrine became an ordered science through shared genres, methods, and tools
+- Eriugena, On the Division of Nature, early synthesis using Neoplatonism
+- Anselm, Proslogion and Cur Deus Homo, faith seeking understanding and satisfaction atonement
+- Abelard, Sic et Non, dialectical method to reconcile authorities
+- Hugh of St Victor, Didascalicon and De Sacramentis, pedagogy and sacramental overview
+- Peter Lombard, Sentences c 1155 to 1158, four book framework that became the curriculum
+- Aquinas, Summa Theologiae 1265 to 1274 and Summa contra Gentiles, high synthesis with Aristotelian tools
+- Bonaventure, Breviloquium and Itinerarium mentis in Deum 1259, Franciscan sapiential system
+- Duns Scotus, Ordinatio, univocity, formal distinction, primacy of will
+- Ockham, Summa Logicae and Sentences commentary, nominalism and divine omnipotence
+- Key concepts: lectio to disputatio, the move from authoritative reading to argued questions
+- Key concepts: quaestio and disputatio, standardized units of inquiry and public debate
+- Key concepts: summa and Sentences commentary, didactic synthesis and academic exercise
+- Key concepts: analogy versus univocity, competing accounts of language about God
+- Lateran IV 1215, defined Eucharistic transubstantiation and stabilized Trinitarian language
+- Aristotelian translations mid thirteenth century, expanded conceptual tools for doctrine
+- Condemnations of 1277, curtailed determinism and reset boundaries for reason in theology
+- Turning point: Lombard textbook canonized the sequence of topics
+- Turning point: Aristotle received and constrained, enabling Aquinas yet provoking 1277
+- Turning point: Scotus and Ockham diversified metaphysics and fractured consensus
+- Historiography: from triumphalist Thomism to plural accounts of schools within a shared discipline
+- Legacy: durable methods and genres shaped teaching for centuries, setting agendas for later debates

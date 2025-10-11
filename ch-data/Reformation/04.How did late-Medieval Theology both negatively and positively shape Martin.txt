@@ -1,0 +1,66 @@
+### TITLE
+Seeds and Snares of the Late Middle Ages in Luther's Theology
+
+### PREVIEW NOTES
+- Time and setting: 1483 to 1525 in the Holy Roman Empire, within university and monastic networks.
+- Aim: Explain how late medieval theology both furnished and provoked Luther's reforming theology.
+- Martin Luther, Augustinian friar and professor at Wittenberg.
+- Johannes von Staupitz, Augustinian vicar and mentor who directed Luther to Christ's wounds.
+- Gabriel Biel, via moderna expositor of covenant and merit, a key school text for Luther.
+- William of Ockham, nominalist shaping divine will, covenant, and contingency.
+- Thomas Aquinas and John Duns Scotus, high scholastics representing rival medieval syntheses.
+- Gregory of Rimini, Augustinian theologian of grace and predestination in the late fourteenth century.
+- Key themes: merit and grace, human ability and divine promise, law and gospel, theology of the cross, Word and sacrament, authority and conscience.
+- Core concepts: facere quod in se est, fides caritate formata, de condigno and de congruo merit, potentia absoluta and ordinata, imputation and alien righteousness.
+- Major texts and events: Lectures on Romans 1515 to 1516, 95 Theses 1517, Heidelberg Disputation 1518, Leipzig Debate 1519, Freedom of a Christian 1520, Bondage of the Will 1525.
+- Councils and wider frame: Constance 1414 to 1418 and Basel 1431 to 1449 as conciliar memory, Devotio moderna and humanist ad fontes.
+- Wider context: Crisis of pastoral assurance, diversity of scholastic schools, papal and conciliar tensions, rise of print and universities.
+- Legacy cue: Reformation recasts justification, sacraments, Scripture, and ecclesial authority.
+
+### ESSAY
+Luther was born into a late medieval world whose schools, pulpits, and practices shaped him in minute detail. The same intellectual soil that nourished his early formation also produced the thorns he would cut away. To grasp the Reformation, we must see how Luther was a son of the fourteenth and fifteenth centuries as much as a critic of them. His theology bears the imprint of the via moderna, of Augustinian devotion, of scholastic method, and of the penitential economy, even as it contests their conclusions.
+
+The setting is crucial. Luther studied at Erfurt, entered the Augustinian Observance in 1505, and moved to Wittenberg when the new university, founded in 1502, called him to lecture. In Erfurt he learned theology from Jodocus Trutvetter and Bartholomaeus Arnoldi of Usingen, masters formed by Gabriel Biel, who died in 1495. Biel was the canonical expositor of William of Ockham and of the via moderna. He taught a covenantal scheme grounded in the distinction between God's absolute power and ordained power. God freely bound himself by covenant, Biel said, to accept the best that a sinner can do, facere quod in se est. God would then reward this first step with further grace, moving the soul toward justifying love. This model mapped onto the penitential system that had matured since the twelfth century, with its distinctions of merit de congruo and de condigno, and with the axiom that faith is formed by love, fides caritate formata.
+
+Luther internalized that world. He practiced confession with scrupulous care. He sought assurance through the stages of contrition, confession, and satisfaction. He read Peter Lombard's Sentences as was customary, and he mastered the scholastic method of question, distinction, and disputation. When he began lecturing on the Psalms in 1513 and on Romans in 1515 to 1516, he drew from Augustine, Bernard, and medieval glosses as well as from humanist tools that urged him back to Scripture's sources. Johannes von Staupitz, his Augustinian mentor, directed him to contemplate the wounds of Christ rather than the labyrinth of his own conscience. Medieval mysticism, from Tauler to the anonymous Theologia Germanica, taught him to distrust spiritual pride and to look for God's work under the cross.
+
+From these late medieval sources Luther gleaned positive tools. He learned how to argue. The quaestio and disputatio would remain his native tongue, from the 95 Theses in 1517 to the Heidelberg Disputation in 1518 and beyond. He learned a precise vocabulary for grace, merit, habitus, and intention, and he would wield that vocabulary as he redefined each term. He learned from Augustine that grace precedes all human willing and doing, and that sin is bondage. Gregory of Rimini, a fourteenth century Augustinian often read in the Observant houses, sharpened an Augustinian predestinarian edge that would surface in Luther's debate with Erasmus in 1525. He learned a robust doctrine of God as free and sovereign, even hidden, a theme the via moderna highlighted by its stress on God's absolute power. Yet Luther transposed that theme into the language of the cross and promise.
+
+He also absorbed critical impulses. The scholastic fusion of Aristotle and theology had elevated habits of virtue and the ladder of love. In Luther's experience, that ladder yielded either pride or despair. In the Romans lectures, he wrestled with the phrase the righteousness of God. Once heard as the standard God demanded, in 1515 to 1516 he came to hear it as the gift God gives in Christ, an alien righteousness imputed to faith. That turn did not float free of his schooling. The very contrast between merit de condigno and de congruo prepared him to ask whether any human action could rise to the level of condignity before the divine judge. The pactum language of the via moderna, which located assurance in God's covenantal will, became in Luther a firmer promissio Dei, the sheer promise grounded in Christ's once for all work. The God of absolute freedom became the God who binds himself to the external Word, for your sake, in baptism and gospel.
+
+On the negative side, late medieval theology gave Luther targets. He rejected fides caritate formata as the formal cause of justification. If faith is formed by love, he argued, then assurance is always deferred to the quality of my love. He insisted instead that faith justifies because it takes hold of Christ. He rejected the habitus of infused charity as the ground of acceptance, not because he denied renewal, but because he distinguished acceptance from transformation. In 1518 at Heidelberg he contrasted a theologia gloriae, which infers the invisible attributes of God from created perfections, with a theologia crucis, which finds God hidden under the opposite, in the suffering Christ and the folly of the cross. Aristotle's ethics, he said, were not the grammar of the gospel. By 1520, in Freedom of a Christian, he spoke the medieval idiom of virtue only after relocating it under faith's freeing word.
+
+The system of penance and indulgences pressed his critique. The late medieval economy of satisfaction and the treasury of merits, formalized across the fourteenth and fifteenth centuries, produced the campaigns Johann Tetzel led in 1517. Luther's 95 Theses attacked the pastoral abuses and then the theology that sustained them. The debate widened. At Leipzig in 1519, Luther conceded that councils could err, a stance that drew upon conciliar memories from Constance 1414 to 1418 and Basel 1431 to 1449, yet now aimed directly at papal and conciliar authority alike. The universal tribunal became Scripture. Here too late medieval developments mattered. Humanist ad fontes methods and the Vulgate's long rule, the rise of printing and university faculties, all primed a turn to the text. Luther's Romans and Galatians lectures are medieval in their attention to glosses and authorities, yet they find a new center of gravity in Paul's grammar of promise, law, and faith.
+
+The sacramental field shows both inheritance and rupture. Medieval teaching held that sacraments work ex opere operato when not blocked by mortal sin. Augustine bequeathed the res et sacramentum distinction and an objective realism of signs. Luther kept the objectivity, yet revised the account of efficacy. A sacrament is the Word attached to an external sign, he argued in 1520, and works by promise received in faith. This cuts two ways. He rejected the multiplication of sacraments and the notion of sacrifice in the mass, yet he resisted spiritualizing tendencies. He stayed close to a medieval realism about Christ's presence in the Supper, against interpretations that reduced the Supper to a bare memorial. He thus reorganized the medieval inheritance around promise, gift, and Christ's institution.
+
+A crucial turning point came in 1525 when Erasmus pressed the question of free choice. The Bondage of the Will gathered Luther's Augustinian strands and late medieval divine voluntarism into a focused confession that fallen humans are not free to will the good. He distinguished the hidden God whose counsel is inscrutable and the preached God who binds himself to the gospel. Here again, late medieval theologies are both source and foil. The via moderna stressed contingency and divine freedom. Luther kept the stress but tethered it to the proclamation of Christ crucified.
+
+The theological significance is twofold. First, Luther's positive appropriation of the late medieval world gave him weapons. Disputation, distinction, and Augustinian emphases on grace's priority allowed him to argue with precision. Mystical suspicion of self and glory disposed him to a theology of the cross. Second, the negative impetus set his agenda. The medieval confidence in human cooperation under grace, in formed faith, and in the penitential treasury, had become for him the pastoral engine of despair. His answer reframed the map. Justification is forensic and external, faith is trust that clings to a given promise, sacraments are visible words, and the church is where the Word is preached and believed. These claims arose within the late medieval world and against it.
+
+As the movement widened, reception and contradiction made the late medieval imprint more visible. Melanchthon's Loci of 1521 systematized the evangelical turn using methods learned in the schools. Catholic response, culminating later at Trent beginning in 1545, consolidated the very doctrines Luther contested, such as the formed nature of justifying faith and the efficacy of the sacraments, while correcting abuses. Historians in the twentieth century emphasized that Luther was not a modern outsider but a late medieval man. The contours of his thought show how reform emerges from within tradition.
+
+Luther did not spring from the earth fully formed. He was a monk of late medieval Europe who turned its grammar inside out, and by doing so, he remade the conversation for centuries to come.
+
+### RECAP NOTES
+- Late medieval setting in the Holy Roman Empire, 1483 to 1525, universities, Observant Augustinians, and pastoral anxieties about assurance.
+- Question: How the late medieval schools and practices both supplied Luther's tools and provoked his critique.
+- Martin Luther, lectures on Psalms and Romans 1513 to 1516, 95 Theses 1517, Heidelberg 1518, Leipzig 1519, Freedom of a Christian 1520, Bondage of the Will 1525.
+- Johannes von Staupitz, Augustinian mentor, directed Luther to Christ and grace over introspection.
+- Gabriel Biel, via moderna covenant and merit, taught facere quod in se est and de congruo merit.
+- William of Ockham, divine will and potentia distinctions, fed covenantal and hidden God themes.
+- Thomas Aquinas and John Duns Scotus, habits and charity models of justification that Luther reworked.
+- Gregory of Rimini, Augustinian stress on predestination and grace, an Observant influence.
+- Key concepts: facere quod in se est, human best effort under covenant, rejected as ground of assurance.
+- Fides caritate formata, faith formed by love, replaced by faith that receives Christ's righteousness.
+- Merit de congruo and de condigno, medieval merit schema, displaced by imputation as gift.
+- Potentia absoluta and ordinata, God's freedom and binding promise, reframed as promissio Dei.
+- Law and gospel, medieval homiletic theme sharpened in Luther for assurance and exegesis.
+- Sacraments as visible words, medieval realism retained, ex opere operato critiqued.
+- Events: Constance 1414 to 1418 and Basel 1431 to 1449, conciliar memory shaping authority debates.
+- Turning point: Romans lectures 1515 to 1516, righteousness of God as gift, shift to imputation.
+- Turning point: Heidelberg Disputation 1518, theology of the cross against Aristotelian virtue.
+- Turning point: Leipzig 1519, councils can err, Scripture as final judge.
+- Turning point: Bondage of the Will 1525, Augustinian bondage and hidden God, promise in preaching.
+- Historiography: older rupture models tempered by views of Luther as a late medieval reformer from within.
+- Legacy: Reformation doctrines of justification, sacraments, and authority recast medieval categories for a new era.

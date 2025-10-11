@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "What is the place of Schleiermacher Hegel and Kant in the development of",
+  "file_txt": "out/Modern/14.What is the place of Schleiermacher Hegel and Kant in the development of.txt",
+  "generated_at": "2025-10-08T00:54:46.966018Z",
+  "essay_word_count": 1355,
+  "issues": [
+    "### ESSAY: word count 1355 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "Discuss nineteenth-century evangelicalism Mention key dates persons and events",
+  "file_txt": "out/Modern/16.Discuss nineteenth-century evangelicalism Mention key dates persons and events.txt",
+  "generated_at": "2025-10-08T01:12:10.457647Z",
+  "essay_word_count": 1327,
+  "issues": [
+    "### ESSAY: word count 1327 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

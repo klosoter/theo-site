@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "What were the central points of dispute between Roman Catholicism and Luther at",
+  "file_txt": "out/Reformation/10.What were the central points of dispute between Roman Catholicism and Luther at.txt",
+  "generated_at": "2025-10-07T21:36:50.038376Z",
+  "essay_word_count": 1370,
+  "issues": [
+    "### ESSAY: word count 1370 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

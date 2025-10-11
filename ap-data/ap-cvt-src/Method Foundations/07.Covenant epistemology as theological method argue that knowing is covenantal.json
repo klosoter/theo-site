@@ -1,0 +1,16 @@
+{
+  "period": "Method Foundations",
+  "question": "Covenant epistemology as theological method argue that knowing is covenantal",
+  "file_txt": "out/Method Foundations/07.Covenant epistemology as theological method argue that knowing is covenantal.txt",
+  "generated_at": "2025-10-08T04:06:34.435438Z",
+  "essay_word_count": 1501,
+  "issues": [
+    "### ESSAY: word count 1501 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

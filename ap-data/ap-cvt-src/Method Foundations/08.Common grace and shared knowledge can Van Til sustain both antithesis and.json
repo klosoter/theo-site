@@ -1,0 +1,16 @@
+{
+  "period": "Method Foundations",
+  "question": "Common grace and shared knowledge can Van Til sustain both antithesis and",
+  "file_txt": "out/Method Foundations/08.Common grace and shared knowledge can Van Til sustain both antithesis and.txt",
+  "generated_at": "2025-10-08T04:13:20.287486Z",
+  "essay_word_count": 1349,
+  "issues": [
+    "### ESSAY: word count 1349 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

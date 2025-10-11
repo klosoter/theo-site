@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "Discuss Müntzer Luther and the reformation of the common man Or discuss social",
+  "file_txt": "out/Reformation/09.Discuss Müntzer Luther and the reformation of the common man Or discuss social.txt",
+  "generated_at": "2025-10-07T21:28:59.094522Z",
+  "essay_word_count": 1311,
+  "issues": [
+    "### ESSAY: word count 1311 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "period": "Medieval",
+  "question": "What contributed to East-West disunity and schism in the medieval church",
+  "file_txt": "out/Medieval/05.What contributed to East-West disunity and schism in the medieval church.txt",
+  "generated_at": "2025-10-07T19:29:42.882706Z",
+  "essay_word_count": 1448,
+  "issues": [
+    "### ESSAY: word count 1448 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

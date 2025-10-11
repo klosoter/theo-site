@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "What did Elizabeth do with the Book of Common Prayer and how was it received",
+  "file_txt": "out/Reformation/21.What did Elizabeth do with the Book of Common Prayer and how was it received.txt",
+  "generated_at": "2025-10-07T22:50:33.196979Z",
+  "essay_word_count": 1361,
+  "issues": [
+    "### ESSAY: word count 1361 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

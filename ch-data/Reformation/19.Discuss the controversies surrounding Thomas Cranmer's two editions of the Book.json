@@ -1,0 +1,14 @@
+{
+  "period": "Reformation",
+  "question": "Discuss the controversies surrounding Thomas Cranmer's two editions of the Book",
+  "file_txt": "out/Reformation/19.Discuss the controversies surrounding Thomas Cranmer's two editions of the Book.txt",
+  "generated_at": "2025-10-07T22:34:44.922568Z",
+  "essay_word_count": 1214,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

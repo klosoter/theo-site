@@ -1,0 +1,16 @@
+{
+  "period": "Method Foundations",
+  "question": "Analogical knowledge and revelation state Van Til's claim that all true",
+  "file_txt": "out/Method Foundations/04.Analogical knowledge and revelation state Van Til's claim that all true.txt",
+  "generated_at": "2025-10-08T03:44:39.523632Z",
+  "essay_word_count": 1375,
+  "issues": [
+    "### ESSAY: word count 1375 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

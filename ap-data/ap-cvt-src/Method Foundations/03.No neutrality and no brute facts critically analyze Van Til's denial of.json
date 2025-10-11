@@ -1,0 +1,16 @@
+{
+  "period": "Method Foundations",
+  "question": "No neutrality and no brute facts critically analyze Van Til's denial of",
+  "file_txt": "out/Method Foundations/03.No neutrality and no brute facts critically analyze Van Til's denial of.txt",
+  "generated_at": "2025-10-08T03:37:13.322901Z",
+  "essay_word_count": 1427,
+  "issues": [
+    "### ESSAY: word count 1427 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

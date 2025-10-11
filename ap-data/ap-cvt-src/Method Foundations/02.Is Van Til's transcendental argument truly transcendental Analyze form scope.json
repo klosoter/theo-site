@@ -1,0 +1,16 @@
+{
+  "period": "Method Foundations",
+  "question": "Is Van Til's transcendental argument truly transcendental Analyze form scope",
+  "file_txt": "out/Method Foundations/02.Is Van Til's transcendental argument truly transcendental Analyze form scope.txt",
+  "generated_at": "2025-10-08T03:31:29.115971Z",
+  "essay_word_count": 1387,
+  "issues": [
+    "### ESSAY: word count 1387 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

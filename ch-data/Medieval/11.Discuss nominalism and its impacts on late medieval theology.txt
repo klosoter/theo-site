@@ -1,0 +1,76 @@
+### TITLE
+Nominalism and the Recasting of Late Medieval Theology
+
+### PREVIEW NOTES
+- Time and setting, 1277-1500, Latin West universities, Avignon to Paris to German faculties
+- Aim, explain how nominalism reshaped theological method, doctrines, and church politics
+- William of Ockham, Franciscan logician and architect of nominalist method
+- John Duns Scotus, subtle doctor whose univocity and voluntarism set preconditions
+- Adam Wodeham and Robert Holcot, innovators in cognition and scriptural method
+- Gregory of Rimini, Augustinian nominalist of predestination and grace
+- Pierre dAilly and Jean Gerson, via moderna in ecclesiology and pastoral theology
+- Gabriel Biel, late fifteenth century synthesizer and textbook voice
+- Universals as names, focus on singulars and signs rather than real natures
+- Potentia absoluta and ordinata, divine freedom and contingent order
+- Intuitive and abstractive cognition, limits and possibilities of knowing
+- Divine acceptation and covenant, merit by Gods pact and promise
+- Ecclesial authority and conciliarism, limits on papal monarchy
+- Condemnations of 1277, widened divine power against Aristotelian necessity
+- Avignon Papacy 1309-1377, crisis fueling debates on authority
+- Great Western Schism 1378-1417, fracture provoking conciliar solutions
+- Ockhams Summa Logicae, method of mental language and signs
+- Ockhams Dialogus, political theology amid papal empire conflict
+- Council of Constance 1414-1418, conciliarist settlement and reform
+- Biels Collectorium 1470s, codifies via moderna for classrooms
+- Wider context, plague, pastoral strain, and the rise of university logic
+- Legacy cue, pathways to conciliar thought, devotio moderna, and Reformation
+
+### ESSAY
+The story of late medieval nominalism begins with a tension about words, things, and God. Can theology speak confidently about what is, or must it speak humbly about signs and promises given by a free God who could have done otherwise. That question moved from the classroom to the church as the fourteenth century reeled from papal exile, the Black Death, and the Great Western Schism of 1378-1417. The fate of universals in logic connected with the fate of papal claims and the fate of the anxious soul seeking grace.
+
+The background is the condemnations of 1277 in Paris and Oxford, where bishops censured propositions that made the cosmos necessary under Aristotelian rules. Those condemnations pried open space for divine freedom and contingency. John Duns Scotus, active around 1290-1308, set two crucial preconditions. First, the univocity of being, a claim that terms like being can be said in the same sense of God and creatures, though analogically perfected. Second, a strong account of the divine will, where moral norms are right because God wills them, though God wills in wisdom. Scotus did not deny real natures, but he weakened the old realist glue and redirected attention to divine willing and the formal precision of concepts.
+
+William of Ockham, born around 1287 and writing in the 1310s and 1320s, brought the turn to a methodological clarity that became the via moderna. His Summa Logicae, around 1323, articulated a theory of mental language, supposition, and signification. Universals, he argued, are not real entities existing in things but are names and concepts that stand for many singulars. Ockhams razor, the principle that we ought not multiply entities without necessity, disciplined metaphysics and set theology on a leaner footing. In his Sentences commentary and Quodlibetal Questions, Ockham reclassified theology as a practical science ordered to salvation and virtue, dependent on divine revelation and not a demonstrative science like geometry.
+
+This logical asceticism reshaped doctrines. On divine power, Ockham sharpened the distinction between potentia absoluta and potentia ordinata. God could do otherwise than he in fact does, since nothing outside God necessitates his choice. The existing moral and sacramental order is what God has freely ordained. This fuels both consolation and anxiety. Consolation, because salvation rests on Gods faithful promise. Anxiety, because in principle God could have willed a different path and we cannot compel his will by nature.
+
+Nominalist epistemology emphasized intuitive and abstractive cognition. Intuitive cognition knows singulars as existing, while abstractive cognition knows what can be without affirming existence. Ockham and Adam Wodeham explored whether God could cause intuitive cognition of a non-existent object, and such debates exposed the limits of natural certainty about the world. In theology, this bred humility about metaphysical claims and pushed scholars toward exegesis and careful parsing of authoritative texts.
+
+In sacramental and Eucharistic theology, nominalists accepted Lateran IV and the language of transubstantiation, yet they probed how accidents can remain without their subject under Gods power and how we speak coherently of Christs presence. They argued that God sustains appearances and causal orders by free ordination, not by necessary forms embedded in things. In ethics, the focus on will issued in a sharpened divine command theory. Moral law is contingent on Gods choice, yet God wills consistently with his goodness and has in fact bound himself to a stable order that creatures can learn and obey.
+
+The effects reached church and empire. During the poverty controversy and the conflicts with John XXII in the 1320s, Ockham left Avignon in 1328 and wrote the Dialogus, a sprawling treatise on papal power, law, and the rights of the faithful, composed through the 1330s and 1340s. There he argued that a pope can err and that the church, represented by a general council, may judge and even depose a pope who endangers the faith. This is not a direct blueprint for conciliarism, yet it supplied arguments later deployed at the Council of Constance in 1414-1418, where theologians like Pierre dAilly and Jean Gerson urged remedies to the schism by a council superior to competing popes.
+
+The classroom heirs diversified nominalism. Robert Holcot and Adam Wodeham refined accounts of scriptural language, literal sense, and the conditions of theological inference. Gregory of Rimini, active in the 1340s, combined nominalist logic with a rigorous Augustinian doctrine of grace, predestination, and original sin. He denied that fallen humans can prepare themselves for grace by natural powers, insisting on the priority of divine mercy and foreknowledge. Yet he also used the apparatus of acceptation, the idea that God accepts a finite act as meritorious because he freely sets the covenant terms.
+
+By the late fifteenth century, Gabriel Biel in Tübingen compiled the Collectorium circa quattuor libros Sententiarum, in the 1470s, an influential textbook that codified the via moderna. Biel explained merit in terms of Gods pact, a pactum that promises grace to those who do what lies within them, facientibus quod in se est. He drew sharp lines between merit de congruo and merit de condigno, and he underscored the stability of God's ordinatio while never forgetting Gods absolute power. Here the bishoprics, faculties, and preaching clergy received crisp rules for penance, sacramental practice, and pastoral counsel.
+
+Three turning points magnified these dynamics. The Black Death of 1347-1351 intensified pastoral urgency and the search for reliable marks of grace. The Great Western Schism fractured authority and drove theologians back to first principles of church polity. The conciliar era, from Pisa in 1409 to Constance in 1414-1418 and Basel in 1431-1449, inaugurated a literature of constitutional theology that leaned on nominalist tools, especially regarding positive law, consent, and the limits of jurisdiction. Meanwhile, university statutes in Paris and the German lands alternately restricted and welcomed nominalist teaching, as faculties navigated disputes between the via antiqua of Thomas and Scotus and the via moderna of Ockham and Biel.
+
+Theologically, nominalism rebalanced reason and revelation. It checked speculative confidence and treated theology as practical wisdom, normed by Scripture and conciliar or papal determinations within a contingent order. It reframed natural law as a function of divine will, fostered meticulous moral casuistry, and clarified the analysis of language and inference used in biblical commentary. By reducing metaphysical commitments, it encouraged a sharper sense of the gulf between Creator and creature, while paradoxically securing a robust trust in the promises God has freely made.
+
+Reception was mixed and consequential. Devotio moderna, born in the Low Countries in the 1370s, harmonized well with a covenantal and practical view of theology, stressing interior conversion, disciplined obedience, and confidence in Gods promises mediated through ordinary means of grace. Humanists criticized the pedantry of the schools, yet they often absorbed nominalist suspicion of overbuilt metaphysics. In the final years of the fifteenth century, German universities taught from Biel, and students learned to analyze doctrine by pact and ordination. Martin Luther studied Biel and dAilly at Erfurt around 1501-1505, later rejecting the logic of merit yet thinking with the categories of potentia absoluta and ordinata. Historians rightly warn against a straight line from nominalism to Reformation, but the matrix of language, will, covenant, and ecclesial limits that nominalists forged supplied both tools and foils for sixteenth century debates.
+
+Nominalism did not end scholasticism, it refashioned it. By anchoring theology in signs, singulars, and the promise of a free God, late medieval theologians rebuilt Christian teaching for an age of uncertainty, and they left a lean and agile legacy that both steadied and unsettled the church.
+
+### RECAP NOTES
+- Setting, fourteenth to fifteenth century Latin West in universities shaped by Avignon exile, plague, and the Great Western Schism
+- Focus, how nominalism about universals recast theological method, doctrine, and ecclesial authority
+- William of Ockham, Summa Logicae c. 1323, mental language, razor, potentia absoluta and ordinata, Dialogus on limiting papal power
+- John Duns Scotus, c. 1290-1308, univocity of being and strong divine will as preconditions for later nominalism
+- Adam Wodeham and Robert Holcot, cognition theory and scriptural semantics in the via moderna
+- Gregory of Rimini, 1340s Lectura, Augustinian predestination with nominalist logic of acceptation
+- Pierre dAilly and Jean Gerson, conciliarist ecclesiology at Constance using via moderna categories
+- Gabriel Biel, Collectorium 1470s, pactum, merit de congruo and de condigno, classroom codifier
+- Universals as names, concepts stand for many singulars, no real shared natures in things
+- Potentia absoluta and ordinata, God freely could do otherwise, yet binds himself by ordained order
+- Intuitive and abstractive cognition, knowledge of singulars versus conceptual possibilities
+- Divine acceptation and covenant, God counts finite acts as meritorious by free promise
+- Ethics as divine command, moral law contingent yet stable under Gods ordinance
+- Condemnations of 1277, break with Aristotelian necessity, widened divine freedom
+- Great Western Schism 1378-1417 and Council of Constance 1414-1418, crisis and conciliar solutions
+- Biel at Tübingen in the 1470s and university diffusion, via moderna becomes teaching norm in Germany
+- Turning point, Black Death 1347-1351 intensifies pastoral urgency and prudential theology
+- Turning point, rise of conciliarism reframes authority through law and consent
+- Turning point, classroom shift from metaphysical realism to linguistic analysis and exegesis
+- Historiography, caution against a simple cause of the Reformation, stress a complex toolkit and foil
+- Legacy, reshaped theological method, fostered conciliar thought and devotio moderna, and set terms for Reformation debates

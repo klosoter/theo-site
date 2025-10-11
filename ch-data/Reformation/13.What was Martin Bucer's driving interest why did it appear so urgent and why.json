@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "What was Martin Bucer's driving interest why did it appear so urgent and why",
+  "file_txt": "out/Reformation/13.What was Martin Bucer's driving interest why did it appear so urgent and why.txt",
+  "generated_at": "2025-10-07T21:59:01.670714Z",
+  "essay_word_count": 1358,
+  "issues": [
+    "### ESSAY: word count 1358 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

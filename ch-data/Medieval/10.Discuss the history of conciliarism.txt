@@ -1,0 +1,66 @@
+### TITLE
+Conciliarism from Schism to Settlement, 1290-1517
+
+### PREVIEW NOTES
+- Late medieval Latin West, from Avignon and the Great Western Schism to Lateran V
+- Who holds supreme authority in crisis, pope or general council, and how can the Church be healed and reformed
+- Marsilius of Padua, political theorist of Defensor Pacis
+- William of Ockham, Franciscan critic of papal plenitude
+- Henry of Langenstein and Conrad of Gelnhausen, early via concilii strategists
+- Pierre d Ailly and Jean Gerson, Paris leaders of conciliar program
+- Nicholas of Cusa, theorist of council and consent
+- Plenitudo potestatis versus ecclesia representans, papal monarchy against corporate sovereignty
+- Quod omnes tangit and universitas, consent theory and corporate personhood
+- Pisa 1409, attempted healing but created a third pope
+- Constance 1414-1418, Haec Sancta and Frequens, ended the schism and structured conciliarism
+- Basel 1431-1449, challenge to Eugene IV, antipope Felix V and eventual papal recovery
+- Lateran V 1512-1517, papal reassertion and partial closure
+- Wider backdrop of canon law, Roman law, university culture, and princely politics
+- Legacy for Gallicanism and later constitutional visions of the Church
+
+### ESSAY
+Conciliarism was born of a crisis that refused to be solved by ordinary means. When the Western Church fractured in 1378 into rival obediences, each with its own pope, the old question of primacy took a new shape. If popes themselves divided Christendom, who could mend it. The drama of the Great Western Schism, which lasted until 1417, forced theologians, canonists, and princes to ask whether the universal Church, represented in a general council, stood above any single pope. Out of that question came a program of governance and reform, both practical and theoretical, that we call conciliarism.
+
+The background lay in the growth of papal monarchy from the twelfth century onward. Gratian's Decretum around 1140 assembled a body of law that could be read to support a plenitudo potestatis, a fullness of power, in the Roman pontiff. Innocent III, who reigned from 1198 to 1216, exercised that plenitude with confidence, summoning the Fourth Lateran Council in 1215 and arbitrating disputes across Europe. Yet the same canon law and the reception of Roman law introduced corporate categories that cut the other way. Jurists spoke of the Church as a universitas, a public person that endured beyond any office holder. The principle quod omnes tangit, what touches all should be approved by all, migrated from civil to ecclesiastical reasoning. By 1302, Boniface VIII and the bull Unam Sanctam projected a high papalist line, while Philip IV of France fought back. The Avignon papacy from 1309 to 1377, rooted in French soil, damaged the mystique of Roman independence and sharpened calls for reform. Political theory, canon law, and civic experience set the stage.
+
+Before 1378, strong critiques had already appeared. Marsilius of Padua, writing Defensor Pacis in 1324, rejected theocratic claims and grounded authority in the body of the faithful, with the secular legislator above the clergy. William of Ockham, between the 1320s and his death in 1347, challenged papal absolutism and argued that the Church universal, through a council, could judge and even correct a pope who endangered the common good. Paris masters such as Henry of Langenstein and Conrad of Gelnhausen, in the 1380s, proposed a via concilii, a path of healing through a general council that would represent the universal Church when papal leadership had failed. These were not yet full constitutional blueprints, but the intellectual scaffolding was visible.
+
+The Schism radicalized the debate. Two lines of popes were elected in 1378, one in Rome and one in Avignon, each claiming the keys of Peter. The University of Paris became the beating heart of solutions. Pierre d Ailly, chancellor from 1389, and his younger colleague Jean Gerson promoted three ways forward: cession, arbitration, and council. When cession faltered, momentum gathered for a council. Pisa in 1409 tried to solve the impasse by judging both claimants and electing a new pope, Alexander V. Because neither obedience capitulated, Pisa created a third pope and compounded scandal. Yet Pisa made a decisive move. It acted as if the Church in council could judge popes.
+
+Constance from 1414 to 1418 gave conciliarism its canonical shape. It gathered a wider spectrum of Christendom and adopted voting by nations to prevent Italian domination. In 1415 it issued the decree Haec Sancta, declaring that a general council drew its authority directly from Christ and that every Christian, including the pope, was bound to obey it in matters of faith, schism, and reform. In 1417, Frequens mandated the regular convocation of future councils, trying to normalize what had been an emergency measure. Constance condemned John Wyclif posthumously and burned Jan Hus in 1415, revealing both its theological resolve and its limits in handling dissent. Most crucially, in 1417 it deposed or accepted the resignation of rival popes and elected Martin V, thus ending the Schism. Conciliarists could now claim that theory and practice had converged. The council had healed what the popes could not heal by themselves.
+
+The moment of triumph proved fragile. Conciliar reform aimed at the famous triad, head, members, and morals. Constance made significant moves on simony and benefices, but much remained unsettled. Basel, opened in 1431, took up the program with energy. It reaffirmed the superiority of a council over a pope and pursued reforms in capite et in membris, at the head and in the members. Pope Eugene IV tried to dissolve Basel and transfer proceedings to Italy in view of a hoped for union with the Greek Church. Basel resisted, declared the pope contumacious, and in 1439 deposed him, electing Duke Amadeus VIII of Savoy as Felix V. Meanwhile, the papal party negotiated union with the Greeks at Ferrara and Florence in 1438-1439, where the decrees Laetentur Caeli announced reunion, though it proved short lived in the East. Basel gradually lost support from princes and universities, and Felix V renounced his claim in 1449. Concordats tempered the settlement. The German Concordat of Vienna in 1448 affirmed papal rights while preserving some national liberties. In France, the Pragmatic Sanction of Bourges in 1438 had earlier embedded conciliar decrees into royal law, securing elections to benefices and limiting papal reservations, though it would be moderated by the Concordat of Bologna in 1516.
+
+Theological reflection during these decades pressed beyond tactics. Jean Gerson framed the council as the instrument of the whole Church, with the pope as ministerial head rather than an absolute monarch. Nicholas of Cusa, in De Concordantia Catholica written in 1433, wove Roman law, canon law, and the theology of consent into a synthetic defense of representation in the Church. He argued that the consent of the faithful, mediated through orders and nations, grounded the legitimacy of governance. The council was the voice of the ecclesia representans, the Church in act. Opponents, including papal canonists shaped by Hostiensis and Giles of Rome, defended the pope as the unique subject of plenitudo potestatis in spirituals, an order willed by Christ. The subtlety lay in the distinction between indefectibility and personal immunity. Conciliarists did not deny primacy as such. They denied that primacy was unconditioned when the common good and the faith were at stake.
+
+The turning point came with the Fifth Lateran Council from 1512 to 1517. Summoned by Julius II against a rival assembly at Pisa and Milan promoted by Louis XII of France, Lateran V condemned the conciliarist claim of superiority, annulled the rogue council, and enacted genuine though limited reforms. Leo X closed it in March 1517, months before Luther published his theses at Wittenberg. The institutional tide had turned. Councils would continue, but not as standing parliaments of the Church. The via concilii receded as a constitutional program and survived as a memory, a set of canons, and a national policy in places like France.
+
+The significance of conciliarism is best seen in three registers. First, ecclesiological. By arguing that the Church universal could act through a representative council to judge a pope in emergencies, conciliarists offered a corporate account of authority that did not rest on personal sanctity. It drew on the corpus mysticum tradition and on legal categories of the universitas, tested in cities and universities. Second, legal and political. Conciliarism appropriated the Roman law of corporations and the canonist axiom quod omnes tangit. It is no accident that its universities led it, for they were corporate bodies used to deliberation by nations and faculties. Third, reformist. The movement aimed not only to heal a schism but also to curb abuses in benefices, finance, and jurisdiction. In this respect, Basel's thoroughness and Constance's frameworks mattered even where papalists prevailed.
+
+Reception was mixed and enduring. Gallicanism in France preserved a moderated conciliar language, asserting that a council could correct a pope in limited spheres and that national churches enjoyed liberties against curial centralization. The German church retained concordatarian checks and a memory of imperial oversight of councils. Humanists like Erasmus admired the idea of orderly reform by council, though they did not write as constitutionalists. In later centuries, Catholic monarchies and canonists would echo conciliar tones in Febronian and Josephinist programs. Yet the papal resurgence, symbolized by Lateran V and intensified at Trent from 1545 to 1563, domesticated councils within a papally led framework. The constitutional ideal of a standing sovereign council faded, though its logic never disappeared entirely.
+
+The historiography likewise divides. Some read conciliarism as the medieval Church's constitutional moment, the transposition of civic corporate theory into ecclesial governance. Others see it as a crisis management tool, a justified but extraordinary claim meant to resolve a unique schism rather than redefine the constitution. Both views find evidence, for conciliarists both theorized a general principle and proposed concrete remedies for a concrete catastrophe.
+
+In sum, conciliarism was the Church's attempt to compose unity by assembling the whole. Its high tide at Constance and its ebb by Lateran V do not erase its contribution to ecclesiology, law, and reform. It left behind the conviction that the Church cannot be the private property of one office, and that in times of danger, the whole can speak for the whole.
+
+### RECAP NOTES
+- Western Church under Avignon papacy and Great Western Schism, universities and princes press for order and reform
+- Who is supreme in crisis, pope or general council, and by what right can a pope be judged
+- Marsilius of Padua, Defensor Pacis, rooted authority in the community against papal absolutism
+- William of Ockham, argued council could correct a pope for the common good
+- Henry of Langenstein and Conrad of Gelnhausen, early via concilii proposals to end schism
+- Pierre d Ailly and Jean Gerson, University of Paris leaders, designed conciliar strategy and theology
+- Nicholas of Cusa, De Concordantia Catholica 1433, consent and representation in ecclesial governance
+- Plenitudo potestatis, claim of papal fullness of power
+- Ecclesia representans, the universal Church acting through a council
+- Quod omnes tangit, consent principle adapted from law to church polity
+- Pisa 1409, attempted healing, created a third pope
+- Constance 1414-1418, Haec Sancta on council superiority, Frequens on regular councils, ended schism with Martin V
+- Basel 1431-1449, asserted superiority, deposed Eugene IV, elected Felix V 1439, declined and reconciled
+- Ferrara-Florence 1438-1439, union with Greeks announced, short lived in the East
+- Lateran V 1512-1517, condemned conciliar superiority, reasserted papal leadership
+- Turning point, Haec Sancta and the election of Martin V normalize the conciliar claim
+- Turning point, Basel overreaches and loses support, papal recovery is secured
+- Turning point, Lateran V closes the constitutional window on conciliar supremacy
+- Historiography, split between constitutional reading and emergency theory reading
+- Legacy, Gallican and concordatarian checks persist, papal control strengthened, conciliar ideals remain a reference point

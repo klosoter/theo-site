@@ -1,0 +1,15 @@
+{
+  "apologist": "Joseph Butler",
+  "file_txt": "out-apol/13.Joseph Butler.txt",
+  "generated_at": "2025-10-08T00:23:16.753741Z",
+  "essay_word_count": 1842,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

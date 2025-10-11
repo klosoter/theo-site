@@ -1,0 +1,14 @@
+{
+  "period": "Method Foundations",
+  "question": "Historical development of Van Til's method 1930-1970 from early polemics",
+  "file_txt": "out/Method Foundations/06.Historical development of Van Til's method 1930-1970 from early polemics.txt",
+  "generated_at": "2025-10-08T04:00:11.308045Z",
+  "essay_word_count": 1244,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

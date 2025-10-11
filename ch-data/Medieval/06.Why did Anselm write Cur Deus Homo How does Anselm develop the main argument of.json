@@ -1,0 +1,14 @@
+{
+  "period": "Medieval",
+  "question": "Why did Anselm write Cur Deus Homo How does Anselm develop the main argument of",
+  "file_txt": "out/Medieval/06.Why did Anselm write Cur Deus Homo How does Anselm develop the main argument of.txt",
+  "generated_at": "2025-10-07T19:32:31.741686Z",
+  "essay_word_count": 1292,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

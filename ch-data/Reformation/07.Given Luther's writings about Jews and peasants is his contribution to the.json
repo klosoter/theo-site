@@ -1,0 +1,14 @@
+{
+  "period": "Reformation",
+  "question": "Given Luther's writings about Jews and peasants is his contribution to the",
+  "file_txt": "out/Reformation/07.Given Luther's writings about Jews and peasants is his contribution to the.txt",
+  "generated_at": "2025-10-07T21:12:43.116702Z",
+  "essay_word_count": 1297,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

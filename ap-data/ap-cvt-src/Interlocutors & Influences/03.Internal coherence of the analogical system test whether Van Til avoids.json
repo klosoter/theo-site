@@ -1,0 +1,16 @@
+{
+  "period": "Interlocutors & Influences",
+  "question": "Internal coherence of the analogical system test whether Van Til avoids",
+  "file_txt": "out/Interlocutors & Influences/03.Internal coherence of the analogical system test whether Van Til avoids.txt",
+  "generated_at": "2025-10-08T04:59:38.243230Z",
+  "essay_word_count": 1448,
+  "issues": [
+    "### ESSAY: word count 1448 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

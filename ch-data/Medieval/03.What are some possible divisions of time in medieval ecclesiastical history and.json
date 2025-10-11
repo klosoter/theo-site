@@ -1,0 +1,14 @@
+{
+  "period": "Medieval",
+  "question": "What are some possible divisions of time in medieval ecclesiastical history and",
+  "file_txt": "out/Medieval/03.What are some possible divisions of time in medieval ecclesiastical history and.txt",
+  "generated_at": "2025-10-07T19:13:35.427756Z",
+  "essay_word_count": 1192,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

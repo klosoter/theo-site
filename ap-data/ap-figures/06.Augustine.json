@@ -1,0 +1,15 @@
+{
+  "apologist": "Augustine",
+  "file_txt": "out-apol/06.Augustine.txt",
+  "generated_at": "2025-10-07T23:19:32.210517Z",
+  "essay_word_count": 2064,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

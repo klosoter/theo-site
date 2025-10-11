@@ -1,0 +1,14 @@
+{
+  "period": "Ancient",
+  "question": "Discuss the Edict of Milan",
+  "file_txt": "out/Ancient/08.Discuss the Edict of Milan.txt",
+  "generated_at": "2025-10-07T18:30:55.690246Z",
+  "essay_word_count": 1290,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ch": {
+    "categories": [
+      {
+        "key": "1",
+        "label": "Ancient",
+        "count": 12
+      },
+      {
+        "key": "2",
+        "label": "Medieval",
+        "count": 13
+      },
+      {
+        "key": "3",
+        "label": "Reformation",
+        "count": 25
+      },
+      {
+        "key": "4",
+        "label": "Modern",
+        "count": 24
+      }
+    ]
+  },
+  "ap": {
+    "categories": [
+      {
+        "key": "1",
+        "label": "Figures",
+        "count": 33
+      },
+      {
+        "key": "2",
+        "label": "Issues",
+        "count": 15
+      },
+      {
+        "key": "3",
+        "label": "Van Til \u2014 Method Foundations",
+        "count": 8
+      },
+      {
+        "key": "4",
+        "label": "Van Til \u2014 Interlocutors & Influences",
+        "count": 4
+      },
+      {
+        "key": "5",
+        "label": "Van Til \u2014 Debates & Controversies",
+        "count": 4
+      }
+    ]
+  }
+}

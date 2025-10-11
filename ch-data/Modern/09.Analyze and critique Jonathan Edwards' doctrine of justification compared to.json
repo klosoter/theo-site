@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "Analyze and critique Jonathan Edwards' doctrine of justification compared to",
+  "file_txt": "out/Modern/09.Analyze and critique Jonathan Edwards' doctrine of justification compared to.txt",
+  "generated_at": "2025-10-08T00:30:34.616361Z",
+  "essay_word_count": 1406,
+  "issues": [
+    "### ESSAY: word count 1406 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

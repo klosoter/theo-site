@@ -1,0 +1,14 @@
+{
+  "period": "Modern",
+  "question": "How did Republicanism and Common Sense Realism impact theology in North America",
+  "file_txt": "out/Modern/12.How did Republicanism and Common Sense Realism impact theology in North America.txt",
+  "generated_at": "2025-10-08T00:47:23.994600Z",
+  "essay_word_count": 1274,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

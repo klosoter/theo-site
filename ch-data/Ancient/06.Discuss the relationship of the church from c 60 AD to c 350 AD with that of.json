@@ -1,0 +1,16 @@
+{
+  "period": "Ancient",
+  "question": "Discuss the relationship of the church from c 60 AD to c 350 AD with that of",
+  "file_txt": "out/Ancient/06.Discuss the relationship of the church from c 60 AD to c 350 AD with that of.txt",
+  "generated_at": "2025-10-07T18:24:27.381185Z",
+  "essay_word_count": 1374,
+  "issues": [
+    "### ESSAY: word count 1374 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

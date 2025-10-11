@@ -1,0 +1,14 @@
+{
+  "period": "Modern",
+  "question": "What is the relationship of the New School to liberalism and fundamentalism",
+  "file_txt": "out/Modern/18.What is the relationship of the New School to liberalism and fundamentalism.txt",
+  "generated_at": "2025-10-08T01:25:32.446119Z",
+  "essay_word_count": 1281,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

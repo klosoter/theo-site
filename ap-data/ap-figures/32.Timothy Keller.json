@@ -1,0 +1,15 @@
+{
+  "apologist": "Timothy Keller",
+  "file_txt": "out-apol/32.Timothy Keller.txt",
+  "generated_at": "2025-10-08T03:54:47.369248Z",
+  "essay_word_count": 2004,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

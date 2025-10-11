@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "Outline the main structures of John Calvin's Institutes of the Christian",
+  "file_txt": "out/Reformation/17.Outline the main structures of John Calvin's Institutes of the Christian.txt",
+  "generated_at": "2025-10-07T22:24:35.022372Z",
+  "essay_word_count": 1365,
+  "issues": [
+    "### ESSAY: word count 1365 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

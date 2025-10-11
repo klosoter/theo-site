@@ -1,0 +1,16 @@
+{
+  "period": "Medieval",
+  "question": "Some late-medieval theologians fell out of favour with the Roman Catholic",
+  "file_txt": "out/Medieval/12.Some late-medieval theologians fell out of favour with the Roman Catholic.txt",
+  "generated_at": "2025-10-07T20:19:55.215195Z",
+  "essay_word_count": 1480,
+  "issues": [
+    "### ESSAY: word count 1480 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

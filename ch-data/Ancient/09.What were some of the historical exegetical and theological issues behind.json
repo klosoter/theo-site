@@ -1,0 +1,16 @@
+{
+  "period": "Ancient",
+  "question": "What were some of the historical exegetical and theological issues behind",
+  "file_txt": "out/Ancient/09.What were some of the historical exegetical and theological issues behind.txt",
+  "generated_at": "2025-10-07T18:38:26.666799Z",
+  "essay_word_count": 1455,
+  "issues": [
+    "### ESSAY: word count 1455 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

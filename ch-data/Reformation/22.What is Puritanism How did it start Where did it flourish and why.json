@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "What is Puritanism How did it start Where did it flourish and why",
+  "file_txt": "out/Reformation/22.What is Puritanism How did it start Where did it flourish and why.txt",
+  "generated_at": "2025-10-07T22:56:35.219968Z",
+  "essay_word_count": 1450,
+  "issues": [
+    "### ESSAY: word count 1450 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

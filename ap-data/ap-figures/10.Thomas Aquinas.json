@@ -1,0 +1,15 @@
+{
+  "apologist": "Thomas Aquinas",
+  "file_txt": "out-apol/10.Thomas Aquinas.txt",
+  "generated_at": "2025-10-07T23:57:15.843759Z",
+  "essay_word_count": 1943,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

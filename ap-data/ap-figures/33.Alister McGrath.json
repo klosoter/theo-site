@@ -1,0 +1,15 @@
+{
+  "apologist": "Alister McGrath",
+  "file_txt": "out-apol/33.Alister McGrath.txt",
+  "generated_at": "2025-10-08T04:02:42.514171Z",
+  "essay_word_count": 1887,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "period": "Medieval",
+  "question": "Can you describe any differences between Thomas's account of soteriology in his",
+  "file_txt": "out/Medieval/08.Can you describe any differences between Thomas's account of soteriology in his.txt",
+  "generated_at": "2025-10-07T19:49:16.191144Z",
+  "essay_word_count": 1410,
+  "issues": [
+    "### ESSAY: word count 1410 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

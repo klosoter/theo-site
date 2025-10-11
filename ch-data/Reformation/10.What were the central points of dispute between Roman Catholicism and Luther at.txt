@@ -1,0 +1,65 @@
+### TITLE
+Fault Lines Between Rome and Luther 1517 to 1563
+
+### PREVIEW NOTES
+- Time and setting: Western Latin Christendom, from 1517 to the Council of Trent closing in 1563.
+- Central question: Who authorizes Christian truth and how is a sinner justified before God.
+- Martin Luther, Augustinian friar and professor, catalyst of reform.
+- Pope Leo X, pontiff during the indulgence crisis.
+- Johann Tetzel, indulgence preacher and spark for protest.
+- Johann Eck, Catholic controversialist who forced the authority issue.
+- Philip Melanchthon, Lutheran theologian and author of the Augsburg Confession.
+- Key themes: Scripture and tradition, justification, sacraments, church authority, human freedom and grace.
+- Major texts: Ninety Five Theses 1517, three treatises 1520, Bondage of the Will 1525, Augsburg Confession 1530.
+- Major events: Leipzig Debate 1519, Diet of Worms 1521, Marburg Colloquy 1529, Council of Trent 1545 to 1563.
+- Wider context: Late medieval penitential system, humanism, conciliar crisis, and pastoral anxiety.
+- Legacy cue: Confessionalization in Europe and long term doctrinal realignment.
+
+### ESSAY
+The quarrel that remade the Western church in the early sixteenth century can be stated with stark simplicity. Who speaks for God, and how can guilty humanity stand in the divine courtroom. Roman Catholicism and Luther answered those questions with rival logics, and polemic quickly hardened into institutional rupture. Though the spark was indulgences in 1517, the fuel was deeper, an edifice of authority, sacramental practice, and soteriology that Luther believed obscured the gospel.
+
+The late medieval church had endured the Great Western Schism from 1378 to 1417 and experimented with conciliar remedies. It had settled into a penitential regime that joined contrition, confession, and satisfaction, undergirded by a treasury of merits and mediated by priestly absolution. Pastoral manuals, pilgrimages, and masses for the dead shaped lay piety. Scholastic theology, especially the via moderna, taught that God accepts the one who does what lies within him, a maxim that left scrupulous consciences searching for assurance. Humanists, above all Erasmus with his Greek New Testament in 1516, urged a return to sources and moral reform. Yet the Fifth Lateran Council, 1512 to 1517, did not quiet demands for change. Into this landscape stepped Martin Luther of Wittenberg, born 1483, teaching Scripture and haunted by the question of a gracious God.
+
+When the Dominican Johann Tetzel sold indulgences to fund St Peters and secular debts, Luther posted his Ninety Five Theses on 31 October 1517. He aimed at pastoral abuse, arguing that papal pardons could not remit guilt or release souls from purgatory apart from true repentance. Within months the dispute moved from practice to first principles. At the Heidelberg Disputation in April 1518, Luther contrasted a theology of the cross with a theology of glory. Summoned to Augsburg in 1518, he refused to recant before Cardinal Cajetan without Scripture. The crucial turn came at Leipzig in 1519, where Johann Eck pressed Luther to admit that councils err and that Jan Hus had spoken truth. In conceding both, Luther publicly severed the axiom that Scripture is normed by the church.
+
+Luther spelled out his program in three treatises of 1520. The Address to the Christian Nobility of the German Nation attacked the three walls of Rome, that only the pope can interpret Scripture, that only the pope can call a council, and that the spiritual estate is above the temporal. The Babylonian Captivity of the Church dismantled the sacramental system, reducing the seven to two or three and denying the mass as a propitiatory sacrifice. The Freedom of a Christian set the gospel at the center, a word that liberates by faith. Pope Leo X answered with Exsurge Domine in 1520, threatening excommunication unless he recanted. Luther burned the bull and the canon law. At the Diet of Worms in 1521, before Emperor Charles V, he refused to retract unless convinced by Scripture or plain reason. He was placed under the ban, sheltered at the Wartburg, and translated the New Testament into German in 1522.
+
+As Luther reworked liturgy and pastoral life in Saxony, the dispute crystallized around two axes. The formal principle concerned authority. Luther insisted that Scripture alone, rightly preached and heard, binds the conscience. Tradition and councils are valuable but corrigible. Rome insisted that Scripture and unwritten traditions are a single deposit of revelation authentically interpreted by the church under episcopal and papal authority. The material principle concerned justification. Luther taught that sinners are justified by faith alone, receiving the alien righteousness of Christ imputed to them. Good works follow as the fruit of faith but cannot contribute to acceptance before God. Rome taught that justifying grace is infused, transforming the soul, and that faith formed by love cooperates with grace toward final justification. The difference ran to the core of preaching and conscience.
+
+Around these principles the sacramental disputes unfolded. Luther affirmed two sacraments instituted by Christ with a promise, Baptism and the Supper, and at times treated absolution as a sacramental word. He attacked the mass as an offering for the living and the dead, insisting that it is a testament to be received by faith. He rejected transubstantiation as a philosophical account, yet maintained the real presence, teaching a sacramental union. He redefined penance as the daily return to baptismal promise, and repudiated indulgences as pastoral fiction. Rome reaffirmed seven sacraments, the priestly character, and the ex opere operato efficacy of rites by divine institution, anchored in the churchs sacrificial act in the Eucharist.
+
+The human will and its freedom became a second order flashpoint. Erasmus, wary of dogmatic conflict, urged moral reform. Luther answered with On the Bondage of the Will in 1525, declaring that after the fall the will is bound in sin and that salvation rests in Gods monergistic grace. Rome taught the necessity of grace from first to last, yet defended a healed cooperation of the will under grace and upheld merits de condigno for the justified. The anthropological debate shaped every other debate, from the scope of the law to the meaning of sanctification.
+
+The Lutheran movement faced its own internal trials. At the Marburg Colloquy in 1529, Luther and Zwingli failed to agree on the Supper, Luther insisting on the words This is my body. Yet on the Roman front the lines remained steady. Melanchthon drafted the Augsburg Confession in 1530, presenting Lutheran teaching as evangelical catholicity, not sectarian novelty. The Diet of Augsburg rejected it, and the Smalcald League formed. Luther summarized his convictions again in the Smalcald Articles in 1537, naming the mass as the chief abomination and justification by faith as the article by which the church stands or falls.
+
+The decisive Catholic response came with the Council of Trent, meeting from 1545 to 1563 under shifting political pressures. In 1546 Trent defined the canon, including the deuterocanonical books long read in the church, and authorized the Vulgate as the authentic Latin edition for public use. In 1547 session six declared that the impious is justified by grace through Christ, yet denied that justification is by faith alone, anathematizing the claim that the justified have no inherent righteousness. It taught that grace truly makes the ungodly just, that the believer can increase in justice, and that mortal sin after baptism endangers that state. Session seven in 1547 reaffirmed seven sacraments. Session thirteen in 1551 defined transubstantiation, the real presence, reservation of the sacrament, and the sacrificial character of the mass. Discipline was reformed, bishops were urged to reside, and seminaries were mandated, but the theological decisions fixed the points at issue.
+
+What, then, were the central disputes. First, Scripture and its interpreter. Luther granted no infallible human magisterium and required the church to be measured by the gospel. Rome bound Scripture to apostolic tradition in a living teaching office. Second, justification. Luther taught a forensic declaration grounded in Christs righteousness received by faith alone. Rome taught an intrinsic renewal in which faith, hope, and love cooperate under grace. Third, the sacraments and the mass. Luther pared the sacramental economy to the instituted promises and denied the mass as propitiatory. Rome reaffirmed seven sacraments, transubstantiation, and the Eucharist as sacrifice. Fourth, ecclesiology and ministry. Luther elevated the priesthood of all the baptized and defined the church by the right preaching of the word and the right administration of the sacraments. Rome maintained hierarchical succession and papal primacy as willed by Christ, with sacramental character marking ordained clergy. Fifth, anthropology and grace. Luther declared the will bound and salvation monergistic. Rome taught a wounded, not destroyed, freedom healed and elevated by grace.
+
+Reception was swift and hardening. Confessional documents multiplied, from the Lutheran Apology of the Augsburg Confession in 1531 to the Roman Catechism after Trent in 1566. Universities taught rival systems, catechisms formed rival pieties, and princes enforced rival confessions. The long view shows both reform and clarification. Rome cleaned up abuses, trained clergy, and evangelized widely, while Lutherans consolidated pastoral reforms and indexed piety to the preached word. The chasm remained, though later centuries moderated tones. The twentieth century saw dialogues on justification and Scripture, yet the Reformation era had already drawn the decisive lines.
+
+At bottom, the dispute was a struggle to hear the gospel with assurance and to locate the voice that authoritatively binds conscience.
+
+### RECAP NOTES
+- Setting and context: Western Christendom in crisis from 1517 to Trent 1545 to 1563, amid late medieval penitence, humanism, and post schism instability.
+- Core focus: Authority for Christian truth and the manner of a sinners justification.
+- Luther, Wittenberg reformer, key works Ninety Five Theses 1517, three treatises 1520, Bondage of the Will 1525, aim to restore gospel clarity.
+- Pope Leo X, pontiff who issued Exsurge Domine 1520 and oversaw early response.
+- Johann Eck, theologian at Leipzig 1519, pressed papal and conciliar authority claims.
+- Philip Melanchthon, author of the Augsburg Confession 1530, systematized Lutheran teaching.
+- Sola scriptura, Scripture alone as the only infallible norm for doctrine.
+- Sola fide, justification by faith alone with Christs righteousness imputed.
+- Sacramental economy, Rome held seven sacraments and a sacrificial mass, Luther reduced to instituted promises.
+- Ecclesiology, Rome taught hierarchical succession and papal primacy, Luther defined church by word and sacrament with the priesthood of all believers.
+- Free will and grace, Luther taught the wills bondage and monergistic salvation, Rome taught healed cooperation under grace.
+- Ninety Five Theses 1517, ignited the indulgence controversy and questioned papal power over penalties.
+- Leipzig Debate 1519, forced Luther to deny infallible papal supremacy and council inerrancy.
+- Diet of Worms 1521, Luther refused to recant and was placed under the ban.
+- Marburg Colloquy 1529, Luther and Zwingli split over the real presence.
+- Augsburg Confession 1530, Lutheran summary presented to the emperor and rejected.
+- Council of Trent 1545 to 1563, defined canon, justification in 1547, sacraments in 1547, and Eucharist in 1551, and mandated reforms.
+- Turning point: 1520 treatises reframed the dispute from abuses to foundations.
+- Turning point: Worms 1521 transformed an academic quarrel into an imperial breach.
+- Turning point: Trent fixed Catholic doctrine and closed the door to compromise.
+- Historiography: Material principle justification by faith and formal principle Scripture alone often used to summarize the divide.
+- Legacy: Confessional Europe emerged, with lasting doctrinal boundaries and competing catechetical cultures.

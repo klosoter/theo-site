@@ -1,0 +1,68 @@
+### TITLE
+Tertullian and Cyprian of Carthage, Rigor and Unity in an Early Latin Ecclesiology
+
+### PREVIEW NOTES
+- Late second to mid third century, Roman Carthage and the Latin West.
+- Aim: explain how social, legal, and crisis contexts shaped their visions of the church.
+- Tertullian, Carthaginian theologian and polemicist.
+- Cyprian, bishop of Carthage and martyr.
+- Regula fidei, a concise apostolic summary that norms Scripture reading.
+- Apostolicity and tradition, living transmission through identifiable churches.
+- Martyrdom and discipline, identity forged in witness and penitential rigor.
+- Episcopal unity, one episcopate shared across many sees.
+- Sacramentum unitatis, the church as the visible bond of communion.
+- Extra ecclesiam nulla salus, salvation bound to the church.
+- De Praescriptione Haereticorum, sets legal strategy for excluding heresy from Scripture.
+- De Pudicitia, clashes over penance and the power of the keys.
+- Decian persecution 250 to 251, triggers the lapsi crisis.
+- Carthage synods 251 and 255 to 256, manage readmission and rebaptism debates.
+- Conflict with Stephen of Rome, tests interchurch authority and custom.
+- Wider context, Latinization of theology, Gnostic movements, and imperial law.
+- Legacy cue, seeds for later debates with Novatianists and Donatists and for primacy claims.
+
+### ESSAY
+Two Carthaginian voices, writing within two generations of each other, gave the Latin West some of its earliest and most durable ways of speaking about the church. Tertullian, a fiery advocate for moral clarity and apostolic tradition, forged an ecclesial vision in the crucible of anti heretical struggle and prophetic enthusiasm. Cyprian, a bishop who led through persecution and schism, translated that vision into a public doctrine of unity, sacrament, and episcopal order. Their settings were similar, yet their modes differ, one forensic and charismatic, the other administrative and sacramental. Together they mark a path from boundary drawing to bond making.
+
+Carthage around 200 was a bustling provincial capital, steeped in Roman law, Latin rhetoric, and the habits of voluntary associations. The church in North Africa was growing, urban, and publicly visible. It faced Gnostic teachers who claimed secret knowledge, critics who mocked Christian novelty, and magistrates who enforced imperial policy in fits and starts. Latin became the medium of theology, and with Latin came legal categories, property rules, and the language of discipline. Under Severan pressure early in the third century, and under the sweeping Decian edict in 250, the church was tested by interrogation, sacrifice demands, and the issuing of libelli that certified compliance. These external pressures, joined to internal contests over prophecy, penance, and the scope of episcopal power, formed the matrix for both Tertullian and Cyprian.
+
+Tertullian, likely trained in rhetoric and law, converted around 197 and wrote across two decades. His De Praescriptione Haereticorum, composed around 200, is a programmatic ecclesial manifesto. Borrowing the legal notion of praescriptio, he argues that heretics have no standing to dispute Scripture with the church. The rule of faith precedes the reading of the text, and the apostolic churches serve as living archives where that rule is preserved. He lists concrete communities and their succession as proof, an early Latin appeal to what Irenaeus had championed in Greek. Scripture is thus read within a public tradition and under the custody of communities that can name their founders.
+
+From this follows a seven sided vision of the church. First, the church is apostolic, identifiable by the continuity of its rule and its communion with acknowledged sees. Second, it is one, not a federation of private schools. Third, it is holy, because it cultivates discipline and witness. Fourth, it is catholic in the sense of spanning the empire, not confined to a sect. Fifth, it is guided by the Spirit, whose charismata are still known. Sixth, it is a juridical body with elders, readers, virgins, and the orders of ministry. Seventh, it is a martyr church that recognizes the baptism of blood.
+
+These accents ring through his other writings. In De Baptismo he describes catechesis, exorcism, and the integrity of the sacrament, warning against novelty. In Adversus Praxean, likely around 213, he defends the trinitarian rule and in passing affirms the church as the home of right confession. In De Corona he treats the clash between Christian loyalty and military customs, again making the church the guardian of non negotiable practices. The sharpest ecclesial edge appears in De Pudicitia, written after the bishop of Rome had announced forgiveness for adultery and fornication after penance. Tertullian denounces this as an unlawful extension of the power of the keys. Here his rigorist turn is clear, influenced by the New Prophecy that prized ecstatic utterance and strict morals. The bond of the church is preserved, for him, by clear exclusion and rare reconciliation for grave post baptismal sins. The Spirit may grant extraordinary direction, yet that direction ratifies a strict discipline, not leniency.
+
+Cyprian emerges half a century later, a rhetorician converted around 246, elected bishop of Carthage in 249. Almost immediately the Decian edict of 250 demanded public sacrifice from all citizens. The North African church fractured along three lines. Some lapsed and sought re entry with certificates. Some confessors, imprisoned but unbroken, issued letters of peace on their own authority. Others held out for a rigorist policy that denied any return. Cyprian withdrew temporarily, not to abandon his flock but to govern by letters and to avoid arbitrary martyrdom. His On the Lapsed, written in 251, charted a graded penance, severe but possible, refusing both casual readmission and irreversible exclusion. The key, he argued, was the unity of the church.
+
+On the Unity of the Catholic Church, also in 251, sets the ecclesial doctrine that defines Cyprian. There is one Christ and one church, he writes, and the unity of the episcopate is a single undivided share distributed among many bishops. The chair of Peter is the sign of unity, though not a jurisdictional overlordship. A bishop is truly a bishop only within the fellowship of the whole, and the sacrament of unity, sacramentum unitatis, is a visible reality in shared Eucharist and mutual recognition. He sharpens the claim with the sentence that became a watchword, outside the church there is no salvation. This does not deny Gods freedom, it binds Christian salvation to the visible communion where Christ is present.
+
+Cyprian worked these principles into governance during and after the crisis. At Carthage in 251 he convened a synod that restored order, set procedures for reconciling the lapsed, and rejected both laxist and rigorist schisms. He navigated a local schism led by Felicissimus and faced the Roman schism of Novatian, who had set himself up as a rival bishop after Cornelius was elected. Cyprian supported Cornelius, argued against Novatianist absolutism, and grounded his case in the collegiality of bishops. He wrote letters across Africa, to Rome, and to Spain, modeling interchurch deliberation and defending synodical practice.
+
+A second wave of conflict tested his vision in 255 to 256, when the African bishops decided that baptisms administered by heretics were invalid and that converts must be rebaptized. Cyprian agreed, since sacraments were for him inseparable from the unity of the church. Bishop Stephen of Rome upheld an older Roman custom that accepted the form of baptism if done in the name of the Trinity and required only the laying on of hands. The exchange grew hot. Stephen threatened to break communion. Cyprian replied that each bishop judges within his own see, and that unity is preserved by charity, not by compulsion. Councils at Carthage in 255 and 256 reaffirmed the African position. The dispute was left unsettled when persecution resumed. Cyprian was martyred in 258 under Valerian, sealing his teaching with witness.
+
+The turn from Tertullian to Cyprian shows an evolution shaped by concrete pressures. Tertullian fought Gnostics and laxity by restricting access to Scripture with the rule of faith and by holding a strict view of penance. He prized prophecy and martyr witness as signs that the Spirit still guarded the boundaries of the flock. His legal imagination made the church a corporate body with standing, archives, and customary law. Cyprian, inheriting that corporate imagination, argued that the church is not only bounded but bonded. The unity of a single episcopate, the exchange of letters and councils, the public reconciliation of penitents, and the communion of altars across cities, these enact the church as sacrament. He tethered salvation to this visibility and gave western theology a template for thinking about schism, sacrament, and office.
+
+Reception confirmed both lines in unexpected ways. Novatianists claimed Tertullianist rigor, yet Cyprian had already shown why absolute exclusion violates unity. Donatists in the fourth century appealed to Cyprian on rebaptism and purity. Augustine, in debates that culminated at Carthage in 411 and continued through 418, answered with Cyprians deeper vision of one episcopate and the priority of unity over rebaptism. Roman claims for primacy later invoked the chair of Peter passage, while critics noted that Cyprian asserted the equal authority of bishops. Tertullian bequeathed a Latin lexicon of regula fidei, disciplina, and praescriptio that shaped canonical thinking even when his Montanist sympathies were rejected. Cyprian established synodical habits and a rhetoric of visible communion that stretched from Africa to Gaul and Rome.
+
+Both men speak as sons of Carthage, trained in law and letters, tried by public pressure, and pressed by internal turmoil. Tertullian traced the line that marks the church off from the world and from heresy. Cyprian drew the circle that binds believers together in one episcopate and one sacrament of unity. Their visions differ in accent, but converge in the conviction that Christ has given his church a rule, a visible order, and a costly witness.
+
+### RECAP NOTES
+- Roman North Africa, late second to mid third century, Latin Christian communities under legal scrutiny and intermittent persecution.
+- Focus: how social and crisis contexts formed Tertullian and Cyprian on the church.
+- Tertullian, Carthaginian theologian, De Praescriptione Haereticorum c. 200, De Baptismo, De Pudicitia, rigorist discipline and appeal to apostolic churches.
+- Cyprian, bishop of Carthage 249 to 258, On the Lapsed 251, On the Unity of the Catholic Church 251, synodal leader and martyr.
+- Regula fidei, apostolic summary that governs Scripture and excludes novelty.
+- Apostolicity, continuity of churches and ministers as public proof of doctrine.
+- Martyrdom as baptism of blood, witness that seals identity and sometimes remits sin.
+- Disciplina, strict penitential norms guarding holiness and order.
+- Episcopatus unus, a single episcopate shared by all bishops, the structural core of unity.
+- Sacramentum unitatis, the church as visible communion in faith, sacraments, and bishops.
+- Extra ecclesiam nulla salus, salvation tied to visible communion with the church.
+- De Praescriptione c. 200, bars heretics from Scripture disputes, elevates tradition.
+- Decian persecution 250 to 251, produces lapsi and confessors and triggers the penance debate.
+- Carthage synod 251, graded reconciliation of the lapsed and rejection of schisms.
+- Rebaptism councils 255 to 256, Africa upholds rebaptism of heretics, clash with Stephen of Rome.
+- Turning point, Tertullian turns to prophetic rigor and denounces Roman leniency in De Pudicitia.
+- Turning point, Cyprian articulates one episcopate and synodal governance in 251.
+- Turning point, conflict with Stephen 255 to 256 tests interchurch authority and custom.
+- Brief historiography, Donatists invoke Cyprian on purity while Augustine cites his higher unity to oppose rebaptism in 411 to 418.
+- Legacy, Tertullian furnishes Latin categories of rule and discipline, Cyprian stabilizes western patterns of episcopal collegiality and visible unity.

@@ -1,0 +1,68 @@
+### TITLE
+From student to master: Aquinas on salvation in the Sentences and the Summa
+
+### PREVIEW NOTES
+- Mid thirteenth century, University of Paris then Dominican schools in Italy
+- Aim: trace how Aquinas refines soteriology from early Sentences commentary to the Summa Theologiae
+- Thomas Aquinas, Dominican master and systematizer
+- Peter Lombard, textbook architect who frames the youthful project
+- Anselm of Canterbury, theorist of satisfaction and fittingness
+- Augustine of Hippo, source on grace, charity, and predestination
+- Justification, formal cause and the fourfold account of its acts
+- Merit, condign and congruent, grounded in charity and promise
+- Christ's passion, multiform causality of salvation
+- Sacraments, instrumental causality and ex opere operato efficacy
+- Scriptum super Sententiis 1252 to 1256, apprentice stage
+- Summa Theologiae 1265 to 1274, mature synthesis
+- Lateran IV 1215, background on sacraments and grace
+- Aristotelian surge in scholastic method and causality language
+- Legacy prompt, the Summa standardizes later Latin debates on grace and merit
+
+### ESSAY
+The question of what changed in Aquinas between the early classroom pages of his Sentences commentary and the later architecture of the Summa Theologiae is not a hunt for reversals so much as a tracing of maturation. In salvation doctrine, the young bachelor at Paris in 1252 to 1256 writes under the dialectical pressure of Peter Lombard and the groove of Augustinian and Anselmian sources. A decade later, the master who composes the Summa from 1265 to 1274 reworks those lines into a more Aristotelian and integrated account, especially in how causes are named, ordered, and coordinated.
+
+Begin with the frame. The Sentences commentary forces its author to move topic by topic as Lombard arranged them. Aquinas meets soteriology in Book III on Christ and Book IV on the sacraments and last things, with scattered treatments of grace and predestination where the Lombard set them. The later Summa rearranges the entire project around God as source and end. Thus salvation appears as exitus and reditus, from the Creator through Christ and the sacraments back to beatitude. That reordering alone affects soteriology. In the Summa, justification in the soul, the merits of Christ, sacramental causality, and the final vision are no longer discrete discussions but a single vector toward beatitude.
+
+Context also matters. The early Aquinas is already reading Aristotle through Albert the Great, yet the deployment of causes in the Sentences is episodic and sometimes hesitant. By the time he writes Prima Secundae and Tertia Pars, four cause analysis and a refined account of habit are his everyday tools. That methodological growth largely explains the differences.
+
+Take justification first. In the Sentences Aquinas aligns with the Augustinian line against purely extrinsic accounts. Grace is an infused habit that heals and elevates. He speaks of remission of sins, of charity as the form of the virtues, and of the free will moved by God. Yet the structure of the act remains diffuse. In the Summa, I II question 113, he delivers the classic fourfold description of justification: the infusion of grace as efficient and formal causality on the part of God, the movement of the free will toward God through faith, the movement away from sin through penance, and the remission of guilt as the terminus of the divine motion. He explicitly names the formal cause as habitual grace and charity, the efficient cause as God alone, the instrumental causes as the sacraments where applicable, and the final cause as the glory of God and the salvation of the person. The early commentary implies most of this, but the Summa sets the sequence and the causes with a precision that became standard.
+
+Next consider merit. In the Sentences Aquinas rehearses the twofold distinction of congruent and condign merit and ties merit to charity, yet his argument leans heavily on authorities and less on systematic reasons. By the Summa, II II and I II questions 114, he fixes the ground of condignity in the friendship of charity and the divine promise. Because God has adopted the just as friends and members of Christ, and has promised a reward to acts proceeding from grace, there is a true proportion not of strict equality but of covenantal fittingness grounded in the dignity of grace. He denies that anyone can merit initial grace, he affirms that one in grace can merit increase and eternal life, and he restricts merit for others to congruent merit, that is, impetratory asking that God can grant by mercy. The Sentences contains each piece, but the Summa locks them into a coherent judicial and moral schema.
+
+The passion of Christ stands at the heart of soteriology, and here the development is perhaps most visible. In the Sentences Aquinas follows Anselm closely. Satisfaction is central, Christ bears the punishment due to sin and offers it in charity. There are moments of strong language about necessity, mirroring Cur Deus Homo. By Tertia Pars, questions 46 to 49, he presses more firmly the distinction between absolute and conditional necessity. God could have redeemed otherwise, yet this way was most fitting to justice and mercy. He then multiplies the modes by which the passion causes salvation. It is meritorious because of Christ's charity and obedience, satisfactory because it equals and exceeds the debt of sin, sacrificial because it is the oblation of the true high priest, efficient because it pours forth grace through the head into the members, and redemptive because it pays the price that liberates from bondage. He also adds exemplary causality to shape our lives. The Sentences anticipates these lines, but without the ordered catalog and the careful placement of each under a type of causality.
+
+Connected to that lies the doctrine of Christ's headship and capital grace. In the Sentences, Aquinas affirms that Christ has the fullness of grace for his personal sanctity and for others, yet the mode by which his grace flows into the members remains underdeveloped. In the Summa he articulates the headship as a causal role rooted in the unity of the mystical body, Christ as head communicates grace to members, and this communication uses his humanity as an instrument conjoined to the Word. Capital grace names precisely the habit in Christ by which he merits and causes grace for us. The whole becomes a tight Christological soteriology, where the humanity of Christ is the instrument of divinity for our healing.
+
+Sacramental theology shows a similar sharpening. The Sentences endorses the traditional list and their general effects. Yet instrumental causality receives fuller articulation later. In Tertia Pars questions 62 to 68, sacraments are efficient instruments of Christ's passion, working ex opere operato by virtue of the passion and the institution of Christ, while the disposition of the recipient is required to receive the fruit properly. Baptism confers character and remission, penance has matter and form in contrition, confession, and satisfaction, and the Eucharist contains Christ substantially as the source of unity and charity. The early account knows these themes but does not set them in the network of principal and instrumental causes with the same clarity.
+
+Predestination and reprobation also see clarification. In the Sentences, Aquinas follows Augustine and speaks of predestination to glory and the permission of sins, with efforts to safeguard divine sovereignty and human freedom. In the Summa, I question 23, he anchors predestination within providence as the plan for rational creatures to reach their end. Predestination includes both the preparation of grace and the bestowal of glory, while reprobation involves the will to permit fault and to inflict just punishment. He stresses that God moves the will without violence, that grace is first in order, and that the order of intention is to mercy, while justice appears in the order of execution. Again, no new doctrine, but a calmer, more architectonic exposition.
+
+Finally, the end itself. In both works Aquinas holds to the beatific vision as our salvation. In the Summa, I question 12 and I II question 3, with echoes in Tertia Pars on the fruits of the passion, he details the lumen gloriae by which the intellect is elevated to see the divine essence. The Sentences supports this line but lacks the precise account of the light as an infused habit proportioning the intellect to God as object.
+
+What drives this development is the consolidation of an Aristotelian account of habit, act, and cause within a theological narrative governed by Scripture and the Fathers. The later work prefers fittingness to strict necessity in atonement, friendship to servile obedience in merit, instrumental causality to vague talk of sacramental signs, and the precise coordination of interior motions and divine action in justification. It is the same Aquinas, but now with the mature voice of a master teaching out of his own plan rather than within Lombard's.
+
+Reception confirms the point. Medieval readers mined the Sentences for quaestiones, but the Summa became the handbook that organized disputes from the fourteenth century through Trent. The Paris condemnations of 1277 did not target his soteriology, yet they sharpened later readers about divine power and the fittingness claims Aquinas made. By the time grace and merit were debated in the fifteenth and sixteenth centuries, the Summa's structures on justification, merit, and sacraments set the terms of Catholic argument. The differences between the two works thus mark not a shift in allegiance but the maturing of a grammar of salvation that proved durable.
+
+The young bachelor sketches the path, the master paves it and numbers the stones.
+
+### RECAP NOTES
+- Paris classroom 1252 to 1256 for the Sentences, Dominican schools 1265 to 1274 for the Summa
+- Focus: how Aquinas's soteriology develops from early commentary to mature synthesis
+- Thomas Aquinas, Scriptum super Sententiis and Summa Theologiae, systematizes grace and salvation
+- Peter Lombard, source framework that shapes the early presentation
+- Anselm of Canterbury, satisfaction and fittingness influence on atonement
+- Augustine of Hippo, grace, charity, predestination as deep sources
+- Justification, fourfold act in the Summa with formal cause in infused grace and charity
+- Merit, condign grounded in charity and promise, congruent as impetration for others
+- Christ's passion, causes salvation as merit, satisfaction, sacrifice, efficient cause, and redemption
+- Sacraments, instrumental causes of grace ex opere operato rooted in the passion
+- Predestination, part of providence ordering to glory, mercy first in intention
+- Beatific vision, lumen gloriae elevates intellect to see God
+- Scriptum super Sententiis 1252 to 1256, exploratory and Lombard driven arrangement
+- Summa Theologiae 1265 to 1274, architectonic integration of causes and ends
+- Lateran IV 1215 frames sacramental background, Paris condemnations 1277 touch reception context
+- Turning point: adoption of a four cause analysis applied across soteriology
+- Turning point: shift from strong necessity to fittingness in atonement language
+- Turning point: precise grounding of condign merit in friendship and promise
+- Historiography notes a maturation rather than reversal, with continuity in Augustinian commitments
+- Legacy, the Summa's account became the Latin Catholic template for later debates on grace and merit

@@ -1,0 +1,16 @@
+{
+  "period": "Interlocutors & Influences",
+  "question": "Religious pluralism assess the adequacy of Van Til's method for engaging Islam",
+  "file_txt": "out/Interlocutors & Influences/02.Religious pluralism assess the adequacy of Van Til's method for engaging Islam.txt",
+  "generated_at": "2025-10-08T04:54:58.486236Z",
+  "essay_word_count": 1483,
+  "issues": [
+    "### ESSAY: word count 1483 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

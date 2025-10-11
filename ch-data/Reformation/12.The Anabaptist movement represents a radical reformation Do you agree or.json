@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "The Anabaptist movement represents a radical reformation Do you agree or",
+  "file_txt": "out/Reformation/12.The Anabaptist movement represents a radical reformation Do you agree or.txt",
+  "generated_at": "2025-10-07T21:51:09.283323Z",
+  "essay_word_count": 1349,
+  "issues": [
+    "### ESSAY: word count 1349 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

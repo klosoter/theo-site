@@ -1,0 +1,16 @@
+{
+  "period": "Ancient",
+  "question": "Analyze the influences and contexts that shaped Tertullian's and Cyprian's",
+  "file_txt": "out/Ancient/02.Analyze the influences and contexts that shaped Tertullian's and Cyprian's.txt",
+  "generated_at": "2025-10-07T18:00:08.418302Z",
+  "essay_word_count": 1403,
+  "issues": [
+    "### ESSAY: word count 1403 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

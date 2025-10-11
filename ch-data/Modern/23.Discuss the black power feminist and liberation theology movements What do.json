@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "Discuss the black power feminist and liberation theology movements What do",
+  "file_txt": "out/Modern/23.Discuss the black power feminist and liberation theology movements What do.txt",
+  "generated_at": "2025-10-08T01:45:58.587895Z",
+  "essay_word_count": 1406,
+  "issues": [
+    "### ESSAY: word count 1406 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

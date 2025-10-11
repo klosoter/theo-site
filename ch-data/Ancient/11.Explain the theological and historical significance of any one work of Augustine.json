@@ -1,0 +1,16 @@
+{
+  "period": "Ancient",
+  "question": "Explain the theological and historical significance of any one work of Augustine",
+  "file_txt": "out/Ancient/11.Explain the theological and historical significance of any one work of Augustine.txt",
+  "generated_at": "2025-10-07T18:46:41.267806Z",
+  "essay_word_count": 1339,
+  "issues": [
+    "### ESSAY: word count 1339 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

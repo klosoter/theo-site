@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "What historical conditions or events positively helped to facilitate the",
+  "file_txt": "out/Reformation/02.What historical conditions or events positively helped to facilitate the.txt",
+  "generated_at": "2025-10-07T20:46:31.163182Z",
+  "essay_word_count": 1415,
+  "issues": [
+    "### ESSAY: word count 1415 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

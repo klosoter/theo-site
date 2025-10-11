@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "What are the key distinctives of Jonathan Edwards' theology and philosophy and",
+  "file_txt": "out/Modern/08.What are the key distinctives of Jonathan Edwards' theology and philosophy and.txt",
+  "generated_at": "2025-10-08T00:25:14.507870Z",
+  "essay_word_count": 1304,
+  "issues": [
+    "### ESSAY: word count 1304 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

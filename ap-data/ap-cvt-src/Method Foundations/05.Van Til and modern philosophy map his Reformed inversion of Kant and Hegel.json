@@ -1,0 +1,16 @@
+{
+  "period": "Method Foundations",
+  "question": "Van Til and modern philosophy map his Reformed inversion of Kant and Hegel",
+  "file_txt": "out/Method Foundations/05.Van Til and modern philosophy map his Reformed inversion of Kant and Hegel.txt",
+  "generated_at": "2025-10-08T03:52:53.715232Z",
+  "essay_word_count": 1553,
+  "issues": [
+    "### ESSAY: word count 1553 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

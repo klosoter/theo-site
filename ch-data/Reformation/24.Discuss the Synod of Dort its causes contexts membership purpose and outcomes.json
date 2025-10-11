@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "Discuss the Synod of Dort its causes contexts membership purpose and outcomes",
+  "file_txt": "out/Reformation/24.Discuss the Synod of Dort its causes contexts membership purpose and outcomes.txt",
+  "generated_at": "2025-10-07T23:17:20.525875Z",
+  "essay_word_count": 1384,
+  "issues": [
+    "### ESSAY: word count 1384 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

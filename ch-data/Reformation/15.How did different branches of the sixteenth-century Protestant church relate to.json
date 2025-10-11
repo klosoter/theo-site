@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "How did different branches of the sixteenth-century Protestant church relate to",
+  "file_txt": "out/Reformation/15.How did different branches of the sixteenth-century Protestant church relate to.txt",
+  "generated_at": "2025-10-07T22:11:29.092349Z",
+  "essay_word_count": 1480,
+  "issues": [
+    "### ESSAY: word count 1480 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

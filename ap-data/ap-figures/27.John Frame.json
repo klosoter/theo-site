@@ -1,0 +1,15 @@
+{
+  "apologist": "John Frame",
+  "file_txt": "out-apol/27.John Frame.txt",
+  "generated_at": "2025-10-08T02:31:00.121207Z",
+  "essay_word_count": 2077,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

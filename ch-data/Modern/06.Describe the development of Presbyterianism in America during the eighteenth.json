@@ -1,0 +1,16 @@
+{
+  "period": "Modern",
+  "question": "Describe the development of Presbyterianism in America during the eighteenth",
+  "file_txt": "out/Modern/06.Describe the development of Presbyterianism in America during the eighteenth.txt",
+  "generated_at": "2025-10-08T00:10:49.740800Z",
+  "essay_word_count": 1316,
+  "issues": [
+    "### ESSAY: word count 1316 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

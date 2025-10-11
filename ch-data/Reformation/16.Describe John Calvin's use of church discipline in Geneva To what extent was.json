@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "Describe John Calvin's use of church discipline in Geneva To what extent was",
+  "file_txt": "out/Reformation/16.Describe John Calvin's use of church discipline in Geneva To what extent was.txt",
+  "generated_at": "2025-10-07T22:21:22.650828Z",
+  "essay_word_count": 1308,
+  "issues": [
+    "### ESSAY: word count 1308 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "period": "Modern",
+  "question": "How did Jonathan Edwards defend the revivals of the Great Awakening against the",
+  "file_txt": "out/Modern/10.How did Jonathan Edwards defend the revivals of the Great Awakening against the.txt",
+  "generated_at": "2025-10-08T00:38:23.485827Z",
+  "essay_word_count": 1225,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "How important were debates over public worship in the development of English",
+  "file_txt": "out/Reformation/20.How important were debates over public worship in the development of English.txt",
+  "generated_at": "2025-10-07T22:45:47.159806Z",
+  "essay_word_count": 1351,
+  "issues": [
+    "### ESSAY: word count 1351 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

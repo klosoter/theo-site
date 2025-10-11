@@ -1,0 +1,82 @@
+### TITLE
+Periodizing Medieval Ecclesiastical History
+
+### PREVIEW NOTES
+- Time and setting: Latin West and Christian East across Europe and the Mediterranean, roughly 500-1517
+- Central aim: map workable divisions of medieval church history and briefly characterize each period with firm dates
+- Gregory the Great, Roman pastor and mission strategist
+- Charlemagne, imperial partner in Carolingian reform
+- Gregory VII, architect of the papal reform
+- Innocent III, apex of papal monarchy and legal consolidation
+- Thomas Aquinas, scholastic master of theology and sacraments
+- Cyril and Methodius, Slavic apostles and translators
+- Bernard of Clairvaux, monastic reformer and preacher of crusade
+- Wyclif and Hus, late medieval critics and catalysts of reform
+- Papal monarchy, expansion and jurisdiction of the papacy
+- Monastic and mendicant reform, renewal of discipline and mission
+- Scholasticism, university theology, method, and synthesis
+- Conciliarism, theory and practice of council superiority to the pope
+- Mission and conversion, formation of Latin Christendom and Slavic churches
+- Rule of Benedict, template for Western monasticism
+- Concordat of Worms 1122, solution to investiture conflict
+- Lateran IV 1215, high medieval sacramental and canonical settlement
+- Avignon papacy 1309-1377, centralization and controversy
+- Western Schism 1378-1417, crisis of unity resolved at Constance 1414-1418
+- Wider context: collapse of Western empire, rise of Islam, crusades, state formation, printing, and Ottoman advance
+- Legacy cue: chosen period boundaries shape narratives of reform, authority, and the approach to the Reformation
+
+### ESSAY
+Dividing medieval ecclesiastical history is never a neutral act. Dates are arguments, and boundaries are judgments about what really changed the church. Still, a few schemes have proven both teachable and faithful to the texture of events. Here I set out two robust periodizations, one six part sequence keyed to institutional and doctrinal inflection points, and a leaner three part frame useful for exam recall. I then note an East West angle that complicates any single Western line.
+
+A six part scheme begins with post Roman consolidation and mission, 500-800. Here the grammar of Latin Christianity is reset. The Rule of Benedict, composed in the sixth century and widely diffused by 600, channels monastic life toward stability, lectio, and liturgy. Gregory the Great, 590-604, recasts papal pastoral practice through the Pastoral Rule, and sponsors the mission to the Anglo Saxons under Augustine of Canterbury in 597. Irish and Columbanian missions move across Gaul and into Alemannia. Visigothic Spain embraces Nicene faith at Toledo in 589. After 632 the rise of Islam removes vast Christian territories from imperial reach, reorienting Western energies northward. The seventh and eighth centuries learn a new map of the oikoumene, while heredity episcopates, royal monasteries, and a vibrant cult of saints bind fragmented polities into a Christian social imagination. The Second Council of Nicaea in 787 settles icon veneration for the wider church, even as the Latin West had largely missed the Byzantine iconoclast storms.
+
+Second comes Carolingian ordering and Latin Christendom's platform, 800-950. Charlemagne's imperial coronation in 800 crowns a decades long program of correctio. Royal capitularies standardize liturgy and law, the Admonitio generalis of 789 sets the tone, Benedict of Aniane drives monastic uniformity, Alcuin shapes schools and biblical text. The Council of Frankfurt in 794 rejects adoptionism and critiques certain Byzantine formulations. The filioque expands in Frankish usage. Boniface's earlier missionary governance, culminating in his martyrdom in 754, and the subduing of the Saxons embed episcopal structures in the northeast. Yet Viking, Magyar, and Saracen assaults stress these gains by the later ninth century, while royal fragmentation unsettles episcopal patronage.
+
+Third is the era of reform and the papal revolution, 950-1122. Cluny's foundation in 909 models monastic independence and liturgical focus, exporting a reform esprit across Europe. Leo IX, 1049-1054, and allies such as Humbert of Silva Candida make simony and clerical continence the frontline of ecclesial purification. The papal election decree of 1059 wrests papal choice from Roman nobles by privileging cardinal bishops. Gregory VII, 1073-1085, radicalizes the agenda in the Dictatus papae of 1075, claiming papal supremacy in deposing emperors and investing bishops. The investiture conflict unfolds with Henry IV, the walk to Canossa in 1077, and competing hierarchies. The Concordat of Worms in 1122 resolves the core question by dividing temporal and spiritual investiture, allowing kings to confer symbols of temporal authority while bishops receive ring and staff from ecclesiastical hands. The result is a juridical imagination of the church that sets the stage for canon law and the papal monarchy.
+
+Fourth stands the age of papal monarchy, scholastic consolidation, and crusading, 1122-1303. Gratian's Decretum, circa 1140, becomes the keystone of canon law schools. The Second Lateran Council in 1139 and the Third Lateran in 1179 codify discipline and papal elections. Peter Lombard's Sentences, 1150s, supplies the common theological syllabus for generations. The mendicant orders arise as evangelical correctives within an expanding urban society, Francis receives approval in 1209, Dominicans are confirmed in 1216, bringing preaching, poverty, and pastoral care to the heart of diocesan life. Innocent III, 1198-1216, presides at the apex, governing through legates and law, and summoning the Fourth Lateran Council in 1215. Lateran IV mandates annual confession, defines the form of the Eucharist with transubstantiation as the authoritative term, regulates preaching and the pastoral office, and standardizes education. Crusading frames Western horizons, from Urban II at Clermont in 1095 to the loss of Acre in 1291. The Fourth Crusade's capture of Constantinople in 1204 reshapes East West relations and deepens estrangement. Scholastic theology matures in Thomas Aquinas's Summa theologiae, 1265-1274, where sacramental causality, grace, and ecclesial office receive systematic treatment. Boniface VIII, 1294-1303, asserts papal temporal claims in Unam sanctam in 1302, provoking a crisis with Philip IV of France that marks a hinge in papal fortunes.
+
+Fifth is the Avignon papacy and the Western Schism, 1309-1417. The papal court relocates to Avignon in 1309, building centralized finance and administration while critics decry captivity to French influence. The suppression of the Templars in 1312 at Vienne displays papal sovereignty and royal pressure in tandem. Catherine of Siena urges return to Rome, achieved in 1377. The Western Schism breaks in 1378 with rival obediences at Rome and Avignon. An attempted settlement at Pisa in 1409 only multiplies claimants. Constance, 1414-1418, ends the schism by deposing or accepting resignations and electing Martin V, condemning John Wyclif's teachings and Jan Hus in 1415, and formulating a conciliarist claim of superiority in Haec sancta. The damage to papal moral authority is real, though the machinery of church governance proves resilient.
+
+Sixth comes conciliar aftermath and late medieval reform, 1417-1517. The Council of Basel, 1431-1449, extends conciliarism and triggers a prolonged clash with papalists, before retrenchment under Eugenius IV. The Council of Florence issues a decree of union with Byzantium in 1439, a fragile achievement undercut by the fall of Constantinople in 1453. Observant reforms renew Franciscan and Dominican life, while devotio moderna deepens lay piety through meditation and school networks. Vernacular preaching, catechesis, and texts such as the Cloud of Unknowing, circa 1370, and the Imitation of Christ in the early fifteenth century shape interior devotion. Printing after the 1450s and princely statecraft widen the social base for pastoral reform. Lateran V, 1512-1517, attempts structural improvements but lacks bite. Luther's 1517 marks a decisive threshold, and so 1517 closes the medieval ledger for most Western narratives.
+
+A compact threefold scheme serves for rapid recall. One can speak of formation and conversion, 500-1054, culminating in the East West rupture. Then of papal monarchy and scholastic Christendom, 1054-1303, reaching a peak in Innocent III and Lateran IV and closing with Boniface VIII's defeat. Finally, crisis, conciliarism, and pre Reformation, 1305-1517, from Avignon and schism to conciliar settlements and the failure of deep reform before 1517. Another variant moves the mid boundary to 1215, using Lateran IV to mark the consolidation of sacramental and canonical order, and defines the last period as 1215-1517.
+
+An East West frame reminds us that medieval is not only Latin. For Byzantium, the long arc runs from iconoclasm, 726-843, to the trauma of 1204 and the Ottoman ascent. The Photian crisis, 863-867, and 1054 signal deepening estrangement. The mission of Cyril and Methodius to Moravia in 863 and the baptism of Rus in 988 inaugurate Slavic Christianities that develop on a Byzantine model. Lyon 1274 and Florence 1439 offer union attempts that fail to bind the churches together. These lines can be read alongside the Western schemes to keep the medieval story whole.
+
+Whichever scheme one adopts, the point is to connect boundaries to textures of change, and to let the dates illuminate the lived grammar of medieval Christian life.
+
+### RECAP NOTES
+- Setting and context: Latin and Byzantine churches across Europe and the Mediterranean, c. 500-1517, amid empire's fall, Islam's rise, and state formation
+- Core focus: workable period divisions of medieval ecclesiastical history with dates and characterizations
+
+- Gregory the Great, Pastoral Rule and Anglo Saxon mission, papal pastorate 590-604
+- Charlemagne, imperial reform and correctio, coronation 800
+- Gregory VII, Dictatus papae 1075, investiture struggle
+- Innocent III, Lateran IV 1215, apex of papal monarchy
+- Thomas Aquinas, Summa theologiae 1265-1274, sacramental and ecclesial synthesis
+- Cyril and Methodius, Slavic mission 863, script and liturgy
+- Bernard of Clairvaux, Cistercian reformer and crusade preacher
+- Wyclif and Hus, late medieval critique, condemned at Constance 1415
+
+- Papal monarchy, papal claims to jurisdiction over the universal church and kings
+- Monastic and mendicant reform, renewal of discipline and preaching for pastoral need
+- Scholasticism, university method shaping doctrine and canon law
+- Conciliarism, councils claim authority over popes in crisis
+- Mission and conversion, integration of new peoples into Christian structures
+
+- Rule of Benedict, sixth century, template for Western monasticism
+- Council of Frankfurt 794, rejects adoptionism
+- Concordat of Worms 1122, divides temporal and spiritual investiture
+- Lateran IV 1215, mandates confession and defines Eucharistic doctrine
+- Unam sanctam 1302, Boniface VIII asserts papal supremacy
+- Avignon papacy 1309-1377, centralization and controversy
+- Western Schism 1378-1417, Constance 1414-1418 heals division and condemns Hus
+- Florence 1439, short lived union with Byzantium
+
+- Turning points: 800 Carolingian imperial synthesis, 1054 East West rupture, 1122 investiture settlement, 1215 high medieval consolidation, 1378-1417 schism and conciliar turn
+- Alternate boundary choices: 1215 as consolidation marker, 1303 or 1305 as end of papal apex, 1517 as close of medieval arc
+
+- Historiography: dates function as theses, with reform centered and council centered schemes emphasizing different engines of change
+
+- Legacy: boundaries frame narratives of reform, authority, and the transition to early modern Christianity, and keep East and West within one story

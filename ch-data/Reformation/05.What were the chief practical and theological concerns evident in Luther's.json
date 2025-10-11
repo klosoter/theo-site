@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "What were the chief practical and theological concerns evident in Luther's",
+  "file_txt": "out/Reformation/05.What were the chief practical and theological concerns evident in Luther's.txt",
+  "generated_at": "2025-10-07T21:04:34.044990Z",
+  "essay_word_count": 1400,
+  "issues": [
+    "### ESSAY: word count 1400 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

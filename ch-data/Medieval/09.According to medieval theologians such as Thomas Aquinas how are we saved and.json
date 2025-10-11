@@ -1,0 +1,14 @@
+{
+  "period": "Medieval",
+  "question": "According to medieval theologians such as Thomas Aquinas how are we saved and",
+  "file_txt": "out/Medieval/09.According to medieval theologians such as Thomas Aquinas how are we saved and.txt",
+  "generated_at": "2025-10-07T19:53:10.277896Z",
+  "essay_word_count": 1257,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,81 @@
+### TITLE
+Late medieval roads to reform
+
+### PREVIEW NOTES
+- Time and setting: Western Christendom from the Avignon Papacy 1309-1377 to the eve of 1517, across courts, councils, universities, and towns
+- Aim: Identify movements and events that prepared minds, institutions, and practices for the Reformation
+- John Wycliffe, Oxford theologian and critic of papal authority
+- Jan Hus, Prague preacher and reformer condemned at Constance
+- Geert Groote and Thomas a Kempis, devotio moderna piety and Imitation of Christ
+- Lorenzo Valla and Erasmus, humanist philology and ad fontes program
+- William of Ockham and Gabriel Biel, via moderna shaping late scholastic soteriology
+- Girolamo Savonarola, Florentine moral reform preacher
+- Councils of Pisa 1409, Constance 1414-1418, Basel 1431-1449, conciliar reform efforts
+- Avignon Papacy and the Great Schism, crises of papal credibility
+- Printing press after 1450, new media for doctrine and devotion
+- Wider context: plague, war, urban growth, and rising literacy
+- Legacy cue: from reform of head and members to breakthrough reformers after 1517
+
+### ESSAY
+If the Reformation looked sudden in 1517, its prehistory was long, tangled, and formative. Western Christians had been rehearsing arguments about authority, grace, and Christian life for more than a century. By the later Middle Ages a set of movements and shocks had tilled the soil. They did not predetermine outcomes, yet they stocked the toolbox, primed expectations, and opened channels by which reform messages could travel and take hold.
+
+The first context to name is institutional crisis. From 1309 to 1377 popes resided at Avignon, closely tied to French monarchy and administration. Fiscal mechanisms multiplied to fund an international curia, from annates to provisions, and complaints about papal exactions spread through dioceses and courts. Then came the Great Western Schism, 1378-1417, with rival popes and divided obediences. The scandal was practical and theological. Who spoke for Peter when there were two, then three claimants. What bound the church together when its sacramental headship appeared fractured. In response, reformers adopted the slogan reform of head and members, and proposed conciliar remedies that challenged monarchical papalism without rejecting catholic unity.
+
+Conciliarism thus became a defining late medieval impulse. The Council of Pisa in 1409 tried to heal the breach by deposing two popes and electing a third, but only added a claimant. Constance, 1414-1418, succeeded in ending the schism, deposed or accepted the resignation of rivals, elected Martin V, and condemned John Wycliffe posthumously and Jan Hus to death in 1415. Its decree Haec sancta affirmed the authority of a general council over the pope in matters of reform and crisis, a teaching restricted and contested thereafter, yet immensely influential in universities and courts. The Council of Basel, 1431-1449, pushed conciliar ideas hard, negotiated with the moderate Hussites, and provoked papal resistance. Though conciliarism lost the long game, it left a live memory that councils could judge popes, that universal consent mattered, and that jurisdiction and doctrine could be discussed in public forums with canonical rules. That memory underwrote later appeals to national synods and imperial diets.
+
+A second stream was evangelical and dissenting critique. John Wycliffe, c. 1330-1384, grounded authority in Scripture read in the vernacular, attacked papal claims over temporal dominion in De civili dominio and De ecclesia, and in the 1380s rejected the scholastic account of transubstantiation in favor of a remanence view. His followers, the Lollards, spread preaching and Bible translation in English circles, and Arundel's Constitutions of 1408 targeted them, yet the ideal of Bible for the laity lingered. In Bohemia Jan Hus, c. 1372-1415, drew on Wycliffe while rooting reform in preaching, moral critique, and the demand for communion in both kinds for the laity. His death at Constance sparked the Hussite wars, 1419-1436, and produced a negotiated Compactata in 1436 that recognized Utraquist practice in Bohemia. That settlement showed that local reform of sacramental practice could be conceded under pressure. It also introduced a precedent for territorial confessional distinctives long before the Augsburg settlement.
+
+Side by side with dissent came movements of renewed devotion. The devotio moderna arose in the Low Countries in the late fourteenth century under Geert Groote, 1340-1384, and the Brethren of the Common Life. It combined common prayer, vernacular reading, and practical catechesis, with schools that educated clerics and laity. Thomas a Kempis, c. 1380-1471, gave the movement its classic text in the Imitation of Christ, probably compiled 1418-1427. That book trained readers to seek inward humility, to love Scripture, and to distrust empty display. Observant reforms within the mendicant and monastic orders paralleled this lay piety. Observant Franciscans such as John of Capistrano, 1386-1456, and Observant Augustinians renewed discipline, preaching, and catechesis. Many later reformers, including Martin Luther, were shaped in Observant houses and their curriculum.
+
+The intellectual climate also shifted. Late scholasticism had diverse strands, yet in the universities the via moderna, associated with William of Ockham, 1287-1347, and later Gabriel Biel, 1420-1495, set the terms of many soteriological debates. God had established a covenant, so taught Biel, within which he accepted the best a sinner could do, facere quod in se est, and then gave grace congruently. The logic was elegant, pastoral, and widely taught, yet it could foster anxiety about the measure of human contribution and the grading of merit. The same period saw a flourishing of mystical theology, from Meister Eckhart, d. 1328, to Johannes Tauler and the Theologia Germanica, texts that pressed for union with God beyond scholastic distinctions and encouraged an affective reading of Scripture. All of this created a rich but contested map of divine freedom, human cooperation, and the means of grace.
+
+Renaissance humanism added new tools and new questions. Lorenzo Valla, in 1440, dismantled the Donation of Constantine with philological analysis, an act that made textual criticism into ecclesiastical dynamite. Desiderius Erasmus, 1466-1536, published the Greek New Testament in 1516 with a fresh Latin translation, corrected the Vulgate at key points, and issued paraphrases and editions of the fathers. His Enchiridion militis Christiani in 1503 sketched a philosophia Christi, a program of moral renewal grounded in Scripture and simple piety. Humanists placed ad fontes, to the sources, at the center of educational reform, privileging clear grammar and original texts over dialectical complexity. That made them allies of biblical preaching and sharp critics of shaky authorities. It also armed a generation of theologians with the habit of testing tradition by language and context.
+
+Communication technologies amplified these impulses. After the 1450s, printing houses in Mainz, Venice, Basel, Nuremberg, and Lyon multiplied texts, dropped prices, and created a pan European conversation. Devotional works, mastheads of conciliar debates, sermons, school grammars, and Bible portions moved across borders with unprecedented speed. The public for such works was growing, as towns expanded and basic literacy spread through guilds and confraternities. Vernacular preaching and popular religious drama fed the same appetite.
+
+Fiscal and penitential practices also primed conflict. The doctrine of purgatory matured in the twelfth and thirteenth centuries, and by the later Middle Ages an elaborate economy of masses, endowments, and indulgences had developed to aid the dead and penitent. Pope Boniface VIII proclaimed a Jubilee in 1300. Indulgence preaching campaigns raised funds for crusades, hospitals, and building projects, all backed by the theory of the treasury of merits. The practice was legal and pastorally framed, but abuses from commissioned preachers and financial partners were widely noted. The issue would not wait for 1517 to be controversial. Local protests and satire had long catalogued excess and confusion, so when a specific indulgence campaign ran through German territories in the 1510s, memories and critiques were ready to meet it.
+
+National and princely assertions increased the headroom for reform proposals. England passed Statutes of Provisors in 1351 and Praemunire in 1353 to curb papal appointments and external jurisdiction. France issued the Pragmatic Sanction of Bourges in 1438 to affirm conciliar liberties and limit papal revenues. The Holy Roman Empire compiled grievances against Rome at diets in the fifteenth century. Spain under Isabella and Ferdinand and the leadership of Cardinal Cisneros, 1436-1517, reformed cathedral chapters, fostered Observant life, and produced the Complutensian Polyglot, printed 1514-1517. The message was consistent. Kings and magistrates could sponsor real reform, and learned bishops could overhaul local discipline without waiting for a universal solution.
+
+Several late medieval moments stand out as turning points. Constance ended the schism yet failed to enact lasting reform in head and members. Basel negotiated with Hussites, recognized communion in both kinds in Bohemia, and then fractured. The Fifth Lateran Council, 1512-1517, passed measures on preaching, censorship, and curial finance, yet left fundamental grievances intact. These partial successes taught Europe two lessons. Churchwide reform was possible, but the will and structures to deliver it were fragile. Particular churches might act, and where princes backed reform, it could survive.
+
+The theological significance of these pre Reformation currents is clear. Conciliarism reframed authority around corporate deliberation and accountability. Humanism legitimated text based critique and the return to Scripture and the fathers. The devotio moderna and Observant reforms centered the inner life and catechetical clarity. The via moderna forged a grammar about merit and grace that would be argued through and then rejected by evangelical reformers. The dissent of Wycliffe and Hus modeled a biblical polemic against clerical privilege and sacramental doctrine, and their mixed reception demonstrated the power and peril of challenging entrenched theology. Meanwhile, the public learned to expect debate, seek vernacular instruction, and judge by Scripture.
+
+Reception and legacy were uneven, yet cumulative. Many clerics and laypersons sought change while remaining loyal to the church. Others formed communities with distinct practices, Bohemian Utraquists above all. By 1500 the vocabulary of reform was thick, the pressure points were named, and the channels of persuasion were fast. When Luther posted his Ninety Five Theses in 1517, he stepped into a world already trained to dispute indulgences, to measure claims by texts, and to imagine that reform might be territorial and conciliar rather than merely curial.
+
+In sum, late medieval crises, reforms, and renewals fashioned the tools, trained the readership, and set the stage on which the Reformation could appear and be understood.
+
+### RECAP NOTES
+- Setting: Western Christendom 1309-1517, from Avignon to the eve of Luther, amid plague, war, and urban growth
+- Focus: Which late medieval movements, impulses, and events prepared the way for sixteenth century reform
+
+- Wycliffe, De civili dominio and De ecclesia, vernacular Scripture and attack on papal dominion
+- Hus, Prague sermons and Utraquism, martyr at Constance and catalyst for Bohemian reform
+- Geert Groote and Thomas a Kempis, devotio moderna and Imitation of Christ, inward piety and catechesis
+- Valla, Donation of Constantine exposed, model of critical philology
+- Erasmus, Greek New Testament 1516 and Enchiridion 1503, ad fontes and moral reform
+- Ockham and Biel, via moderna and facere quod in se est, covenantal account of merit
+- Savonarola, Florentine preacher of moral and civic reform, executed 1498
+
+- Conciliarism, councils can correct popes and legislate reform under defined conditions
+- Ad fontes humanism, return to original texts for doctrine and morals
+- Devotio moderna, lay and clerical program of imitation of Christ and disciplined life
+- Indulgence economy, treasury of merits applied to the living and dead through authorized remissions
+- Utraquism, communion in both kinds for laity as a reform touchstone
+
+- Avignon Papacy 1309-1377, papal centralization and fiscal burdens
+- Great Schism 1378-1417, rival popes and fractured obedience
+- Pisa 1409, failed attempt to end the schism
+- Constance 1414-1418, schism ended and Hus condemned, conciliar authority asserted
+- Basel 1431-1449, compact with Hussites in 1436 and conciliar conflict with papacy
+- Statutes of Provisors 1351 and Praemunire 1353, national checks on papal jurisdiction
+- Pragmatic Sanction of Bourges 1438, Gallican liberties against papal revenue claims
+- Printing after 1450, rapid spread of texts and ideas
+
+- Turning point: Constance resolved papal plurality yet left structural reform weak
+- Turning point: Basel conceded Utraquist practice in Bohemia, a precedent for territorial distinctives
+- Turning point: Lateran V 1512-1517 failed to deliver deep reform, heightening expectations
+- Turning point: Humanist editions and vernacular piety created a new reading public
+
+- Historiography: Long reformation models stress continuity from late medieval reform to evangelical breakthroughs, while rupture narratives stress novelty in doctrine and politics
+- Legacy: By 1500 the grammar of reform, the media to spread it, and the expectations of laity and princes were in place, easing the reception of sixteenth century movements

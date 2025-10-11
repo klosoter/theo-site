@@ -1,0 +1,16 @@
+{
+  "period": "Debates & Controversies",
+  "question": "Van Til vs Dooyeweerd and Vollenhoven compare critiques of autonomy the role of",
+  "file_txt": "out/Debates & Controversies/02.Van Til vs Dooyeweerd and Vollenhoven compare critiques of autonomy the role of.txt",
+  "generated_at": "2025-10-08T04:31:41.695341Z",
+  "essay_word_count": 1434,
+  "issues": [
+    "### ESSAY: word count 1434 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

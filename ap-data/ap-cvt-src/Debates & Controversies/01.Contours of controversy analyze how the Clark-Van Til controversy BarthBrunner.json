@@ -1,0 +1,16 @@
+{
+  "period": "Debates & Controversies",
+  "question": "Contours of controversy analyze how the Clark-Van Til controversy BarthBrunner",
+  "file_txt": "out/Debates & Controversies/01.Contours of controversy analyze how the Clark-Van Til controversy BarthBrunner.txt",
+  "generated_at": "2025-10-08T04:21:11.703341Z",
+  "essay_word_count": 1392,
+  "issues": [
+    "### ESSAY: word count 1392 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

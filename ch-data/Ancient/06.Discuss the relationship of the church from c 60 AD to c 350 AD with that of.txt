@@ -1,0 +1,74 @@
+### TITLE
+From Sect to Partner, The Church and the Roman Empire circa 60 to 350
+
+### PREVIEW NOTES
+- Time and setting: Roman Mediterranean world from Nero after 64 to the reigns of Constantine and his sons by 350
+- Aim: How the church moved from suspect association to legally favored body and how empire and church reshaped one another
+- Nero and Domitian, imperial persecutors who framed early suspicion
+- Trajan and Pliny, governor and emperor defining criminal procedure
+- Justin Martyr and Tertullian, apologists arguing loyal civic virtue
+- Origen and Cyprian, scholars of theology and discipline during crisis
+- Decius and Diocletian, architects of empire wide coercion
+- Constantine and Eusebius, patron emperor and historian of providence
+- Key themes: religio licita versus superstition, imperial cult and sacrifice, martyrdom and confession, episcopal order and synod, toleration and patronage
+- Major texts and events: Pliny Trajan rescript 112, Decius edict 249, Great Persecution 303 to 311, Edict of Milan 313, Nicaea 325, Serdica 343
+- Wider context: imperial road network, urban civic life, third century crisis and plague, shifting imperial ideology
+- Legacy cue: from persecution to policy making, a template for Christian empire and contested authority
+
+### ESSAY
+Begin with the tension. In the later first century, the Roman Empire prized public order, ancestral cults, and visible signs of loyalty, while Christian assemblies proclaimed a crucified Lord and refused to sacrifice to the gods. The relationship between church and empire from circa 60 to 350 is a long arc that begins with suspicion and selective coercion and ends with toleration, patronage, and the first imperial attempts to shape doctrine. Across that arc, law, ritual, and theology pressed upon one another until the lines of power and faith were redrawn.
+
+The early context was Roman religion as civic performance. Jews enjoyed an ancient status and exemptions, but Christians, emerging from synagogues into distinct communities by the 60s, lacked legal recognition. Nero, after the fire of Rome in 64, used Christians as scapegoats. Tacitus describes arrests, forced confessions, and executions, brutality that was spectacular but local. Domitian in the 90s cultivated the imperial cult and punished perceived impiety, yet there is no fixed empire wide policy against Christians in this period. Rather, a pattern appears by the early second century. Pliny, governing Bithynia and Pontus around 111 to 112, writes to Trajan about Christians. He interrogates, offers them a chance to sacrifice to the image of the emperor and the gods, and executes the stubborn. Trajan replies that governors should not hunt Christians, no anonymous accusations are allowed, yet those who refuse sacrifice must be punished. The church was defined legally not by creed but by ritual refusal.
+
+This legal and ritual frame shaped early Christian self presentation. Justin Martyr, writing his First Apology around 155 to Antoninus Pius, argues that Christians pray for the emperor, pay taxes, and live chastely. He insists that the name Christian is not a crime, that judgment must rest on deeds. Tertullian, a Carthaginian advocate, writes his Apology around 197, turning Roman ideals against their enforcers. If we are your enemies, he says, why do we fill your cities and camps and forum. He pushes the point that Christians are the empire's best citizens precisely because they worship the one God. In the background sits a theological tension within the scriptures Christians read. Romans 13 commands submission to governing authorities as ordained by God. The Apocalypse of John, likely written near the end of Domitian's rule, portrays Rome as Babylon, beastly and seductive, destined for judgment. The church negotiated between obedience for the sake of peace and witness against idolatry.
+
+Meanwhile, Roman structures helped the church grow. Roads, a shared lingua franca in Greek and later Latin, and urban networks allowed bishops to coordinate across provinces. By the later second century, synods gathered to adjudicate issues such as the date of Easter and the Montanist movement in Asia Minor. The episcopal map mirrored the civic map, with bishops in each civitas and metropolitans in provincial capitals. The empire provided the communications web on which the church built its order.
+
+Persecution in the third century hardened lines. Decius, in 249, ordered a universal sacrifice for the well being of the empire. Citizens were to offer incense and obtain a certificate, a libellus. Many Christians complied under duress, the lapsi. Some stood firm, confessors. Cyprian of Carthage, bishop from 249 to 258, withdrew in the initial storm, then returned to repair discipline. In De Lapsis, he insisted on penitential pathways for the fallen. In De Unitate Ecclesiae, circa 251, he argued that the episcopate held the keys of reconciliation. The Decian edict was not a purge of a named religion. It was a loyalty test that nonetheless hit the church hardest because sacrifice transgressed Christian worship. Valerian intensified things in 257 to 258 with targeted arrests of clergy and confiscations. Then came a reversal. Gallienus in 260 issued a rescript that allowed Christian assemblies to reclaim cemeteries and places. For several decades, a relative peace held.
+
+During the crisis years, with plague from 249 onward and external wars, Christian charity became visible. Dionysius of Alexandria describes in letters how Christians cared for the sick when others fled, a memory later preserved by Eusebius. Such service, paired with steady community discipline, gave the church social credibility within cities battered by uncertainty.
+
+The Great Persecution under Diocletian, beginning in 303, was the last and most systematic attempt to break the church. The first edict ordered the destruction of churches and scriptures, loss of legal rights for clergy and lay leaders, and imprisonment of clergy. Later edicts demanded sacrifice on pain of death. Enforcement varied by region. Galerius, dying in 311, issued an edict of toleration that ended the persecution in the East, acknowledging failure and asking Christians to pray for the emperor and the state. The very terms reveal a shift. The empire now solicited Christian prayer for its well being.
+
+Constantine's rise transformed the relationship. After his victory at the Milvian Bridge in 312, Constantine associated his success with the God of the Christians and moved to protect the church. The agreement between Constantine and Licinius at Milan in 313 affirmed freedom of worship for all, ordered restitution of confiscated properties to Christian communities, and framed toleration as a path to the peace of the state. Constantine then funded basilicas in Rome and the Holy Land, gave bishops privileges such as exemption from some civic duties, and legislated Sunday as a day of rest in 321. He invited bishops to sit as judges in arbitration, the audientia episcopalis, drawing the episcopate into the empire's juridical web.
+
+With patronage came imperial interest in doctrine. The Arian controversy, beginning in Alexandria around 318, turned on how to confess the relation between the Father and the Son. Constantine convened the Council of Nicaea in 325, summoning bishops from across the empire. The creed confessed the Son as true God from true God, of one substance with the Father, and anathematized claims that the Son was a creature. The emperor presided ceremonially, enforced decisions by exile, and funded return. Eusebius of Caesarea, whose Ecclesiastical History was completed in stages by the early 320s, interpreted the Constantinian shift as providential vindication. In his Life of Constantine he narrates an emperor chastened by God who becomes a bishop of those outside, guarding the unity of the church and the peace of the empire.
+
+Yet the new settlement was unstable. Emperors after Constantine attempted to shape outcomes. Constantius II, ruling the East from 337 and the whole empire by 353, favored formulas that avoided Nicaea's term of one substance. Bishops like Athanasius of Alexandria were exiled in 335 and again in 339, illustrating that imperial patronage could become imperial pressure. The Council of Serdica in 343 tried to heal fractures between East and West and articulated an appellate role for the bishop of Rome in certain cases, effectively using imperial logistics to regularize ecclesiastical process. North Africa, meanwhile, wrestled with the Donatist schism that arose from disputed consecrations after the Decian and Diocletianic crises. Constantine convened councils at Rome in 313 and at Arles in 314 to adjudicate. When decisions went against the Donatists, imperial officials enforced them, and coercion entered Christian disputes, a development Tertullian would have abhorred but Cyprian's stress on unity had made imaginable.
+
+Across these three centuries, theology and imperial ideology converged and diverged. Christians argued that the emperor ruled by God's providence, that prayer for rulers was obligatory, and that the imperial vocation was to secure peace and justice, not to command worship. Roman authorities, initially thinking in terms of public rites and order, slowly accepted that stability might be gained by tolerating and then partnering with a church that could moralize subjects and anchor communities. The language of religio licita gave way to a fuller partnership in which the church acquired buildings, bishops acquired civic stature, and disputes inside the church became state concerns.
+
+The legacy by 350 was mixed. The church had moved from local scapegoat to a privileged and conflicted institution inside the empire. It had learned to use councils, laws, and imperial mail to settle doctrine. It had also learned that favor could coerce and that the sword could never fully secure unity of faith. The relationship began in suspicion, passed through blood and letters, and emerged as a fraught alliance whose possibilities and dangers would shape late antiquity.
+
+### RECAP NOTES
+- Setting: Roman Mediterranean world under emperors from Nero to the sons of Constantine, circa 60 to 350
+- Focus: How legal status, ritual demands, and imperial policy moved the church from persecution to partnership
+
+- Nero, local scapegoating after the fire of 64; Domitian, imperial cult emphasis and episodic repression
+- Pliny and Trajan, 112 rescript defining procedure and sacrifice test
+- Justin Martyr, First Apology arguing civic loyalty and rational worship
+- Tertullian, Apology and Ad Scapulam, critique of persecution and vision of Christian civic virtue
+- Origen, Contra Celsum, defense against philosophical attack and argument for prayer for rulers
+- Cyprian of Carthage, De Lapsis and De Unitate, discipline after Decius and unity of the episcopate
+- Decius and Valerian, 249 to 258 coercion through sacrifice and targeted arrests
+- Diocletian and Galerius, Great Persecution 303 to 311 and edict of toleration
+- Constantine, Edict of Milan 313, patronage, Sunday law 321, convening of Nicaea 325
+- Eusebius of Caesarea, Ecclesiastical History and Life of Constantine, providential reading of empire
+
+- Religio licita, legal recognition of ancestral cults versus Christian designation as superstition
+- Imperial cult and sacrifice, public loyalty test that Christians refused
+- Martyrdom and confession, witness under pressure and authority of confessors
+- Episcopal synodality, bishops coordinating across the imperial map
+- Toleration and patronage, legal freedom plus benefits that drew church into administration
+
+- Pliny Trajan rescript 112, do not seek, punish obstinate; Decius edict 249, libelli and crisis of the lapsi
+- Great Persecution 303 to 311, destruction of churches and scriptures, prisons and executions
+- Edict of Milan 313, restitution of property and freedom of worship
+- Council of Nicaea 325, creed with of one substance and condemnation of Arius
+- Council of Serdica 343, appeal procedures and failed East West reconciliation
+
+- Turning points: Decius loyalty test recasts church state conflict; Galerius toleration signals failure of coercion; Constantine conversion and Milan institute partnership; Nicaea inaugurates imperial involvement in doctrine
+
+- Historiography: From Eusebian providential narrative to modern views of local variation in persecution and pragmatic imperial policy
+
+- Legacy: By 350 the church held legal favor and civic roles, yet imperial pressure shaped doctrine and discipline; the alliance defined late antique Christianity and imperial governance

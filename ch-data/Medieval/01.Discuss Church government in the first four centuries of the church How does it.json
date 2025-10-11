@@ -1,0 +1,16 @@
+{
+  "period": "Medieval",
+  "question": "Discuss Church government in the first four centuries of the church How does it",
+  "file_txt": "out/Medieval/01.Discuss Church government in the first four centuries of the church How does it.txt",
+  "generated_at": "2025-10-07T19:00:06.980116Z",
+  "essay_word_count": 1483,
+  "issues": [
+    "### ESSAY: word count 1483 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

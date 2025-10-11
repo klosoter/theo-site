@@ -1,0 +1,14 @@
+{
+  "period": "Modern",
+  "question": "What is Neo-Evangelicalism Include in your answer a discussion of the leading",
+  "file_txt": "out/Modern/24.What is Neo-Evangelicalism Include in your answer a discussion of the leading.txt",
+  "generated_at": "2025-10-08T01:55:39.004089Z",
+  "essay_word_count": 1189,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

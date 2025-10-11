@@ -1,0 +1,14 @@
+{
+  "period": "Modern",
+  "question": "Discuss the role of J Gresham Machen in the Modernist vs Fundamentalist battles",
+  "file_txt": "out/Modern/20.Discuss the role of J Gresham Machen in the Modernist vs Fundamentalist battles.txt",
+  "generated_at": "2025-10-08T01:33:01.222376Z",
+  "essay_word_count": 1298,
+  "issues": [],
+  "ok": true,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "period": "Medieval",
+  "question": "Identify late medieval movements impulses or events that helped to pave the way",
+  "file_txt": "out/Medieval/13.Identify late medieval movements impulses or events that helped to pave the way.txt",
+  "generated_at": "2025-10-07T20:30:37.693647Z",
+  "essay_word_count": 1511,
+  "issues": [
+    "### ESSAY: word count 1511 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

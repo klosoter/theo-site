@@ -1,0 +1,15 @@
+{
+  "apologist": "Abraham Kuyper",
+  "file_txt": "out-apol/16.Abraham Kuyper.txt",
+  "generated_at": "2025-10-08T00:53:41.168261Z",
+  "essay_word_count": 1797,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

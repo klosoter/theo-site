@@ -1,0 +1,15 @@
+{
+  "apologist": "C. S. Lewis",
+  "file_txt": "out-apol/20.C S Lewis.txt",
+  "generated_at": "2025-10-08T01:26:40.783237Z",
+  "essay_word_count": 2032,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

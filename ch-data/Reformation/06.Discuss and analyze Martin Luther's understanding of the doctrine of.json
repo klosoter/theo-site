@@ -1,0 +1,16 @@
+{
+  "period": "Reformation",
+  "question": "Discuss and analyze Martin Luther's understanding of the doctrine of",
+  "file_txt": "out/Reformation/06.Discuss and analyze Martin Luther's understanding of the doctrine of.txt",
+  "generated_at": "2025-10-07T21:08:54.656833Z",
+  "essay_word_count": 1349,
+  "issues": [
+    "### ESSAY: word count 1349 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,59 @@
+### TITLE
+Leipzig 1519 and the Reformation's Turn to the Question of Authority
+
+### PREVIEW NOTES
+- Time and setting, June to July 1519, Pleissenburg in Leipzig under Duke George of Saxony
+- Central question, who or what normed Christian doctrine, pope and councils or Scripture alone
+- Martin Luther, Augustinian friar and Wittenberg theologian, emergent reformer
+- Johann Eck, Ingolstadt scholastic and papal polemicist, defender of Roman primacy
+- Andreas Karlstadt, Wittenberg canonist and theologian, advocate of Augustinian grace
+- Sola scriptura, Scripture as the final norm over popes and councils
+- Papal primacy, whether Peter's office carries divine right or human right only
+- Conciliar fallibility, whether councils such as Constance can err in faith
+- Council of Constance 1414-1418, condemned Jan Hus, touchstone for claims about error
+- Papal bulls Exsurge Domine 1520 and Decet Romanum Pontificem 1521, censure and excommunication
+- Wider context, from the indulgence crisis of 1517 into an empire wide debate on authority
+- Legacy cue, the disputation recast the Reformation from reform of abuses to a redefinition of the church
+
+### ESSAY
+In the summer heat of 1519, a university disputation in Leipzig pulled the Reformation out of the narrow lane of indulgence abuses and thrust it onto the broad road of authority. By the time the arguments wound down in mid July at the Pleissenburg, Martin Luther was no longer a monk seeking better pastoral practice. He was a public theologian who had declared that popes and councils can err, that Scripture stands alone as the final judge, and that some teachings of the condemned Jan Hus were evangelical. The Leipzig Disputation thus marks a hinge. It did not resolve the questions it raised, but it set the agenda and hardened the lines.
+
+The road to Leipzig began with the Ninety five Theses of 1517 and the immediate storm that followed. Tetzel's indulgence preaching had provoked Luther's critique of the theology of penance and treasury of merits, and Rome responded with formal demands for submission. In Augsburg in 1518, Cardinal Cajetan pressed Luther to recant. Luther demurred, appealed to a council, and returned to Saxony under the protection of Frederick the Wise. Meanwhile, Johann Eck of Ingolstadt entered the fray. A skilled scholastic and a veteran debater, Eck attacked Luther's propositions in a set of Obelisks. Luther answered with Asterisks. The exchange grew personal and doctrinal. What began as a quarrel over indulgences and penance widened into a challenge to papal claims and to the fabric of scholastic theology.
+
+Leipzig was arranged as an academic contest. Duke George of Saxony provided the venue and pressed for order. The original pairing set Andreas Karlstadt against Eck on questions of free will and grace. Karlstadt, a Wittenberg canonist steeped in Augustine, argued the incapacity of the will apart from grace. Eck defended a more synergistic account shaped by late medieval scholasticism. This opening phase mattered because it exposed the deeper cleavage between Augustinian monergism and the standard university synthesis that blended Aristotle with theology. It also set the stage for Luther, who joined to debate Eck when the topic shifted to the primacy of Peter and the authority of the Roman bishop.
+
+From late June to mid July, Luther and Eck battled over the central crux. Was the primacy of the Roman pope a divine right instituted by Christ, or a human arrangement for good order. Luther argued that the rock in Matthew 16 is the confession of faith, not the person of Peter in isolation, and that the New Testament knows no one bishop with universal jurisdiction. He conceded a historical primacy of honor but denied a dominion by divine law. Eck pressed the patristic citations and canon law, insisting on an unbroken line of Petrine authority. He drove the point further by linking Luther to the Bohemian reformer Jan Hus, condemned and burned at the Council of Constance in 1415. When Luther replied that many of Hus's statements were evangelical and that councils can err, the dispute crossed a threshold.
+
+That threshold defined the significance of Leipzig. Eck had succeeded in forcing Luther to declare positions that cut deeper than indulgences. The claim that councils can err struck at the conciliar settlement of the fifteenth century. Constance and Basel 1431-1449 had asserted council over pope, then the papacy had recovered strength and reasserted primacy. Luther now said both pope and councils are fallible. Only Scripture is the norm that norms without being normed. This was not an abstract declaration. It arose as Luther weighed the record of Constance. If Hus had taught the gospel on key points, and if Constance had condemned him, then the council had erred. That judgment recast the authority map. It placed the canon of Scripture above all church offices and assemblies and mandated a new method of proof, one that would mark the Lutheran confessional writings from 1530 onward.
+
+No official verdict closed the debate. The Leipzig theologians naturally claimed victory for Eck. Duke George favored the Roman side. Wittenberg circles published their accounts, and so did Eck and his allies. The printing press thus mediated the outcome more than any panel of judges. What mattered, however, was the set of conclusions that each side carried away. Luther emerged convinced that the papacy rested on historical development rather than divine institution, that Rome's theology of penance and merit could not be defended from Scripture, and that the church must be tested by the Word. Eck emerged certain that Luther was a Hussite in German dress and redoubled his efforts to secure censure.
+
+The next two years confirm the turning point. In 1520 Pope Leo X issued Exsurge Domine, which condemned forty one propositions drawn from Luther's writings and warned of excommunication. Eck served as a papal emissary to publish the bull in the Empire. Luther burned the bull and canon law in December 1520. He followed with three major treatises that owe much to Leipzig's agenda. The Address to the Christian Nobility of the German Nation called the laity and magistrates to reform since no clerical monopoly can block the Word. The Babylonian Captivity of the Church dismantled the sacramental system and insisted on the promise grasped by faith. The Freedom of a Christian articulated the paradox of a free lord of all and a servant of all. At the Diet of Worms in 1521, confronted with his books and asked to recant, Luther affirmed the standard laid down at Leipzig. Unless convinced by the testimony of Scripture or evident reason, he could not recant, for popes and councils can err.
+
+Theologically, Leipzig clarified the axes of later disputes. On authority, it gave programmatic form to sola scriptura, which Luther and Melanchthon would nuance by insisting on the public preaching office and on the creedal core that expresses the plain sense of Scripture. On grace and will, it previewed Luther's later conflict with Erasmus in 1524-1525 over the bondage of the will. On ecclesiology, it redirected reform from disciplinary correction to a doctrinal redefinition of what constitutes the church. The church is where the gospel is rightly preached and the sacraments are rightly administered. That claim, later codified in the Augsburg Confession of 1530, stands downstream of Leipzig's insistence that office without gospel authority is not decisive. Even Luther's appeal to the fathers took on a distinct shape after Leipzig. He cited Augustine and Chrysostom, but as witnesses tested by Scripture rather than as a court of last resort.
+
+Reception was mixed, and that very mixture reveals the disputation's reach. German humanists, many of whom had praised Luther's boldness in 1517, began to hesitate as the controversy shifted from moral reform to arguments about authority and truth. Erasmus himself kept distance, arguing for peace over dogmatic hardening. By contrast, Wittenberg under Elector Frederick and then John the Steadfast consolidated reform. Karlstadt moved faster than Luther in some practical reforms, yet the common front against Eck and Rome held through the early 1520s. In Bohemia, memories of Hus and the Utraquist tradition found new resonance as Luther acknowledged that Constance might have erred. In Saxony, Duke George remained a stalwart opponent of Wittenberg, while the Ernestine line protected Luther. University networks split along similar lines, Ingolstadt and Leipzig against Wittenberg and its allies.
+
+Historians have debated who won at Leipzig. Many grant Eck superior control of scholastic technique and citation, while crediting Luther with setting the deeper agenda. Others stress that the textual record is partial and shaped by partisan printers. Nearly all agree on its strategic weight. Leipzig relocated the conversation. The question was no longer how to curb indulgence abuses or whether to refine scholastic accounts of merit. The question was whose word rules in the church and how that word is known. By compelling Luther to say councils can err and by fusing the name of Hus with the Wittenberg cause, Eck made the choice stark. The Reformation proceeded along that track.
+
+Leipzig's enduring significance rests in that shift from practice to principle. It pushed Luther and his followers to name Scripture alone as the final norm and to treat the church's institutions as accountable to that norm, and it pushed Rome and its allies to rally around the primacy of Peter and the authority of the church's continuous teaching. Once stated so clearly, the choice was not easily softened. The rest of the sixteenth century worked out the consequence. A debate contested in a castle hall opened a path that courts, councils, and congregations would walk for generations.
+
+### RECAP NOTES
+- Setting, Leipzig's Pleissenburg, June 27 to July 15, 1519, hosted by Duke George amid post 1517 turmoil
+- Focus, the norm of doctrine, papal primacy and conciliar authority versus Scripture's finality
+- Martin Luther, Wittenberg theologian, argued councils can err and Scripture alone norms teaching
+- Johann Eck, Ingolstadt scholastic and papal defender, pressed Petrine primacy and labeled Luther a Hussite
+- Andreas Karlstadt, Wittenberg canonist, debated free will and grace in Augustinian terms
+- Sola scriptura, Scripture as the sole final authority over popes, councils, and canon law
+- Papal primacy, claim that Peter's office yields universal jurisdiction by divine right
+- Conciliar fallibility, assertion that general councils can err in doctrine and judgment
+- Council of Constance 1414-1418, condemned Jan Hus in 1415, made a test case for the claim that councils err
+- Leipzig Disputation 1519, widened the indulgence quarrel into an authority crisis, no binding verdict
+- Exsurge Domine 1520, papal bull condemning Luther's positions, followed by public burning in Wittenberg
+- Diet of Worms 1521, Luther refused to recant unless convinced by Scripture, leading to outlaw status
+- Turning point, Eck linked Luther to Hus, forcing public admission that councils err
+- Turning point, Luther shifted from reform of abuses to a redefinition of church and authority
+- Turning point, print circulation of the debate shaped outcomes more than local judgments
+- Historiography, Eck seen as tactical victor, Luther as strategic victor, with partisan transcripts complicating scores
+- Legacy, clarified the axes of authority and grace that would structure confessionalization
+- Legacy, set the stage for Luther's 1520 treatises and for the Augsburg Confession's marks of the church

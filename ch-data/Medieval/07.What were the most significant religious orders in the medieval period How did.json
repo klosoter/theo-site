@@ -1,0 +1,16 @@
+{
+  "period": "Medieval",
+  "question": "What were the most significant religious orders in the medieval period How did",
+  "file_txt": "out/Medieval/07.What were the most significant religious orders in the medieval period How did.txt",
+  "generated_at": "2025-10-07T19:42:57.651421Z",
+  "essay_word_count": 1468,
+  "issues": [
+    "### ESSAY: word count 1468 outside range [900, 1300]"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

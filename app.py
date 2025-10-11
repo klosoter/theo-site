@@ -4,6 +4,8 @@ from typing import Dict, List, Tuple
 from flask import Flask, jsonify, send_from_directory, request, abort
 from markdown import markdown
 from dotenv import load_dotenv
+from datetime import datetime
+
 
 load_dotenv()
 ROOT = pathlib.Path(__file__).parent.resolve()
@@ -66,6 +68,266 @@ CACHE = {
 THEO_MAP = {t["id"]: t for t in (CACHE["theologians"] or []) if isinstance(t, dict) and "id" in t}
 TOPIC_MAP = {t["id"]: t for t in (CACHE["topics"] or []) if isinstance(t, dict) and "id" in t}
 WORK_MAP = {w["id"]: w for w in (CACHE["works"] or []) if isinstance(w, dict) and "id" in w}
+
+# ======== Essays (CH/AP) =========
+
+# ======== Essays (CH/AP) — REPLACE the earlier essay helpers with THIS ========
+from datetime import datetime  # you already added this, but just to be sure.
+
+ESSAY_ROOT = ROOT
+
+def _resolve_any_dir(*names):
+    for n in names:
+        p = (ESSAY_ROOT / n).resolve()
+        if p.exists():
+            return p
+    return (ESSAY_ROOT / names[0]).resolve()
+
+AP_ROOT = _resolve_any_dir("ap-data", "Ap-data")
+CH_ROOT = _resolve_any_dir("ch-data", "Ch-data")
+
+CH_CATEGORIES = [
+    {"key": "1", "label": "Ancient",     "dir": "Ancient"},
+    {"key": "2", "label": "Medieval",    "dir": "Medieval"},
+    {"key": "3", "label": "Reformation", "dir": "Reformation"},
+    {"key": "4", "label": "Modern",      "dir": "Modern"},
+]
+
+AP_CATEGORIES = [
+    {"key": "1", "label": "Figures",                              "dir": os.path.join("ap-figures")},
+    {"key": "2", "label": "Issues",                               "dir": os.path.join("ap-issues")},
+    {"key": "3", "label": "Van Til — Method Foundations",         "dir": os.path.join("ap-cvt-src", "Method Foundations")},
+    {"key": "4", "label": "Van Til — Interlocutors & Influences", "dir": os.path.join("ap-cvt-src", "Interlocutors & Influences")},
+    {"key": "5", "label": "Van Til — Debates & Controversies",    "dir": os.path.join("ap-cvt-src", "Debates & Controversies")},
+]
+
+_slug_rx = re.compile(r"[^a-z0-9]+")
+def _slugify(s: str) -> str:
+    s = (s or "").strip().lower()
+    s = _slug_rx.sub("-", s)
+    return s.strip("-").strip(".")
+
+# Accept either "TITLE:"/etc OR markdown headings like "### Title"
+# We’ll normalize the header label to one of: title, preview, essay, recap
+_HDR_RE = re.compile(
+    r"""^\s{0,3}  # up to 3 spaces
+        (?:
+          \#{1,6}\s*([A-Za-z ]+)\s*:?\s*$   # markdown heading form (### Title)
+          |
+          ([A-Za-z ]+)\s*:\s*$              # plain KEY: form
+        )
+    """,
+    re.I | re.X,
+)
+
+# map many spellings to canonical keys
+def _canon_header(label: str) -> str | None:
+    if not label:
+        return None
+    k = re.sub(r"\s+", " ", label.strip().lower())
+    if k in ("title",): return "title"
+    if k in ("preview", "preview notes"): return "preview"
+    if k in ("essay",): return "essay"
+    if k in ("recap", "recap notes"): return "recap"
+    return None
+
+def _parse_essay_blocks(txt: str) -> Dict[str, str]:
+    """Return dict with keys: title, preview, essay, recap (strings, may be empty)."""
+    lines = txt.replace("\r\n", "\n").split("\n")
+    buckets = {"title": [], "preview": [], "essay": [], "recap": []}
+    cur = None
+
+    for ln in lines:
+        m = _HDR_RE.match(ln)
+        if m:
+            label = m.group(1) or m.group(2) or ""
+            canon = _canon_header(label)
+            if canon:
+                cur = canon
+                continue  # header line itself doesn’t go into content
+        if cur:
+            buckets[cur].append(ln)
+
+    # Clean up blocks
+    out = {}
+    for k, arr in buckets.items():
+        while arr and not arr[0].strip(): arr.pop(0)
+        while arr and not arr[-1].strip(): arr.pop()
+        out[k] = "\n".join(arr).strip()
+
+    # Title fallback: first non-empty non-header line; otherwise filename gets used by caller
+    if not out["title"]:
+        for ln in lines:
+            if _HDR_RE.match(ln):  # skip headings
+                continue
+            if ln.strip():
+                out["title"] = ln.strip()
+                break
+
+    # Remove only markdown hashes, but preserve leading numbers like "1." or "3.2."
+    t = out.get("title") or ""
+    t = re.sub(r"^\s*\#{1,6}\s*", "", t).strip()
+    # Don’t strip numeric prefixes—keep things like "1." or "3.2."
+    out["title"] = t
+
+    return out
+
+def _html_escape(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def _md_min_to_html(md: str) -> str:
+    """Tiny markdown-ish renderer: paragraphs + unordered lists only (safe)."""
+    if not md: return ""
+    lines = md.split("\n")
+    out, in_list = [], False
+    for ln in lines:
+        if re.match(r"^\s*[-*]\s+", ln):
+            if not in_list:
+                out.append("<ul>"); in_list = True
+            item = re.sub(r"^\s*[-*]\s+", "", ln)
+            out.append(f"<li>{_html_escape(item)}</li>")
+        else:
+            if in_list:
+                out.append("</ul>"); in_list = False
+            if ln.strip() == "":
+                out.append("")
+            else:
+                out.append(f"<p>{_html_escape(ln)}</p>")
+    if in_list: out.append("</ul>")
+    return "\n".join(out)
+
+def _scan_domain(root_dir: pathlib.Path, domain_id: str, label: str, categories: List[Dict]) -> Dict:
+    essays = []
+    for cat in categories:
+        abs_dir = (root_dir / cat["dir"]).resolve()
+        if not abs_dir.exists():
+            continue
+        for fp in sorted(abs_dir.glob("*.txt")):
+            try:
+                raw = fp.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                raw = fp.read_text(encoding="utf-8", errors="replace")
+
+
+
+
+            blocks = _parse_essay_blocks(raw)
+
+            stem = fp.stem
+            mnum = re.match(r"^\s*(\d+(?:\.\d+)*)[^\w]?", stem)   # captures 3, 02, 2.3, 3.1.4 etc.
+            num_prefix = mnum.group(1) if mnum else ""
+
+            title = blocks.get("title") or stem
+            display_title = f"{num_prefix} {title}".strip() if num_prefix else title
+
+            slug = _slugify(title or stem)  # keep slug aligned with what users see
+
+            title = blocks.get("title") or fp.stem
+            slug = _slugify(title or fp.stem)
+            essays.append({
+                "id": slug,
+                "slug": slug,
+#                 "title": title,
+                "title": display_title,
+                "preview_md": blocks.get("preview", ""),
+                "essay_md": blocks.get("essay", ""),
+                "recap_md": blocks.get("recap", ""),
+                "preview_html": _md_min_to_html(blocks.get("preview", "")),
+                "essay_html": _md_min_to_html(blocks.get("essay", "")),
+                "recap_html": _md_min_to_html(blocks.get("recap", "")),
+                "domain": domain_id,
+                "domain_label": label,
+                "category_key": cat["key"],
+                "category_label": cat["label"],
+                "file": fp.as_posix(),
+                "updated_at": datetime.fromtimestamp(fp.stat().st_mtime).isoformat() if fp.exists() else None,
+            })
+
+    def _num_prefix_sort_key(title):
+        m = re.match(r"^\s*(\d+(?:\.\d+)*)", title)
+        if m:
+            # convert "2.3.1" -> tuple of ints (2,3,1)
+            return tuple(map(int, m.group(1).split(".")))
+        return (9999,)
+
+    def _num_tuple(s: str):
+        m = re.match(r"^\s*(\d+(?:\.\d+)*)", s)
+        if not m:
+            return (9999,)  # push unnumbered to the end
+        return tuple(int(p) for p in m.group(1).split("."))
+
+    # Sort within category: numeric prefix → title (as tiebreaker)
+    essays.sort(key=lambda e: (int(e["category_key"]), _num_tuple(e["title"]), e["title"]))
+
+    cats_out = []
+    for c in categories:
+        count = sum(1 for e in essays if e["category_key"] == c["key"])
+        cats_out.append({"key": c["key"], "label": c["label"], "count": count})
+    return {"domain": domain_id, "label": label, "categories": cats_out, "essays": essays}
+
+def _get_ch_payload(): return _scan_domain(CH_ROOT, "CH", "Church History", CH_CATEGORIES)
+def _get_ap_payload(): return _scan_domain(AP_ROOT, "AP", "Apologetics", AP_CATEGORIES)
+
+@app.get("/api/essays/ch")
+def api_essays_ch(): return jsonify(_get_ch_payload())
+
+@app.get("/api/essays/ap")
+def api_essays_ap(): return jsonify(_get_ap_payload())
+
+@app.get("/api/essay/<slug>")
+def api_essay(slug):
+    slug = slug.strip().lower()
+    all_essays = _get_ch_payload()["essays"] + _get_ap_payload()["essays"]
+    hit = next((e for e in all_essays if e["slug"] == slug), None)
+    if not hit: return jsonify({"error": "Not found"}), 404
+    return jsonify(hit)
+
+
+@app.get("/api/search")
+def search():
+    q = (request.args.get("q") or "").strip()
+    if not q:
+        return jsonify([])
+    terms = [t for t in re.split(r"\s+", q.lower()) if t]
+    results = []
+
+    # existing items...
+    for item in CACHE["search"]:
+        hay = " ".join([
+            (item.get("name") or item.get("title") or ""),
+            item.get("slug", ""),
+            " ".join(item.get("eras", []) or []),
+            " ".join(item.get("traditions", []) or []),
+            item.get("type", ""),
+        ]).lower()
+        if all(t in hay for t in terms):
+            if item.get("type") == "work":
+                wid = item.get("id")
+                if wid:
+                    item = dict(item); item["id"] = _canonicalize(wid)
+            results.append(item)
+
+    # NEW: essays (CH + AP)
+    essays = _get_ch_payload()["essays"] + _get_ap_payload()["essays"]
+    for e in essays:
+        hay = f"{e['title']} {e['domain_label']} {e['category_label']}".lower()
+        if all(t in hay for t in terms):
+            results.append({
+                "type": "essay",
+                "title": e["title"],
+                "slug": e["slug"],
+            })
+
+    type_order = {"theologian": 0, "work": 1, "topic": 2, "outline": 3, "essay": 4}
+    results.sort(key=lambda x: (type_order.get(x.get("type"), 9), len(x.get("name", x.get("title", "")))))
+    # dedupe (same as before)
+    seen, out = set(), []
+    for r in results:
+        key = (r.get("type"), r.get("id") if r.get("type") == "work" else r.get("slug") or r.get("title"))
+        if key in seen: continue
+        seen.add(key); out.append(r)
+    return jsonify(out[:50])
+
 
 
 # --- add near other helpers ---
@@ -244,6 +506,23 @@ def api_canon_counts_by_topic():
         }
     return jsonify(out)
 
+@app.get("/api/work_summary/<work_id>")
+def work_summary(work_id):
+    """Serve pre-generated Markdown summaries as HTML."""
+    summary_dir = DATA_DIR / "summaries" / "by_work"
+    md_path = summary_dir / f"{work_id}.md"
+    # also try slug form if files are named work_<id>.<slug>.md
+    if not md_path.exists():
+        matches = list(summary_dir.glob(f"{work_id}.*.md"))
+        md_path = matches[0] if matches else None
+    if not md_path or not md_path.exists():
+        return jsonify({"html": "<div class='small'>Summary not found.</div>"}), 404
+
+    text = md_path.read_text(encoding="utf-8")
+    html = markdown(normalize_md(text), extensions=["fenced_code", "tables"])
+    return jsonify({"html": html})
+
+
 # ---------- Registries ----------
 @app.get("/api/registries/institutions")
 def institutions_registry():
@@ -267,7 +546,7 @@ def api_traditions():
 
 # ---------- API: search ----------
 @app.get("/api/search")
-def search():
+def search_old():
     q = (request.args.get("q") or "").strip()
     if not q:
         return jsonify([])

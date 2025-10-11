@@ -1,0 +1,15 @@
+{
+  "apologist": "John of Damascus",
+  "file_txt": "out-apol/08.John of Damascus.txt",
+  "generated_at": "2025-10-07T23:37:38.399472Z",
+  "essay_word_count": 1852,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}

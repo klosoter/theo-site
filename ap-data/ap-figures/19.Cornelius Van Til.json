@@ -1,0 +1,15 @@
+{
+  "apologist": "Cornelius Van Til",
+  "file_txt": "out-apol/19.Cornelius Van Til.txt",
+  "generated_at": "2025-10-08T01:17:43.411762Z",
+  "essay_word_count": 1790,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-mini-tts",
+    "voice": "nova"
+  }
+}
