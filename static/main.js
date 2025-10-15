@@ -604,6 +604,8 @@ function EssayPage(props) {
   );
 }
 
+
+
 /* ---------- Domain pages for CH/AP ---------- */
 function DomainPage({ domainId, datasets }) {
   const data = domainId === "CH" ? datasets.chData : datasets.apData;
@@ -635,6 +637,196 @@ function DomainPage({ domainId, datasets }) {
     </div>
   );
 }
+
+/* ---------- Digest rows & pages (with inline HTML) ---------- */
+function DigestRow({ digest }) {
+  const go = useGo();
+  const [open, setOpen] = React.useState(false);
+  const [html, setHtml] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState("");
+
+  const to = `/digest/${digest.slug}`;
+
+  const titleEl = (
+    <div style={{ display: "flex", gap: 8, alignItems: "baseline", flexWrap: "wrap" }}>
+      <b>
+        <a
+          href={to}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            go(e, to, true);
+          }}
+        >
+          {digest.authors_display}: {digest.title}
+        </a>
+      </b>
+    </div>
+  );
+
+  async function onToggle() {
+    const willOpen = !open;
+    setOpen(willOpen);
+    if (willOpen && !html && !loading) {
+      setLoading(true);
+      setError("");
+      try {
+        const r = await api(`/api/digest_html/${encodeURIComponent(digest.slug)}`);
+        setHtml(r.html || "");
+      } catch (e) {
+        setError(String(e));
+      } finally {
+        setLoading(false);
+      }
+    }
+  }
+
+  return (
+    <div className="card" style={{ gridColumn: "1 / -1" }}>
+      <CollapsibleShell
+        open={open}
+        onToggle={onToggle}
+        titleEl={titleEl}
+        rightEl={<span className="badge">{digest.category}</span>}
+        sticky
+      >
+        <div className="markdown" style={{ paddingTop: 6 }}>
+          <div className="small">updated {String(digest.updated_at || "").slice(0, 10)}</div>
+
+          {loading && <div className="small" style={{ marginTop: 8 }}>Loading…</div>}
+          {error && <div className="small" style={{ marginTop: 8 }}>{String(error).replace(/</g, "&lt;")}</div>}
+          {!loading && !error && html && (
+            <div style={{ marginTop: 8 }} dangerouslySetInnerHTML={{ __html: String(html) }} />
+          )}
+          {!loading && !error && !html && (
+            <div className="small muted" style={{ marginTop: 8 }}>(no content)</div>
+          )}
+        </div>
+      </CollapsibleShell>
+    </div>
+  );
+}
+
+function DigestsPage() {
+  const [payload, setPayload] = React.useState(null);
+  const [openCat, setOpenCat] = React.useState({});
+
+  React.useEffect(() => {
+    let gone = false;
+    (async () => {
+      try {
+        const r = await api("/api/digests");
+        if (!gone) setPayload(r);
+      } catch (e) {
+        if (!gone) setPayload({ digests: [] });
+      }
+    })();
+    return () => { gone = true; };
+  }, []);
+
+  if (!payload) return <div>Loading…</div>;
+  const list = payload.digests || [];
+
+  const byCat = list.reduce((m, d) => { (m[d.category] ||= []).push(d); return m; }, {});
+  const order = ["AP", "ST", "CH"];
+  const labelFor = (cat) => (cat === "AP" ? "Apologetics" : cat === "ST" ? "Systematic Theology" : "Church History");
+
+  return (
+    <div>
+      <h1>Digests</h1>
+
+      {order.map((cat) => {
+        const items = (byCat[cat] || []).slice();
+        if (!items.length) return null;
+
+        const opened = !!openCat[cat];
+        items.sort((a, b) =>
+          (a.authors_display || "").localeCompare(b.authors_display || "") ||
+          (a.title || "").localeCompare(b.title || "")
+        );
+
+        return (
+          <section key={cat} style={{ marginBottom: 16 }}>
+            <div className={"section " + (opened ? "open" : "")}>
+              <div
+                className="section-head"
+                onClick={() => setOpenCat((s) => ({ ...s, [cat]: !opened }))}
+              >
+                <div className="caret">▸</div>
+                <h3>{labelFor(cat)}</h3>
+                <span className="count">{items.length}</span>
+              </div>
+
+              {opened && (
+                <div className="work-list">
+                  {items.map((d) => <DigestRow key={d.slug} digest={d} />)}
+                </div>
+              )}
+            </div>
+          </section>
+        );
+      })}
+    </div>
+  );
+}
+
+function DigestPage(props) {
+  const param =
+    props.slug ||
+    props.id ||
+    decodeURIComponent(window.location.pathname.split("/").pop() || "");
+
+  const [digest, setDigest] = React.useState(null);
+  const [html, setHtml] = React.useState("");
+  const [error, setError] = React.useState("");
+
+  React.useEffect(() => {
+    let gone = false;
+    async function load() {
+      setError("");
+      setDigest(null);
+      setHtml("");
+      try {
+        const meta = await api(`/api/digest/${encodeURIComponent(param)}`);
+        if (gone) return;
+        setDigest(meta);
+        try {
+          const r = await api(`/api/digest_html/${encodeURIComponent(param)}`);
+          if (!gone) setHtml(r.html || "");
+        } catch (e) {
+          if (!gone) setHtml("");
+        }
+      } catch (e) {
+        if (!gone) setError("Digest not found.");
+      }
+    }
+    if (param) load();
+    return () => { gone = true; };
+  }, [param]);
+
+  if (error) return <div className="small">{error}</div>;
+  if (!digest) return <div>Loading…</div>;
+
+  return (
+    <div>
+      <h1>{digest.authors_display}: {digest.title}</h1>
+      <span className="badge">{digest.category}</span>
+
+      <div style={{ padding: 10 }}>
+        <div className="small">Last updated {String(digest.updated_at || "").slice(0, 10)}</div>
+        <div className="markdown" style={{ paddingTop: 8 }}>
+          {html ? (
+            <div dangerouslySetInnerHTML={{ __html: String(html) }} />
+          ) : (
+            <div className="small muted">(no content)</div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 /* ---------- App ---------- */
 function App() {
@@ -726,6 +918,8 @@ function Header() {
       <a href="/works" onClick={(e) => select(e, "/works")}>Works</a>
       <a href="/church-history" onClick={(e) => select(e, "/church-history")}>Church History</a>
       <a href="/apologetics" onClick={(e) => select(e, "/apologetics")}>Apologetics</a>
+      <a href="/digests" onClick={(e) => select(e, "/digests")}>Digests</a>
+      <a href="/podcasts" onClick={(e) => { e.preventDefault(); window.open("https://klosoter.github.io/theology-audio/"); }}>Podcasts</a>
 
       <input
         placeholder="Search topics, theologians, works, essays…"
@@ -742,6 +936,7 @@ function Header() {
               r.type === "topic" ? `/topic/${r.slug}` :
               r.type === "work" ? `/work/${r.id}` :
               r.type === "essay" ? `/essay/${r.slug}` :
+              r.type === "digest" ? `/digest/${r.slug}` :
               r.type === "outline" ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` : "/";
             return (
               <div key={i} style={{ padding: "6px 4px", cursor: "pointer" }} onClick={(e) => select(e, to)}>
@@ -784,6 +979,14 @@ function Routes({ datasets }) {
     return <EssayPage id={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets} />;
   if (pathname.startsWith("/category/"))
     return <TopicCategoryPage slug={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets} />;
+  if (pathname === "/digests")
+    return <DigestsPage />;
+  if (pathname.startsWith("/digest/"))
+    return <DigestPage slug={decodeURIComponent(url.pathname.split("/").pop())} />;
+  if (pathname === "/podcasts") {
+    window.location.href = "https://klosoter.github.io/theology-audio/";
+  }
+
 
   return <div>Not found.</div>;
 }

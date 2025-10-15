@@ -196,6 +196,92 @@ def _md_min_to_html(md: str) -> str:
     if in_list: out.append("</ul>")
     return "\n".join(out)
 
+
+# ======== Digests (DOCX) ========
+DIGESTS_ROOT = (ROOT / "Digests").resolve()
+DIGEST_CATS = ["AP", "ST", "CH"]
+
+def _slugify2(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").strip().lower()).strip("-").strip(".")
+
+def _parse_digest_filename(stem: str):
+    # "<authors> - <title>"
+    parts = stem.split("-", 1)
+    if len(parts) != 2:
+        return None, None, []
+    raw_authors, raw_title = parts[0].strip(), parts[1].strip()
+    authors = [a.strip() for a in re.split(r"\s*(?:,|&|and)\s*", raw_authors) if a.strip()]
+    return raw_title, raw_authors, authors
+
+def _scan_digests():
+    recs = []
+    for cat in DIGEST_CATS:
+        folder = (DIGESTS_ROOT / cat)
+        if not folder.exists():
+            continue
+        for f in sorted(folder.glob("*.docx")):
+            title, authors_display, authors = _parse_digest_filename(f.stem)
+            if not title or f.stem.startswith("~"):
+                continue
+            slug = _slugify2(f"{cat}-{authors_display}-{title}")[:140]
+            recs.append({
+                "type": "digest",
+                "category": cat,                     # AP|ST|CH
+                "title": title,
+                "authors": authors,                  # ["Lastname", "Other"]
+                "authors_display": authors_display,  # original left side
+                "slug": slug,
+                "filename": f.name,
+                "path": f"Digests/{cat}/{f.name}",
+                "updated_at": datetime.fromtimestamp(f.stat().st_mtime).isoformat()
+            })
+    return recs
+
+CACHE["digests"] = _scan_digests()
+
+# --- DOCX → safe-ish HTML ---
+def _docx_to_html(docx_path: pathlib.Path) -> str:
+    """
+    Convert a .docx to basic HTML. Prefers 'mammoth' if installed; otherwise falls back to python-docx -> <p>.
+    Output is simple, no styles/scripts.
+    """
+    try:
+        import mammoth  # type: ignore
+        with open(docx_path, "rb") as f:
+            result = mammoth.convert_to_html(f)
+        html = result.value or ""
+    except Exception:
+        # Fallback: python-docx
+        try:
+            import docx  # python-docx
+            doc = docx.Document(str(docx_path))
+            paras = []
+            for p in doc.paragraphs:
+                txt = (p.text or "").strip()
+                if txt:
+                    # very light escaping
+                    txt = (txt.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+                    paras.append(f"<p>{txt}</p>")
+            html = "\n".join(paras)
+        except Exception:
+            html = "<div class='small'>Unable to render document.</div>"
+    return html
+
+@app.get("/api/digest_html/<slug>")
+def api_digest_html(slug):
+    slug = (slug or "").lower().strip()
+    digests = CACHE.get("digests") or []
+    hit = next((d for d in digests if (d.get("slug") or "").lower() == slug), None)
+    if not hit:
+        return jsonify({"html": "<div class='small'>Not found.</div>"}), 404
+    abs_path = (DIGESTS_ROOT / hit["category"] / hit["filename"]).resolve()
+    # safety: must live under Digests
+    if DIGESTS_ROOT not in abs_path.parents or not abs_path.exists():
+        return jsonify({"html": "<div class='small'>File missing.</div>"}), 404
+    html = _docx_to_html(abs_path)
+    return jsonify({"html": html})
+
+
 def _scan_domain(root_dir: pathlib.Path, domain_id: str, label: str, categories: List[Dict]) -> Dict:
     essays = []
     for cat in categories:
@@ -267,6 +353,29 @@ def _scan_domain(root_dir: pathlib.Path, domain_id: str, label: str, categories:
 
 def _get_ch_payload(): return _scan_domain(CH_ROOT, "CH", "Church History", CH_CATEGORIES)
 def _get_ap_payload(): return _scan_domain(AP_ROOT, "AP", "Apologetics", AP_CATEGORIES)
+
+@app.get("/api/digests")
+def api_digests():
+    return jsonify({"digests": CACHE.get("digests", [])})
+
+@app.get("/api/digest/<slug>")
+def api_digest(slug):
+    slug = (slug or "").lower().strip()
+    hit = next((d for d in (CACHE.get("digests") or []) if (d.get("slug") or "").lower() == slug), None)
+    if not hit:
+        return jsonify({"error": "Not found"}), 404
+    return jsonify(hit)
+
+@app.get("/files/digests/<path:rel>")
+def files_digests(rel):
+    # serve only from Digests root; rel should be like 'AP/Foo - Bar.docx'
+    safe = pathlib.Path(rel).as_posix()
+    parts = safe.split("/")
+    if len(parts) < 2 or parts[0] not in DIGEST_CATS:
+        abort(404)
+    cat = parts[0]
+    filename = "/".join(parts[1:])
+    return send_from_directory((DIGESTS_ROOT / cat), filename, as_attachment=False)
 
 @app.get("/api/essays/ch")
 def api_essays_ch(): return jsonify(_get_ch_payload())
@@ -580,6 +689,62 @@ def search_old():
         deduped.append(r)
     return jsonify(deduped[:50])
 
+@app.get("/api/search")
+def search_all():
+    q = (request.args.get("q") or "").strip()
+    if not q:
+        return jsonify([])
+    terms = [t for t in re.split(r"\s+", q.lower()) if t]
+
+    results = []
+
+    # 1) existing index
+    for item in CACHE["search"]:
+        hay = " ".join([
+            (item.get("name") or item.get("title") or ""),
+            item.get("slug", ""),
+            " ".join(item.get("eras", []) or []),
+            " ".join(item.get("traditions", []) or []),
+            item.get("type", ""),
+        ]).lower()
+        if all(t in hay for t in terms):
+            if item.get("type") == "work":
+                wid = item.get("id")
+                if wid:
+                    item = dict(item); item["id"] = _canonicalize(wid)
+            results.append(item)
+
+    # 2) essays (CH + AP)
+    essays = _get_ch_payload()["essays"] + _get_ap_payload()["essays"]
+    for e in essays:
+        hay = f"{e['title']} {e['domain_label']} {e['category_label']}".lower()
+        if all(t in hay for t in terms):
+            results.append({"type": "essay", "title": e["title"], "slug": e["slug"]})
+
+    # 3) digests (DOCX)
+    for d in (CACHE.get("digests") or []):
+        hay = f"{d['title']} {' '.join(d['authors'])} {d['category']}".lower()
+        if all(t in hay for t in terms):
+            results.append({
+                "type": "digest",
+                "title": f"{d['authors_display']}: {d['title']}",
+                "slug": d["slug"],
+            })
+
+    type_order = {"theologian": 0, "work": 1, "topic": 2, "outline": 3, "essay": 4, "digest": 5}
+    results.sort(key=lambda x: (type_order.get(x.get("type"), 9), len(x.get("name", x.get("title", "")))))
+
+    # dedupe (works by canonical id; others by slug/title)
+    seen, out = set(), []
+    for r in results:
+        key = (r.get("type"), r.get("id") if r.get("type") == "work" else r.get("slug") or r.get("title"))
+        if key in seen:
+            continue
+        seen.add(key); out.append(r)
+
+    return jsonify(out[:50])
+
+
 # ---------- Markdown normalization ----------
 def normalize_md(text: str) -> str:
     lines = text.splitlines()
@@ -654,3 +819,6 @@ def spa(path):
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5001))
     app.run(host="0.0.0.0", port=port, debug=True)
+
+
+#  lsof -ti tcp:5001 | xargs kill -9 && python app.py
