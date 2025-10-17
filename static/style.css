@@ -32,7 +32,7 @@ header {
 }
 header a { color: #111827; font-weight: 600; text-decoration: none; padding: 6px 8px; border-radius: 8px; }
 header a:hover { background: #f3f4f6; }
-header a + a { margin-left: 14px; color: inherit; }
+header a + a { color: inherit; }
 header input {
   margin-left: auto; width: 380px; max-width: 50vw; height: 36px;
   border-radius: 10px; border: 1px solid var(--border);
@@ -192,4 +192,392 @@ h3 { font-size: 16px; margin: 0; }
   border: 1px solid #dbeafe;
 }
 
-/* essay list uses same grid as work-list; nothing else needed */
+
+:root { --wrap: 1100px; --gut: 16px; --header-h: 56px; }
+
+/* 1) Page width rule (container + header match exactly) */
+.container{
+  width: min(var(--wrap), calc(100vw - 2*var(--gut)));
+  margin: 24px auto;
+  padding: 0 var(--gut);
+}
+
+/* 2) Header becomes a shell; inner matches .container width */
+header{
+  position: sticky; top: 0; z-index: 20;
+  backdrop-filter: blur(6px);
+  background: rgba(250,251,252,.9);
+  border-bottom: 1px solid var(--border);
+  height: var(--header-h);
+  padding: 0;                 /* remove global padding */
+  display: block;             /* no flex here */
+}
+header .header-inner{
+  width: min(var(--wrap), calc(100vw - 2*var(--gut)));
+  height: var(--header-h);
+  margin: 0 auto;             /* center with page */
+  padding: 0 var(--gut);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;         /* anchor popover */
+}
+
+/* 3) Left: page switcher */
+.page-switch{
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 700; cursor: pointer; user-select: none;
+  padding: 6px 10px; border: 1px solid var(--border);
+  border-radius: 8px; background: #fff;
+}
+.page-switch .caret{ transition: transform .12s ease; }
+.page-switch.open .caret{ transform: rotate(180deg); }
+
+/* 4) Right: search input stays on the right edge of inner width */
+header input{
+  margin-left: auto;
+  width: clamp(240px, 42vw, 620px);
+  max-width: 100%;
+  height: 36px; border-radius: 10px; border: 1px solid var(--border);
+  padding: 0 12px; outline: none; background: #fff;
+}
+
+/* 5) Horizontal popover, full inner width (no vertical scroll) */
+.page-popover{
+  position: absolute;
+  left: var(--gut);
+  top: calc(100% + 8px);
+  width: calc(100% - 2*var(--gut));
+  background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  padding: 10px; z-index: 60;
+
+  display: flex; flex-wrap: nowrap; gap: 12px;
+  overflow-x: auto; overflow-y: hidden; white-space: nowrap;
+}
+.page-popover a{
+  flex: 0 0 auto; white-space: nowrap; font-weight: 600;
+  padding: 6px 8px; border-radius: 8px; text-decoration: none; color: inherit;
+}
+.page-popover a:hover{ background:#f3f4f6; }
+
+/* 6) Centered search results dropdown (matches page width) */
+.search-results{
+  position: fixed; z-index: 60;
+  left: 50%; transform: translateX(-50%);
+  top: calc(var(--header-h) + 8px);
+  width: min(700px, calc(100vw - 2*var(--gut)));
+  max-height: 60vh; overflow: auto;
+}
+
+/* 7) Small screens: stack cleanly */
+@media (max-width: 640px){
+  header .header-inner{ flex-wrap: wrap; height: auto; padding: 8px var(--gut); }
+  .page-switch{ order: 1; }
+  header input{ order: 2; flex: 1 1 100%; }
+  .search-results{ top: 96px; }
+}
+
+:root { --wrap: 1100px; --gut: 16px; --header-h: 56px; }
+
+/* 1) Page width rule (container + header match exactly) */
+.container{
+  width: min(var(--wrap), calc(100vw - 2*var(--gut)));
+  margin: 24px auto;
+  padding: 0 var(--gut);
+}
+
+/* 2) Header becomes a shell; inner matches .container width */
+header{
+  position: sticky; top: 0; z-index: 20;
+  backdrop-filter: blur(6px);
+  background: rgba(250,251,252,.9);
+  border-bottom: 1px solid var(--border);
+  height: var(--header-h);
+  padding: 0;                 /* remove global padding */
+  display: block;             /* no flex here */
+}
+header .header-inner{
+  width: min(var(--wrap), calc(100vw - 2*var(--gut)));
+  height: var(--header-h);
+  margin: 0 auto;             /* center with page */
+  padding: 0 var(--gut);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;         /* anchor popover */
+}
+
+/* 3) Left: page switcher */
+.page-switch{
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 700; cursor: pointer; user-select: none;
+  padding: 6px 10px; border: 1px solid var(--border);
+  border-radius: 8px; background: #fff;
+}
+.page-switch .caret{ transition: transform .12s ease; }
+.page-switch.open .caret{ transform: rotate(180deg); }
+
+/* 4) Right: search input stays on the right edge of inner width */
+header input{
+  margin-left: auto;
+  width: clamp(240px, 42vw, 620px);
+  max-width: 100%;
+  height: 36px; border-radius: 10px; border: 1px solid var(--border);
+  padding: 0 12px; outline: none; background: #fff;
+}
+
+/* 5) Horizontal popover, full inner width (no vertical scroll) */
+.page-popover{
+  position: absolute;
+  left: var(--gut);
+  top: calc(100% + 8px);
+  width: calc(100% - 2*var(--gut));
+  background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  padding: 10px; z-index: 60;
+
+  display: flex; flex-wrap: nowrap; gap: 12px;
+  overflow-x: auto; overflow-y: hidden; white-space: nowrap;
+}
+.page-popover a{
+  flex: 0 0 auto; white-space: nowrap; font-weight: 600;
+  padding: 6px 8px; border-radius: 8px; text-decoration: none; color: inherit;
+}
+.page-popover a:hover{ background:#f3f4f6; }
+
+/* 6) Centered search results dropdown (matches page width) */
+.search-results{
+  position: fixed; z-index: 60;
+  left: 50%; transform: translateX(-50%);
+  top: calc(var(--header-h) + 8px);
+  width: min(700px, calc(100vw - 2*var(--gut)));
+  max-height: 60vh; overflow: auto;
+}
+
+/* 7) Small screens: stack cleanly */
+@media (max-width: 640px){
+  header .header-inner{ flex-wrap: wrap; height: auto; padding: 8px var(--gut); }
+  .page-switch{ order: 1; }
+  header input{ order: 2; flex: 1 1 100%; }
+  .search-results{ top: 96px; }
+}
+
+/* --- vertical page popover instead of horizontal --- */
+.page-popover {
+  position: absolute;
+  left: var(--gut);
+  top: calc(100% + 8px);
+  width: auto;                     /* fit to content */
+  min-width: 160px;                /* tidy min width */
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  padding: 6px 0;
+  z-index: 60;
+
+  display: flex;
+  flex-direction: column;          /* vertical layout */
+  gap: 0;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.page-popover a {
+  display: block;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.page-popover a:hover {
+  background: #f3f4f6;
+}
+
+
+/* --- clean, compact vertical dropdown --- */
+.page-popover {
+  position: absolute;
+  left: 0;                        /* align exactly with trigger */
+  top: calc(100% + 4px);
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  padding: 4px 0;
+  z-index: 60;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.page-popover a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.page-popover a:hover {
+  background: #f3f4f6;
+}
+
+/* keep the dropdown aligned even when the header is centered */
+header .header-inner { position: relative; }
+.page-switch { position: relative; }
+
+
+/* --- final tidy vertical dropdown: no side offset --- */
+.page-popover {
+  position: absolute;
+  left: 0;                      /* no side gap */
+  right: auto;
+  top: calc(100% + 4px);
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  padding: 4px 0;
+  z-index: 60;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.page-popover a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.page-popover a:hover {
+  background: #f3f4f6;
+}
+
+/* ensure alignment under trigger */
+header .header-inner { position: relative; }
+.page-switch { position: relative; }
+
+
+/* Header shell already set; just make contents flex smart */
+header .header-inner{
+  display: flex;
+  align-items: center;
+  gap: 8px;              /* tighter on small screens */
+}
+
+/* Page label stays its natural size */
+.page-switch{
+  flex: 0 0 auto;
+}
+
+/* SEARCH: fill the remaining header width */
+header input{
+  flex: 1 1 auto;        /* <-- grow + shrink to available space */
+  width: auto;           /* ignore earlier fixed/clamped widths */
+  max-width: none;       /* remove the desktop cap so it can truly fill */
+  min-width: 120px;      /* keep a sane minimum on tiny screens */
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 0 12px;
+  background: #fff;
+}
+
+/* If you still want a soft cap on big desktops, uncomment this: */
+/* @media (min-width: 1100px){ header input{ max-width: 720px; } } */
+
+/* When header wraps on very narrow iPhones, let the input take the full row */
+@media (max-width: 520px){
+  header .header-inner{ flex-wrap: wrap; }
+  .page-switch{ order: 1; }
+  header input{ order: 2; flex: 1 1 100%; }
+}
+
+
+/* Make the search fill the available header space */
+header .header-inner > input{
+  flex: 1 1 0 !important;   /* grow + shrink from zero */
+  min-width: 0;             /* allow flexbox to actually shrink */
+  width: auto !important;   /* override the 380px */
+  max-width: none !important;
+  margin-left: 0 !important;/* override the auto push */
+}
+
+/* When it wraps to a new line on tiny screens, let it span full width */
+@media (max-width: 560px){
+  header .header-inner{ flex-wrap: nowrap; }
+  header .header-inner > input{
+    flex: 1 1 100% !important;
+  }
+
+}
+
+
+/* don't let card hover override transform on the dropdown */
+.card:hover:not(.no-raise){
+  box-shadow: 0 4px 16px rgba(0,0,0,.05);
+  transform: translateY(-1px);
+}
+
+/* keep the dropdown's transform stable even on hover */
+.search-results{
+  transform: translateX(-50%) !important;
+}
+.search-results:hover{
+  transform: translateX(-50%) !important;
+}
+
+
+.section .section-head { border-radius: 10px; }
+.section.open .section-head    { border-left: 3px solid var(--accent); background: #fff; }
+.section:not(.open) .section-head { border-left: 3px solid transparent; background: #f7f9fc; }
+.section .caret { transition: transform .15s ease, opacity .15s; opacity: .6; }
+.section.open .caret { transform: rotate(90deg); opacity: 1; }
+.section.open .details { margin-left: 10px; border-left: 1px dashed var(--border); padding-left: 10px; }
+
+
+/* ——— Rhythm shim (paste at end) ——— */
+:root { --rh-font: 16px; --rh-pad-x: 12px; --rh-pad-y: 8px; --rh-gap: 8px; }
+
+/* 1) Make group titles look the same everywhere */
+.section-head h2,
+.section-head h3,
+.section-head .small b {
+  font-size: var(--rh-font);
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* 2) Unify section head/body padding */
+.section-head {
+  padding: var(--rh-pad-y) var(--rh-pad-x);
+}
+.section.open .details {
+  padding: var(--rh-gap) var(--rh-pad-x) var(--rh-pad-x);
+}
+
+/* 3) Keep stripped .card.section looking like the others (spacing only) */
+.card.section { padding: 0; }            /* keep chrome off */
+.card.section .section-head {             /* but keep the spacing consistent */
+  border-radius: 10px;
+}
+
+/* 4) Markdown rhythm so Domain/Category pages don’t look “airier” */
+.markdown { line-height: 1.55; }
+.markdown h1, .markdown h2 { margin: 14px 0 0px; }
+
+/* 5) Compact work rows match the same padding rhythm */
+.work-list .card.work-row { padding: 10px 12px; }
