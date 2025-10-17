@@ -3225,7 +3225,7 @@ function TopicPage({ slug, datasets }) {
   const [openEra, setOpenEra] = React.useState({});
 
   const entry = datasets.byTopic[topic.id] || { theologians: [] };
-  const theoTitle = (T) => (T.dates ? `${T.full_name} ${T.dates}` : T.full_name);
+  const theoTitle = (T) => (T.dates ? `${T.full_name} (${T.dates})` : T.full_name);
 
   // --- outlines lookup for this topic ---
   function outlinesForTheo(theologian_id) {
