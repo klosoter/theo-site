@@ -7,3 +7,4 @@ outlines/pneumatology/.DS_Store
 .idea/copilot.data.migration.ask.xml
 .idea/copilot.data.migration.ask2agent.xml
 .idea/copilot.data.migration.edit.xml
+__pycache__/utils.cpython-310.pyc

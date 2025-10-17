@@ -2517,7 +2517,7 @@ function Header() {
   }, []);
 
   const select = (e, to) => { setOpen(false); setResults([]); setQ(""); go(e, to); };
-  
+
 // removed ["Works", "/works"],
   const pages = [
     ["Topics", "/"],
