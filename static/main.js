@@ -2517,11 +2517,11 @@ function Header() {
   }, []);
 
   const select = (e, to) => { setOpen(false); setResults([]); setQ(""); go(e, to); };
-
+  
+// removed ["Works", "/works"],
   const pages = [
     ["Topics", "/"],
     ["Theologians", "/theologians"],
-    ["Works", "/works"],
     ["Church History", "/church-history"],
     ["Apologetics", "/apologetics"],
     ["Digests", "/digests"],
