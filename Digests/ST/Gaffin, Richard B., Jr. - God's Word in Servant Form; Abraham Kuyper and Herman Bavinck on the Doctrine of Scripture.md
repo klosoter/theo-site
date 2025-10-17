@@ -1,0 +1,49 @@
+__God’s Word in Servant Form: Abraham Kuyper and Herman Bavinck on the Doctrine of Scripture \- Richard B\. Gaffin Jr\.__
+
+__Introduction \- Dr\. Peter A\. Lilliback__
+
+Dr\. Peter A\. Lilliback begins by emphasizing the theoanthropic nature of Scripture, highlighting its complexity and the need for doxological precision\. He advocates for inerrancy, stating that Scripture is true and free from error in all its teachings, rejecting any notion that Scripture is only true in matters of redemption while being fallible in science\. He points out that Augustine and Calvin both held to inerrancy, with Calvin asserting that Scripture is inerrant by its own self\-attestation\. 
+
+Lilliback revisits the positions of Old Princeton theologians Charles Hodge and B\. B\. Warfield, who linked inerrancy with inspiration\. At Westminster Theological Seminary \(WTS\), figures like Murray upheld inerrancy, acknowledging difficulties but rejecting contradictions and disingenuous attempts at harmonization, emphasizing that rational demonstration is not the ground of faith\. Cornelius Van Til combined Warfield and Calvin’s views, emphasizing the autonomy of man\. Geerhardus Vos considered inerrancy essential to Biblical theology\.
+
+__I\. Background and Issues__
+
+Jack Rogers and Donald McKim, in their book *The Authority and Interpretation of the Bible*, argue that contemporary evangelicalism’s view of Scripture is a regrettable deviation from the historic church doctrine, particularly that of the Reformers\. This, they claim, has become an unnecessary barrier to unity among evangelicals\. Gaffin seeks to __address the questions__ posed by Rogers and McKim, particularly:
+
+1. How did Kuyper and Bavinck view themselves in relation to Post\-Reformation Reformed Orthodoxy and the Reformation?
+2. The role of the Holy Spirit’s internal testimony in recognizing scriptural authority\.
+3. The relationship between form and content in Scripture\.
+4. The analogy between the incarnation and inscripturation\.
+5. Their stance on biblical criticism\.
+6. Their understanding of biblical inerrancy and whether it accommodates the presence or possibility of errors in Scripture\.
+
+Gaffin focuses primarily on the sixth question to measure the validity of Rogers and McKim’s critique\.
+
+__II\. Kuyper__
+
+Abraham Kuyper’s views on the doctrine of Scripture are elaborated in works like *Principles of Sacred Theology*, *The Work of the Holy Spirit*, and *Dictaten dogmatiek*\. Kuyper posits that both the incarnation and inscripturation necessitate a servant form, reflecting human imperfection in language and nature, while remaining free from sin and error\. 
+
+Summary and Conclusions: Kuyper
+
+1. While ahistorical, rationalistic tendencies may be present in post\-Reformation orthodoxy, there is a deep, inner continuity between it and Kuyper, as well as the Reformation itself\. In particular, it fairly represents the same historic church doctrine of Scripture that he is seeking to uphold in his own day\.
+2. The internal testimony of the Holy Spirit is absolutely indispensable to recognizing the divine origin and authority of Scripture\. There is no place for a system of external proofs for inspiration, directed to unaided reason\. 
+3. The form and the content of Scripture are both truly divine and truly human and, as such, are indivisible\. The form of Scripture is predestined; as its primary author, the Holy Spirit is ultimately accountable for its form as well as its content\. It is wrong to assign its form to the human side, its content or central message to the divine side of Scripture, as if the form/content distinction parallels the human/divine distinction\. 
+4. The incarnation gives rise to inscripturation, and the latter is intrinsic to the former; the one could not exist without the other\. The mystery of Scripture is its unique theanthropic character, without, however, involving any sort of hypostatic union between divine and human elements\. Scripture has its servant\-form only because Christ was incarnated not in a glorified state but in a state of humiliation\. The analogue to the sinlessness of Christ is that Scripture is without error\. 
+5. Careful, methodical study is demanded in view of the historical origin and human authorship of the biblical documents\. But contemporary biblical criticism is for the most part premised on rational autonomy and, whether or not intentionally, undermines the claims and authority of Scripture\. 
+6. The Bible is without errors, absolutely, not only in its content but also in its form, not only in the sense of deception but also to the exclusion of unintentional mistakes, faulty judgments, lapses of memory and the like\.” For Scripture to contain errors would mean that God is guilty of error\. The truth of Scripture, appropriate to its unique divine authorship, is impressionistic, not notarially precise or scientifically exact\. Repeatedly Kuyper speaks of the errorlessness \(*feilloosheid*\) of Scripture\. While he apparently never uses the closest Dutch equivalent for the term inerrancy \(*foutloosheid*\), there is no reason to suppose that he would object to it or find it inappropriate, provided it is understood in an impressionistic, nontechnical sense\.
+
+__III\. Bavinck \(*Gereformeerde Dogmatiek* 103\-129\)__
+
+1. A deep continuity and harmony exists between the Reformation and post\-Reformation orthodoxy\.” Especially in its later development, this orthodoxy does display a too mechanical, atomistic approach towards Scripture that needs to be corrected by a more organic outlook\. But this deviation, by no means negligible, does not put post\-Reformation orthodoxy outside the central church tradition on Scripture\.
+2. The internal testimony of the Holy Spirit produces recognition of the inspiration and authority of Scripture\. The focus of this testimony is Scripture as such, its form as well as and inseparable from its content\. This witness is absolutely indispensable\. No amount of proofs appealing to unaided reason can ever replace or supplement it\.”
+3. The form and the content of Scripture are both fully divine and fully human and, as such, in their organic coherence, indivisible\. As the primary author of Scripture, God is ultimately accountable for its form as well as the content\. The form, in its genuinely human character, expresses the specifically authorial intention of the Spirit\. The form/content distinction does not parallel the human/divine distinction\. The form is not the merely human side of Scripture, in distinction from the content or central message as the exclusively divine side\.
+4. Inscripturation arises necessarily from the incarnation and would not exist apart from it\. This reality determines the origin and composition of Scripture from beginning to end\. It specifies more concretely the organic nature of inspiration as a whole\. It gives Scripture a unique theanthropic character \(“everything divine and everything human”\), without, however, involving some sort of hypostatic union between divine and human elements\. Scripture has its distinctive servant\-form, not because of its “humanity,” generally considered, but because Christ was incarnated, not in a state of glory but of humiliation\. The correlate to the sinlessness of Christ is that Scripture is without error\.
+5. Disciplined, scholarly study of Scripture is necessary, especially in order to reach a better understanding of its organic, incarnate origin and composition\. But the crucial issue raised by contemporary biblical criticism is primarily ethical\. Much of this criticism is heart\-directed rebellion against he authority of Scripture as God’s word\.
+6. The Bible is without error\. Since all error, unintentional mistakes as well as deception, results from sin, it would be misleading at best to speak of errors in Scripture, either in form or content, in any sense\. To find error in Scripture would be to fault its primary author and undermine his authority\. The truth of Scripture is not notarially precise or scientifically exact\. Ultimately this nontechnical, impressionistic quality is appropriate to and explained by its unique divine authorship and specific, incarnate character, not the involvement and limitations of the human authors\. Unlike Kuyper, Bavinck does not speak of the errorlessness of Scripture\. In the material we have examined he does not even use the word infallibility\. But every consideration leads us to suppose that he would not object nor find it inappropriate to speak of the inerrancy of Scripture, provided that, like Kuyper, we understand that in an impressionistic, nontechnical sense\.
+
+__Conclusion__
+
+When we compare the positions of Kuyper and Bavinck over the range of our examination certain differences appear\. Leaving to the side interesting variations in style, disposition of material and the development of basic concepts, most striking perhaps is the fact, already noted, that, in contrast to Bavinck, Kuyper stresses the infallibility and errorlessness of Scripture\. Bavinck’s reserve in this regard, however, is not a sign of uncertainty or indifference\. As we have seen, with him, too, the concern to maintain that Scripture is without error is present\.
+
+Also, there is truth in the observation of Berkouwer mentioned above \(see above, note 62\): Bavinck, unlike Kuyper, seems to sense the storms of the future over the doctrine of Scripture\. With reference to the attacks of biblical criticism, Bavinck is not any less confident than Kuyper, but, we may say, Kuyper is more triumphant\. Bavinck’s comments about the \(probably\) unsolvable difficulties that Scripture itself presents to its inspiration, and his eloquent statements concerning the nature of faith, including faith in Scripture, as a constant struggle against the appearance of things \(441\-42\) sound a note which is not present in Kuyper\.
+
