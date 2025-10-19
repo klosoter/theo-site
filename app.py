@@ -14,6 +14,8 @@ DATA_DIR = pathlib.Path(os.getenv("DATA_DIR", ROOT / "data")).resolve()
 # Optional text fallbacks placed by your process (used if JSON missing)
 BY_WORKS_FILE = pathlib.Path(os.getenv("BY_WORKS_FILE", DATA_DIR / "indices" / "by_work.json"))
 WORK_CANON_FILE = pathlib.Path(os.getenv("WORK_CANON_FILE", DATA_DIR / "work_canon_map.json"))
+THEOLOGIAN_ESSAYS_DIR = (DATA_DIR / "theologian-essays").resolve()
+
 
 def _load_json_maybe_txt(pathish: pathlib.Path, default=None):
     """Load JSON from .json or the same path with .txt (used in repo)."""
@@ -196,90 +198,6 @@ def _md_min_to_html(md: str) -> str:
     if in_list: out.append("</ul>")
     return "\n".join(out)
 
-#
-# # ======== Digests (DOCX) ========
-# DIGESTS_ROOT = (ROOT / "Digests").resolve()
-# DIGEST_CATS = ["AP", "ST", "CH"]
-#
-# def _slugify2(s: str) -> str:
-#     return re.sub(r"[^a-z0-9]+", "-", (s or "").strip().lower()).strip("-").strip(".")
-#
-# def _parse_digest_filename(stem: str):
-#     # "<authors> - <title>"
-#     parts = stem.split("-", 1)
-#     if len(parts) != 2:
-#         return None, None, []
-#     raw_authors, raw_title = parts[0].strip(), parts[1].strip()
-#     authors = [a.strip() for a in re.split(r"\s*(?:,|&|and)\s*", raw_authors) if a.strip()]
-#     return raw_title, raw_authors, authors
-#
-# def _scan_digests():
-#     recs = []
-#     for cat in DIGEST_CATS:
-#         folder = (DIGESTS_ROOT / cat)
-#         if not folder.exists():
-#             continue
-#         for f in sorted(folder.glob("*.docx")):
-#             title, authors_display, authors = _parse_digest_filename(f.stem)
-#             if not title or f.stem.startswith("~"):
-#                 continue
-#             slug = _slugify2(f"{cat}-{authors_display}-{title}")[:140]
-#             recs.append({
-#                 "type": "digest",
-#                 "category": cat,                     # AP|ST|CH
-#                 "title": title,
-#                 "authors": authors,                  # ["Lastname", "Other"]
-#                 "authors_display": authors_display,  # original left side
-#                 "slug": slug,
-#                 "filename": f.name,
-#                 "path": f"Digests/{cat}/{f.name}",
-#                 "updated_at": datetime.fromtimestamp(f.stat().st_mtime).isoformat()
-#             })
-#     return recs
-#
-# CACHE["digests"] = _scan_digests()
-#
-# # --- DOCX → safe-ish HTML ---
-# def _docx_to_html(docx_path: pathlib.Path) -> str:
-#     """
-#     Convert a .docx to basic HTML. Prefers 'mammoth' if installed; otherwise falls back to python-docx -> <p>.
-#     Output is simple, no styles/scripts.
-#     """
-#     try:
-#         import mammoth  # type: ignore
-#         with open(docx_path, "rb") as f:
-#             result = mammoth.convert_to_html(f)
-#         html = result.value or ""
-#     except Exception:
-#         # Fallback: python-docx
-#         try:
-#             import docx  # python-docx
-#             doc = docx.Document(str(docx_path))
-#             paras = []
-#             for p in doc.paragraphs:
-#                 txt = (p.text or "").strip()
-#                 if txt:
-#                     # very light escaping
-#                     txt = (txt.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
-#                     paras.append(f"<p>{txt}</p>")
-#             html = "\n".join(paras)
-#         except Exception:
-#             html = "<div class='small'>Unable to render document.</div>"
-#     return html
-#
-# @app.get("/api/digest_html/<slug>")
-# def api_digest_html(slug):
-#     slug = (slug or "").lower().strip()
-#     digests = CACHE.get("digests") or []
-#     hit = next((d for d in digests if (d.get("slug") or "").lower() == slug), None)
-#     if not hit:
-#         return jsonify({"html": "<div class='small'>Not found.</div>"}), 404
-#     abs_path = (DIGESTS_ROOT / hit["category"] / hit["filename"]).resolve()
-#     # safety: must live under Digests
-#     if DIGESTS_ROOT not in abs_path.parents or not abs_path.exists():
-#         return jsonify({"html": "<div class='small'>File missing.</div>"}), 404
-#     html = _docx_to_html(abs_path)
-#     return jsonify({"html": html})
 
 DIGESTS_ROOT = (ROOT / "Digests").resolve()
 DIGEST_CATS  = ["AP", "ST", "CH"]
@@ -485,6 +403,29 @@ def _build_search_pool(items):
 
 CACHE["search"] = _load_json(DATA_DIR / "indices" / "search_index.json", [])
 CACHE["search_pool"] = _build_search_pool(CACHE["search"])
+
+@app.get("/api/theologian_essay/<theo_id>")
+def api_theologian_essay(theo_id):
+    """
+    Serve data/theologian-essays/{theo_id}.md as HTML.
+    Reuses normalize_md + markdown renderer like /api/outline.
+    """
+    safe_id = re.sub(r"[^a-zA-Z0-9_:-]+", "", (theo_id or ""))
+    md_path = (THEOLOGIAN_ESSAYS_DIR / f"{safe_id}.md").resolve()
+
+    # Safety: must be inside THEOLOGIAN_ESSAYS_DIR and exist
+    if THEOLOGIAN_ESSAYS_DIR not in md_path.parents or not md_path.exists():
+        return jsonify({"html": ""})
+
+    try:
+        text = md_path.read_text(encoding="utf-8")
+    except Exception:
+        return jsonify({"html": ""})
+
+    body = normalize_md(text)
+    html = markdown(body, extensions=["fenced_code", "tables", "toc"])
+    return jsonify({"html": html})
+
 
 
 # --- add near other helpers ---

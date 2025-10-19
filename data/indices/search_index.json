@@ -80158,5 +80158,41 @@
     "path": "/Users/klosoter/Documents/Coding/Theo-Wiki/Digests/CH/Wilken, Robert Louis - The Christians as the Romans Saw Them.docx",
     "updated_at": "2024-12-16T15:46:28.468602",
     "hay": "wilken, robert louis - the christians as the romans saw them ch digest"
+  },
+  {
+    "type": "theologian",
+    "name": "Irenaeus",
+    "slug": "irenaeus",
+    "hay": "irenaeus theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "Cappadocian Fathers",
+    "slug": "cappadocian-fathers",
+    "hay": "cappadocian fathers theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "Philip Melanchthon",
+    "slug": "philip-melanchthon",
+    "hay": "philip melanchthon theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "Council of Trent",
+    "slug": "council-of-trent",
+    "hay": "council of trent theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "William G.T. Shedd",
+    "slug": "william-g-t-shedd",
+    "hay": "william g t shedd theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "James Henley Thornwell",
+    "slug": "james-henley-thornwell",
+    "hay": "james henley thornwell theologian"
   }
 ]

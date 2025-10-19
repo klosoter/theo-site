@@ -42284,5 +42284,197 @@
       }
     ],
     "country_primary_iso": "GBR"
+  },
+  {
+    "id": "theo_95101ca3ece7",
+    "slug": "irenaeus",
+    "full_name": "Irenaeus",
+    "name": "Irenaeus",
+    "institution_ids": [],
+    "era_slug": "patristic",
+    "tradition_slug": "patristic",
+    "dates": "130-202",
+    "birth_year": 130,
+    "death_year": 202,
+    "era": {
+      "id": "era_patristic",
+      "slug": "patristic",
+      "label": "Patristic",
+      "start": 100,
+      "end": 749
+    },
+    "tradition": {
+      "id": "trad_patristic",
+      "slug": "patristic",
+      "label": "Patristic (Church Fathers)"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+  {
+    "id": "theo_4a4e2b6dd8b4",
+    "slug": "cappadocian-fathers",
+    "full_name": "Cappadocian Fathers",
+    "name": "Cappadocian Fathers",
+    "institution_ids": [],
+    "era_slug": "patristic",
+    "tradition_slug": "eastern-orthodox",
+    "dates": "329-395",
+    "birth_year": 329,
+    "death_year": 395,
+    "era": {
+      "id": "era_patristic",
+      "slug": "patristic",
+      "label": "Patristic",
+      "start": 100,
+      "end": 749
+    },
+    "tradition": {
+      "id": "trad_orthodox",
+      "slug": "eastern-orthodox",
+      "label": "Eastern Orthodox"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+  {
+    "id": "theo_a6458c7f2694",
+    "slug": "philip-melanchthon",
+    "full_name": "Philip Melanchthon",
+    "name": "Philip Melanchthon",
+    "institution_ids": [],
+    "era_slug": "reformation",
+    "tradition_slug": "lutheran",
+    "dates": "1497-1560",
+    "birth_year": 1497,
+    "death_year": 1560,
+    "era": {
+      "id": "era_reformation",
+      "slug": "reformation",
+      "label": "Reformation",
+      "start": 1500,
+      "end": 1599
+    },
+    "tradition": {
+      "id": "trad_lutheran",
+      "slug": "lutheran",
+      "label": "Lutheran"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+  {
+    "id": "theo_106583ee8c82",
+    "slug": "council-of-trent",
+    "full_name": "Council of Trent",
+    "name": "Council of Trent",
+    "institution_ids": [],
+    "era_slug": "reformation",
+    "tradition_slug": "catholic",
+    "dates": "1545-1563",
+    "birth_year": 1545,
+    "death_year": 1563,
+    "era": {
+      "id": "era_reformation",
+      "slug": "reformation",
+      "label": "Reformation",
+      "start": 1500,
+      "end": 1599
+    },
+    "tradition": {
+      "id": "trad_catholic",
+      "slug": "catholic",
+      "label": "Roman Catholic"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+  {
+    "id": "theo_cd0926bd13b4",
+    "slug": "william-g-t-shedd",
+    "full_name": "William G.T. Shedd",
+    "name": "William G.T. Shedd",
+    "institution_ids": [],
+    "era_slug": "modern",
+    "tradition_slug": "reformed",
+    "dates": "1820-1894",
+    "birth_year": 1820,
+    "death_year": 1894,
+    "era": {
+      "id": "era_modern",
+      "slug": "modern",
+      "label": "Modern",
+      "start": 1800,
+      "end": 1945
+    },
+    "tradition": {
+      "id": "trad_reformed",
+      "slug": "reformed",
+      "label": "Reformed"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+  {
+    "id": "theo_1ce33009761e",
+    "slug": "james-henley-thornwell",
+    "full_name": "James Henley Thornwell",
+    "name": "James Henley Thornwell",
+    "institution_ids": [],
+    "era_slug": "modern",
+    "tradition_slug": "reformed",
+    "dates": "1812-1862",
+    "birth_year": 1812,
+    "death_year": 1862,
+    "era": {
+      "id": "era_modern",
+      "slug": "modern",
+      "label": "modern",
+      "start": 1800,
+      "end": 1945
+    },
+    "tradition": {
+      "id": "trad_reformed",
+      "slug": "reformed",
+      "label": "Reformed"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
   }
 ]
