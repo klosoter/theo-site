@@ -551,9 +551,9 @@ function Header() {
 
   const [q, setQ] = React.useState("");
   const [results, setResults] = React.useState([]);
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false);           // search popover
   const [highlight, setHighlight] = React.useState(-1);
-  const [switchOpen, setSwitchOpen] = React.useState(false);
+  const [switchOpen, setSwitchOpen] = React.useState(false); // page switch popover
   const boxRef = React.useRef(null);
 
   const current = React.useMemo(() => {
@@ -574,26 +574,48 @@ function Header() {
     return "Browse";
   }, [path]);
 
+  // Search effect (mutually exclusive with page switch)
   React.useEffect(() => {
     const id = setTimeout(async () => {
       const query = q.trim();
       if (!query) { setResults([]); setOpen(false); setHighlight(-1); return; }
+      // close page switch if typing/searching
+      setSwitchOpen(false);
       try {
         const r = await api("/api/search?q=" + encodeURIComponent(query));
         setResults(r);
         setHighlight(r.length > 0 ? 0 : -1);
         setOpen(r.length > 0);
-      } catch { setResults([]); setOpen(false); setHighlight(-1); }
+      } catch {
+        setResults([]); setOpen(false); setHighlight(-1);
+      }
     }, 180);
     return () => clearTimeout(id);
   }, [q]);
 
+  // Global listeners
   React.useEffect(() => {
-    function onDoc(e){ if (!boxRef.current) return; if (!boxRef.current.contains(e.target)) { setSwitchOpen(false); setOpen(false); setHighlight(-1); } }
-    function onKey(e){ if (e.key === "Escape") { setOpen(false); setSwitchOpen(false); setHighlight(-1); } }
+    function onDoc(e){
+      if (!boxRef.current) return;
+      if (!boxRef.current.contains(e.target)) {
+        setSwitchOpen(false);
+        setOpen(false);
+        setHighlight(-1);
+      }
+    }
+    function onKey(e){
+      if (e.key === "Escape") {
+        setOpen(false);
+        setSwitchOpen(false);
+        setHighlight(-1);
+      }
+    }
     document.addEventListener("mousedown", onDoc);
     window.addEventListener("keydown", onKey);
-    return () => { document.removeEventListener("mousedown", onDoc); window.removeEventListener("keydown", onKey); };
+    return () => {
+      document.removeEventListener("mousedown", onDoc);
+      window.removeEventListener("keydown", onKey);
+    };
   }, []);
 
   const select = (e, to) => { setOpen(false); setResults([]); setQ(""); go(e, to); };
@@ -634,7 +656,13 @@ function Header() {
       <div className="header-inner">
         <div
           className={"page-switch" + (switchOpen ? " open" : "")}
-          onClick={() => setSwitchOpen(o => !o)}
+          onClick={() => {
+            // toggling page switch should close search (mutually exclusive)
+            setOpen(false);
+            setResults([]);
+            setHighlight(-1);
+            setSwitchOpen(o => !o);
+          }}
           role="button"
           aria-expanded={switchOpen ? "true" : "false"}
           aria-haspopup="true"
@@ -645,8 +673,9 @@ function Header() {
         <input
           placeholder="Search topics, theologians, works, essays…"
           value={q}
-          onChange={(e) => setQ(e.target.value)}
-          onFocus={() => setOpen((results || []).length > 0)}
+          onChange={(e) => { setQ(e.target.value); setSwitchOpen(false); }} // typing closes page switch
+          onFocus={() => { setSwitchOpen(false); setOpen((results || []).length > 0); }} // focusing search closes page switch
+          onClick={() => { setSwitchOpen(false); if ((results || []).length > 0) setOpen(true); }} // clicking search closes page switch
           onKeyDown={handleKey}
         />
 
@@ -659,6 +688,7 @@ function Header() {
                 onClick={(e) => {
                   e.preventDefault();
                   setSwitchOpen(false);
+                  setOpen(false);
                   select(e, to);
                 }}
               >
@@ -689,7 +719,10 @@ function Header() {
                   background: active ? "#eef" : "transparent",
                 }}
                 onMouseEnter={() => setHighlight(i)}
-                onClick={(e) => select(e, to)}
+                onClick={(e) => {
+                  setSwitchOpen(false);
+                  select(e, to);
+                }}
               >
                 <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
               </div>
