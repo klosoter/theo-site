@@ -247,6 +247,7 @@ def api_digest_meta(slug):
     slug = (slug or "").lower().strip()
     digests = CACHE.get("digests") or _scan_digests_md()
     hit = next((d for d in digests if (d.get("slug") or "").lower() == slug), None)
+
     if not hit:
         return {"error": "Not found"}, 404
     # you can also add a convenience 'name' the search UI might use
@@ -402,7 +403,7 @@ def _build_search_pool(items):
     return pool
 
 CACHE["search"] = _load_json(DATA_DIR / "indices" / "search_index.json", [])
-CACHE["search_pool"] = _build_search_pool(CACHE["search"])
+CACHE["search_pool"] =  CACHE["search"] #_build_search_pool(CACHE["search"])
 
 @app.get("/api/theologian_essay/<theo_id>")
 def api_theologian_essay(theo_id):
@@ -644,6 +645,7 @@ def api_traditions():
 
 # ---------- API: search ----------
 @app.get("/api/search")
+@app.get("/api/search")
 def api_search():
     q = (request.args.get("q") or "").strip().lower()
     if not q:
@@ -657,26 +659,44 @@ def api_search():
         if all(t in it.get("hay","") for t in terms):
             r = dict(it)
             r.pop("hay", None)
-            # canonicalize work IDs (collapsing aliases)
             if r.get("type") == "work" and r.get("id"):
                 r["id"] = _canonicalize(r["id"])
             hits.append(r)
 
+    # optional: keep global type ordering but not inner sorting
     type_order = {"theologian": 0, "work": 1, "topic": 2, "outline": 3, "essay": 4, "digest": 5}
-    hits.sort(key=lambda x: (
-        type_order.get(x.get("type"), 9),
-        len(x.get("name", x.get("title", "")))
-    ))
+    hits.sort(key=lambda x: type_order.get(x.get("type"), 9))
 
-    # dedupe: works by canonical id; others by slug/title
-    seen, out = set(), []
+    # dedupe (same as before)
+    seen, unique = set(), []
     for r in hits:
         key = (r.get("type"), r.get("id") if r.get("type") == "work" else r.get("slug") or r.get("title"))
         if key in seen:
             continue
-        seen.add(key); out.append(r)
+        seen.add(key)
+        unique.append(r)
 
-    return jsonify(out[:50])
+    # cap per type
+    MAX_PER_TYPE = {
+        "theologian": 10,
+        "work": 15,
+        "topic": 10,
+        "outline": 10,
+        "essay": 10,
+        "digest": 10,
+    }
+
+    grouped = {}
+    for r in unique:
+        t = r.get("type")
+        grouped.setdefault(t, []).append(r)
+
+    limited = []
+    for t in sorted(grouped.keys(), key=lambda x: type_order.get(x, 9)):
+        limited.extend(grouped[t][:MAX_PER_TYPE.get(t, 10)])
+
+    return jsonify(limited)
+
 
 @app.post("/api/search/reload")
 def api_search_reload():

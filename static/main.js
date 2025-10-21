@@ -444,31 +444,64 @@ function GlobalSearch() {
   const [q, setQ] = useState("");
   const [results, setResults] = useState([]);
   const [open, setOpen] = useState(false);
+  const [highlight, setHighlight] = useState(-1);
   const boxRef = useRef(null);
 
   useEffect(() => {
     const id = setTimeout(async () => {
       const query = q.trim();
-      if (!query) { setResults([]); setOpen(false); return; }
+      if (!query) { setResults([]); setOpen(false); setHighlight(-1); return; }
       try {
         const r = await api("/api/search?q=" + encodeURIComponent(query));
-        setResults(r); setOpen(r.length > 0);
+        setResults(r);
+        setHighlight(r.length > 0 ? 0 : -1);
+        setOpen(r.length > 0);
       } catch {
-        setResults([]); setOpen(false);
+        setResults([]); setOpen(false); setHighlight(-1);
       }
     }, 180);
     return () => clearTimeout(id);
   }, [q]);
 
   useEffect(() => {
-    function onDoc(e) { if (!boxRef.current) return; if (!boxRef.current.contains(e.target)) setOpen(false); }
-    function onKey(e) { if (e.key === "Escape") setOpen(false); }
+    function onDoc(e) {
+      if (!boxRef.current) return;
+      if (!boxRef.current.contains(e.target)) {
+        setOpen(false);
+        setHighlight(-1);
+      }
+    }
+    function onKey(e) {
+      if (e.key === "Escape") { setOpen(false); setHighlight(-1); }
+    }
     document.addEventListener("mousedown", onDoc);
     window.addEventListener("keydown", onKey);
     return () => { document.removeEventListener("mousedown", onDoc); window.removeEventListener("keydown", onKey); };
   }, []);
 
   const select = (e, to) => { setOpen(false); setResults([]); setQ(""); go(e, to); };
+
+  const handleKey = (e) => {
+    if (!open || results.length === 0) return;
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setHighlight((h) => (h + 1) % results.length);
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setHighlight((h) => (h - 1 + results.length) % results.length);
+    } else if (e.key === "Enter" && highlight >= 0) {
+      e.preventDefault();
+      const r = results[highlight];
+      const to =
+        r.type === "theologian" ? `/theologian/${r.slug}` :
+        r.type === "topic" ? `/topic/${r.slug}` :
+        r.type === "work" ? `/work/${r.id}` :
+        r.type === "essay" ? `/essay/${r.slug}` :
+        r.type === "digest" ? `/digest/${r.slug}` :
+        r.type === "outline" ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` : "/";
+      select(e, to);
+    }
+  };
 
   return (
     <div ref={boxRef} style={{ position: "relative" }}>
@@ -477,6 +510,7 @@ function GlobalSearch() {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         onFocus={() => setOpen((results || []).length > 0)}
+        onKeyDown={handleKey}
       />
       {open && results.length > 0 && (
         <div className="card" style={{ position: "absolute", top: "48px", right: 0, width: "520px", maxHeight: "60vh", overflow: "auto", zIndex: 30 }}>
@@ -488,8 +522,18 @@ function GlobalSearch() {
               r.type === "essay" ? `/essay/${r.slug}` :
               r.type === "digest" ? `/digest/${r.slug}` :
               r.type === "outline" ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` : "/";
+            const active = i === highlight;
             return (
-              <div key={i} style={{ padding: "6px 4px", cursor: "pointer" }} onClick={(e) => select(e, to)}>
+              <div
+                key={i}
+                style={{
+                  padding: "6px 4px",
+                  cursor: "pointer",
+                  background: active ? "#eef" : "transparent",
+                }}
+                onMouseEnter={() => setHighlight(i)}
+                onClick={(e) => select(e, to)}
+              >
                 <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
               </div>
             );
@@ -499,9 +543,9 @@ function GlobalSearch() {
     </div>
   );
 }
-// removed {r.slug && <div className="small">{r.slug}</div>}
 
 
+/* ---------------- Header ---------------- */
 /* ---------------- Header ---------------- */
 function Header() {
   const go = useGo();
@@ -510,6 +554,7 @@ function Header() {
   const [q, setQ] = React.useState("");
   const [results, setResults] = React.useState([]);
   const [open, setOpen] = React.useState(false);
+  const [highlight, setHighlight] = React.useState(-1);
   const [switchOpen, setSwitchOpen] = React.useState(false);
   const boxRef = React.useRef(null);
 
@@ -534,18 +579,20 @@ function Header() {
   React.useEffect(() => {
     const id = setTimeout(async () => {
       const query = q.trim();
-      if (!query) { setResults([]); setOpen(false); return; }
+      if (!query) { setResults([]); setOpen(false); setHighlight(-1); return; }
       try {
         const r = await api("/api/search?q=" + encodeURIComponent(query));
-        setResults(r); setOpen(r.length > 0);
-      } catch { setResults([]); setOpen(false); }
+        setResults(r);
+        setHighlight(r.length > 0 ? 0 : -1);
+        setOpen(r.length > 0);
+      } catch { setResults([]); setOpen(false); setHighlight(-1); }
     }, 180);
     return () => clearTimeout(id);
   }, [q]);
 
   React.useEffect(() => {
-    function onDoc(e){ if (!boxRef.current) return; if (!boxRef.current.contains(e.target)) setSwitchOpen(false); }
-    function onKey(e){ if (e.key === "Escape") { setOpen(false); setSwitchOpen(false); } }
+    function onDoc(e){ if (!boxRef.current) return; if (!boxRef.current.contains(e.target)) { setSwitchOpen(false); setOpen(false); setHighlight(-1); } }
+    function onKey(e){ if (e.key === "Escape") { setOpen(false); setSwitchOpen(false); setHighlight(-1); } }
     document.addEventListener("mousedown", onDoc);
     window.addEventListener("keydown", onKey);
     return () => { document.removeEventListener("mousedown", onDoc); window.removeEventListener("keydown", onKey); };
@@ -553,7 +600,28 @@ function Header() {
 
   const select = (e, to) => { setOpen(false); setResults([]); setQ(""); go(e, to); };
 
-// removed ["Works", "/works"],
+  const handleKey = (e) => {
+    if (!open || results.length === 0) return;
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setHighlight((h) => (h + 1) % results.length);
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setHighlight((h) => (h - 1 + results.length) % results.length);
+    } else if (e.key === "Enter" && highlight >= 0) {
+      e.preventDefault();
+      const r = results[highlight];
+      const to =
+        r.type === "theologian" ? `/theologian/${r.slug}` :
+        r.type === "topic" ? `/topic/${r.slug}` :
+        r.type === "work" ? `/work/${r.id}` :
+        r.type === "essay" ? `/essay/${r.slug}` :
+        r.type === "digest" ? `/digest/${r.slug}` :
+        r.type === "outline" ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` : "/";
+      select(e, to);
+    }
+  };
+
   const pages = [
     ["Topics", "/"],
     ["Theologians", "/theologians"],
@@ -581,6 +649,7 @@ function Header() {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           onFocus={() => setOpen((results || []).length > 0)}
+          onKeyDown={handleKey}
         />
 
         {switchOpen && (
@@ -612,8 +681,18 @@ function Header() {
               r.type === "essay" ? `/essay/${r.slug}` :
               r.type === "digest" ? `/digest/${r.slug}` :
               r.type === "outline" ? `/outline?path=${encodeURIComponent(r.markdown_path || "")}` : "/";
+            const active = i === highlight;
             return (
-              <div key={i} style={{ padding: "6px 4px", cursor: "pointer" }} onClick={(e) => select(e, to)}>
+              <div
+                key={i}
+                style={{
+                  padding: "6px 4px",
+                  cursor: "pointer",
+                  background: active ? "#eef" : "transparent",
+                }}
+                onMouseEnter={() => setHighlight(i)}
+                onClick={(e) => select(e, to)}
+              >
                 <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
               </div>
             );
@@ -623,7 +702,6 @@ function Header() {
     </header>
   );
 }
-// removed {r.slug && <div className="small">{r.slug}</div>}
 
 /* ---------------- Leaf rows reused by pages ---------------- */
 function TheoBadges({theo}) {
@@ -955,7 +1033,7 @@ function OutlineGroups({ groups, datasets, normalizeItem }) {
                 <a
                   href={`/category/${catSlug}`}
                   onClick={(e) => { e.preventDefault(); e.stopPropagation(); go(e, `/category/${catSlug}`, true); }}
-                >a
+                >
                   {cat}
                 </a>
               </b>
