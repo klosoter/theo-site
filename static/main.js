@@ -544,8 +544,6 @@ function GlobalSearch() {
   );
 }
 
-
-/* ---------------- Header ---------------- */
 /* ---------------- Header ---------------- */
 function Header() {
   const go = useGo();
@@ -659,8 +657,8 @@ function Header() {
                 key={label}
                 href={to}
                 onClick={(e) => {
+                  e.preventDefault();
                   setSwitchOpen(false);
-                  if (label === "Podcast") { e.preventDefault(); window.open("https://klosoter.github.io/theology-audio/"); return; }
                   select(e, to);
                 }}
               >
@@ -1265,7 +1263,6 @@ function DigestsPage() {
   );
 }
 
-
 /* ---------------- Detail pages kept minimal ---------------- */
 function EssayPage(props) {
   const param = props.slug || props.id || decodeURIComponent(window.location.pathname.split("/").pop() || "");
@@ -1707,6 +1704,107 @@ function TheologianPage({ slug, datasets }) {
         </div>
     );
 };
+function TopicCategoryPage({ slug, datasets }) {
+  const go = useGo();
+  const { topics } = datasets;
+
+  const { catName, items } = React.useMemo(() => {
+    const sample = topics.find((t) => slugify(t.category || "Other") === slug);
+    const name = sample ? sample.category : slug;
+    const list = topics
+      .filter((t) => slugify(t.category || "Other") === slug)
+      .sort((a, b) => {
+        // numeric/letter ordering like "2.A" vs "10.B"
+        const [na, la] = parseTopicKeyFromSlug(a.slug);
+        const [nb, lb] = parseTopicKeyFromSlug(b.slug);
+        if (na !== nb) return na - nb;
+        return String(la).localeCompare(String(lb));
+      });
+    return { catName: name, items: list };
+  }, [slug, topics]);
+
+  return (
+    <div>
+      <h1>{catName}</h1>
+      <div className="grid">
+        {items.map((t) => (
+          <div
+            key={t.id}
+            className="card"
+            style={{ cursor: "pointer" }}
+            onClick={(e) => go(e, `/topic/${t.slug}`)}
+            role="link"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") go(e, `/topic/${t.slug}`);
+            }}
+          >
+            <b>{t.title}</b>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+function PodcastPage() {
+  const feeds = [
+    { file: "podcasts/ap-figures.rss", title: "Apologetics: Figures & Methods" },
+    { file: "podcasts/ap-issues.rss", title: "Apologetics: Issues & Applications" },
+    { file: "podcasts/ap-vantil.rss", title: "Cornelius Van Til: Method & Debate" },
+    { file: "podcasts/ch-ancient.rss", title: "Church History: Ancient" },
+    { file: "podcasts/ch-medieval.rss", title: "Church History: Medieval" },
+    { file: "podcasts/ch-reformation.rss", title: "Church History: Reformation" },
+    { file: "podcasts/ch-modern.rss", title: "Church History: Modern" },
+  ];
+  const base = "https://klosoter.github.io/theology-audio/";
+
+  function CopyBtn({ url }) {
+    const [ok, setOk] = React.useState(false);
+    return (
+      <button
+        className="btn secondary"
+        onClick={async () => {
+          try { await navigator.clipboard.writeText(url); setOk(true); setTimeout(()=>setOk(false),1200); } catch {}
+        }}
+      >
+        {ok ? "Copied ✓" : "Copy RSS"}
+      </button>
+    );
+  }
+
+  return (
+    <div className="container podcasts">
+      <h1>Theology Audio — Podcast Feeds</h1>
+      <p className="lead">
+        Subscribe to narrated <b>AP</b> and <b>CH</b> essays. Add a feed to your podcast app; new audio
+        will drop in automatically.
+      </p>
+
+      <div className="podcast-grid">
+        {feeds.map((f) => {
+          const url = base + f.file;
+          return (
+            <article key={f.file} className="card podcast-card">
+              <h3 className="podcast-title">{f.title}</h3>
+              <div className="podcast-actions">
+                <a className="btn primary" href={url} target="_blank" rel="noopener noreferrer">Open feed</a>
+                <CopyBtn url={url} />
+              </div>
+              <code className="rss-url">{url}</code>
+            </article>
+          );
+        })}
+      </div>
+
+      <h3 style={{marginTop:16}}>How to subscribe</h3>
+      <ol className="small">
+        <li>Click “Open feed” or copy the RSS link.</li>
+        <li>In your app, choose “Add by URL” / “Add RSS Feed”.</li>
+        <li>Paste, then subscribe.</li>
+      </ol>
+    </div>
+  );
+}
 
 /* ---------- Work Page (canonical-only; alias redirects) ---------- */
 function WorkPage({id, datasets}) {
@@ -1833,7 +1931,6 @@ function OutlinePage() {
   }, []);
   return <div className="markdown" dangerouslySetInnerHTML={{__html: html}}/>;
 }
-
 /* ---------------- Routes ---------------- */
 function Routes({ datasets }) {
   const { path } = useContext(RouterCtx);
@@ -1853,52 +1950,11 @@ function Routes({ datasets }) {
   if (pathname.startsWith("/category/"))                return <TopicCategoryPage slug={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets} />;
   if (pathname === "/digests")                          return <DigestsPage />;
   if (pathname.startsWith("/digest/"))                  return <DigestPage slug={decodeURIComponent(url.pathname.split("/").pop())} />;
-  if (pathname === "/podcasts") { window.location.href = "https://klosoter.github.io/theology-audio/"; }
+  if (pathname === "/podcasts")                         return <PodcastPage />;
 
   return <div>Not found.</div>;
 }
-function TopicCategoryPage({ slug, datasets }) {
-  const go = useGo();
-  const { topics } = datasets;
 
-  const { catName, items } = React.useMemo(() => {
-    const sample = topics.find((t) => slugify(t.category || "Other") === slug);
-    const name = sample ? sample.category : slug;
-    const list = topics
-      .filter((t) => slugify(t.category || "Other") === slug)
-      .sort((a, b) => {
-        // numeric/letter ordering like "2.A" vs "10.B"
-        const [na, la] = parseTopicKeyFromSlug(a.slug);
-        const [nb, lb] = parseTopicKeyFromSlug(b.slug);
-        if (na !== nb) return na - nb;
-        return String(la).localeCompare(String(lb));
-      });
-    return { catName: name, items: list };
-  }, [slug, topics]);
-
-  return (
-    <div>
-      <h1>{catName}</h1>
-      <div className="grid">
-        {items.map((t) => (
-          <div
-            key={t.id}
-            className="card"
-            style={{ cursor: "pointer" }}
-            onClick={(e) => go(e, `/topic/${t.slug}`)}
-            role="link"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") go(e, `/topic/${t.slug}`);
-            }}
-          >
-            <b>{t.title}</b>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 /* ---------------- App (DataHub + Router) ---------------- */
 function App() {

@@ -581,3 +581,32 @@ header .header-inner > input{
 
 /* 5) Compact work rows match the same padding rhythm */
 .work-list .card.work-row { padding: 10px 12px; }
+
+/* Podcasts layout */
+.podcasts .lead { color:#334155; margin-top:4px; }
+.podcast-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+  gap:12px;
+  margin-top:10px;
+}
+.podcast-card { padding:14px; }
+.podcast-title { margin:0 0 6px 0; font-size:1rem; }
+.podcast-actions { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
+
+/* Buttons reused elsewhere if you want */
+.btn { display:inline-block; padding:8px 12px; border-radius:8px; text-decoration:none; font-size:14px; }
+.btn.primary { background:#1d4ed8; color:#fff; }
+.btn.secondary { background:#e2e8f0; color:#0f172a; border:none; cursor:pointer; }
+
+/* URL chip */
+.rss-url {
+  display:block;
+  font-size:12px;
+  background:#f8fafc;
+  color:#475569;
+  border:1px dashed #e2e8f0;
+  border-radius:8px;
+  padding:6px 8px;
+  word-break:break-all;
+}

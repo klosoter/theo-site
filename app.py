@@ -379,31 +379,7 @@ def api_essay(slug):
     if not hit: return jsonify({"error": "Not found"}), 404
     return jsonify(hit)
 
-# ---- search pool (use search_index.json only) ----
-def _build_search_pool(items):
-    pool = []
-    for it in items or []:
-        name_or_title = (it.get("name") or it.get("title") or "")
-        eras = it.get("eras") or it.get("era") or []
-        if isinstance(eras, str): eras = [eras] if eras else []
-        traditions = it.get("traditions") or it.get("tradition") or []
-        if isinstance(traditions, str): traditions = [traditions] if traditions else []
-
-        pool.append({
-            **it,
-            # precomputed haystack keeps the handler tiny
-            "hay": " ".join([
-                name_or_title,
-                it.get("slug", ""),
-                " ".join(eras),
-                " ".join(traditions),
-                it.get("type",""),
-            ]).lower()
-        })
-    return pool
-
 CACHE["search"] = _load_json(DATA_DIR / "indices" / "search_index.json", [])
-CACHE["search_pool"] =  CACHE["search"] #_build_search_pool(CACHE["search"])
 
 @app.get("/api/theologian_essay/<theo_id>")
 def api_theologian_essay(theo_id):
@@ -652,7 +628,7 @@ def api_search():
         return jsonify([])
 
     terms = [t for t in re.split(r"\s+", q) if t]
-    pool = CACHE.get("search_pool") or []
+    pool = CACHE.get("search") or []
 
     hits = []
     for it in pool:
@@ -701,8 +677,7 @@ def api_search():
 @app.post("/api/search/reload")
 def api_search_reload():
     CACHE["search"] = _load_json(DATA_DIR / "indices" / "search_index.json", [])
-    CACHE["search_pool"] = _build_search_pool(CACHE["search"])
-    return jsonify({"ok": True, "count": len(CACHE["search_pool"])})
+    return jsonify({"ok": True, "count": len(CACHE["search"])})
 
 # ---------- Markdown normalization ----------
 def normalize_md(text: str) -> str:
