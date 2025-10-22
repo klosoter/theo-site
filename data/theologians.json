@@ -13,14 +13,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "\"Tertullian\" was a seminal figure in early Christian theology, born in Carthage around 155 AD. A prolific writer, Tertullian is often credited as the father of Latin Christianity and a key figure in the development of Western theology. His conversion to Christianity from paganism marked a significant turning point, leading to his fervent defense of the faith against both external persecution and internal heresy. Tertullian's works, such as 'Apologeticus' and 'De Praescriptione Haereticorum,' were instrumental in articulating a robust Christian apologetic framework. He engaged with contemporary philosophical currents, notably Stoicism, while maintaining a critical stance towards Greek philosophy, famously asserting, 'What has Athens to do with Jerusalem?' His theological contributions include the formulation of the doctrine of the Trinity, coining the term 'Trinitas' to describe the Godhead's three persons. Tertullian's rigorous moralism and asceticism eventually led him to align with the Montanist movement, a sect emphasizing prophetic revelation and strict ethical standards. This affiliation, however, did not diminish his influence; his writings continued to shape theological discourse, particularly in the areas of ecclesiology and soteriology. Tertullian's legacy is marked by his pioneering role in establishing a distinct Christian identity, separate from both Judaism and paganism, and his enduring impact on the development of Christian doctrine and apologetics.",
     "timeline": [
@@ -81,14 +81,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "\"Origen\" was a seminal figure in early Christian theology, known for his extensive exegetical work and speculative theology. Born in Alexandria, he was educated in both Christian and Hellenistic thought, which profoundly influenced his theological approach. Origen's most significant contribution is his work on biblical exegesis, particularly the Hexapla, a critical edition of the Old Testament in six versions. His allegorical interpretation of Scripture sought to uncover deeper spiritual meanings beyond the literal text, a method that would influence later theological developments. Origen's theological system was marked by his belief in the pre-existence of souls and the eventual apokatastasis, or restoration of all beings to God, which later became controversial. His interlocutors included Celsus, against whom he wrote the apologetic work 'Contra Celsum', defending Christianity against pagan critiques. Despite his profound influence, Origen's speculative theology led to posthumous condemnation, particularly at the Second Council of Constantinople in 553, which anathematized certain Origenist views. His legacy, however, endures in the development of Christian thought, particularly in the Eastern Orthodox tradition, which regards him as a pivotal figure in the formation of Christian doctrine and spirituality.",
     "timeline": [
@@ -152,14 +152,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "Cyprian of Carthage was a pivotal figure in early Christianity, serving as bishop of Carthage during a time of intense persecution and theological development. Born around 200 CE in North Africa, Cyprian converted to Christianity in 246 and quickly rose to prominence due to his rhetorical skills and theological acumen. His episcopacy was marked by the Decian persecution (250–251), during which he fled Carthage, a decision that sparked controversy and debate over the role of bishops during persecution. Cyprian's theological contributions are encapsulated in his treatises and letters, notably 'De Unitate Ecclesiae,' where he emphasized the unity and authority of the Church, famously asserting 'extra Ecclesiam nulla salus' (outside the Church there is no salvation). His stance on the rebaptism of lapsed Christians, articulated during the Novatianist schism, positioned him against the Roman bishop Stephen, highlighting early ecclesiastical tensions between Carthage and Rome. Cyprian's martyrdom in 258 under Emperor Valerian solidified his legacy as a steadfast defender of ecclesial unity and orthodoxy.",
     "timeline": [
@@ -225,7 +225,7 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
@@ -301,14 +301,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "Hilary of Poitiers was a seminal figure in the development of early Christian theology, particularly known for his staunch defense of Nicene orthodoxy against Arianism. Born around 310 in Poitiers, Gaul, Hilary was initially a pagan before converting to Christianity, eventually becoming the bishop of Poitiers around 353. His theological journey was marked by his engagement with the Arian controversy, which dominated the ecclesiastical landscape of the fourth century. Hilary's most significant work, 'De Trinitate' (On the Trinity), was a comprehensive treatise that articulated a robust defense of the consubstantiality of the Father and the Son, countering the Arian assertion of the Son's subordination. His theological acumen earned him the title 'Athanasius of the West,' reflecting his alignment with Athanasius of Alexandria, a key opponent of Arianism in the East. Hilary's exile to Phrygia by the pro-Arian Emperor Constantius II from 356 to 360 further solidified his theological positions, as he engaged with Eastern theologians and deepened his understanding of the Trinitarian doctrine. Upon his return, Hilary continued to combat Arianism and other heretical views, contributing significantly to the consolidation of Nicene orthodoxy in the Western Church. His writings not only addressed doctrinal issues but also emphasized the pastoral and spiritual dimensions of theology, influencing subsequent Western theological thought.",
     "timeline": [
@@ -372,14 +372,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "\"Didymus the Blind\" was a prominent theologian and head of the Catechetical School of Alexandria during the 4th century. Despite losing his sight at a young age, Didymus became a prolific scholar, contributing significantly to Christian theology, particularly in the areas of Trinitarian doctrine and biblical exegesis. His works often engaged with the theological controversies of his time, notably the Arian controversy, where he staunchly defended Nicene orthodoxy. Didymus was a contemporary and interlocutor of notable figures such as Athanasius of Alexandria and Jerome, the latter of whom translated some of Didymus' works into Latin. His exegetical works, though largely lost, were influential in shaping the theological landscape of his era. Didymus' distinctive contributions include his allegorical interpretation of Scripture and his development of the doctrine of the Holy Spirit, which prefigured later theological formulations. Despite being posthumously condemned at the Second Council of Constantinople in 553 due to his association with Origenism, Didymus' theological insights continued to resonate within the Christian tradition, particularly in Eastern Orthodoxy. His intellectual legacy is marked by a profound commitment to the integration of faith and reason, as well as a deep engagement with the philosophical currents of his time, including Neoplatonism.",
     "timeline": [
@@ -438,7 +438,7 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
@@ -517,7 +517,7 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
@@ -589,14 +589,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "\"Augustine\" was a seminal figure in the development of Western Christianity and philosophy, born in 354 in Thagaste, Roman North Africa. His early life was marked by a search for truth, leading him through Manichaeism and skepticism before his conversion to Christianity in 386, influenced by Ambrose of Milan. Augustine's theological contributions are vast, with his works such as 'Confessions' and 'The City of God' addressing the nature of God, the problem of evil, and the relationship between the church and secular society. His doctrine of original sin and his articulation of the concept of grace were pivotal in shaping Christian orthodoxy. Augustine engaged in significant controversies, notably against the Donatists, who challenged the validity of sacraments administered by priests who had lapsed in faith, and the Pelagians, who denied original sin and affirmed human free will. His refutations of Pelagianism were instrumental in the development of the doctrine of predestination. Augustine's influence extended beyond theology into philosophy, where his integration of Platonic thought with Christian doctrine laid the groundwork for medieval scholasticism. His legacy is evident in the works of later theologians such as Thomas Aquinas and Martin Luther, who both drew heavily on Augustinian thought.",
     "timeline": [
@@ -810,14 +810,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "\"Pelagius\" was a British monk and theologian whose teachings sparked significant controversy in the early 5th century. He is best known for his rejection of the doctrine of original sin and his emphasis on human free will. Pelagius argued that human beings are born morally neutral and possess the inherent ability to choose good without divine intervention. This stance brought him into direct conflict with Augustine of Hippo, who advocated for the necessity of divine grace for salvation. Pelagius's teachings were disseminated through his works, such as 'De Natura' and 'De Libero Arbitrio,' which were later condemned by several church councils, including the Council of Carthage in 418. His views were labeled heretical, leading to his excommunication. Despite this, Pelagianism persisted in various forms, influencing later theological debates. Pelagius's interlocutors included not only Augustine but also Jerome, who criticized his views on asceticism and grace. His theological contributions, though controversial, prompted a deeper exploration of the nature of grace, free will, and human nature within Christian thought. Pelagius's emphasis on moral responsibility and the potential for human perfection continues to be a point of discussion in theological circles, highlighting the enduring impact of his ideas on Christian doctrine.",
     "timeline": [
@@ -880,14 +880,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "John Cassian, a seminal figure in the development of Western monasticism, was born around 360 in the region of Scythia Minor, present-day Romania. His theological journey was profoundly shaped by his experiences in the Egyptian desert, where he encountered the Desert Fathers, including Evagrius Ponticus, whose teachings on asceticism and prayer deeply influenced him. Cassian's subsequent travels took him to Constantinople, where he was ordained a deacon by John Chrysostom, and later to Rome, where he sought refuge following Chrysostom's deposition. Around 415, Cassian founded the Abbey of Saint Victor in Marseille, which became a center for monastic life in Gaul. His major works, 'Conferences' and 'Institutes', synthesized Eastern monastic practices for a Western audience, emphasizing the importance of purity of heart and the practice of continual prayer. Cassian's theology was marked by a nuanced understanding of grace and free will, which later embroiled him in the Semi-Pelagian controversy. He argued against Augustine's doctrine of predestination, advocating instead for a synergistic cooperation between divine grace and human freedom. Despite this controversy, Cassian's contributions to monastic spirituality and his articulation of the 'Eight Principal Vices' as precursors to the Seven Deadly Sins left an indelible mark on Christian thought.",
     "timeline": [
@@ -948,7 +948,7 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
@@ -1017,14 +1017,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "Julian of Eclanum was a prominent 5th-century bishop and theologian known for his leadership in the Pelagian controversy. Born around 386 in Eclanum, Italy, Julian was initially a supporter of Augustine of Hippo but later became his most formidable opponent. After the death of his father, Memorius, Julian succeeded him as bishop of Eclanum. His theological journey took a pivotal turn when he rejected the Augustinian doctrine of original sin, aligning instead with Pelagius, whose teachings emphasized human free will and the inherent goodness of human nature. Julian's opposition to Augustine's views led to his excommunication by Pope Zosimus in 418. Despite this, Julian continued to write prolifically, defending Pelagianism and critiquing Augustinian predestination. His works, although largely lost, were known for their rigorous logical structure and rhetorical skill. Julian's theological stance was characterized by a belief in the moral capacity of humans to choose good without divine intervention, a view that placed him at odds with the prevailing orthodoxy of his time. His legacy is marked by his role as a leading intellectual figure in the Pelagian movement, which was ultimately condemned at the Council of Ephesus in 431. Julian spent his later years in exile, continuing to write and correspond with other theologians until his death around 455.",
     "timeline": [
@@ -1085,14 +1085,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "Prosper of Aquitaine was a prominent lay theologian and disciple of Augustine of Hippo, active during the early 5th century. His theological contributions were primarily in defense of Augustinian doctrines, particularly against the Semi-Pelagian movement. Prosper's most notable work, 'De vocatione omnium gentium,' articulates a robust defense of divine grace and predestination, aligning closely with Augustine's teachings. He engaged in theological polemics with figures such as John Cassian, who advocated for a more synergistic view of salvation. Prosper's writings were instrumental in the eventual condemnation of Semi-Pelagianism at the Second Council of Orange in 529. His epistolary exchanges, particularly with Augustine, reveal his commitment to the orthodoxy of grace and his role in transmitting Augustinian thought to the Gallic church. Prosper's theological acumen and his ability to synthesize and defend complex doctrines made him a pivotal figure in the patristic era's theological landscape.",
     "timeline": [
@@ -1153,7 +1153,7 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
@@ -1226,7 +1226,7 @@
     "era": {
       "id": "era_early_medieval",
       "slug": "early-medieval",
-      "label": "Early Medieval",
+      "label": "Early Medieval (750 - 1049)",
       "start": 750,
       "end": 1049
     },
@@ -1304,7 +1304,7 @@
     "era": {
       "id": "era_early_medieval",
       "slug": "early-medieval",
-      "label": "Early Medieval",
+      "label": "Early Medieval (750 - 1049)",
       "start": 750,
       "end": 1049
     },
@@ -1380,7 +1380,7 @@
     "era": {
       "id": "era_early_medieval",
       "slug": "early-medieval",
-      "label": "Early Medieval",
+      "label": "Early Medieval (750 - 1049)",
       "start": 750,
       "end": 1049
     },
@@ -1458,7 +1458,7 @@
     "era": {
       "id": "era_high_medieval",
       "slug": "high-medieval",
-      "label": "High Medieval",
+      "label": "High Medieval (1050 - 1299)",
       "start": 1050,
       "end": 1299
     },
@@ -1538,7 +1538,7 @@
     "era": {
       "id": "era_high_medieval",
       "slug": "high-medieval",
-      "label": "High Medieval",
+      "label": "High Medieval (1050 - 1299)",
       "start": 1050,
       "end": 1299
     },
@@ -1611,7 +1611,7 @@
     "era": {
       "id": "era_high_medieval",
       "slug": "high-medieval",
-      "label": "High Medieval",
+      "label": "High Medieval (1050 - 1299)",
       "start": 1050,
       "end": 1299
     },
@@ -1680,7 +1680,7 @@
     "era": {
       "id": "era_high_medieval",
       "slug": "high-medieval",
-      "label": "High Medieval",
+      "label": "High Medieval (1050 - 1299)",
       "start": 1050,
       "end": 1299
     },
@@ -1751,7 +1751,7 @@
     "era": {
       "id": "era_high_medieval",
       "slug": "high-medieval",
-      "label": "High Medieval",
+      "label": "High Medieval (1050 - 1299)",
       "start": 1050,
       "end": 1299
     },
@@ -2159,7 +2159,7 @@
     "era": {
       "id": "era_late_medieval",
       "slug": "late-medieval",
-      "label": "Late Medieval",
+      "label": "Late Medieval (1300 - 1499)",
       "start": 1300,
       "end": 1499
     },
@@ -2230,7 +2230,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -2497,7 +2497,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -2576,7 +2576,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -2651,7 +2651,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -2741,7 +2741,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -2812,7 +2812,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3179,7 +3179,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3252,7 +3252,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3334,7 +3334,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3408,7 +3408,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3483,7 +3483,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3552,7 +3552,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3630,7 +3630,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3704,7 +3704,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3778,7 +3778,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -3845,7 +3845,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -4304,7 +4304,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -4378,7 +4378,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -4448,7 +4448,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -4530,7 +4530,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -4614,7 +4614,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -4686,7 +4686,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -4754,7 +4754,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -4831,7 +4831,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -4982,7 +4982,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -5055,7 +5055,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -5397,7 +5397,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -5474,7 +5474,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -5545,7 +5545,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -5621,7 +5621,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -5697,9 +5697,9 @@
     "era": {
       "id": "era_enlightenment",
       "slug": "enlightenment",
-      "label": "Enlightenment & Early Modern",
-      "start": 1700,
-      "end": 1799
+      "label": "Enlightenment & Early Modern (1700 - 1799)",
+      "start": 1600,
+      "end": 1699
     },
     "tradition": {
       "id": "trad_philosophical",
@@ -5765,7 +5765,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -6159,9 +6159,9 @@
     "era": {
       "id": "era_enlightenment",
       "slug": "enlightenment",
-      "label": "Enlightenment & Early Modern",
-      "start": 1700,
-      "end": 1799
+      "label": "Enlightenment & Early Modern (1700 - 1799)",
+      "start": 1600,
+      "end": 1699
     },
     "tradition": {
       "id": "trad_puritan",
@@ -6250,9 +6250,9 @@
     "era": {
       "id": "era_enlightenment",
       "slug": "enlightenment",
-      "label": "Enlightenment & Early Modern",
-      "start": 1700,
-      "end": 1799
+      "label": "Enlightenment & Early Modern (1700 - 1799)",
+      "start": 1600,
+      "end": 1699
     },
     "tradition": {
       "id": "trad_baptist",
@@ -6329,14 +6329,14 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
     "tradition": {
       "id": "trad_modern_liberal",
       "slug": "liberal-theology",
-      "label": "Modern Liberal Theology"
+      "label": "Modern (1800 - 1945) Liberal Theology"
     },
     "bio": "Friedrich Schleiermacher, often hailed as the 'father of modern liberal theology,' was a pivotal figure in the development of Protestant thought during the late 18th and early 19th centuries. Born in 1768 in Breslau, Prussia, Schleiermacher was deeply influenced by the Enlightenment and Romanticism, which shaped his theological and philosophical outlook. His seminal work, 'On Religion: Speeches to its Cultured Despisers' (1799), sought to reconcile Enlightenment rationalism with religious faith, emphasizing the role of individual experience and feeling in religious life. Schleiermacher's interlocutors included Immanuel Kant, whose critical philosophy he engaged with, and Johann Gottlieb Fichte, whose idealism he critiqued. His 'The Christian Faith' (1821-22) systematically articulated his theology, positing that the essence of religion lies in the feeling of absolute dependence on God. This marked a departure from traditional doctrinal formulations and sparked controversies, particularly among orthodox theologians who viewed his emphasis on subjectivity as undermining doctrinal authority. Schleiermacher's contributions to hermeneutics, particularly his emphasis on understanding the author's intent and the historical context of texts, have had a lasting impact on biblical interpretation. His legacy is evident in the development of modern theology, where his ideas continue to influence debates on the nature of faith, the role of experience, and the interpretation of religious texts.",
     "timeline": [
@@ -6472,7 +6472,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -6712,7 +6712,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -6787,7 +6787,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -6862,7 +6862,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -6956,7 +6956,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -7032,7 +7032,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -7102,7 +7102,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -7180,7 +7180,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -7272,14 +7272,14 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
     "tradition": {
       "id": "trad_modern_liberal",
       "slug": "liberal-theology",
-      "label": "Modern Liberal Theology"
+      "label": "Modern (1800 - 1945) Liberal Theology"
     },
     "bio": "Albrecht Ritschl was a pivotal figure in 19th-century Protestant theology, renowned for his development of a theology that emphasized the ethical and communal dimensions of Christianity. Born in Berlin in 1822, Ritschl studied under the influence of the Tübingen School but eventually distanced himself from its speculative tendencies. His major work, 'The Christian Doctrine of Justification and Reconciliation' (1870-1874), sought to reinterpret traditional doctrines through a historical-critical lens, emphasizing the Kingdom of God as a present ethical reality rather than a future eschatological hope. Ritschl's theology was deeply influenced by Immanuel Kant's moral philosophy, which he integrated with a focus on the historical Jesus as the revelation of God's will. He engaged critically with contemporaries such as Friedrich Schleiermacher, whose emphasis on religious feeling he found insufficiently grounded in historical reality. Ritschl's ideas sparked significant controversy, particularly with the rise of the 'Ritschlian School,' which was criticized by figures like Adolf von Harnack and Karl Barth for its perceived reduction of theology to ethics. Despite such critiques, Ritschl's work laid the groundwork for subsequent liberal theological movements and remains a touchstone for discussions on the relationship between faith, history, and ethics.",
     "timeline": [
@@ -7464,7 +7464,7 @@
     "era": {
       "id": "era_post_reformation",
       "slug": "post-reformation",
-      "label": "Post-Reformation & Protestant Scholasticism",
+      "label": "Post-Reformation & Protestant Scholasticism (1600 - 1699)",
       "start": 1600,
       "end": 1699
     },
@@ -7533,7 +7533,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -7605,7 +7605,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -7679,7 +7679,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -7878,7 +7878,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -7953,7 +7953,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -8027,7 +8027,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -8394,7 +8394,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -8472,7 +8472,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -8672,7 +8672,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -8924,14 +8924,14 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
     "tradition": {
       "id": "trad_modern_liberal",
       "slug": "liberal-theology",
-      "label": "Modern Liberal Theology"
+      "label": "Modern (1800 - 1945) Liberal Theology"
     },
     "bio": "H.R. Mackintosh was a pivotal figure in early 20th-century Scottish theology, known for his synthesis of Reformed theology with modern critical thought. Born in 1870, Mackintosh was deeply influenced by the liberal theological currents of his time, particularly the works of Friedrich Schleiermacher and Albrecht Ritschl. He served as a professor at the University of Edinburgh, where he became a leading voice in the development of liberal theology within the Reformed tradition. Mackintosh's theological approach was characterized by a commitment to integrating faith with reason, emphasizing the experiential and personal aspects of Christian belief. His major work, 'The Doctrine of the Person of Jesus Christ' (1912), reflects his Christocentric focus, arguing for the centrality of Christ in theological discourse while engaging critically with historical-critical methods. Mackintosh was also noted for his dialogues with contemporary theologians such as Karl Barth, with whom he shared a mutual respect despite differing theological perspectives. His contributions to the understanding of the incarnation and atonement were marked by a nuanced appreciation for both the historical Jesus and the Christ of faith, seeking to bridge the gap between traditional dogma and modern existential concerns. Mackintosh's legacy lies in his ability to articulate a theology that was both intellectually rigorous and pastorally sensitive, making significant strides in the field of systematic theology.",
     "timeline": [
@@ -8994,7 +8994,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -9064,7 +9064,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -9164,7 +9164,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -9268,14 +9268,14 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
     "tradition": {
       "id": "trad_modern_liberal",
       "slug": "liberal-theology",
-      "label": "Modern Liberal Theology"
+      "label": "Modern (1800 - 1945) Liberal Theology"
     },
     "bio": "C.H. Dodd, a seminal figure in 20th-century biblical scholarship, was born in Wrexham, Wales, in 1884. Educated at Oxford, Dodd became a prominent New Testament scholar and theologian, known for his contributions to the understanding of early Christianity and the historical Jesus. His tenure at the University of Manchester and later at the University of Cambridge solidified his influence in academic circles. Dodd's work was characterized by a commitment to the historical-critical method, and he was a leading proponent of 'realized eschatology,' a concept suggesting that the eschatological promises of the New Testament were fulfilled in the ministry of Jesus. This stance often placed him in dialogue with contemporaries such as Rudolf Bultmann, with whom he shared a mutual respect despite differing views on demythologization. Dodd's major works, including 'The Parables of the Kingdom' (1935) and 'The Apostolic Preaching and Its Developments' (1936), were pivotal in shifting scholarly focus from future eschatology to the present realization of the Kingdom of God. His approach to the Johannine literature, particularly in 'The Interpretation of the Fourth Gospel' (1953), emphasized the theological depth and historical context of the text, influencing generations of scholars. Dodd's legacy is marked by his rigorous scholarship and his ability to bridge the gap between historical inquiry and theological reflection.",
     "timeline": [
@@ -9342,7 +9342,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -9475,7 +9475,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -9726,14 +9726,14 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
     "tradition": {
       "id": "trad_modern_liberal",
       "slug": "liberal-theology",
-      "label": "Modern Liberal Theology"
+      "label": "Modern (1800 - 1945) Liberal Theology"
     },
     "bio": "Paul Tillich was a seminal figure in 20th-century theology, renowned for his integration of existential philosophy with Christian theology. Born in Germany, Tillich's early academic career was shaped by the tumultuous socio-political landscape of post-World War I Europe. His theological journey was significantly influenced by existentialists like Martin Heidegger and Søren Kierkegaard, which is evident in his magnum opus, 'Systematic Theology'. Tillich's work is characterized by his 'method of correlation', a dialectical approach that seeks to relate the existential questions of human existence to theological answers. His tenure at Union Theological Seminary in New York marked a pivotal period where he engaged with American theological discourse, bringing a European existential perspective to the forefront. Tillich's concept of 'the God above God' challenged traditional theism, proposing a God that transcends the dichotomy of theism and atheism. This was controversial, particularly among conservative theologians, who viewed his approach as undermining orthodox Christian doctrines. Despite such controversies, Tillich's influence extended beyond theology into philosophy, psychology, and cultural studies, making him a pivotal figure in the dialogue between faith and reason.",
     "timeline": [
@@ -9873,7 +9873,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -10038,7 +10038,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -10109,7 +10109,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -10276,7 +10276,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -10345,7 +10345,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -10701,7 +10701,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -10780,7 +10780,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -10854,7 +10854,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -10920,7 +10920,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -11003,7 +11003,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -11238,7 +11238,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -11311,7 +11311,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -11571,7 +11571,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -11645,7 +11645,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -11716,7 +11716,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -11788,7 +11788,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -11867,7 +11867,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -11941,7 +11941,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -12022,7 +12022,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -12151,7 +12151,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -12221,7 +12221,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -12306,7 +12306,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -12380,7 +12380,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -12455,7 +12455,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -12545,7 +12545,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -12612,7 +12612,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -12687,7 +12687,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -12764,14 +12764,14 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
     "tradition": {
       "id": "trad_modern_liberal",
       "slug": "liberal-theology",
-      "label": "Modern Liberal Theology"
+      "label": "Modern (1800 - 1945) Liberal Theology"
     },
     "bio": "\"Hans Frei\" was a pivotal figure in 20th-century theology, particularly known for his contributions to narrative theology and his critique of historical-critical methods. Born in Germany in 1922, Frei emigrated to the United States, where he became a prominent theologian at Yale University. His seminal work, \"The Eclipse of Biblical Narrative\" (1974), challenged the prevailing historical-critical approach by emphasizing the narrative structure of biblical texts over their historical factuality. Frei argued that the meaning of biblical stories is found in their narrative form, not in their correspondence to historical events. He engaged with contemporaries such as Karl Barth, whose neo-orthodox emphasis on the Word of God influenced Frei's own theological trajectory. Frei's work sparked significant debate, particularly with proponents of historical-critical methods, and he became a central figure in post-liberal theology. His later works, including \"Types of Christian Theology\" (1992), further explored the relationship between theology and biblical interpretation. Frei's contributions continue to influence contemporary theological discourse, particularly in the areas of hermeneutics and the role of narrative in theology.",
     "timeline": [
@@ -12827,7 +12827,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -12903,7 +12903,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13020,7 +13020,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13090,7 +13090,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13162,7 +13162,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13239,7 +13239,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13314,7 +13314,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13387,13 +13387,13 @@
     ],
     "era_slug": "contemporary",
     "tradition_slug": "progressive-theology",
-    "dates": "1926-",
+    "dates": "1926-2024",
     "birth_year": 1926,
-    "death_year": null,
+    "death_year": 2024,
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13550,7 +13550,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13625,7 +13625,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13836,7 +13836,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13913,7 +13913,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -13981,7 +13981,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14061,7 +14061,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14129,7 +14129,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14205,7 +14205,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14276,7 +14276,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14363,7 +14363,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14426,7 +14426,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14500,7 +14500,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14576,7 +14576,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14647,7 +14647,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14720,7 +14720,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14791,7 +14791,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14867,7 +14867,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -14944,7 +14944,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15019,7 +15019,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15101,7 +15101,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15172,7 +15172,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15244,7 +15244,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15325,7 +15325,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15396,7 +15396,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15467,7 +15467,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15796,7 +15796,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15875,7 +15875,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -15955,7 +15955,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16036,7 +16036,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16076,11 +16076,11 @@
         "gloss": "Wright defended the practice of infant baptism within the Reformed tradition, arguing for its theological and historical continuity from the early church to the Reformation."
       },
       {
-        "label": "Reformation Theology",
+        "label": "Reformation (1500 - 1599) Theology",
         "gloss": "He explored the nuances of Reformation theology, particularly engaging with Calvin's works to highlight the distinctiveness of Reformed thought."
       },
       {
-        "label": "Patristic Studies",
+        "label": "Patristic (100 - 749) Studies",
         "gloss": "Wright's work in patristics focused on the writings of Augustine, providing critical insights into early Christian doctrines and their development."
       }
     ],
@@ -16103,7 +16103,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16166,7 +16166,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16252,7 +16252,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16343,7 +16343,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16423,7 +16423,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16489,7 +16489,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16589,7 +16589,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16673,7 +16673,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16863,7 +16863,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -16939,7 +16939,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17006,7 +17006,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17089,7 +17089,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17138,7 +17138,7 @@
         "gloss": "Giles argues against complementarianism, promoting egalitarianism in church leadership and gender roles, emphasizing biblical equality."
       },
       {
-        "label": "Patristic Engagement",
+        "label": "Patristic (100 - 749) Engagement",
         "gloss": "Giles draws on patristic sources to critique modern evangelical interpretations of the Trinity, advocating for a return to early church understandings."
       }
     ],
@@ -17162,7 +17162,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17247,7 +17247,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17314,7 +17314,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17380,7 +17380,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17446,7 +17446,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17512,7 +17512,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17578,7 +17578,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17644,7 +17644,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17710,7 +17710,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17781,7 +17781,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17851,7 +17851,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17927,7 +17927,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -17995,7 +17995,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18062,7 +18062,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18133,7 +18133,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18200,7 +18200,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18269,7 +18269,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18343,7 +18343,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18409,7 +18409,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18482,7 +18482,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18553,7 +18553,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18624,7 +18624,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18668,7 +18668,7 @@
         "gloss": "Louth emphasizes the importance of mystical theology in understanding the Christian tradition, drawing heavily on the works of the Cappadocian Fathers and exploring the apophatic approach to God."
       },
       {
-        "label": "Patristic Tradition",
+        "label": "Patristic (100 - 749) Tradition",
         "gloss": "He advocates for a return to the patristic sources, arguing that the Church Fathers provide essential insights for contemporary theological issues, particularly in the context of Eastern Orthodoxy."
       },
       {
@@ -18692,7 +18692,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18762,7 +18762,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18828,7 +18828,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18894,7 +18894,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -18961,7 +18961,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19027,7 +19027,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19094,7 +19094,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19166,7 +19166,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19232,7 +19232,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19299,7 +19299,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19365,7 +19365,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19462,7 +19462,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19538,7 +19538,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19612,7 +19612,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19686,7 +19686,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19777,7 +19777,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -19854,7 +19854,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20117,7 +20117,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20188,7 +20188,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20261,7 +20261,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20327,7 +20327,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20398,7 +20398,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20465,7 +20465,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20533,7 +20533,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20600,7 +20600,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20671,7 +20671,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20743,7 +20743,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20810,7 +20810,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20882,7 +20882,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -20953,7 +20953,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21019,7 +21019,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21091,7 +21091,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21215,7 +21215,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21305,7 +21305,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21373,7 +21373,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21535,7 +21535,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21630,7 +21630,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21698,7 +21698,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21764,7 +21764,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21809,7 +21809,7 @@
         "gloss": "Lane offers a detailed examination of John Calvin's views on salvation, emphasizing the interplay between divine sovereignty and human responsibility. He argues for a balanced interpretation that respects the complexity of Calvin's thought."
       },
       {
-        "label": "Reformation Theology",
+        "label": "Reformation (1500 - 1599) Theology",
         "gloss": "Lane's work critically engages with the theological developments of the Reformation, particularly focusing on the doctrinal shifts regarding justification and ecclesiology. He provides a comparative analysis with Lutheran and Catholic perspectives."
       },
       {
@@ -21835,7 +21835,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21901,7 +21901,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -21972,7 +21972,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22048,7 +22048,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22172,7 +22172,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22249,7 +22249,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22326,7 +22326,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22393,7 +22393,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22464,7 +22464,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22531,7 +22531,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22598,7 +22598,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22700,7 +22700,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22768,7 +22768,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22835,7 +22835,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -22936,7 +22936,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23004,7 +23004,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23090,7 +23090,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23159,7 +23159,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23231,7 +23231,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23297,7 +23297,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23368,7 +23368,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23404,7 +23404,7 @@
     "updated_at": "2025-08-21",
     "themes": [
       {
-        "label": "Reformation Theology",
+        "label": "Reformation (1500 - 1599) Theology",
         "gloss": "George's work on Reformation theology emphasizes the enduring relevance of Reformation insights, particularly those of Luther and Calvin, for contemporary Baptist and evangelical thought."
       },
       {
@@ -23435,7 +23435,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23505,7 +23505,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23577,7 +23577,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23652,7 +23652,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23718,7 +23718,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23791,7 +23791,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23859,7 +23859,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -23959,7 +23959,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24026,7 +24026,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24105,7 +24105,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24184,7 +24184,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24251,7 +24251,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24327,7 +24327,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24393,7 +24393,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24471,7 +24471,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24555,7 +24555,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24622,7 +24622,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24710,7 +24710,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24783,7 +24783,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24851,7 +24851,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24921,7 +24921,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -24998,7 +24998,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25075,7 +25075,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25145,7 +25145,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25221,7 +25221,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25289,7 +25289,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25357,7 +25357,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25441,7 +25441,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25516,7 +25516,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25587,7 +25587,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25653,7 +25653,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25728,7 +25728,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25795,7 +25795,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25872,7 +25872,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -25944,7 +25944,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26012,7 +26012,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26082,7 +26082,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26149,7 +26149,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26219,7 +26219,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26288,7 +26288,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26377,7 +26377,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26445,7 +26445,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26509,7 +26509,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26578,7 +26578,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26687,7 +26687,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26769,7 +26769,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26837,7 +26837,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26910,7 +26910,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -26980,7 +26980,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27045,7 +27045,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27112,7 +27112,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27175,7 +27175,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27242,7 +27242,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27310,7 +27310,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27377,7 +27377,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27454,7 +27454,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27525,7 +27525,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27591,7 +27591,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27664,7 +27664,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27757,7 +27757,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27819,7 +27819,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27894,7 +27894,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -27961,7 +27961,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28031,7 +28031,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28097,7 +28097,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28169,7 +28169,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28264,7 +28264,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28330,7 +28330,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28414,7 +28414,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28481,7 +28481,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28547,7 +28547,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28617,7 +28617,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28691,7 +28691,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28772,7 +28772,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28843,7 +28843,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28911,7 +28911,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -28982,7 +28982,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29054,7 +29054,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29127,7 +29127,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29169,7 +29169,7 @@
         "gloss": "Selderhuis's work on John Calvin's exegesis of the Psalms highlights Calvin's pastoral and practical approach to scripture, emphasizing the reformer's focus on the applicability of biblical texts to the believer's life."
       },
       {
-        "label": "Reformation Ecclesiology",
+        "label": "Reformation (1500 - 1599) Ecclesiology",
         "gloss": "Selderhuis explores the ecclesiological developments during the Reformation, particularly the shift towards a more congregational and participatory church structure, as influenced by Calvin and Luther."
       },
       {
@@ -29196,7 +29196,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29262,7 +29262,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29328,7 +29328,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29394,7 +29394,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29461,7 +29461,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29533,7 +29533,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29617,7 +29617,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29692,7 +29692,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29758,7 +29758,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29828,7 +29828,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29892,7 +29892,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29958,7 +29958,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -29991,7 +29991,7 @@
     "updated_at": "2025-08-21",
     "themes": [
       {
-        "label": "Reformation and Modernity",
+        "label": "Reformation (1500 - 1599) and Modernity",
         "gloss": "Gregory examines the Reformation's role in shaping modern secular society, arguing that the fragmentation of religious authority during the Reformation set the stage for secularization and individualism."
       },
       {
@@ -30021,7 +30021,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30059,7 +30059,7 @@
         "gloss": "Allert critically examines the evangelical understanding of biblical authority, advocating for a perspective that acknowledges the historical and ecclesiastical processes in the formation of the canon. His work challenges simplistic views and calls for a more historically informed approach."
       },
       {
-        "label": "Patristic Engagement",
+        "label": "Patristic (100 - 749) Engagement",
         "gloss": "Allert emphasizes the importance of engaging with early church fathers to enrich evangelical theology. He argues that understanding the historical context of early Christian writings can provide valuable insights for contemporary theological discussions."
       },
       {
@@ -30086,7 +30086,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30158,7 +30158,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30224,7 +30224,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30291,7 +30291,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30357,7 +30357,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30423,7 +30423,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30490,7 +30490,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30556,7 +30556,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30622,7 +30622,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30689,7 +30689,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30755,7 +30755,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30825,7 +30825,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30891,7 +30891,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -30955,7 +30955,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31021,7 +31021,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31089,7 +31089,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31160,7 +31160,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31226,7 +31226,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31292,7 +31292,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31358,7 +31358,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31425,7 +31425,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31491,7 +31491,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31562,7 +31562,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31633,7 +31633,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31699,7 +31699,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31765,7 +31765,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31831,7 +31831,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31893,7 +31893,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -31965,7 +31965,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32005,7 +32005,7 @@
         "gloss": "Boxall's work on the Book of Revelation emphasizes the text's historical context and theological implications, offering a nuanced interpretation that balances scholarly rigor with ecclesial relevance."
       },
       {
-        "label": "Patristic Exegesis",
+        "label": "Patristic (100 - 749) Exegesis",
         "gloss": "He engages deeply with early church interpretations, drawing on patristic sources to inform contemporary readings of New Testament texts, particularly in the context of Revelation."
       },
       {
@@ -32031,7 +32031,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32097,7 +32097,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32163,7 +32163,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32230,7 +32230,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32296,7 +32296,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32366,7 +32366,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32432,7 +32432,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32498,7 +32498,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32561,7 +32561,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32627,7 +32627,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32667,7 +32667,7 @@
         "gloss": "Trigg extensively analyzes Luther's doctrine of justification, emphasizing its foundational role in Lutheran theology. He argues for its continued relevance in contemporary theological discourse, particularly in ecumenical dialogues."
       },
       {
-        "label": "Reformation Ecclesiology",
+        "label": "Reformation (1500 - 1599) Ecclesiology",
         "gloss": "Trigg explores the ecclesiological implications of the Reformation, focusing on how Lutheran principles can inform modern church practices. His work highlights the tension between historical fidelity and contemporary application."
       },
       {
@@ -32694,7 +32694,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32761,7 +32761,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32829,7 +32829,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32895,7 +32895,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -32958,7 +32958,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33025,7 +33025,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33092,7 +33092,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33158,7 +33158,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33226,7 +33226,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33293,7 +33293,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33355,7 +33355,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33414,7 +33414,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33480,7 +33480,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33621,7 +33621,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33687,7 +33687,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33754,7 +33754,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33818,7 +33818,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33884,7 +33884,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33953,7 +33953,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -33998,7 +33998,7 @@
         "gloss": "Nichols ardently defends the principle of sola scriptura, emphasizing its foundational role in Reformed theology. He argues for the sufficiency and authority of Scripture in all matters of faith and practice, countering modern theological trends that seek to undermine this doctrine."
       },
       {
-        "label": "Reformation History",
+        "label": "Reformation (1500 - 1599) History",
         "gloss": "Nichols' scholarship extensively covers the Reformation, focusing on figures like Luther and Calvin. He highlights their theological innovations and the enduring impact of their ideas on contemporary evangelicalism, advocating for a return to Reformation principles."
       },
       {
@@ -34024,7 +34024,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34090,7 +34090,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34179,7 +34179,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34246,7 +34246,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34290,7 +34290,7 @@
         "gloss": "Harmon is a proponent of dialogue between Baptists and Catholics, focusing on shared theological heritage and mutual enrichment. He has been actively involved in formal conversations aimed at fostering understanding and cooperation between these traditions."
       },
       {
-        "label": "Patristic Retrieval",
+        "label": "Patristic (100 - 749) Retrieval",
         "gloss": "Harmon emphasizes the importance of the Church Fathers in shaping contemporary Baptist theology. He argues for a return to patristic sources to inform modern ecclesiological and theological discussions, advocating for a continuity with early Christian thought."
       }
     ],
@@ -34313,7 +34313,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34382,7 +34382,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34448,7 +34448,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34515,7 +34515,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34586,7 +34586,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34653,7 +34653,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34720,7 +34720,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34792,7 +34792,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34861,7 +34861,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34927,7 +34927,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -34998,7 +34998,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35066,7 +35066,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35106,7 +35106,7 @@
     "updated_at": "2025-08-21",
     "themes": [
       {
-        "label": "Patristic Hermeneutics",
+        "label": "Patristic (100 - 749) Hermeneutics",
         "gloss": "Behr emphasizes a hermeneutical approach that integrates historical-critical methods with theological exegesis, focusing on the continuity of tradition from the early Church Fathers to contemporary theology."
       },
       {
@@ -35137,7 +35137,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35182,7 +35182,7 @@
         "gloss": "Ayres offers a nuanced interpretation of Augustine's Trinitarian theology, focusing on the bishop's engagement with contemporary theological currents and his influence on later doctrinal developments."
       },
       {
-        "label": "Patristic Hermeneutics",
+        "label": "Patristic (100 - 749) Hermeneutics",
         "gloss": "Ayres explores the interpretative strategies of early Christian theologians, advocating for a historically informed reading that appreciates the rhetorical and theological contexts of patristic texts."
       }
     ],
@@ -35204,7 +35204,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35270,7 +35270,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35344,7 +35344,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35381,11 +35381,11 @@
     "updated_at": "2025-08-21",
     "themes": [
       {
-        "label": "Modern Identity",
+        "label": "Modern (1800 - 1945) Identity",
         "gloss": "Trueman's exploration of modern identity politics critiques the philosophical shifts from expressive individualism to the current cultural milieu, drawing heavily on Charles Taylor's 'A Secular Age' and Philip Rieff's sociological insights."
       },
       {
-        "label": "Reformation Theology",
+        "label": "Reformation (1500 - 1599) Theology",
         "gloss": "Trueman's scholarship on Reformation figures like Martin Luther and John Owen emphasizes their enduring relevance, advocating for a return to their theological rigor in addressing contemporary ecclesial and cultural issues."
       },
       {
@@ -35411,7 +35411,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35477,7 +35477,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35544,7 +35544,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35614,7 +35614,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35714,7 +35714,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35781,7 +35781,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35817,7 +35817,7 @@
     "updated_at": "2025-08-21",
     "themes": [
       {
-        "label": "Patristic Engagement",
+        "label": "Patristic (100 - 749) Engagement",
         "gloss": "Litfin emphasizes the importance of engaging with the early church fathers to inform contemporary evangelical theology. He argues for a retrieval of patristic insights to address modern theological challenges."
       },
       {
@@ -35847,7 +35847,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35914,7 +35914,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -35979,7 +35979,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36046,7 +36046,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36126,7 +36126,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36206,7 +36206,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36274,7 +36274,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36340,7 +36340,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36425,7 +36425,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36495,7 +36495,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36561,7 +36561,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36627,7 +36627,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36672,7 +36672,7 @@
         "gloss": "Reeves emphasizes the relational and joyful nature of the Trinity, critiquing modern evangelical neglect of this doctrine. He argues for a return to a vibrant Trinitarianism that influences worship and daily Christian life."
       },
       {
-        "label": "Reformation History",
+        "label": "Reformation (1500 - 1599) History",
         "gloss": "Reeves explores the theological and historical significance of the Reformation, highlighting its impact on contemporary evangelical identity. He underscores the importance of Reformation principles in shaping modern Protestant thought."
       },
       {
@@ -36698,7 +36698,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36764,7 +36764,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36831,7 +36831,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36898,7 +36898,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -36962,7 +36962,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37047,7 +37047,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37119,7 +37119,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37185,7 +37185,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37256,7 +37256,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37326,7 +37326,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37416,7 +37416,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37483,7 +37483,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37557,7 +37557,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37634,7 +37634,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37700,7 +37700,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37775,7 +37775,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37841,7 +37841,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37908,7 +37908,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -37948,7 +37948,7 @@
         "gloss": "While operating within an evangelical framework, Johnson advocates for a more sacramental understanding of Christian practices, suggesting that sacraments are means of grace that facilitate union with Christ. This stance invites dialogue and sometimes tension within evangelical circles."
       },
       {
-        "label": "Reformation Theology",
+        "label": "Reformation (1500 - 1599) Theology",
         "gloss": "Johnson's scholarship is deeply influenced by Reformation theology, particularly the works of Calvin and Luther. He seeks to apply their insights to contemporary evangelical issues, emphasizing the relevance of historical doctrines for modern faith practice."
       }
     ],
@@ -37970,7 +37970,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38037,7 +38037,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38103,7 +38103,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38171,7 +38171,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38246,7 +38246,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38319,7 +38319,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38401,7 +38401,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38512,7 +38512,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38583,7 +38583,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38650,7 +38650,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38716,7 +38716,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38783,7 +38783,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38849,7 +38849,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38915,7 +38915,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -38985,7 +38985,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39052,7 +39052,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39121,7 +39121,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39188,7 +39188,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39254,7 +39254,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39320,7 +39320,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39387,7 +39387,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39463,7 +39463,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39529,7 +39529,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39595,7 +39595,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39661,7 +39661,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39723,7 +39723,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39790,7 +39790,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39826,7 +39826,7 @@
     "updated_at": "2025-08-21",
     "themes": [
       {
-        "label": "Patristic Retrieval",
+        "label": "Patristic (100 - 749) Retrieval",
         "gloss": "Myers emphasizes the importance of retrieving insights from the Church Fathers to address contemporary theological issues, advocating for a return to early Christian sources as a means of enriching modern evangelical thought."
       },
       {
@@ -39856,7 +39856,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39923,7 +39923,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -39990,7 +39990,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40085,7 +40085,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40151,7 +40151,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40221,7 +40221,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40287,7 +40287,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40354,7 +40354,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40430,7 +40430,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40496,7 +40496,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40567,7 +40567,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40633,7 +40633,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40701,7 +40701,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40772,7 +40772,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40838,7 +40838,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40901,7 +40901,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -40973,7 +40973,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41035,7 +41035,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41102,7 +41102,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41172,7 +41172,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41238,7 +41238,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41304,7 +41304,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41370,7 +41370,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41437,7 +41437,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41500,7 +41500,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41567,7 +41567,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41652,7 +41652,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41719,7 +41719,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41784,7 +41784,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41846,7 +41846,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41910,7 +41910,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -41977,7 +41977,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42039,7 +42039,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42106,7 +42106,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42169,7 +42169,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42242,7 +42242,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42302,14 +42302,14 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
     "tradition": {
       "id": "trad_patristic",
       "slug": "patristic",
-      "label": "Patristic (Church Fathers)"
+      "label": "Patristic (100 - 749) (Church Fathers)"
     },
     "bio": "",
     "timeline": [],
@@ -42334,7 +42334,7 @@
     "era": {
       "id": "era_patristic",
       "slug": "patristic",
-      "label": "Patristic",
+      "label": "Patristic (100 - 749)",
       "start": 100,
       "end": 749
     },
@@ -42366,7 +42366,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -42398,7 +42398,7 @@
     "era": {
       "id": "era_reformation",
       "slug": "reformation",
-      "label": "Reformation",
+      "label": "Reformation (1500 - 1599)",
       "start": 1500,
       "end": 1599
     },
@@ -42430,7 +42430,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -42462,7 +42462,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -42494,7 +42494,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42522,7 +42522,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42550,7 +42550,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42578,7 +42578,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42606,7 +42606,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -42634,7 +42634,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42662,7 +42662,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42690,7 +42690,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42718,7 +42718,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -42746,7 +42746,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42774,7 +42774,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42802,7 +42802,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42830,7 +42830,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42858,7 +42858,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42886,7 +42886,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42914,7 +42914,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42942,7 +42942,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42970,7 +42970,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -42998,7 +42998,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43026,7 +43026,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43054,7 +43054,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43082,7 +43082,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43110,7 +43110,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43138,7 +43138,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43166,7 +43166,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43194,7 +43194,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43222,7 +43222,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43250,7 +43250,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43278,7 +43278,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43306,7 +43306,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43334,7 +43334,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43362,7 +43362,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43390,7 +43390,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43418,7 +43418,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43446,7 +43446,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43474,7 +43474,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43502,7 +43502,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43530,7 +43530,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43558,7 +43558,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43586,7 +43586,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43614,7 +43614,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43642,7 +43642,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43670,7 +43670,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43698,7 +43698,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43726,7 +43726,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43754,7 +43754,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43782,7 +43782,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -43810,7 +43810,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43838,7 +43838,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43866,7 +43866,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43894,7 +43894,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43922,7 +43922,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43950,7 +43950,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -43978,7 +43978,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44006,7 +44006,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44034,7 +44034,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44062,7 +44062,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44090,7 +44090,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44118,7 +44118,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44146,7 +44146,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44174,7 +44174,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44202,7 +44202,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44230,7 +44230,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44258,7 +44258,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44286,7 +44286,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44314,7 +44314,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44342,7 +44342,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44370,7 +44370,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44398,7 +44398,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44426,7 +44426,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44454,7 +44454,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44482,7 +44482,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44510,7 +44510,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44538,7 +44538,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44566,7 +44566,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44594,7 +44594,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44622,7 +44622,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44650,7 +44650,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44678,7 +44678,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44706,7 +44706,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44734,7 +44734,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44762,7 +44762,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44790,7 +44790,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44818,7 +44818,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44846,7 +44846,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44874,7 +44874,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44902,7 +44902,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44930,7 +44930,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -44958,7 +44958,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -44986,7 +44986,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45014,7 +45014,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45042,7 +45042,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45070,7 +45070,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45098,7 +45098,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -45126,7 +45126,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -45154,7 +45154,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45182,7 +45182,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45210,7 +45210,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45238,7 +45238,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -45266,7 +45266,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45294,7 +45294,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -45322,7 +45322,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -45350,7 +45350,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45378,7 +45378,7 @@
     "era": {
       "id": "era_contemporary",
       "slug": "contemporary",
-      "label": "Contemporary",
+      "label": "Contemporary (1946 - )",
       "start": 1946,
       "end": 3000
     },
@@ -45406,7 +45406,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },
@@ -45434,7 +45434,7 @@
     "era": {
       "id": "era_modern",
       "slug": "modern",
-      "label": "Modern",
+      "label": "Modern (1800 - 1945)",
       "start": 1800,
       "end": 1945
     },

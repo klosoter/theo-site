@@ -71,7 +71,21 @@ THEO_MAP = {t["id"]: t for t in (CACHE["theologians"] or []) if isinstance(t, di
 TOPIC_MAP = {t["id"]: t for t in (CACHE["topics"] or []) if isinstance(t, dict) and "id" in t}
 WORK_MAP = {w["id"]: w for w in (CACHE["works"] or []) if isinstance(w, dict) and "id" in w}
 
-# ======== Essays (CH/AP) =========
+def last_name_key(full_name: str) -> str:
+    if not full_name:
+        return ""
+    full_name = (full_name or "").strip()
+    full_name = re.sub(r"\s+", " ", full_name)
+    parts = full_name.split()
+
+    if not parts:
+        return ""
+    last = re.sub(r"[^a-zA-Z]", "", parts[-1])
+    # if the last token is 3 or fewer letters, include the previous word too
+    if len(last) <= 3 and len(parts) >= 2:
+        prev = re.sub(r"[^a-zA-Z]", "", parts[-2])
+        return f"{prev} {last}"
+    return last
 
 # ======== Essays (CH/AP) — REPLACE the earlier essay helpers with THIS ========
 from datetime import datetime  # you already added this, but just to be sure.
@@ -621,7 +635,6 @@ def api_traditions():
 
 # ---------- API: search ----------
 @app.get("/api/search")
-@app.get("/api/search")
 def api_search():
     q = (request.args.get("q") or "").strip().lower()
     if not q:
@@ -681,6 +694,7 @@ def api_search_reload():
 
 # ---------- Markdown normalization ----------
 def normalize_md(text: str) -> str:
+    text = text.replace(" __", "__ ")
     lines = text.splitlines()
     first_h1 = None
     for i, ln in enumerate(lines):
@@ -733,12 +747,20 @@ def outline_html():
         md_path = (OUTLINES_DIR / cand).resolve()
         tried.append(str(md_path))
         if OUTLINES_DIR in md_path.parents and md_path.exists():
+            topic_slug = cand.split("/")[-2]
+            topic = [t for tid, t in TOPIC_MAP.items() if topic_slug == "-".join(t["slug"].split("-")[2:])][0]
+
+            theo_slug = cand.split("/")[-1][:-3]
+            theo_match = [th["full_name"] for thid, th in THEO_MAP.items() if th["slug"] == theo_slug] or ["Essay"]
+            page_title_string = (f"{last_name_key(theo_match[0])} - {topic['title']}")
+
+
             text = md_path.read_text(encoding="utf-8")
             # NEW: parse front-matter and strip it before markdown render
             meta, body = _parse_frontmatter(text)
             body = normalize_md(body)
             html = markdown(body, extensions=["fenced_code", "tables", "toc"])
-            return jsonify({"html": html, "meta": meta})
+            return jsonify({"html": html, "meta": meta, "page_title_string": page_title_string})
 
     return jsonify({"error": "Not found", "outlines_dir": str(OUTLINES_DIR), "tried": tried}), 404
 

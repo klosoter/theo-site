@@ -268,7 +268,7 @@ function Collapsible({ open, onToggle, title, right, children, sticky = false })
   );
 }
 
-function SortBar({ value = "birth", onChange, storageKey }) {
+function SortBar({ value = "era", onChange, storageKey }) {
   return (
     <div className="sortbar">
       <label className="sortbar-label" htmlFor={storageKey}>Sort</label>
@@ -279,9 +279,9 @@ function SortBar({ value = "birth", onChange, storageKey }) {
           value={value}
           onChange={(e) => onChange?.(e.target.value)}
         >
+          <option value="era">Era → Birth year</option>
           <option value="birth">By Birth Year</option>
           <option value="alpha">Alphabetical (last name)</option>
-          <option value="era">Era → Birth year</option>
           <option value="trad">Tradition → Alphabetical</option>
         </select>
       </div>
@@ -534,7 +534,7 @@ function GlobalSearch() {
                 onMouseEnter={() => setHighlight(i)}
                 onClick={(e) => select(e, to)}
               >
-                <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
+                <div><b>{r.name || r.title}</b> <span className="small">({r.type})<i>{r.type === "work" ? ` - ${r.author}` : ""}</i></span></div>
               </div>
             );
           })}
@@ -645,6 +645,7 @@ function Header() {
   const pages = [
     ["Topics", "/"],
     ["Theologians", "/theologians"],
+    ["Works", "/works"],
     ["Apologetics", "/apologetics"],
     ["Church History", "/church-history"],
     ["Digests", "/digests"],
@@ -724,7 +725,7 @@ function Header() {
                   select(e, to);
                 }}
               >
-                <div><b>{r.name || r.title}</b> <span className="small">({r.type})</span></div>
+                <div><b>{r.name || r.title}</b> <span className="small">({r.type})<i>{r.type === "work" ? ` - ${r.author}` : ""}</i></span></div>
               </div>
             );
           })}
@@ -1132,6 +1133,7 @@ function splitEraKey(key) {
 }
 
 function TheologiansPage({ datasets, showWorks = false, title = "Theologians" }) {
+  document.getElementById("title").innerHTML = title
   const theos = React.useMemo(
     () => [...(datasets.theologians || [])],
     [datasets.theologians]
@@ -1140,7 +1142,7 @@ function TheologiansPage({ datasets, showWorks = false, title = "Theologians" })
   // parent owns mode + persistence
   const storageKey = showWorks ? "works_sort_mode" : "theologians_sort_mode";
   const [mode, setMode] = React.useState(() => {
-    try { return localStorage.getItem(storageKey) || "birth"; } catch { return "birth"; }
+    try { return localStorage.getItem(storageKey) || "era"; } catch { return "era"; }
   });
   React.useEffect(() => {
     try { localStorage.setItem(storageKey, mode); } catch {}
@@ -1148,9 +1150,6 @@ function TheologiansPage({ datasets, showWorks = false, title = "Theologians" })
 
   // Mode → group levels
   const levels = React.useMemo(() => {
-    if (mode === "alpha" || mode === "birth") {
-      return []; // flat; we pre-sort items below
-    }
     if (mode === "era") {
       return [
         {
@@ -1163,6 +1162,10 @@ function TheologiansPage({ datasets, showWorks = false, title = "Theologians" })
         },
       ];
     }
+    if (mode === "alpha" || mode === "birth") {
+      return []; // flat; we pre-sort items below
+    }
+
     // mode === "trad"
     return [
       {
@@ -1243,6 +1246,7 @@ function TheologiansPage({ datasets, showWorks = false, title = "Theologians" })
 
 // Works = Theologians + final works layer, but same sort modes
 function WorksPage({ datasets }) {
+  document.getElementById("title").innerHTML = "Works"
   return <TheologiansPage datasets={datasets} showWorks title="Works" />;
 }
 
@@ -1251,6 +1255,8 @@ function DomainPage({ domainId, datasets }) {
   const data = domainId === "CH" ? datasets.chData : datasets.apData;
   if (!data) return <div>Loading…</div>;
   const items = (data.essays || []).map(e => ({...e, group: e.category_key, groupLabel: e.category_label}));
+  document.getElementById("title").innerHTML = `Essays - ${domainId}`
+
 
   const levels = [
     {
@@ -1274,6 +1280,7 @@ function DomainPage({ domainId, datasets }) {
 
 // Digests (group by category)
 function DigestsPage() {
+  document.getElementById("title").innerHTML = "Digests"
   const [payload, setPayload] = useState(null);
   useEffect(() => { let gone=false; (async()=>{ try { const r = await api("/api/digests"); if(!gone) setPayload(r); } catch { if(!gone) setPayload({digests:[]}); } })(); return ()=>{gone=true;}; }, []);
   if (!payload) return <div>Loading…</div>;
@@ -1284,6 +1291,8 @@ function DigestsPage() {
   const levels = [
     { key:(d)=> d.category, label:(cat)=> <h3>{labelFor(cat)}</h3>, right:(_c,arr)=> <span className="count">{arr.length}</span>, startOpen:false }
   ];
+
+  document.getElementById("title").innerHTML = "Digests"
 
   return (
     <UniversalPage
@@ -1317,6 +1326,8 @@ function EssayPage(props) {
   }, [param]);
   if (error) return <div className="small">{error}</div>;
   if (!essay) return <div>Loading…</div>;
+  document.getElementById("title").innerHTML = essay.title || "Essay"
+
   return (
     <div>
       <h1>{essay.title}</h1>
@@ -1357,6 +1368,8 @@ function DigestPage(props) {
   }, [param]);
   if (error) return <div className="small">{error}</div>;
   if (!digest) return <div>Loading…</div>;
+  document.getElementById("title").innerHTML = digest.title || "Digest"
+
   return (
     <div>
       <h1>{digest.authors_display}: {digest.title}</h1>
@@ -1372,6 +1385,8 @@ function DigestPage(props) {
 function TopicPage({ slug, datasets }) {
   const go = useGo();
   const topic = datasets.topics.find((t) => t.slug === slug);
+  document.getElementById("title").innerHTML = topic.title || "Topic"
+
   if (!topic) return <div>Topic not found.</div>;
 
   // --- essay: compute path and load once (same pattern as Work summary) ---
@@ -1577,6 +1592,8 @@ function TheologianPage({ slug, datasets }) {
   const theo = datasets.theologians.find((x) => x.slug === slug);
   if (!theo) return <div>Theologian not found.</div>;
 
+  document.getElementById("title").innerHTML = theo.full_name || theo.name || "Theologian"
+
   const entry = datasets.byTheo[theo.id] || {};
   const groups = entry.outlines_by_topic_category || {};
   const canonList = datasets.canonCountsTheo[theo.id] || [];
@@ -1744,6 +1761,8 @@ function TopicCategoryPage({ slug, datasets }) {
   const { catName, items } = React.useMemo(() => {
     const sample = topics.find((t) => slugify(t.category || "Other") === slug);
     const name = sample ? sample.category : slug;
+    document.getElementById("title").innerHTML = sample.category || "Category"
+
     const list = topics
       .filter((t) => slugify(t.category || "Other") === slug)
       .sort((a, b) => {
@@ -1790,6 +1809,7 @@ function PodcastPage() {
     { file: "podcasts/ch-modern.rss", title: "Church History: Modern" },
   ];
   const base = "https://klosoter.github.io/theology-audio/";
+  document.getElementById("title").innerHTML = "Podcasts"
 
   function CopyBtn({ url }) {
     const [ok, setOk] = React.useState(false);
@@ -1838,8 +1858,6 @@ function PodcastPage() {
     </div>
   );
 }
-
-/* ---------- Work Page (canonical-only; alias redirects) ---------- */
 function WorkPage({id, datasets}) {
     const go = useGo();
 
@@ -1856,6 +1874,7 @@ function WorkPage({id, datasets}) {
   const by = datasets.byWork[canonicalId] || {};
   const w = {...by, ...live, id: canonicalId, title: live.title || by.title || canonicalId};
   const title = workTitleWithSuffix(live, by) || w.title || canonicalId;
+  document.getElementById("title").innerHTML = title || "Work"
 
   const authors = resolveAuthorsForWork(canonicalId, datasets);
   const featured = featuredTopicsForWork(canonicalId, datasets.topics, datasets.reverseCanonMap);
@@ -1959,6 +1978,7 @@ function OutlinePage() {
       if (rel) {
         const r = await api("/api/outline?path=" + encodeURIComponent(rel));
         setHtml(r.html);
+        document.getElementById("title").innerHTML = r.page_title_string || "Outline"
       }
     })();
   }, []);

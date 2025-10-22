@@ -1,5 +1,5 @@
 ### TITLE
-**The Coming of the Kingdom (Het Komst van het Koninkrijk)** - Herman Ridderbos 
+**The Coming of the Kingdom (De Komst van het Koninkrijk)** - Herman Ridderbos 
 Site use: focus on **Christ's Messianic Consciousness and Kingdom**
 
 ### OUTLINE NOTES
