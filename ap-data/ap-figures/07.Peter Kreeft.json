@@ -1,0 +1,15 @@
+{
+  "apologist": "Peter Kreeft",
+  "file_txt": "out-apol/07.Peter Kreeft.txt",
+  "generated_at": "2025-11-05T22:28:30.835627Z",
+  "essay_word_count": 2141,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-tts",
+    "voice": "nova"
+  }
+}

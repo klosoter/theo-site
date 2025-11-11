@@ -1,0 +1,15 @@
+{
+  "apologist": "N. T. Wright",
+  "file_txt": "out-apol/09.N T Wright.txt",
+  "generated_at": "2025-11-05T22:49:17.225705Z",
+  "essay_word_count": 2047,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "apologist": "B. B. Warfield",
+  "file_txt": "out-apol/04.B B Warfield.txt",
+  "generated_at": "2025-11-05T21:41:42.520397Z",
+  "essay_word_count": 1983,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-tts",
+    "voice": "nova"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "apologist": "Athenagoras of Athens",
+  "file_txt": "out-apol/01.Athenagoras of Athens.txt",
+  "generated_at": "2025-11-05T21:01:38.342002Z",
+  "essay_word_count": 1792,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-tts",
+    "voice": "nova"
+  }
+}

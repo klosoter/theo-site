@@ -3,7 +3,7 @@ Ethical Kingdom and Value-Judgment: Recasting Christian Doctrine around the Comm
 
 ### PREVIEW NOTES
 - **Nineteenth-century German Protestantism**, shaped by **historicism**, the **Kantian turn**, and post-**Hegelian** critique, with **Albrecht Ritschl** teaching at **Bonn** and **Göttingen** between 1852 and 1889.
-- **Method of *Werturteil* and *Glaubensurteil** grounded in **Immanuel Kant** and **Hermann Lotze**, rejecting **metaphysics** in favor of historical knowledge oriented to the **practical reason** of faith.
+- **Method of *Werturteil* and *Glaubensurteil* **grounded in **Immanuel Kant** and **Hermann Lotze**, rejecting **metaphysics** in favor of historical knowledge oriented to the **practical reason** of faith.
 - **Key works**: **Die Entstehung der altkatholischen Kirche** 1850, **Die christliche Lehre von der Rechtfertigung und Versöhnung** 3 vols 1870–1874, **Theologie und Metaphysik** 1881, **Geschichte des Pietismus** 1882–1886.
 - **Central categories**: **Reich Gottes**, **Vatergott** and **Bruderliebe**, **Gemeinde** as ethical community, **value-judgments** and **practical reason**, **anti-metaphysical Christology**, **historical-critical method**.
 - **Interlocutors and influences**: **F. C. Baur** and the **Tübingen School**, **Friedrich Schleiermacher**, **Immanuel Kant**, **Hermann Lotze**, and associates **Julius Kaftan**, **Wilhelm Herrmann**, **Adolf von Harnack**; later critiques from **Karl Barth** and **Reinhold Niebuhr**.

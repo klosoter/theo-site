@@ -1,0 +1,15 @@
+{
+  "apologist": "Herman Dooyeweerd",
+  "file_txt": "out-apol/05.Herman Dooyeweerd.txt",
+  "generated_at": "2025-11-05T21:54:33.613177Z",
+  "essay_word_count": 2040,
+  "issues": [
+    "Essay length outside configured range"
+  ],
+  "ok": false,
+  "models": {
+    "text": "gpt-5",
+    "tts": "gpt-4o-tts",
+    "voice": "nova"
+  }
+}
