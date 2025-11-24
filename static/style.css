@@ -610,3 +610,66 @@ header .header-inner > input{
   padding:6px 8px;
   word-break:break-all;
 }
+
+/* bullets */
+.exam-item-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.exam-item {
+  margin-bottom: 10px;
+}
+
+.exam-item-text {
+  font-weight: 600;
+}
+
+/* existing note */
+.exam-note-box {
+  margin-top: 4px;
+  padding: 6px 10px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  border-left: 3px solid #ccc;
+  white-space: pre-wrap;
+  cursor: pointer;
+}
+
+.exam-note-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+.exam-note-empty {
+  color: #999;
+  font-style: italic;
+}
+
+/* editing state */
+.exam-note-editing {
+  cursor: default;
+}
+
+.exam-note-actions {
+  margin-top: 4px;
+  display: flex;
+  gap: 6px;
+}
+
+/* empty state: minimal inline control */
+.exam-note-add {
+  margin-top: 2px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.exam-note-add:hover {
+  text-decoration: underline;
+}

@@ -571,6 +571,9 @@ function Header() {
     if (p.startsWith("/essay/")) return "Essay";
     if (p.startsWith("/digest/")) return "Digest";
     if (p.startsWith("/outline")) return "Outline";
+    if (p.startsWith("/exam-essays")) return "Exam essays";
+    if (p.startsWith("/exam-essay/")) return "Exam essays";
+
     return "Browse";
   }, [path]);
 
@@ -648,6 +651,7 @@ function Header() {
     ["Works", "/works"],
     ["Apologetics", "/apologetics"],
     ["Church History", "/church-history"],
+    ["Exam essays", "/exam-essays"],
     ["Digests", "/digests"],
     ["Podcast", "/podcasts"],
   ];
@@ -1278,6 +1282,73 @@ function DomainPage({ domainId, datasets }) {
   );
 }
 
+function ExamEssaysPage({ datasets }) {
+  const go = useGo();
+  const exams = datasets.examEssays || [];
+  document.getElementById("title").innerHTML = "Exam essays";
+
+  const grouped = React.useMemo(() => {
+    const out = {
+      ST: { label: "Systematic Theology", items: [] },
+      CH: { label: "Church History",     items: [] },
+      AP: { label: "Apologetics",        items: [] },
+    };
+    for (const e of exams) {
+      const t = e.exam_track || "AP";
+      if (!out[t]) continue;
+      out[t].items.push(e);
+    }
+    // keep question_label order (they already came sorted from backend)
+    return out;
+  }, [exams]);
+
+  const [openTracks, setOpenTracks] = React.useState({ ST: true, CH: true, AP: true });
+
+  return (
+    <div>
+      <h1>Exam essays</h1>
+      {["ST","CH","AP"].map((track) => {
+        const g = grouped[track];
+        if (!g || !g.items.length) return null;
+        const open = !!openTracks[track];
+        return (
+          <div key={track} className={"section card " + (open ? "open" : "")} style={{ marginBottom: 12 }}>
+            <div
+              className="section-head"
+              onClick={() => setOpenTracks(p => ({ ...p, [track]: !open }))}
+            >
+              <div className="caret">▸</div>
+              <h3 style={{ margin: 0 }}>{g.label}</h3>
+              <span className="count">{g.items.length}</span>
+            </div>
+            {open && (
+              <div className="details">
+                {g.items.map((e) => {
+                  const to = `/exam-essay/${encodeURIComponent(e.id)}`;
+                  return (
+                    <div
+                      key={e.id}
+                      className="card"
+                      style={{ cursor: "pointer", marginBottom: 6 }}
+                      onClick={(ev) => go(ev, to)}
+                    >
+                      <div className="small muted">{e.question_label} · {e.session}</div>
+                      <div style={{ marginTop: 4 }}>
+                        <b>{e.question_text}</b>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+
 // Digests (group by category)
 function DigestsPage() {
   document.getElementById("title").innerHTML = "Digests"
@@ -1412,6 +1483,37 @@ function TopicPage({ slug, datasets }) {
     return () => { gone = true; };
   }, [essayRel]);
 
+  const prepRel = `outlines/${catFolder}/${topicFolder}/${topicFolder}_exam_prep.md`;
+
+  const [prepHTML, setPrepHTML] = React.useState("");
+  const [prepTried, setPrepTried] = React.useState(false);
+  const [prepOpen, setPrepOpen] = React.useState(false);
+  // NEW: probe for exam-prep essay once per topic
+  React.useEffect(() => {
+    let gone = false;
+
+    (async () => {
+      try {
+        const r = await api("/api/outline?path=" + encodeURIComponent(prepRel));
+        if (!gone) {
+          setPrepHTML(r.html || "");
+        }
+      } catch {
+        if (!gone) {
+          setPrepHTML("");   // file missing / 404
+        }
+      } finally {
+        if (!gone) {
+          setPrepTried(true);
+        }
+      }
+    })();
+
+    return () => { gone = true; };
+  }, [prepRel]);
+
+
+
   // --- existing state/logic ---
   const [openWts, setOpenWts] = React.useState(false);
   const [openRecent, setOpenRecent] = React.useState(false);
@@ -1477,6 +1579,30 @@ function TopicPage({ slug, datasets }) {
           )}
         </div>
       </div>
+
+      {/* NEW: Exam-prep essay (only if file exists) */}
+      {prepTried && prepHTML && (
+        <div className="card" style={{ marginTop: 12, padding: 0 }}>
+          <div className={"section " + (prepOpen ? "open" : "")}>
+            <div
+              className="section-head sticky-head"
+              onClick={() => setPrepOpen(o => !o)}
+            >
+              <div className="caret">▸</div>
+              <h3 style={{ margin: 0 }}>Exam prep essay</h3>
+            </div>
+            {prepOpen && (
+              <div style={{ padding: 16 }}>
+                <div
+                  className="markdown"
+                  dangerouslySetInnerHTML={{ __html: prepHTML }}
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
 
       {/* badges row */}
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", margin: "4px 0 8px" }}>
@@ -1615,6 +1741,32 @@ function TheologianPage({ slug, datasets }) {
     return () => { gone = true; };
   }, [theo.id]);
 
+  const [prepHTML, setPrepHTML] = React.useState("");
+  const [prepTried, setPrepTried] = React.useState(false);
+  const [prepOpen, setPrepOpen] = React.useState(false);
+
+    // NEW: exam-prep theologian essay: {theo_id}_exam_prep.md
+  React.useEffect(() => {
+    let gone = false;
+    (async () => {
+      try {
+        const id = `${theo.id}_exam_prep`;
+        const r = await api(`/api/theologian_essay/${encodeURIComponent(id)}`);
+        if (!gone) {
+          // endpoint returns { html: "" } if file missing
+          setPrepHTML(r?.html || "");
+        }
+      } catch {
+        if (!gone) setPrepHTML("");
+      } finally {
+        if (!gone) setPrepTried(true);
+      }
+    })();
+    return () => { gone = true; };
+  }, [theo.id]);
+
+
+
   const [openWorks, setOpenWorks] = React.useState(false);
   const [openCats, setOpenCats] = React.useState({});
   const [aboutOpen, setAboutOpen] = React.useState(false);
@@ -1644,6 +1796,26 @@ function TheologianPage({ slug, datasets }) {
           )}
         </div>
       </div>
+
+      {/* NEW: Exam-prep essay (only if file exists) */}
+      {prepTried && prepHTML && (
+        <div className="card" style={{ marginTop: 12, padding: 0 }}>
+          <div className={"section " + (prepOpen ? "open" : "")}>
+            <div
+              className="section-head sticky-head"
+              onClick={() => setPrepOpen(o => !o)}
+            >
+              <div className="caret">▸</div>
+              <h3 style={{ margin: 0 }}>Exam prep essay</h3>
+            </div>
+            {prepOpen && (
+              <div className="markdown" style={{ padding: 16 }}>
+                <div dangerouslySetInnerHTML={{ __html: prepHTML }} />
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* About */}
       <div className="card" style={{marginTop: 12, padding: 0}}>
@@ -1798,6 +1970,1020 @@ function TopicCategoryPage({ slug, datasets }) {
     </div>
   );
 }
+
+
+function ExamEssayPage(props) {
+  const param =
+    props.id || decodeURIComponent(window.location.pathname.split("/").pop() || "");
+
+  const [data, setData] = React.useState(null);
+  const [error, setError] = React.useState("");
+
+  const [open, setOpen] = React.useState({
+    essay: true,
+    drill: true,
+    oral: true,
+    diag: false,
+  });
+
+  // inner subsections (cards inside each main card)
+  const [subOpen, setSubOpen] = React.useState({
+    // card 1
+    auto_summary: true,
+    auto_thesis: false,
+    auto_strengths: false,
+    auto_outline: false,
+    auto_essay: true,
+
+    // card 2 – drill subsections
+    drill_exam_hist: true,
+    drill_exam_doc: true,
+    drill_exam_top: true,
+    drill_ws_logic: false,
+    drill_ws_hist: false,
+    drill_ws_theo: false,
+    drill_ws_term: false,
+    drill_ws_balance: false,
+    drill_om_fig: false,
+    drill_om_texts: false,
+    drill_om_conf: false,
+
+    // card 3 – oral prep subsections
+    oral_hist: true,
+    oral_doc: true,
+    oral_top: true,
+
+    // card 4 – diagnostics
+    diag_ws_logic: true,
+    diag_ws_hist: false,
+    diag_ws_theo: false,
+    diag_ws_term: false,
+    diag_ws_balance: false,
+    diag_om_fig: false,
+    diag_om_texts: false,
+    diag_om_conf: false,
+    diag_comm_doc: false,
+    diag_comm_ref: false,
+    diag_comm_trig: false,
+  });
+
+  const [userNotes, setUserNotes] = React.useState({});
+  const [oralNotes, setOralNotes] = React.useState({});
+  const [committeeNotes, setCommitteeNotes] = React.useState({});
+
+  const onUpdateNote =
+    typeof props.onUpdateNote === "function" ? props.onUpdateNote : null;
+
+  // load essay
+  React.useEffect(() => {
+    let gone = false;
+    async function load() {
+      setError("");
+      setData(null);
+      try {
+        const r = await api(`/api/exam_essays/${encodeURIComponent(param)}`);
+        if (!gone) setData(r);
+      } catch (e) {
+        if (!gone) setError("Exam essay not found.");
+      }
+    }
+    if (param) load();
+    return () => {
+      gone = true;
+    };
+  }, [param]);
+
+  // sync local notes when essay data changes
+  React.useEffect(() => {
+    if (!data) return;
+    setUserNotes(data.user_notes || {});
+    setOralNotes(data.oral_prep_notes || {});
+    setCommitteeNotes(data.committee_notes || {});
+  }, [data && data.id]);
+
+  if (error) return <div className="small">{error}</div>;
+  if (!data) return <div>Loading…</div>;
+
+  document.getElementById("title").innerHTML =
+    data.question_label || "Exam essay";
+
+  const auto      = data.auto_analysis || {};
+  const committee = data.committee_analysis || {};
+  const oral      = data.oral_prep || {};
+  const moa       = data.model_oral_answers || {};
+
+  const aws = auto.weak_spots || {};
+  const aom = auto.omissions || {};
+
+  const ws = userNotes.weak_spots || {};
+  const om = userNotes.omissions || {};
+
+  const moaAuto      = moa.auto_analysis || {};
+  const moaAutoWeak  = moaAuto.weak_spots || {};
+  const moaAutoOmiss = moaAuto.omissions || {};
+
+  const toggle = (k) => setOpen((p) => ({ ...p, [k]: !p[k] }));
+  const toggleSub = (k) => setSubOpen((p) => ({ ...p, [k]: !p[k] }));
+
+  const renderSimpleList = (arr) =>
+    Array.isArray(arr) && arr.some((x) => x && String(x).trim()) ? (
+      <ul>
+        {arr.map((v, i) =>
+          v && String(v).trim() ? (
+            <li key={i}>
+              <div>{v}</div>
+            </li>
+          ) : null
+        )}
+      </ul>
+    ) : (
+      <div className="small muted">(none)</div>
+    );
+
+  // helper for drill subsections: list of qa objects -> collapsible questions
+function renderDrillQAList(list) {
+  const qas = Array.isArray(list) ? list.filter(Boolean) : [];
+  if (!qas.length) return <div className="small muted">(none)</div>;
+
+  return (
+    <div>
+      {qas.map((qa, i) => {
+        if (!qa) return null;
+
+        // Prefer the clean diagnostic sentence:
+        let raw = qa.source_note || qa.question || "";
+        raw = String(raw).trim();
+        if (!raw) return null;
+
+        return (
+          <details key={i} style={{ marginBottom: 4 }}>
+            <summary>
+              <b>Q{i + 1}. {raw}</b>
+            </summary>
+            <div style={{ marginTop: 4 }}>
+              {qa.answer_html ? (
+                <div
+                  className="markdown"
+                  dangerouslySetInnerHTML={{ __html: String(qa.answer_html || "") }}
+                />
+              ) : (
+                <div className="small muted">(no model answer yet)</div>
+              )}
+            </div>
+          </details>
+        );
+      })}
+    </div>
+  );
+}
+
+  // single handler used by all InlineNoteList instances
+  function handleLocalNoteChange(index, value, pathPrefix) {
+    if (!pathPrefix) return;
+
+    if (onUpdateNote) {
+      onUpdateNote(data.id, pathPrefix, index, value);
+    }
+
+    if (pathPrefix.startsWith("user_notes.")) {
+      const parts = pathPrefix.split(".");
+      const scope = parts[1]; // thesis_points | weak_spots | omissions | ...
+      const field = parts[2];
+
+      setUserNotes((prev) => {
+        const base = prev || {};
+
+        if (scope === "thesis_points") {
+          const arr = (base.thesis_points || []).slice();
+          arr[index] = value;
+          return { ...base, thesis_points: arr };
+        }
+
+        if (scope === "weak_spots") {
+          const wsPrev = base.weak_spots || {};
+          const arr = (wsPrev[field] || []).slice();
+          arr[index] = value;
+          return {
+            ...base,
+            weak_spots: { ...wsPrev, [field]: arr },
+          };
+        }
+
+        if (scope === "omissions") {
+          const omPrev = base.omissions || {};
+          const arr = (omPrev[field] || []).slice();
+          arr[index] = value;
+          return {
+            ...base,
+            omissions: { ...omPrev, [field]: arr },
+          };
+        }
+
+        return base;
+      });
+    } else if (pathPrefix.startsWith("oral_prep_notes.")) {
+      const parts = pathPrefix.split(".");
+      const field = parts[1];
+
+      setOralNotes((prev) => {
+        const base = prev || {};
+        const arr = (base[field] || []).slice();
+        arr[index] = value;
+        return { ...base, [field]: arr };
+      });
+    } else if (pathPrefix.startsWith("committee_notes.")) {
+      const parts = pathPrefix.split(".");
+      const field = parts[1];
+
+      setCommitteeNotes((prev) => {
+        const base = prev || {};
+        const arr = (base[field] || []).slice();
+        arr[index] = value;
+        return { ...base, [field]: arr };
+      });
+    }
+
+    fetch(`/api/exam_essays/${encodeURIComponent(data.id)}/update_note`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        path: pathPrefix,
+        index,
+        value,
+      }),
+    }).catch((err) => {
+      console.error("Failed to save note", err);
+    });
+  }
+
+  return (
+    <div>
+      <h1>
+        {data.question_label} — {data.id}
+      </h1>
+      <div className="small">
+        <span className="badge">
+          {data.exam_track_label || data.exam_track}
+        </span>{" "}
+        <span className="badge">{data.session}</span>
+      </div>
+
+      <div style={{ marginTop: 12, marginBottom: 12 }}>
+        <b>Question:</b>
+        <div>{data.question_text}</div>
+      </div>
+
+      {/* 1. Summary + structure + essay */}
+      <div
+        className={"card section " + (open.essay ? "open" : "")}
+        style={{ marginTop: 12 }}
+      >
+        <div className="section-head" onClick={() => toggle("essay")}>
+          <div className="caret">{open.essay ? "▾" : "▸"}</div>
+          <h3 style={{ margin: 0 }}>Summary, structure, and essay</h3>
+        </div>
+        {open.essay && (
+          <div className="details" style={{ paddingTop: 8 }}>
+            {auto.summary && (
+              <div
+                className={"section card " + (subOpen.auto_summary ? "open" : "")}
+                style={{ marginTop: 4 }}
+              >
+                <div
+                  className="section-head"
+                  onClick={() => toggleSub("auto_summary")}
+                >
+                  <div className="caret">
+                    {subOpen.auto_summary ? "▾" : "▸"}
+                  </div>
+                  <div className="small"><b>Auto summary</b></div>
+                </div>
+                {subOpen.auto_summary && (
+                  <div className="details" style={{ padding: 8 }}>
+                    <p>{auto.summary}</p>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {Array.isArray(auto.thesis_points) && auto.thesis_points.length > 0 && (
+              <div
+                className={"section card " + (subOpen.auto_thesis ? "open" : "")}
+                style={{ marginTop: 6 }}
+              >
+                <div className="section-head" onClick={() => toggleSub("auto_thesis")}>
+                  <div className="caret">
+                    {subOpen.auto_thesis ? "▾" : "▸"}
+                  </div>
+                  <div className="small"><b>Auto thesis points</b></div>
+                </div>
+                {subOpen.auto_thesis && (
+                  <div className="details" style={{ padding: 8 }}>
+                    {renderSimpleList(auto.thesis_points)}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {Array.isArray(auto.strengths) && auto.strengths.length > 0 && (
+              <div
+                className={"section card " + (subOpen.auto_strengths ? "open" : "")}
+                style={{ marginTop: 6 }}
+              >
+                <div
+                  className="section-head"
+                  onClick={() => toggleSub("auto_strengths")}
+                >
+                  <div className="caret">
+                    {subOpen.auto_strengths ? "▾" : "▸"}
+                  </div>
+                  <div className="small"><b>Auto strengths</b></div>
+                </div>
+                {subOpen.auto_strengths && (
+                  <div className="details" style={{ padding: 8 }}>
+                    {renderSimpleList(auto.strengths)}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {Array.isArray(auto.outline) && auto.outline.length > 0 && (
+              <div
+                className={"section card " + (subOpen.auto_outline ? "open" : "")}
+                style={{ marginTop: 6 }}
+              >
+                <div
+                  className="section-head"
+                  onClick={() => toggleSub("auto_outline")}
+                >
+                  <div className="caret">
+                    {subOpen.auto_outline ? "▾" : "▸"}
+                  </div>
+                  <div className="small"><b>Outline (auto)</b></div>
+                </div>
+                {subOpen.auto_outline && (
+                  <div className="details" style={{ padding: 8 }}>
+                    {renderSimpleList(auto.outline)}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {data.essay_markdown && (
+              <div
+                className={"section card " + (subOpen.auto_essay ? "open" : "")}
+                style={{ marginTop: 6, marginBottom: 4 }}
+              >
+                <div
+                  className="section-head"
+                  onClick={() => toggleSub("auto_essay")}
+                >
+                  <div className="caret">
+                    {subOpen.auto_essay ? "▾" : "▸"}
+                  </div>
+                  <div className="small"><b>Essay text</b></div>
+                </div>
+                {subOpen.auto_essay && (
+                  <div className="details" style={{ padding: 8 }}>
+                    <div
+                      className="markdown"
+                      style={{ whiteSpace: "pre-wrap", tabSize: 4 }}
+                    >
+                      {data.essay_markdown}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* 2. Drill questions & model answers */}
+      <div
+        className={"card section " + (open.drill ? "open" : "")}
+        style={{ marginTop: 12 }}
+      >
+        <div className="section-head" onClick={() => toggle("drill")}>
+          <div className="caret">{open.drill ? "▾" : "▸"}</div>
+          <h3 style={{ margin: 0 }}>Drill questions & model answers</h3>
+        </div>
+        {open.drill && (
+          <div className="details" style={{ paddingTop: 8 }}>
+            {/* Exam prep subsections */}
+            <div
+              className={"section card " + (subOpen.drill_exam_hist ? "open" : "")}
+              style={{ marginTop: 4 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_exam_hist")}
+              >
+                <div className="caret">
+                  {subOpen.drill_exam_hist ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Exam prep: historical fixes</b></div>
+              </div>
+              {subOpen.drill_exam_hist && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moa.critical_historical_fixes)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_exam_doc ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_exam_doc")}
+              >
+                <div className="caret">
+                  {subOpen.drill_exam_doc ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Exam prep: doctrinal themes</b></div>
+              </div>
+              {subOpen.drill_exam_doc && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moa.critical_doctrinal_themes)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_exam_top ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_exam_top")}
+              >
+                <div className="caret">
+                  {subOpen.drill_exam_top ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Exam prep: top exam questions</b></div>
+              </div>
+              {subOpen.drill_exam_top && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moa.top_exam_questions)}
+                </div>
+              )}
+            </div>
+
+            {/* Weak spots subsections */}
+            <div
+              className={"section card " + (subOpen.drill_ws_logic ? "open" : "")}
+              style={{ marginTop: 10 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_ws_logic")}
+              >
+                <div className="caret">
+                  {subOpen.drill_ws_logic ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: logic</b></div>
+              </div>
+              {subOpen.drill_ws_logic && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoWeak.logic_weaknesses)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_ws_hist ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_ws_hist")}
+              >
+                <div className="caret">
+                  {subOpen.drill_ws_hist ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: historical</b></div>
+              </div>
+              {subOpen.drill_ws_hist && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoWeak.historical_issues)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_ws_theo ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_ws_theo")}
+              >
+                <div className="caret">
+                  {subOpen.drill_ws_theo ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: theological</b></div>
+              </div>
+              {subOpen.drill_ws_theo && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoWeak.theological_tensions)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_ws_term ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_ws_term")}
+              >
+                <div className="caret">
+                  {subOpen.drill_ws_term ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: terminology</b></div>
+              </div>
+              {subOpen.drill_ws_term && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoWeak.terminology_problems)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_ws_balance ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_ws_balance")}
+              >
+                <div className="caret">
+                  {subOpen.drill_ws_balance ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: balance</b></div>
+              </div>
+              {subOpen.drill_ws_balance && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoWeak.balance_issues)}
+                </div>
+              )}
+            </div>
+
+            {/* Omissions subsections */}
+            <div
+              className={"section card " + (subOpen.drill_om_fig ? "open" : "")}
+              style={{ marginTop: 10 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_om_fig")}
+              >
+                <div className="caret">
+                  {subOpen.drill_om_fig ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Omissions: figures</b></div>
+              </div>
+              {subOpen.drill_om_fig && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoOmiss.missing_figures)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_om_texts ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_om_texts")}
+              >
+                <div className="caret">
+                  {subOpen.drill_om_texts ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Omissions: primary texts</b></div>
+              </div>
+              {subOpen.drill_om_texts && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoOmiss.missing_primary_texts)}
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.drill_om_conf ? "open" : "")}
+              style={{ marginTop: 6, marginBottom: 4 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("drill_om_conf")}
+              >
+                <div className="caret">
+                  {subOpen.drill_om_conf ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Omissions: confessional anchors</b></div>
+              </div>
+              {subOpen.drill_om_conf && (
+                <div className="details" style={{ padding: 8 }}>
+                  {renderDrillQAList(moaAutoOmiss.missing_confessional_anchors)}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* 3. Oral prep (your lists) */}
+      <div
+        className={"card section " + (open.oral ? "open" : "")}
+        style={{ marginTop: 12 }}
+      >
+        <div className="section-head" onClick={() => toggle("oral")}>
+          <div className="caret">{open.oral ? "▾" : "▸"}</div>
+          <h3 style={{ margin: 0 }}>Oral prep (your lists)</h3>
+        </div>
+        {open.oral && (
+          <div className="details" style={{ paddingTop: 8 }}>
+            <div
+              className={"section card " + (subOpen.oral_hist ? "open" : "")}
+              style={{ marginTop: 4 }}
+            >
+              <div className="section-head" onClick={() => toggleSub("oral_hist")}>
+                <div className="caret">
+                  {subOpen.oral_hist ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Critical historical fixes</b></div>
+              </div>
+              {subOpen.oral_hist && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={oral.critical_historical_fixes || []}
+                    notes={oralNotes.critical_historical_fixes || []}
+                    pathPrefix="oral_prep_notes.critical_historical_fixes"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.oral_doc ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div className="section-head" onClick={() => toggleSub("oral_doc")}>
+                <div className="caret">
+                  {subOpen.oral_doc ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Critical doctrinal themes</b></div>
+              </div>
+              {subOpen.oral_doc && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={oral.critical_doctrinal_themes || []}
+                    notes={oralNotes.critical_doctrinal_themes || []}
+                    pathPrefix="oral_prep_notes.critical_doctrinal_themes"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.oral_top ? "open" : "")}
+              style={{ marginTop: 6, marginBottom: 4 }}
+            >
+              <div className="section-head" onClick={() => toggleSub("oral_top")}>
+                <div className="caret">
+                  {subOpen.oral_top ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Top exam questions</b></div>
+              </div>
+              {subOpen.oral_top && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={oral.top_exam_questions || []}
+                    notes={oralNotes.top_exam_questions || []}
+                    pathPrefix="oral_prep_notes.top_exam_questions"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* 4. Diagnostics & committee */}
+      <div
+        className={"card section " + (open.diag ? "open" : "")}
+        style={{ marginTop: 12, marginBottom: 24 }}
+      >
+        <div className="section-head" onClick={() => toggle("diag")}>
+          <div className="caret">{open.diag ? "▾" : "▸"}</div>
+          <h3 style={{ margin: 0 }}>Diagnostics & committee</h3>
+        </div>
+        {open.diag && (
+          <div className="details" style={{ paddingTop: 8 }}>
+            {/* Weak spots */}
+            <div
+              className={"section card " + (subOpen.diag_ws_logic ? "open" : "")}
+              style={{ marginTop: 4 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_ws_logic")}
+              >
+                <div className="caret">
+                  {subOpen.diag_ws_logic ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: logic</b></div>
+              </div>
+              {subOpen.diag_ws_logic && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aws.logic_weaknesses || []}
+                    notes={ws.logic_weaknesses || []}
+                    pathPrefix="user_notes.weak_spots.logic_weaknesses"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.diag_ws_hist ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_ws_hist")}
+              >
+                <div className="caret">
+                  {subOpen.diag_ws_hist ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: historical</b></div>
+              </div>
+              {subOpen.diag_ws_hist && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aws.historical_issues || []}
+                    notes={ws.historical_issues || []}
+                    pathPrefix="user_notes.weak_spots.historical_issues"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.diag_ws_theo ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_ws_theo")}
+              >
+                <div className="caret">
+                  {subOpen.diag_ws_theo ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: theological</b></div>
+              </div>
+              {subOpen.diag_ws_theo && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aws.theological_tensions || []}
+                    notes={ws.theological_tensions || []}
+                    pathPrefix="user_notes.weak_spots.theological_tensions"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.diag_ws_term ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_ws_term")}
+              >
+                <div className="caret">
+                  {subOpen.diag_ws_term ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: terminology</b></div>
+              </div>
+              {subOpen.diag_ws_term && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aws.terminology_problems || []}
+                    notes={ws.terminology_problems || []}
+                    pathPrefix="user_notes.weak_spots.terminology_problems"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.diag_ws_balance ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_ws_balance")}
+              >
+                <div className="caret">
+                  {subOpen.diag_ws_balance ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Weak spots: balance</b></div>
+              </div>
+              {subOpen.diag_ws_balance && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aws.balance_issues || []}
+                    notes={ws.balance_issues || []}
+                    pathPrefix="user_notes.weak_spots.balance_issues"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            {/* Omissions */}
+            <div
+              className={"section card " + (subOpen.diag_om_fig ? "open" : "")}
+              style={{ marginTop: 10 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_om_fig")}
+              >
+                <div className="caret">
+                  {subOpen.diag_om_fig ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Omissions: figures</b></div>
+              </div>
+              {subOpen.diag_om_fig && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aom.missing_figures || []}
+                    notes={om.missing_figures || []}
+                    pathPrefix="user_notes.omissions.missing_figures"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.diag_om_texts ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_om_texts")}
+              >
+                <div className="caret">
+                  {subOpen.diag_om_texts ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Omissions: primary texts</b></div>
+              </div>
+              {subOpen.diag_om_texts && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aom.missing_primary_texts || []}
+                    notes={om.missing_primary_texts || []}
+                    pathPrefix="user_notes.omissions.missing_primary_texts"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div
+              className={"section card " + (subOpen.diag_om_conf ? "open" : "")}
+              style={{ marginTop: 6 }}
+            >
+              <div
+                className="section-head"
+                onClick={() => toggleSub("diag_om_conf")}
+              >
+                <div className="caret">
+                  {subOpen.diag_om_conf ? "▾" : "▸"}
+                </div>
+                <div className="small"><b>Omissions: confessional anchors</b></div>
+              </div>
+              {subOpen.diag_om_conf && (
+                <div className="details" style={{ padding: 8 }}>
+                  <InlineNoteList
+                    items={aom.missing_confessional_anchors || []}
+                    notes={om.missing_confessional_anchors || []}
+                    pathPrefix="user_notes.omissions.missing_confessional_anchors"
+                    onLocalChange={handleLocalNoteChange}
+                  />
+                </div>
+              )}
+            </div>
+
+            {/* Committee */}
+            {(Array.isArray(committee.wts_doctrinal_flags) &&
+              committee.wts_doctrinal_flags.length > 0) ||
+            (Array.isArray(committee.reformed_tradition_flags) &&
+              committee.reformed_tradition_flags.length > 0) ||
+            (Array.isArray(committee.examiner_trigger_points) &&
+              committee.examiner_trigger_points.length > 0) ? (
+              <>
+                <div
+                  className={"section card " + (subOpen.diag_comm_doc ? "open" : "")}
+                  style={{ marginTop: 10 }}
+                >
+                  <div
+                    className="section-head"
+                    onClick={() => toggleSub("diag_comm_doc")}
+                  >
+                    <div className="caret">
+                      {subOpen.diag_comm_doc ? "▾" : "▸"}
+                    </div>
+                    <div className="small"><b>Committee: doctrinal flags</b></div>
+                  </div>
+                  {subOpen.diag_comm_doc && (
+                    <div className="details" style={{ padding: 8 }}>
+                      <InlineNoteList
+                        items={committee.wts_doctrinal_flags || []}
+                        notes={committeeNotes.wts_doctrinal_flags || []}
+                        pathPrefix="committee_notes.wts_doctrinal_flags"
+                        onLocalChange={handleLocalNoteChange}
+                      />
+                    </div>
+                  )}
+                </div>
+
+                <div
+                  className={"section card " + (subOpen.diag_comm_ref ? "open" : "")}
+                  style={{ marginTop: 6 }}
+                >
+                  <div
+                    className="section-head"
+                    onClick={() => toggleSub("diag_comm_ref")}
+                  >
+                    <div className="caret">
+                      {subOpen.diag_comm_ref ? "▾" : "▸"}
+                    </div>
+                    <div className="small">
+                      <b>Committee: Reformed-tradition flags</b>
+                    </div>
+                  </div>
+                  {subOpen.diag_comm_ref && (
+                    <div className="details" style={{ padding: 8 }}>
+                      <InlineNoteList
+                        items={committee.reformed_tradition_flags || []}
+                        notes={committeeNotes.reformed_tradition_flags || []}
+                        pathPrefix="committee_notes.reformed_tradition_flags"
+                        onLocalChange={handleLocalNoteChange}
+                      />
+                    </div>
+                  )}
+                </div>
+
+                <div
+                  className={"section card " + (subOpen.diag_comm_trig ? "open" : "")}
+                  style={{ marginTop: 6 }}
+                >
+                  <div
+                    className="section-head"
+                    onClick={() => toggleSub("diag_comm_trig")}
+                  >
+                    <div className="caret">
+                      {subOpen.diag_comm_trig ? "▾" : "▸"}
+                    </div>
+                    <div className="small">
+                      <b>Committee: examiner trigger points</b>
+                    </div>
+                  </div>
+                  {subOpen.diag_comm_trig && (
+                    <div className="details" style={{ padding: 8 }}>
+                      <InlineNoteList
+                        items={committee.examiner_trigger_points || []}
+                        notes={committeeNotes.examiner_trigger_points || []}
+                        pathPrefix="committee_notes.examiner_trigger_points"
+                        onLocalChange={handleLocalNoteChange}
+                      />
+                    </div>
+                  )}
+                </div>
+              </>
+            ) : null}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function PodcastPage() {
   const feeds = [
     { file: "podcasts/ap-figures.rss", title: "Apologetics: Figures & Methods" },
@@ -1984,6 +3170,109 @@ function OutlinePage() {
   }, []);
   return <div className="markdown" dangerouslySetInnerHTML={{__html: html}}/>;
 }
+function InlineNoteList({ items, notes, pathPrefix, onLocalChange }) {
+  const [editingIndex, setEditingIndex] = React.useState(null);
+  const [draft, setDraft] = React.useState("");
+
+  if (!Array.isArray(items) || !items.some((t) => t && t.trim())) {
+    return <div className="small muted">(none)</div>;
+  }
+
+  const startEdit = (idx, current) => {
+    setEditingIndex(idx);
+    setDraft(current || "");
+  };
+
+  const handleSave = (idx) => {
+    setEditingIndex(null);
+    if (onLocalChange) {
+      onLocalChange(idx, draft, pathPrefix);
+    }
+  };
+
+  const handleCancel = () => {
+    setEditingIndex(null);
+    setDraft("");
+  };
+
+  const placeholder = "Add note";
+
+  return (
+    <ul className="exam-item-list">
+      {items.map((text, i) => {
+        if (!text || !text.trim()) return null;
+
+        const currentNote =
+          Array.isArray(notes) && typeof notes[i] === "string" ? notes[i] : "";
+        const note = currentNote.trim();
+        const isEditing = editingIndex === i;
+
+        return (
+          <li key={i} className="exam-item">
+            <div className="exam-item-text">{text}</div>
+
+            {isEditing ? (
+              <div className="exam-note-box exam-note-editing">
+                <textarea
+                  className="small exam-note-edit"
+                  style={{ width: "100%", boxSizing: "border-box" }}
+                  value={draft}
+                  rows={Math.max(2, draft.split("\n").length, 2)}
+                  data-note-key={
+                    pathPrefix ? `${pathPrefix}[${i}]` : undefined
+                  }
+                  onChange={(e) => setDraft(e.target.value)}
+                />
+                <div className="exam-note-actions">
+                  <button
+                    type="button"
+                    className="btn small"
+                    onClick={() => handleSave(i)}
+                  >
+                    Save
+                  </button>
+                  <button
+                    type="button"
+                    className="btn small muted"
+                    onClick={handleCancel}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            ) : note ? (
+              // note exists → show full box
+              <div
+                className="exam-note-box small"
+                data-note-key={
+                  pathPrefix ? `${pathPrefix}[${i}]` : undefined
+                }
+                onClick={() => startEdit(i, currentNote)}
+              >
+                <div className="exam-note-label">Note</div>
+                <div>{note}</div>
+              </div>
+            ) : (
+              // no note yet → just a tiny inline "Add note" link
+              <button
+                type="button"
+                className="exam-note-add small muted"
+                data-note-key={
+                  pathPrefix ? `${pathPrefix}[${i}]` : undefined
+                }
+                onClick={() => startEdit(i, currentNote)}
+              >
+                + {placeholder}
+              </button>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+
 /* ---------------- Routes ---------------- */
 function Routes({ datasets }) {
   const { path } = useContext(RouterCtx);
@@ -1993,6 +3282,8 @@ function Routes({ datasets }) {
   if (pathname === "" || pathname === "/")              return <TopicsPage datasets={datasets} />;
   if (pathname === "/theologians")                      return <TheologiansPage datasets={datasets} />;
   if (pathname === "/works")                            return <WorksPage datasets={datasets} />;
+  if (pathname === "/exam-essays")                      return <ExamEssaysPage datasets={datasets} />;         // ← NEW
+  if (pathname.startsWith("/exam-essay/"))              return <ExamEssayPage id={decodeURIComponent(url.pathname.split("/").pop())} />; // ← NEW
   if (pathname.startsWith("/topic/"))                   return <TopicPage slug={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets} />;
   if (pathname.startsWith("/theologian/"))              return <TheologianPage slug={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets} />;
   if (pathname.startsWith("/work/"))                    return <WorkPage id={decodeURIComponent(url.pathname.split("/").pop())} datasets={datasets} />;
@@ -2009,6 +3300,7 @@ function Routes({ datasets }) {
 }
 
 
+
 /* ---------------- App (DataHub + Router) ---------------- */
 function App() {
   const router = useRouter();
@@ -2021,7 +3313,7 @@ function App() {
         byTopic, byTheo, byWork,
         canonMap, reverseCanonMap,
         canonCountsTheo, canonCountsTopic,
-        chData, apData,
+        chData, apData, examEssays
       ] = await Promise.all([
         api("/api/topics"),
         api("/api/theologians"),
@@ -2035,13 +3327,14 @@ function App() {
         api("/api/indices/canon_counts_by_topic"),
         api("/api/essays/ch"),
         api("/api/essays/ap"),
+        api("/api/exam_essays"),
       ]);
       setDatasets({
         topics, theologians, works,
         byTopic, byTheo, byWork,
         canonMap, reverseCanonMap,
         canonCountsTheo, canonCountsTopic,
-        chData, apData,
+        chData, apData,examEssays
       });
     })().catch(console.error);
   }, []);

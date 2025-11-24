@@ -212,6 +212,156 @@ def _md_min_to_html(md: str) -> str:
     if in_list: out.append("</ul>")
     return "\n".join(out)
 
+# EXAM ESSAYS
+
+EXAM_ES_DIR = (ROOT / "exam_essays_structured").resolve()
+
+EXAM_ESSAY_MAP = {}
+EXAM_ESSAY_FILES = {}
+
+def _load_exam_essays():
+    global EXAM_ESSAY_MAP, EXAM_ESSAY_FILES
+    out = []
+    file_map = {}
+
+    if EXAM_ES_DIR.is_dir():
+        for path in sorted(EXAM_ES_DIR.glob("*.json")):
+            data = _load_json(path, {})
+            if not isinstance(data, dict):
+                continue
+            if "id" not in data:
+                data["id"] = path.stem
+
+            track = (data.get("exam_track") or "").upper()
+            if track == "ST":
+                data["exam_track_label"] = "Systematic Theology"
+            elif track == "CH":
+                data["exam_track_label"] = "Church History"
+            elif track == "AP":
+                data["exam_track_label"] = "Apologetics"
+            else:
+                data["exam_track_label"] = track or "Other"
+
+            # NEW: pre-render model_oral_answers markdown → HTML
+            moa = data.get("model_oral_answers") or {}
+            for key in ("critical_historical_fixes",
+                        "critical_doctrinal_themes",
+                        "top_exam_questions"):
+                arr = moa.get(key)
+                if isinstance(arr, list):
+                    for qa in arr:
+                        if not isinstance(qa, dict):
+                            continue
+                        md = qa.get("answer_markdown")
+                        md = re.sub(r"\n[ ]{2}-", "\n    -", md)
+                        qa["answer_html"] = markdown(
+                                md,
+                                extensions=["fenced_code", "tables"]
+                            )
+                        # only compute if markdown present and no HTML yet
+#                         if md and not qa.get("answer_html"):
+#
+#
+#                             qa["answer_html"] = markdown(
+#                                 md,
+#                                 extensions=["fenced_code", "tables"]
+#                             )
+
+            out.append(data)
+            file_map[data["id"]] = path
+
+    CACHE["exam_essays"] = out
+    EXAM_ESSAY_MAP = {e["id"]: e for e in out}
+    EXAM_ESSAY_FILES = file_map
+
+
+
+_load_exam_essays()
+
+
+@app.get("/api/exam_essays")
+def api_exam_essays():
+    items = []
+    for e in CACHE.get("exam_essays", []):
+        items.append({
+            "id": e["id"],
+            "exam_track": e.get("exam_track"),
+            "exam_track_label": e.get("exam_track_label"),
+            "session": e.get("session"),
+            "question_label": e.get("question_label"),
+            "question_text": e.get("question_text"),
+        })
+    def _track_order(t):
+        if t == "ST": return 0
+        if t == "CH": return 1
+        if t == "AP": return 2
+        return 9
+    items.sort(key=lambda x: (_track_order(x.get("exam_track")), x.get("question_label") or ""))
+    return jsonify(items)
+
+@app.get("/api/exam_essays/<essay_id>")
+def api_exam_essay_detail(essay_id):
+    e = EXAM_ESSAY_MAP.get(essay_id)
+    if not e:
+        return jsonify({"error": "Not found"}), 404
+    return jsonify(e)
+
+@app.post("/api/exam_essays/<essay_id>/update_note")
+def api_update_exam_essay_note(essay_id):
+    payload = request.get_json(force=True) or {}
+    path = payload.get("path")      # e.g. "user_notes.thesis_points"
+    index = payload.get("index")
+    value = payload.get("value", "")
+
+    if not path or not isinstance(index, int):
+        return jsonify({"error": "invalid payload"}), 400
+
+    essay = EXAM_ESSAY_MAP.get(essay_id)
+    file_path = EXAM_ESSAY_FILES.get(essay_id)
+    if essay is None or file_path is None:
+        return jsonify({"error": "not found"}), 404
+
+    # --- version history BEFORE mutating ---
+    history = essay.setdefault("_note_history", [])
+    history.insert(0, {
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "user_notes": essay.get("user_notes", {}),
+        "oral_prep_notes": essay.get("oral_prep_notes", {}),
+    })
+    if len(history) > 10:
+        del history[10:]
+
+    # --- generic path navigation ---
+    keys = path.split(".")  # ["user_notes", "weak_spots", "logic_weaknesses"]
+    target = essay
+    for key in keys[:-1]:
+        if key not in target or not isinstance(target[key], dict):
+            target[key] = {}
+        target = target[key]
+
+    arr_key = keys[-1]
+    arr = target.get(arr_key)
+    if not isinstance(arr, list):
+        arr = []
+    # extend array if needed
+    while len(arr) <= index:
+        arr.append("")
+    arr[index] = value
+    target[arr_key] = arr
+
+    # --- write back to disk ---
+    # don't persist internal helper fields if you add any later;
+    # _note_history *is* meant to be saved.
+    to_save = dict(essay)
+    # if you ever add other transient fields, pop them here
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(to_save, f, indent=2, ensure_ascii=False)
+
+    return jsonify({"ok": True})
+
+
+
 
 DIGESTS_ROOT = (ROOT / "Digests").resolve()
 DIGEST_CATS  = ["AP", "ST", "CH"]
@@ -320,9 +470,22 @@ def _scan_domain(root_dir: pathlib.Path, domain_id: str, label: str, categories:
                 "preview_md": blocks.get("preview", ""),
                 "essay_md": blocks.get("essay", ""),
                 "recap_md": blocks.get("recap", ""),
-                "preview_html": _md_min_to_html(blocks.get("preview", "")),
-                "essay_html": _md_min_to_html(blocks.get("essay", "")),
-                "recap_html": _md_min_to_html(blocks.get("recap", "")),
+#                 "preview_html": _md_min_to_html(blocks.get("preview", "")),
+#                 "essay_html": _md_min_to_html(blocks.get("essay", "")),
+#                 "recap_html": _md_min_to_html(blocks.get("recap", "")),
+                "preview_html": markdown(
+                    blocks.get("preview", ""),
+                    extensions=["fenced_code", "tables", "toc"]
+                ),
+                "essay_html": markdown(
+                    blocks.get("essay", ""),
+                    extensions=["fenced_code", "tables", "toc"]
+                ),
+                "recap_html": markdown(
+                    blocks.get("recap", ""),
+                    extensions=["fenced_code", "tables", "toc"]
+                ),
+
                 "domain": domain_id,
                 "domain_label": label,
                 "category_key": cat["key"],
