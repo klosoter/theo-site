@@ -45447,5 +45447,136 @@
     "updated_at": "2025-10-19",
     "themes": [],
     "country_primary_iso": ""
+  },
+  {
+    "id": "theo_e19c78278013",
+    "slug": "william-ames",
+    "full_name": "William Ames",
+    "name": "William Ames",
+    "institution_ids": [],
+    "era_slug": "reformation",
+    "tradition_slug": "puritan",
+    "dates": "1576–1633",
+    "birth_year": 1576,
+    "death_year": 1633,
+    "era": {
+      "id": "era_reformation",
+      "slug": "reformation",
+      "label": "Reformation & Post-Reformation (1500–1650)",
+      "start": 1500,
+      "end": 1650
+    },
+    "tradition": {
+      "id": "trad_puritan",
+      "slug": "puritan",
+      "label": "Puritan"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+
+  {
+    "id": "theo_481ae941418b",
+    "slug": "todd-rester",
+    "full_name": "Todd Rester",
+    "name": "Todd Rester",
+    "institution_ids": [],
+    "era_slug": "contemporary",
+    "tradition_slug": "reformed",
+    "dates": "1977–",
+    "birth_year": 1977,
+    "death_year": null,
+    "era": {
+      "id": "era_contemporary",
+      "slug": "contemporary",
+      "label": "Contemporary (1946– )",
+      "start": 1946,
+      "end": 3000
+    },
+    "tradition": {
+      "id": "trad_reformed",
+      "slug": "reformed",
+      "label": "Reformed"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+
+  {
+    "id": "theo_cd32446de37b",
+    "slug": "stephen-coleman",
+    "full_name": "Stephen Coleman",
+    "name": "Stephen Coleman",
+    "institution_ids": [],
+    "era_slug": "contemporary",
+    "tradition_slug": "reformed",
+    "dates": "1980–",
+    "birth_year": 1980,
+    "death_year": null,
+    "era": {
+      "id": "era_contemporary",
+      "slug": "contemporary",
+      "label": "Contemporary (1946– )",
+      "start": 1946,
+      "end": 3000
+    },
+    "tradition": {
+      "id": "trad_reformed",
+      "slug": "reformed",
+      "label": "Reformed"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
+  },
+
+  {
+    "id": "theo_558a9cbd730a",
+    "slug": "rob-edwards",
+    "full_name": "Rob Edwards",
+    "name": "Rob Edwards",
+    "institution_ids": [],
+    "era_slug": "contemporary",
+    "tradition_slug": "reformed",
+    "dates": "1982–",
+    "birth_year": 1982,
+    "death_year": null,
+    "era": {
+      "id": "era_contemporary",
+      "slug": "contemporary",
+      "label": "Contemporary (1946– )",
+      "start": 1946,
+      "end": 3000
+    },
+    "tradition": {
+      "id": "trad_reformed",
+      "slug": "reformed",
+      "label": "Reformed"
+    },
+    "bio": "",
+    "timeline": [],
+    "key_work_ids": [],
+    "wts_relevance": false,
+    "created_at": "",
+    "updated_at": "",
+    "themes": [],
+    "country_primary_iso": ""
   }
 ]

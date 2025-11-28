@@ -38917,5 +38917,29 @@
     "path": "/Users/klosoter/Documents/Coding/Theo-Wiki/Digests/ST/Bavinck, Herman - Reformed Dogmatics (Theology Proper).docx",
     "updated_at": "2024-12-16T15:46:29.110716",
     "hay": "bavinck, herman - reformed dogmatics (theology proper) st digest"
+  },
+  {
+    "type": "theologian",
+    "name": "William Ames",
+    "slug": "william-ames",
+    "hay": "william-ames theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "Todd Rester",
+    "slug": "todd-rester",
+    "hay": "todd-rester theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "Stephen Coleman",
+    "slug": "stephen-coleman",
+    "hay": "stephen-coleman theologian"
+  },
+  {
+    "type": "theologian",
+    "name": "Rob Edwards",
+    "slug": "rob-edwards",
+    "hay": "rob-edwards theologian"
   }
 ]

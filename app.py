@@ -3,11 +3,143 @@ from collections import Counter
 from typing import Dict, List, Tuple
 from flask import Flask, jsonify, send_from_directory, request, abort
 from markdown import markdown
+from markdown_it import MarkdownIt
 from dotenv import load_dotenv
 from datetime import datetime
 
 
 load_dotenv()
+
+import re
+_BULLET_2SPACE_RE = re.compile(r"^( {1,2})([-*+])\s+")
+import re
+
+def _collapse_interbullet_blank_lines(text: str) -> str:
+    """
+    Remove blank lines *between* list items at the same indentation level.
+    Keep blanks before headings/paragraphs. Ignore fenced code blocks.
+    """
+    if not text:
+        return text
+
+    lines = text.splitlines()
+    out = []
+
+    fence_re = re.compile(r"^```")
+    bullet_re = re.compile(r"^(\s*)([-*+])\s+")
+
+    in_fence = False
+    prev_was_bullet = False
+    prev_indent = None
+    pending_blank = False  # blank after a bullet we haven't decided to keep/drop yet
+
+    for ln in lines:
+        # handle fences
+        if fence_re.match(ln):
+            # flush any pending blank before the fence
+            if pending_blank:
+                out.append("")
+                pending_blank = False
+            in_fence = not in_fence
+            out.append(ln)
+            prev_was_bullet = False
+            prev_indent = None
+            continue
+
+        if in_fence:
+            # inside code: pass through literally
+            if pending_blank:
+                out.append("")
+                pending_blank = False
+            out.append(ln)
+            continue
+
+        # outside fences
+        if ln.strip() == "":
+            # blank line
+            if prev_was_bullet:
+                # maybe drop it later if next line is same-indent bullet
+                pending_blank = True
+            else:
+                out.append("")
+            continue
+
+        # non-blank line
+        m = bullet_re.match(ln)
+        if m:
+            indent = len(m.group(1) or "")
+
+            if pending_blank:
+                # if previous was bullet at SAME indent, drop the blank
+                if not (prev_was_bullet and indent == prev_indent):
+                    out.append("")
+                pending_blank = False
+
+            out.append(ln)
+            prev_was_bullet = True
+            prev_indent = indent
+        else:
+            # heading/paragraph/etc.
+            if pending_blank:
+                # we DO want a blank before non-bullet content
+                out.append("")
+                pending_blank = False
+            out.append(ln)
+            prev_was_bullet = False
+            prev_indent = None
+
+    return "\n".join(out)
+
+
+def _fix_two_space_bullets(text: str) -> str:
+    """
+    Normalize leading 1- or 2-space bullets to 4-space bullets.
+    Only outside fenced code blocks.
+    """
+    if not text:
+        return text
+
+    lines = text.splitlines()
+    out = []
+    in_fence = False
+    fence_re = re.compile(r"^```")
+
+    for ln in lines:
+        if fence_re.match(ln):
+            in_fence = not in_fence
+            out.append(ln)
+            continue
+
+        if not in_fence:
+            m = _BULLET_2SPACE_RE.match(ln)
+            if m:
+                indent = m.group(1)     # either " " or "  "
+                rest = ln[len(indent):]  # remove the original indent
+                out.append("    " + rest)  # force 4 spaces
+                continue
+
+        out.append(ln)
+
+    return "\n".join(out)
+
+
+
+MD = MarkdownIt("commonmark", {
+    "html": False,     # no raw HTML from user content
+    "linkify": True,   # auto-link URLs
+    "typographer": False,
+}).enable("table")      # tables on; code fences are already on in commonmark
+
+def render_md(text: str) -> str:
+    if not text:
+        return ""
+    text = _fix_two_space_bullets(text)
+    text = _collapse_interbullet_blank_lines(text)
+#     text = text.replace("\n  -", "\n    -")  # also fix any 2-space indented bullets after line breaks
+    return MD.render(text)
+
+
+
 ROOT = pathlib.Path(__file__).parent.resolve()
 DATA_DIR = pathlib.Path(os.getenv("DATA_DIR", ROOT / "data")).resolve()
 
@@ -254,18 +386,7 @@ def _load_exam_essays():
                             continue
                         md = qa.get("answer_markdown")
                         md = re.sub(r"\n[ ]{2}-", "\n    -", md)
-                        qa["answer_html"] = markdown(
-                                md,
-                                extensions=["fenced_code", "tables"]
-                            )
-                        # only compute if markdown present and no HTML yet
-#                         if md and not qa.get("answer_html"):
-#
-#
-#                             qa["answer_html"] = markdown(
-#                                 md,
-#                                 extensions=["fenced_code", "tables"]
-#                             )
+                        qa["answer_html"] = render_md(md)
 
             out.append(data)
             file_map[data["id"]] = path
@@ -396,7 +517,8 @@ def _scan_digests_md():
 
 def _read_md(path: pathlib.Path) -> str:
     text = path.read_text(encoding="utf-8")
-    return markdown(text, extensions=["tables", "footnotes"])
+    return render_md(text)
+#     return markdown(text, extensions=["tables", "footnotes"])
 
 @app.get("/api/digests")
 def api_digests_index():
@@ -470,21 +592,21 @@ def _scan_domain(root_dir: pathlib.Path, domain_id: str, label: str, categories:
                 "preview_md": blocks.get("preview", ""),
                 "essay_md": blocks.get("essay", ""),
                 "recap_md": blocks.get("recap", ""),
-#                 "preview_html": _md_min_to_html(blocks.get("preview", "")),
-#                 "essay_html": _md_min_to_html(blocks.get("essay", "")),
-#                 "recap_html": _md_min_to_html(blocks.get("recap", "")),
-                "preview_html": markdown(
-                    blocks.get("preview", ""),
-                    extensions=["fenced_code", "tables", "toc"]
-                ),
-                "essay_html": markdown(
-                    blocks.get("essay", ""),
-                    extensions=["fenced_code", "tables", "toc"]
-                ),
-                "recap_html": markdown(
-                    blocks.get("recap", ""),
-                    extensions=["fenced_code", "tables", "toc"]
-                ),
+                "preview_html": render_md(blocks.get("preview", "")),
+                "essay_html": render_md(blocks.get("essay", "")),
+                "recap_html": render_md(blocks.get("recap", "")),
+#                 "preview_html": markdown(
+#                     blocks.get("preview", ""),
+#                     extensions=["fenced_code", "tables", "toc"]
+#                 ),
+#                 "essay_html": markdown(
+#                     blocks.get("essay", ""),
+#                     extensions=["fenced_code", "tables", "toc"]
+#                 ),
+#                 "recap_html": markdown(
+#                     blocks.get("recap", ""),
+#                     extensions=["fenced_code", "tables", "toc"]
+#                 ),
 
                 "domain": domain_id,
                 "domain_label": label,
@@ -577,7 +699,8 @@ def api_theologian_essay(theo_id):
         return jsonify({"html": ""})
 
     body = normalize_md(text)
-    html = markdown(body, extensions=["fenced_code", "tables", "toc"])
+    html = render_md(body)
+
     return jsonify({"html": html})
 
 
@@ -772,6 +895,7 @@ def work_summary(work_id):
 
     text = md_path.read_text(encoding="utf-8")
     html = markdown(normalize_md(text), extensions=["fenced_code", "tables"])
+    html = render_md(text)
     return jsonify({"html": html})
 
 
@@ -922,7 +1046,7 @@ def outline_html():
             # NEW: parse front-matter and strip it before markdown render
             meta, body = _parse_frontmatter(text)
             body = normalize_md(body)
-            html = markdown(body, extensions=["fenced_code", "tables", "toc"])
+            html = render_md(body)
             return jsonify({"html": html, "meta": meta, "page_title_string": page_title_string})
 
     return jsonify({"error": "Not found", "outlines_dir": str(OUTLINES_DIR), "tried": tried}), 404

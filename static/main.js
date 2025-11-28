@@ -651,7 +651,7 @@ function Header() {
     ["Works", "/works"],
     ["Apologetics", "/apologetics"],
     ["Church History", "/church-history"],
-    ["Exam essays", "/exam-essays"],
+//    ["Exam essays", "/exam-essays"],
     ["Digests", "/digests"],
     ["Podcast", "/podcasts"],
   ];
@@ -1468,7 +1468,7 @@ function TopicPage({ slug, datasets }) {
   const essayRel = `outlines/${catFolder}/${topicFolder}/${topicFolder}.md`;
 
   const [essayHTML, setEssayHTML] = React.useState("");
-  const [essayOpen, setEssayOpen] = React.useState(true); // default open like "About"
+  const [essayOpen, setEssayOpen] = React.useState(false); // default open like "About"
 
   React.useEffect(() => {
     let gone = false;
@@ -1487,7 +1487,7 @@ function TopicPage({ slug, datasets }) {
 
   const [prepHTML, setPrepHTML] = React.useState("");
   const [prepTried, setPrepTried] = React.useState(false);
-  const [prepOpen, setPrepOpen] = React.useState(false);
+  const [prepOpen, setPrepOpen] = React.useState(true);
   // NEW: probe for exam-prep essay once per topic
   React.useEffect(() => {
     let gone = false;
@@ -1743,11 +1743,16 @@ function TheologianPage({ slug, datasets }) {
 
   const [prepHTML, setPrepHTML] = React.useState("");
   const [prepTried, setPrepTried] = React.useState(false);
-  const [prepOpen, setPrepOpen] = React.useState(false);
+  const [prepOpen, setPrepOpen] = React.useState(true);
 
-    // NEW: exam-prep theologian essay: {theo_id}_exam_prep.md
+  // NEW: exam-prep theologian essay: {theo_id}_exam_prep.md
   React.useEffect(() => {
     let gone = false;
+
+    // reset for new theologian
+    setPrepHTML("");
+    setPrepTried(false);
+
     (async () => {
       try {
         const id = `${theo.id}_exam_prep`;
@@ -1764,6 +1769,25 @@ function TheologianPage({ slug, datasets }) {
     })();
     return () => { gone = true; };
   }, [theo.id]);
+
+  const prepExists = prepTried && prepHTML.trim() !== "";
+
+  // Decide initial open/closed once prep has been checked
+  React.useEffect(() => {
+    if (!prepTried) return; // still loading
+
+    if (prepExists) {
+      // prep exists: show prep, hide essay
+      setPrepOpen(true);
+      setEssayOpen(false);
+    } else {
+      // no prep: hide prep, show essay
+      setPrepOpen(false);
+      setEssayOpen(true);
+    }
+  }, [theo.id, prepTried, prepExists]);
+
+
 
 
 

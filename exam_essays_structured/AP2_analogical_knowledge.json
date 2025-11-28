@@ -312,8 +312,8 @@
     ]
   },
   "model_oral_answers": {
-    "version": 8,
-    "generated_at": "2025-11-24T16:11:21.372061Z",
+    "version": 9,
+    "generated_at": "2025-11-24T17:02:22.290169Z",
     "by_model": "gpt-5.1",
     "critical_historical_fixes": [
       {

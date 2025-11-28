@@ -3,8 +3,7 @@ Calvin and the Reformation (selected writings of John Calvin; ed. William Stacy 
 Primary author: **John Calvin** - selections emphasizing Reformation theology as articulated in the Institutes and related treatises/sermons.
 
 ### OUTLINE NOTES
-- **Setting / publication context**
- - Mid-16th century Reformation, Geneva as polemical and pastoral center. Calvin writes within humanist exegetical method and Protestant confessional debates with Roman Catholics, Lutherans, and radical Reformers.
+- **Setting / publication context**- Mid-16th century Reformation, Geneva as polemical and pastoral center. Calvin writes within humanist exegetical method and Protestant confessional debates with Roman Catholics, Lutherans, and radical Reformers.
  - The edition (Johnson, ed.) collects Calvin's canonical expositions chiefly from the Institutes and shorter tracts/sermons that shaped Reformed identity.
 - **Central thesis / doctrinal problem**
  - To articulate a coherent Protestant systematic theology centered on **God's glory, Christ's redemptive work, and the Spirit's renewing effect** - answering how sinners are known, justified, and transformed while maintaining divine sovereignty and human responsibility.
