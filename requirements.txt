@@ -2,3 +2,4 @@ Flask==3.0.3
 python-dotenv==1.0.1
 Markdown==3.6
 Markupsafe==2.1.5
+markdown-it-py==4.0.0

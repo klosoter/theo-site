@@ -571,8 +571,6 @@ function Header() {
     if (p.startsWith("/essay/")) return "Essay";
     if (p.startsWith("/digest/")) return "Digest";
     if (p.startsWith("/outline")) return "Outline";
-    if (p.startsWith("/exam-essays")) return "Exam essays";
-    if (p.startsWith("/exam-essay/")) return "Exam essays";
 
     return "Browse";
   }, [path]);
