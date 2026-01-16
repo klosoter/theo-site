@@ -75,6 +75,17 @@ This avoids runtime databases, CMS abstractions, and implicit relationships.
 
 ---
 
+## Data Generation Notes
+
+Some datasets in this project were initially generated or augmented using
+large language models (LLMs) as part of an offline preprocessing workflow.
+
+LLM usage is confined to a separate experimental repository and is not
+required to build, run, or deploy this site. All data published here is
+stored as static artifacts and reviewed before inclusion.
+
+---
+
 ## Recruiter Context
 
 This repository demonstrates:
